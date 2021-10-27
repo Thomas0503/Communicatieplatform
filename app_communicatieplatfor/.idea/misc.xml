@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/activiteit.xml" value="0.1" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/activity_chat.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/afspraak.xml" value="0.4" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/chat.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/chat_example.xml" value="0.2966485507246377" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/dagboek.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/documents.xml" value="0.2015625" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/homepage.xml" value="0.2015625" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/kalender.xml" value="0.2015625" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/layout.xml" value="0.13405797101449277" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/message_example.xml" value="0.2966485507246377" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/sign_in_example.xml" value="0.2966485507246377" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/title.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
