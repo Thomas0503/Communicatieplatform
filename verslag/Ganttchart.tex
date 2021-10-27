@@ -1,0 +1,265 @@
+\documentclass[landscape,12pt]{article}
+% style
+\usepackage[left=2.5cm,top=2cm,right=2.5cm,bottom=2cm,a4paper]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Communicatieplatform}
+\rhead{Gantt-grafiek: P\&O.3}
+\renewcommand{\headrulewidth}{0.4pt}
+\usepackage{color}
+
+% gantt
+\usepackage{pgfgantt}
+
+\def\pgfcalendarweekdayletter#1{%
+	\ifcase#1M\or D\or W\or D\or V\or Z\or Z\fi%
+}
+
+%\def\pgfcalendarmonthshortname#1{%
+%	\ifcase#1Sept\or Okt\or Nov\or Dec\fi%
+%}
+
+\definecolor{foobarblue}{RGB}{0,153,255}
+\definecolor{foobaryellow}{RGB}{234,187,0}
+\definecolor{grey}{RGB}{170,170,170}
+
+\newganttchartelement{foobar}{
+	foobar/.style={
+		shape= rectangle,
+		inner sep=0pt,
+		draw=grey!70!blue,
+		thick,
+		fill=white,
+		inner color=blue!10, outer color=blue!40, opacity=0.95
+	},
+	foobar incomplete/.style={
+		/pgfgantt/foobar,
+		draw=foobaryellow,
+		bottom color=foobaryellow!50
+	},
+	foobar label font=\slshape,
+	foobar left shift=0,%.1,
+	foobar right shift=0%-.1
+}
+\begin{document}
+	
+	
+	\begin{figure}\hspace*{-2cm}
+		\centering
+		\begin{ganttchart}[hgrid, vgrid, x unit=5mm, time slot format=isodate]{2021-09-30}{2021-11-06}
+			\gantttitlecalendar{week,month=shortname,day,weekday=letter} \\
+			\ganttgroup{\bf I - Tools}{2021-09-30}{2021-10-28}
+			\ganttmilestone{}{2021-10-28} \\
+			\ganttfoobar[name=11]{Onderzoek}{2021-09-30}{2021-10-14}\\
+			\ganttfoobar[name=12]{Verslaggeving}{2021-10-14}{2021-10-28}\\
+			\ganttlink{11}{12}
+		
+			\newganttchartelement{foobar2}{
+				foobar/.style={
+					shape= rectangle,
+					inner sep=0pt,
+					draw=grey!70!yellow,
+					thick,
+					fill=white,
+					inner color=yellow!10, outer color=yellow!40, opacity=0.95
+				},
+				foobar incomplete/.style={
+					/pgfgantt/foobar,
+					draw=foobaryellow,
+					bottom color=foobaryellow!50
+				},
+				foobar label font=\slshape,
+				foobar left shift=0,%.1,
+				foobar right shift=0%-.1
+			}
+			\ganttgroup{\bf II - App}{2021-10-14}{2021-11-06}\\
+			\ganttfoobar[name=21]{Design}{2021-10-14}{2021-10-21}\\
+			\ganttfoobar[name=22]{Programmeren}{2021-10-21}{2021-11-06}\\
+			\ganttlink{21}{22}
+			
+			
+				\newganttchartelement{foobar3}{
+				foobar/.style={
+					shape= rectangle,
+					inner sep=0pt,
+					draw=grey!70!purple,
+					thick,
+					fill=white,
+					inner color=purple!10, outer color=purple!40, opacity=0.95
+				},
+				foobar incomplete/.style={
+					/pgfgantt/foobar,
+					draw=foobaryellow,
+					bottom color=foobaryellow!50
+				},
+				foobar label font=\slshape,
+				foobar left shift=0,%.1,
+				foobar right shift=0%-.1
+			}
+			\ganttgroup{\bf III - Tussentijds verslag}{2021-10-28}{2021-11-06}
+			\ganttmilestone{}{2021-11-06}\\
+			\ganttfoobar[name=31]{Inleiding}{2021-10-28}{2021-10-28}\\
+			\ganttfoobar[name=34]{Integratie}{2021-10-28}{2021-10-28}\\
+			\ganttfoobar[name=32]{Studie tools}{2021-10-28}{2021-11-04}\\
+			\ganttfoobar[name=36]{Referenties}{2021-10-28}{2021-11-04}\\
+			\ganttfoobar[name=33]{Resultaten}{2021-11-04}{2021-11-04}\\
+			\ganttfoobar[name=35]{Conclusie}{2021-11-04}{2021-11-06}\\
+
+			\ganttlink{32}{36}
+			\ganttlink{33}{35}
+			
+
+			
+		\end{ganttchart}
+	\end{figure}
+
+\newpage
+	\begin{figure}\hspace*{-2cm}
+		\centering
+		\begin{ganttchart}[hgrid, vgrid, x unit=5mm, time slot format=isodate]{2021-11-07}{2021-12-23}
+			
+			\newganttchartelement{foobar4}{
+				foobar/.style={
+					shape= rectangle,
+					inner sep=0pt,
+					draw=grey!70!yellow,
+					thick,
+					fill=white,
+					inner color=yellow!10, outer color=yellow!40, opacity=0.95
+				},
+				foobar incomplete/.style={
+					/pgfgantt/foobar,
+					draw=foobaryellow,
+					bottom color=foobaryellow!50
+				},
+				foobar label font=\slshape,
+				foobar left shift=0,%.1,
+				foobar right shift=0%-.1
+			}
+		
+			\gantttitlecalendar{week=7,month=shortname,day,weekday=letter} \\
+			\ganttgroup{\bf II - App}{2021-11-07}{2021-12-18}\\
+			\ganttfoobar[name=21]{Design}{2021-11-07}{2021-11-07}\\
+			\ganttfoobar[name=22]{Inlogsysteem}{2021-11-07}{2021-11-11}\\
+			\ganttfoobar[name=23]{Doorklikken naar pagina's}{2021-11-11}{2021-11-18}\\
+			\ganttfoobar[name=24]{Pagina's}{2021-11-07}{2021-12-18}\\
+			\ganttlink{22}{23}
+			
+			\newganttchartelement{foobar5}{
+				foobar/.style={
+					shape= rectangle,
+					inner sep=0pt,
+					draw=grey!70!pink,
+					thick,
+					fill=white,
+					inner color=pink!10, outer color=pink!40, opacity=0.95
+				},
+				foobar incomplete/.style={
+					/pgfgantt/foobar,
+					draw=foobaryellow,
+					bottom color=foobaryellow!50
+				},
+				foobar label font=\slshape,
+				foobar left shift=0,%.1,
+				foobar right shift=0%-.1
+			}
+		
+			\ganttgroup{\bf IV - Website}{2021-11-07}{2021-12-22}
+			\ganttmilestone{}{2021-12-22}\\
+			\ganttfoobar[name=41]{Inlogsysteem}{2021-11-07}{2021-11-11}\\
+			\ganttfoobar[name=42]{Doorklikken naar pagina's}{2021-11-11}{2021-11-18}\\
+			\ganttfoobar[name=43]{Pagina's}{2021-11-07}{2021-12-18}\\
+			\ganttfoobar[name=44]{Design}{2021-12-11}{2021-12-22}\\
+			\ganttlink{41}{42}
+			
+			\newganttchartelement{foobar3}{
+				foobar/.style={
+					shape= rectangle,
+					inner sep=0pt,
+					draw=grey!70!green,
+					thick,
+					fill=white,
+					inner color=green!10, outer color=green!40, opacity=0.95
+				},
+				foobar incomplete/.style={
+					/pgfgantt/foobar,
+					draw=foobaryellow,
+					bottom color=foobaryellow!50
+				},
+				foobar label font=\slshape,
+				foobar left shift=0,%.1,
+				foobar right shift=0%-.1
+			}
+			
+			\ganttgroup{\bf V - Database}{2021-11-07}{2021-12-22}
+			\ganttmilestone{}{2021-12-22}\\
+			\ganttfoobar[name=51]{Programmeren}{2021-11-07}{2021-12-18}\\
+			\ganttfoobar[name=52]{Testen}{2021-11-18}{2021-12-22}\\
+			\ganttlink{51}{52}
+			
+		\end{ganttchart}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}\hspace*{-2cm}
+		\centering
+		\begin{ganttchart}[hgrid, vgrid, x unit=5mm, time slot format=isodate]{2021-11-07}{2021-12-23}
+			\newganttchartelement{foobar3}{
+				foobar/.style={
+					shape= rectangle,
+					inner sep=0pt,
+					draw=grey!70!orange,
+					thick,
+					fill=white,
+					inner color=orange!10, outer color=orange!40, opacity=0.95
+				},
+				foobar incomplete/.style={
+					/pgfgantt/foobar,
+					draw=foobaryellow,
+					bottom color=foobaryellow!50
+				},
+				foobar label font=\slshape,
+				foobar left shift=0,%.1,
+				foobar right shift=0%-.1
+			}
+		
+			\gantttitlecalendar{week=7,month=shortname,day,weekday=letter} \\
+			\ganttgroup{\bf VI - Verslag}{2021-11-18}{2021-12-21}
+			\ganttmilestone{}{2021-12-21}\\
+			\ganttfoobar[name=61]{Feedback tussentijds verslag}{2021-11-18}{2021-11-18}\\
+			\ganttfoobar[name=62]{Updaten}{2021-11-18}{2021-11-25}\\
+			\ganttfoobar[name=63]{Uitwerking}{2021-11-25}{2021-12-09}\\
+			\ganttfoobar[name=64]{Nalezen}{2021-12-09}{2021-12-16}\\
+			\ganttlink{61}{62}
+			\ganttlink{62}{63}
+			\ganttlink{63}{64}
+			
+			\newganttchartelement{foobar4}{
+				foobar/.style={
+					shape= rectangle,
+					inner sep=0pt,
+					draw=grey!70!red,
+					thick,
+					fill=white,
+					inner color=red!10, outer color=red!40, opacity=0.95
+				},
+				foobar incomplete/.style={
+					/pgfgantt/foobar,
+					draw=foobaryellow,
+					bottom color=foobaryellow!50
+				},
+				foobar label font=\slshape,
+				foobar left shift=0,%.1,
+				foobar right shift=0%-.1
+			}
+		
+			\ganttgroup{\bf VII - Presentatie}{2021-12-09}{2021-12-23}
+			\ganttmilestone{}{2021-12-23}\\
+			\ganttfoobar[name=71]{Beamer maken}{2021-12-09}{2021-12-16}\\
+			\ganttfoobar[name=72]{Nalezen}{2021-12-16}{2021-12-19}\\
+			\ganttfoobar[name=73]{Opdelen}{2021-12-19}{2021-12-19}\\
+			\ganttlink{71}{72}
+			\ganttlink{72}{73}
+		\end{ganttchart}
+	\end{figure}
+\end{document}

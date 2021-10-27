@@ -1,0 +1,164 @@
+\documentclass[12pt]{article}
+
+% style
+\setlength{\parindent}{0pt}
+\usepackage[left=2.5cm,top=2cm,right=2.5cm,bottom=2cm,a4paper]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Communicatieplatform}
+\rhead{Takenstructuur: P\&O.3}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% table
+\usepackage{etoolbox}
+\usepackage{booktabs}
+\usepackage{xstring}
+\usepackage{xcolor,colortbl}
+\usepackage{longtable}
+
+\definecolor{gray1}{gray}{0.7}
+\definecolor{gray2}{gray}{0.85}
+\definecolor{gray3}{gray}{0.95}
+
+% counting system        
+\newcounter{counter}
+\newcounter{subcounter}
+\newcounter{subsubcounter}
+\newcommand{\teller}{
+    \stepcounter{counter}
+    \setcounter{subcounter}{0}
+    \setcounter{subsubcounter}{0}
+    \thecounter}
+\newcommand{\subteller}{
+    \stepcounter{subcounter}
+    \setcounter{subsubcounter}{0}
+    \thecounter.\thesubcounter}
+\newcommand{\subsubteller}{
+    \stepcounter{subsubcounter}
+    \thecounter.\thesubcounter.\thesubsubcounter}
+
+% row    
+\newcommand{\row}[3]{
+    \IfEqCase{#1}{
+        {1}{\teller & #2 & \IfEqCase{#3}{{0}{niet OK}{1}{OK}} \\}
+        {2}{\subteller & #2 & \IfEqCase{#3}{{0}{niet OK}{1}{OK}} \\}
+        {3}{\subsubteller & #2 & \IfEqCase{#3}{{0}{niet OK}{1}{OK}} \\}
+    }[PackageError{row}{Undefined option to row: #1}]}
+
+
+
+\begin{document}    
+    
+    \begin{table}
+        \centering
+        %\caption{Takenstructuur}
+        
+        \vspace{\baselineskip}
+        \begin{tabular}{p{1cm}p{12cm}c}
+            
+            
+            \toprule
+            Code & Taak & Status \\ 
+            
+            \midrule
+            \row{1}{Tools}{1}
+            \row{2}{Onderzoek}{1}
+            \row{3}{Methoden om website en app te linken}{1}
+            \row{3}{Onderzoek over databases}{1}
+            
+            \row{2}{Verslaggeving}{1}
+            
+            \row{3}{Takenstructuur}{1}
+            \row{3}{Gantt-chart}{1}
+            \row{3}{Taakverdeling}{1}
+            
+            
+            
+            
+            \midrule        
+            \row{1}{Rapportering}{0}
+            \row{2}{Tussentijds verslag}{0}
+            
+            \row{3}{Inleiding}{0}
+            \row{2}{Integratie}{0}
+            \row{3}{Studie Tools}{0}
+            \row{3}{Referenties}{0}
+            \row{3}{Resultaten}{0}
+            \row{3}{Conclusie}{0}
+            
+            \row{2}{Eindverslag}{0}
+            
+            \row{3}{Inleiding}{0}
+            \row{2}{Integratie}{0}
+            \row{3}{Studie Tools}{0}
+            \row{3}{Referenties}{0}
+            \row{3}{Resultaten}{0}
+            \row{3}{Conclusie}{0}
+            
+            
+            
+            
+            \row{2}{Eindpresentaie}{0}
+            \row{3}{Beamer maken}{0}
+            \row{3}{Opdelen}{0}
+            \row{3}{Nalezen}{0}
+            \row{3}{Inoefenen}{0}
+            
+            
+            
+            
+            
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    
+    \begin{table}
+    \centering
+    \begin{tabular}{p{1cm}p{12cm}c}
+        \toprule
+        Code & Taak & Status \\
+        \midrule
+        \row{1}{Website}{0}
+        \row{2}{Design}{0}
+        \row{3}{Inlogsysteem}{0}
+        \row{3}{Dagboekje}{0}
+        \row{3}{Kalender}{0}
+        \row{3}{Chat optie}{0}
+        \row{2}{Programmeren}{0}
+        \row{3}{Inlogsysteem}{0}
+        \row{3}{Dagboekje}{0}
+        \row{3}{Kalender}{0}
+        \row{3}{Chat optie}{0}
+        
+        \row{3}{Doorverwijzingen}{0}
+        
+        \midrule
+        \row{1}{App}{0}
+        \row{2}{Design}{0}
+        \row{3}{Inlogsysteem}{0}
+        \row{3}{Dagboekje}{0}
+        \row{3}{Kalender}{0}
+        \row{3}{Chat optie}{0}
+        \row{2}{Programmeren}{0}
+        \row{3}{Inlogsysteem}{0}
+        \row{3}{Dagboekje}{0}
+        \row{3}{Kalender}{0}
+        \row{3}{Chat optie}{0}
+        \row{3}{Inlogsysteem}{0}
+        \row{3}{Dagboekje}{0}
+        \row{3}{Kalender}{0}
+        \row{3}{Doorverwijzingen}{0}
+        
+        
+        \midrule
+        \row{1}{Database}{0}
+        \row{2}{Programmeren}{0}
+        \row{2}{Testen}{0}
+        
+        \bottomrule
+    \end{tabular}
+    \end{table}
+    
+
+    
+\end{document}
