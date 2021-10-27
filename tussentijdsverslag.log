@@ -1,0 +1,377 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.25)  27 OCT 2021 14:36
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**tussentijdsverslag.tex
+(./tussentijdsverslag.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-09-24>
+(c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(c:/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(c:/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/09/01 3.48 The Babel package
+
+(c:/texlive/2020/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/09/01 3.48 Babel common definitions
+\babel@savecnt=\count176
+\U@D=\dimen135
+\l@babelnohyphens=\language86
+
+(c:/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count177
+
+(c:/texlive/2020/texmf-dist/tex/generic/babel-dutch/dutch.ldf
+Language: dutch 2005/03/30 v3.8i Dutch support from the babel system
+Package babel Info: Making " an active character on input line 132.
+))
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
+)
+(c:/texlive/2020/texmf-dist/tex/latex/titling/titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip49
+\thanksmargin=\skip50
+\droptitle=\skip51
+)
+(c:/texlive/2020/texmf-dist/tex/latex/subfiles/subfiles.sty
+Package: subfiles 2020/09/07 v2.0 Multi-file projects (package)
+
+(c:/texlive/2020/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
+))
+(c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
+
+(c:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(c:/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count178
+\calc@Bcount=\count179
+\calc@Adimen=\dimen138
+\calc@Bdimen=\dimen139
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count180
+\calc@Cskip=\skip54
+)
+(c:/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+
+(c:/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+
+(c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+(c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+\AM@pagewidth=\dimen140
+\AM@pageheight=\dimen141
+
+(c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box45
+\AM@global@opts=\toks16
+\AM@pagecnt=\count181
+\AM@toc@title=\toks17
+\c@AM@survey=\count182
+\AM@templatesizebox=\box46
+)
+(c:/texlive/2020/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count183
+\c@@ppsavesec=\count184
+\c@@ppsaveapp=\count185
+)
+(c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count186
+\l__pdf_internal_box=\box47
+)
+(./tussentijdsverslag.aux)
+\openout1 = `tussentijdsverslag.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+
+(c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count187
+\scratchdimen=\dimen142
+\scratchbox=\box48
+\nofMPsegments=\count188
+\nofMParguments=\count189
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count190
+\MPscratchDim=\dimen143
+\MPnumerator=\count191
+\makeMPintoPDFobject=\count192
+\everyMPtoPDFconversion=\toks19
+) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(c:/texlive/2020/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(c:/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(c:/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(c:/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box49
+
+(c:/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+<2013-kulak-cmyk-highres.jpg, id=1, 602.25pt x 125.46875pt>
+File: 2013-kulak-cmyk-highres.jpg Graphic file (type jpg)
+<use 2013-kulak-cmyk-highres.jpg>
+Package pdftex.def Info: 2013-kulak-cmyk-highres.jpg  used on input line 24.
+(pdftex.def)             Requested size: 170.71652pt x 35.5656pt.
+ [1
+
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./2013-kulak-cm
+yk-highres.jpg>]
+(./tussentijdsverslag.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `tussentijdsverslag.toc'.
+
+ [2] [3] [4] [5]
+<Ganttchart.pdf, id=24, 845.0471pt x 597.50829pt>
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf>
+Package pdftex.def Info: Ganttchart.pdf  used on input line 113.
+(pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf>
+Package pdftex.def Info: Ganttchart.pdf  used on input line 113.
+(pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
+<Ganttchart.pdf, id=27, page=1, 845.0471pt x 597.50829pt>
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 1>
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 113.
+(pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 1>
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 113.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+ [6]
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 1>
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 113.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 1>
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 113.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 1>
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 113.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+ [7 <./Ganttchart.pdf>]
+<Ganttchart.pdf, id=62, page=2, 845.0471pt x 597.50829pt>
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 2>
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 113.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 2>
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 113.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 2>
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 113.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+ [8 <./Ganttchart.pdf>]
+<Ganttchart.pdf, id=70, page=3, 845.0471pt x 597.50829pt>
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 3>
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 113.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 3>
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 113.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 3>
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 113.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+ [9 <./Ganttchart.pdf>]
+<Takenstructuur.pdf, id=78, 597.50829pt x 845.0471pt>
+File: Takenstructuur.pdf Graphic file (type pdf)
+<use Takenstructuur.pdf>
+Package pdftex.def Info: Takenstructuur.pdf  used on input line 114.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: Takenstructuur.pdf Graphic file (type pdf)
+<use Takenstructuur.pdf>
+Package pdftex.def Info: Takenstructuur.pdf  used on input line 114.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<Takenstructuur.pdf, id=81, page=1, 597.50829pt x 845.0471pt>
+File: Takenstructuur.pdf Graphic file (type pdf)
+<use Takenstructuur.pdf, page 1>
+Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 114.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: Takenstructuur.pdf Graphic file (type pdf)
+<use Takenstructuur.pdf, page 1>
+Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 114.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: Takenstructuur.pdf Graphic file (type pdf)
+<use Takenstructuur.pdf, page 1>
+Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 114.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: Takenstructuur.pdf Graphic file (type pdf)
+<use Takenstructuur.pdf, page 1>
+Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 114.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: Takenstructuur.pdf Graphic file (type pdf)
+<use Takenstructuur.pdf, page 1>
+Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 114.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [10 <./Takenstructuur.pdf>]
+<Takenstructuur.pdf, id=89, page=2, 597.50829pt x 845.0471pt>
+File: Takenstructuur.pdf Graphic file (type pdf)
+<use Takenstructuur.pdf, page 2>
+Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 114.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: Takenstructuur.pdf Graphic file (type pdf)
+<use Takenstructuur.pdf, page 2>
+Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 114.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: Takenstructuur.pdf Graphic file (type pdf)
+<use Takenstructuur.pdf, page 2>
+Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 114.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [11 <./Takenstructuur.pdf>] (./tussentijdsverslag.bbl
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+) [12] (./tussentijdsverslag.aux) ) 
+Here is how much of TeX's memory you used:
+ 3991 strings out of 480875
+ 59508 string characters out of 5911456
+ 325210 words of memory out of 5000000
+ 19556 multiletter control sequences out of 15000+600000
+ 537986 words of font info for 39 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,18n,46p,595b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on tussentijdsverslag.pdf (12 pages, 181917 bytes).
+PDF statistics:
+ 112 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+

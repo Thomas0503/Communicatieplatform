@@ -1,0 +1,9 @@
+\babel@toc {dutch}{}
+\contentsline {section}{\numberline {1}Studie voor tools}{4}%
+\contentsline {subsection}{\numberline {1.1}Oplossingen}{4}%
+\contentsline {subsection}{\numberline {1.2}Gebruikte tools}{5}%
+\contentsline {section}{\numberline {2}Resultaten}{5}%
+\contentsline {section}{\numberline {3}Samenwerking}{5}%
+\contentsline {subsection}{\numberline {3.1}Verantwoordelijheden}{5}%
+\contentsline {subsection}{\numberline {3.2}Taakverdeling}{5}%
+\contentsline {section}{Appendices}{6}%
