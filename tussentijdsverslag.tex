@@ -63,11 +63,11 @@
 \newpage
 \section*{Inleiding}
 \normalsize
-Blinde mensen hebben vaak honden nodig om hen te helpen in het dagelijks leven. Die blindengeleidehonden hebben daarvoor eerst een opleiding nodig. Die honden moeten zowel  stressbestendig als gehoorzaam zijn in drukke situaties om zo zijn baasje optimaal te begeleiden. Hiervoor verblijven ze gedurende een periode bij een pleeggezin en worden ze getraind door hun gezin en trainers. In zo'n periode is goede communicatie erg belangrijk. Zo kan de blindengeleidehonden optimaal worden opgeleid om later een blinde te begeleiden. \\
+Blinde mensen hebben vaak honden nodig om hen te helpen in het dagelijks leven. Die blindengeleidehonden hebben daarvoor eerst een opleiding nodig. Ze moeten zowel  stressbestendig als gehoorzaam zijn in drukke situaties om zo hun baasje optimaal te begeleiden. Hiervoor verblijven ze gedurende een periode bij een pleeggezin en worden ze getraind door hun gezin en trainers. In die periode is goede communicatie erg belangrijk. Zo kunnen de blindengeleidehonden optimaal worden opgeleid om later een blinde te begeleiden. \\
 Op dit moment verloopt die communicatie niet altijd vlot met opleidingscentra. Dit heeft ongunstige gevolgen voor de opleiding van de hond. Daarvoor zoeken wij een oplossing. 
 
 Het doel is om een communicatieplatform te creëren voor die pleeggezinnen en hun trainers.
-Op die manier kan het gezin communiceren met de trainer en omgekeerd. Ze kunnen een kalender raadplegen waarop ze de trainingen en toediening van medicatie kunnen bekijken. Daarnaast is het ook mogelijk om een dagboek bij te houden van de verschillende activiteiten dat het gezin doet met de hond zoals bijvoorbeeld een terrasje doen. Die data kan worden opgevraagd via een overzicht om inzicht te krijgen in welke activiteiten er meer getraind moeten worden. Het gezin kan ook verslagen van trainingen opvragen van de trainers. \\
+Op die manier kan het gezin communiceren met de trainer en omgekeerd. Hiervoor heeft iedereen een persoonlijke login waarmee ze gegevens kunnen vinden over de opleiding van een hond. Ze kunnen een kalender raadplegen waarop ze de trainingen en toediening van medicatie kunnen bekijken. Daarnaast is het ook mogelijk om een dagboek bij te houden van de verschillende activiteiten die het gezin doen met de hond zoals bijvoorbeeld een terrasje doen. Die data kan worden opgevraagd via een overzicht om inzicht te krijgen in welke activiteiten er meer getraind moeten worden. Het gezin kan ook verslagen van trainingen opvragen van de trainers. \\
 Hiervoor is zowel een Android-app als een website nodig: De gezinnen kunnen via hun app herinneringen krijgen voor trainingen van de hond, of voor medicijnen dat de hond moet innemen\texttt{...} Daarnaast kan de trainer via zijn computer de verslagen van trainingen uploaden die belangrijk zijn om te weten waarop er nog getraind moet worden.
 
 \subsection*{Integratie van vakken}
@@ -78,27 +78,41 @@ Het hoofddoel is een app en website bouwen die samen een communicatieplatform vo
 \section{Studie voor tools}
 \subsection{Taal}
 Er bestaan enorm veel programmeertalen. We kenden enkel Python, dus de andere talen zouden we moeten aanleren. Aangezien Python niet de beste taal bleek te zijn om een app te ontwikkelen, zochten we verder. Doordat we de taal nog moeten leren kennen, hebben we beslist om bekendere talen te gebruiken. Omdat we het op die manier makkelijker konden aanleren aan de hand van vele online video's. Wij hebben op basis van deze voorkennis en onderzoek meteen een selectie gemaakt tot 6 talen: Java, JavaScript, Python, Kotlin, C en C++. Daarna zochten we uit welke talen het beste waren voor onze opdracht. \\
-Java en Kotlin blijken de beste programmeertalen te zijn om een app te bouwen. Zowel Java als Kotlin zijn officiële programmeertalen voor $Android development$, daardoor sluiten ze goed aan op het besturingssysteem Android. Kotlin is makkelijk aan te leren, maar bestaat pas sinds 2011 waardoor er niet zoveel documentatie online staat. Online documentatie is voor sommige onderdelen (zoals bij chat) erg belangrijk doordat het erg moeilijk is om daarvoor van nul te starten met een taal die voor ons niet volledig gekend is. 
-Het is dus de bedoeling om een web app te ontwikkelen. Dit is een app waarvoor het mogelijk is om die te benaderen met een browser. Dit wordt het best gedaan met talen die populair zijn in de webdevelopment wereld, zoals Java. \\
+
+Java en Kotlin blijken de beste programmeertalen te zijn om een app te bouwen. Zowel Java als Kotlin zijn officiële programmeertalen voor $Android development$, daardoor sluiten ze goed aan op het besturingssysteem Android. Kotlin is makkelijk aan te leren, maar bestaat pas sinds 2011 waardoor er niet zoveel documentatie online staat. Online documentatie is voor sommige onderdelen (zoals bij chat) erg belangrijk doordat het erg moeilijk is om daarvoor van nul te starten met een taal die voor ons niet volledig gekend is. Om een webapp\footnote{Een webapp is een app waarvoor het mogelijk is om die te benaderen met een browser.} te ontwikkelen wordt er aangeraden om dit met talen te doen die populair zijn in de webdevelopment wereld, zoals Java. We hebben dus gekozen om Java te gebruiken als programmeertaal voor de app.
 %of een hybride app?
+
 Voor een website te maken zijn HTML, CSS en JavaScript de meest gebruikte talen. HTML wordt gebruikt voor de structuur. Voor de presentatie wordt CSS gebruikt en voor het gedrag van de site JavaScript. Daarnaast zijn er nog vele andere talen: PHP, Python, Java, C++, \texttt{...} We hebben voor de scriptaal Javascript gekozen bij het ontwikkelen van de webiste. Omdat deze taal veelzijdiger is doordat ze kan gebruikt worden voor zowel 'server-side' als voor de 'client-side'. Deze taal is dus geschikt voor het ontwikkelen van dynamische sites en daarbovenop ook erg gebruiksvriendelijk. 
 
-
+\newpage
 \subsection{App}
-Er bestaan veel tools om een app te ontwikkelen voor het besturingssysteem Android. De tool moest voldoen aan verschillende vereisten. Allereerst moet het compatibel zijn met Android. Het moet ook mogelijk zijn om de data weg te schrijven naar een database zodat er een website aan gelinkt kan worden. Daarnaast hadden we gaan budget waardoor we een gratis platform zochten. Tot slot moet de tool ook aan alle vereisten voor ons probleem voldoen, zo moet het mogelijk zijn om documenten up te loaden, om een dagboek bij te houden en om een chatfunctie te installeren. \\
-Android Studio brengt app-ontwikkeling eenvoudiger dankzij de 'lay-outeditor', de 'APK-analyser' en 'Vector Asset Studio'.. Die eerste zorgt ervoor dat een lay-out snel gebouwd kan worden en er later makkelijk onderdelen kunnen gewijzigd worden. De 'Analyzer' zorgt dat de APK-grootte verkleind. %wat is APK???
-Dankzij de 'Vector Asset Studio' kunnen verschillende bestanden gegenereerd worden voor alle schermdichtheden.
-Android Studio is specifiek gericht op het Android platform. In Android Studio is het  ook makkelijk om programmeertalen Kotlin, Java en C++ te combineren bij het programmeren van de app. 
-Daarbij kan Android Studio ook gebruikt worden met hulpprogramma's voor een beter en efficiënter groepswerk. Het kan gesynchroniseerd worden met GitHub waardoor alle groepsleden kunnen werken met de meest recente versie van de app. De verschillende functionaliteiten kunnen via deelprogramma's onafhankelijk worden ontwikkeld en getest. 
+Er bestaan veel tools om een app te ontwikkelen voor het besturingssysteem Android. De tool moest voldoen aan verschillende vereisten. Allereerst moet het compatibel zijn met Android. Het moet ook mogelijk zijn om de data weg te schrijven naar een database zodat er een website aan gekoppeld kan worden. Daarnaast hadden we geen budget waardoor we een gratis platform zochten. Tot slot moet de tool ook aan alle vereisten voor ons probleem voldoen, zo moet het mogelijk zijn om documenten up te loaden, om een dagboek bij te houden en om een chatfunctie te installeren. 
 
+Aangezien wij een Android-app moeten ontwikkelen was de keuze snel gemaakt; we kozen voor Android Studio. Het brengt app-ontwikkeling eenvoudiger dankzij de 'lay-outeditor', de 'APK-analyzer' en 'Vector Asset Studio'.. Die eerste zorgt ervoor dat een lay-out snel gebouwd kan worden en er later makkelijk onderdelen kunnen gewijzigd worden. De 'Analyzer' zorgt dat de APK\footnote{APK is een bestandsformaat voor software van het Android-platform.}-grootte verkleint.
+Dankzij de 'Vector Asset Studio' kunnen verschillende bestanden gegenereerd worden voor alle schermdichtheden.
+Android Studio is dus specifiek gericht op het Android platform. In Android Studio is het ook makkelijk om programmeertalen Kotlin, Java en C++ te combineren bij het programmeren van de app. Het is ook mogelijk om aan de hand van Android-emulators de app te testen.
+Daarnaast kan Android Studio ook gebruikt worden met hulpprogramma's voor een beter en efficiënter groepswerk. Het kan gesynchroniseerd worden met GitHub\footnote{Github is een versiebeheersysteem. Telkens er een wijziging wordt gedaan in de code, wordt deze opgeslaan. Deze kunnen later gepusht worden zodat elk teamlid de wijzigingen ziet.} waardoor alle groepsleden kunnen werken met de meest recente versie van de app. De verschillende functionaliteiten kunnen via deelprogramma's onafhankelijk worden ontwikkeld en getest. 
+Tot slot kan Android Studio makkelijk gekoppeld worden met de database Firebase doordat Firebase-services rechtstreeks kunnen geïntegreerd worden vanuit Android Studio.
+
+\newpage
 \subsection{Website}
 % We gebruikten css, html en javascript
+
+\newpage
 \subsection{Database}
 % jason: dictonairies in dictionaries --> non sequal 
 Android Studio werkt rechtstreeks via stapsgewijze procedures met Firebase. Daarnaast kan de app ook gekoppeld worden met Google Cloud Endpoints en andere modules die ontwikkeld zijn voor Google App Engine.
 
+\newpage
 \section{Resultaten}
-\includepdf[pages=-]{Flowchart}
+Op dit moment zijn we eraan uit welke tools we gaan gebruiken: Android Studio voor de app, $iets$ voor de website en Firebase voor de database. 
+Daarna hebben we gezocht naar een structuur (die weergegeven wordt op pagina \pageref{flowchart}), die we wouden bereiken voor het communicatieplatform. Hiervoor hebben we verschillende pagina's nodig: login, menu, chatoverzicht, documenten, kalender, dagboek, activiteiten toevoegen, overzicht van activiteiten, documenten toevoegen en chatberichten. \\
+Voor de app is er al een uitgewerkt idee voor het design. Hierbij zijn de verschillende pagina's al ontworpen en is het al mogelijk om door te klikken tussen de pagina's. Daarnaast is het gelukt om de app te verbinden met de Firebase. \\
+Met diezelfde database is het ook gelukt om de website te verbinden. Voor de website lukt het inlog-systeem al en wordt er gewerkt aan het dagboekje. \\
+Firebase is dus gekoppeld met zowel de app als de website. Aan de structuur om alles weg te schrijven vanuit de app en website naar de database wordt er gewerkt. \\
+
+Er moeten nog veel pagina's geprogrammeerd worden bij de app. Ook bij de website is er nog veel werk aangezien er nog moet gekeken worden voor zowel de pagina's te implementeren als het design voor die pagina's. Tot slot moet alles nog getest worden, of alles juist doorgegeven wordt naar de database en er juist in wordt opgeslaan.
+\includepdf[pages=-]{Flowchart} \label{flowchart}
 %voorlopige resultaten + hoe verder in toekomst
 
 \section{Samenwerking}
