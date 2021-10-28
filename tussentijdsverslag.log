@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.25)  28 OCT 2021 12:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.25)  28 OCT 2021 12:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -311,131 +311,140 @@ File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf, page 1>
 Package pdftex.def Info: Flowchart.pdf , page1 used on input line 115.
 (pdftex.def)             Requested size: 614.66623pt x 434.01242pt.
- [9 <./Flowchart.pdf>] [10]
+ [9 <./Flowchart.pdf>]
+
+LaTeX Warning: Reference `takenstructuur' on page 10 undefined on input line 12
+2.
+
+[10]
 <Ganttchart.pdf, id=49, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf>
-Package pdftex.def Info: Ganttchart.pdf  used on input line 132.
+Package pdftex.def Info: Ganttchart.pdf  used on input line 134.
 (pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf>
-Package pdftex.def Info: Ganttchart.pdf  used on input line 132.
+Package pdftex.def Info: Ganttchart.pdf  used on input line 134.
 (pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
 <Ganttchart.pdf, id=52, page=1, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 132.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 134.
 (pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 132.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [11]
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 132.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 132.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 132.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [12 <./Ganttchart.pdf>]
 <Ganttchart.pdf, id=86, page=2, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 2>
-Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 132.
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 2>
-Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 132.
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 2>
-Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 132.
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [13 <./Ganttchart.pdf>]
 <Ganttchart.pdf, id=95, page=3, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 3>
-Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 132.
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 3>
-Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 132.
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 3>
-Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 132.
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [14 <./Ganttchart.pdf>]
 <Takenstructuur.pdf, id=103, 597.50829pt x 845.0471pt>
 File: Takenstructuur.pdf Graphic file (type pdf)
 <use Takenstructuur.pdf>
-Package pdftex.def Info: Takenstructuur.pdf  used on input line 133.
+Package pdftex.def Info: Takenstructuur.pdf  used on input line 135.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: Takenstructuur.pdf Graphic file (type pdf)
 <use Takenstructuur.pdf>
-Package pdftex.def Info: Takenstructuur.pdf  used on input line 133.
+Package pdftex.def Info: Takenstructuur.pdf  used on input line 135.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 <Takenstructuur.pdf, id=106, page=1, 597.50829pt x 845.0471pt>
 File: Takenstructuur.pdf Graphic file (type pdf)
 <use Takenstructuur.pdf, page 1>
-Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 133.
+Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 135.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: Takenstructuur.pdf Graphic file (type pdf)
 <use Takenstructuur.pdf, page 1>
-Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 133.
+Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 135.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 File: Takenstructuur.pdf Graphic file (type pdf)
 <use Takenstructuur.pdf, page 1>
-Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 133.
+Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 135.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 File: Takenstructuur.pdf Graphic file (type pdf)
 <use Takenstructuur.pdf, page 1>
-Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 133.
+Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 135.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 File: Takenstructuur.pdf Graphic file (type pdf)
 <use Takenstructuur.pdf, page 1>
-Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 133.
+Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 135.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
  [15 <./Takenstructuur.pdf>]
 <Takenstructuur.pdf, id=114, page=2, 597.50829pt x 845.0471pt>
 File: Takenstructuur.pdf Graphic file (type pdf)
 <use Takenstructuur.pdf, page 2>
-Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 133.
+Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 135.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 File: Takenstructuur.pdf Graphic file (type pdf)
 <use Takenstructuur.pdf, page 2>
-Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 133.
+Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 135.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 File: Takenstructuur.pdf Graphic file (type pdf)
 <use Takenstructuur.pdf, page 2>
-Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 133.
+Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 135.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [16 <./Takenstructuur.pdf>] (./tussentijdsverslag.bbl) (./tussentijdsverslag.a
-ux) ) 
+ [16 <./Takenstructuur.pdf>]
+(./tussentijdsverslag.bbl) (./tussentijdsverslag.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4015 strings out of 480875
- 59869 string characters out of 5911456
- 324219 words of memory out of 5000000
- 19573 multiletter control sequences out of 15000+600000
+ 4018 strings out of 480875
+ 59914 string characters out of 5911456
+ 324240 words of memory out of 5000000
+ 19576 multiletter control sequences out of 15000+600000
  539809 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,18n,46p,869b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/
-texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
-pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on tussentijdsverslag.pdf (16 pages, 251639 bytes).
+<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on tussentijdsverslag.pdf (16 pages, 252413 bytes).
 PDF statistics:
  146 PDF objects out of 1000 (max. 8388607)
  94 compressed objects within 1 object stream
