@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.25)  28 OCT 2021 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.25)  28 OCT 2021 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -253,19 +253,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 82.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 82.
-
-Overfull \hbox (23.03958pt too wide) in paragraph at lines 82--84
-\OT1/cmr/m/n/10 wen. Zo-wel Java als Kot-lin zijn of-fici[]ele pro-gram-meer-ta
--len voor $\OML/cmm/m/it/10 Androiddevelopment$\OT1/cmr/m/n/10 ,
- []
-
 [4] [5] [6]
-Overfull \hbox (5.06775pt too wide) in paragraph at lines 104--105
-\OT1/cmr/m/it/10 Android Stu-dio werkt recht-streeks via staps-ge-wijze pro-ce-
-du-res met Fire-base. Daar-
- []
-
-[7]
 Underfull \hbox (badness 10000) in paragraph at lines 108--113
 
  []
@@ -274,7 +262,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--113
 
 pdfTeX warning: pdflatex.exe (file ./Flowchart.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<Flowchart.pdf, id=36, 1035.6291pt x 731.25197pt>
+<Flowchart.pdf, id=33, 1035.6291pt x 731.25197pt>
 File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf>
 Package pdftex.def Info: Flowchart.pdf  used on input line 115.
@@ -295,7 +283,7 @@ ersion <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./Flowchart.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<Flowchart.pdf, id=39, page=1, 1035.6291pt x 731.25197pt>
+<Flowchart.pdf, id=36, page=1, 1035.6291pt x 731.25197pt>
 File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf, page 1>
 Package pdftex.def Info: Flowchart.pdf , page1 used on input line 115.
@@ -304,7 +292,7 @@ File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf, page 1>
 Package pdftex.def Info: Flowchart.pdf , page1 used on input line 115.
 (pdftex.def)             Requested size: 614.66623pt x 434.01242pt.
-[8]
+[7]
 File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf, page 1>
 Package pdftex.def Info: Flowchart.pdf , page1 used on input line 115.
@@ -317,13 +305,13 @@ File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf, page 1>
 Package pdftex.def Info: Flowchart.pdf , page1 used on input line 115.
 (pdftex.def)             Requested size: 614.66623pt x 434.01242pt.
- [9 <./Flowchart.pdf>]
+ [8 <./Flowchart.pdf>]
 
-LaTeX Warning: Reference `takenstructuur' on page 10 undefined on input line 12
-2.
+LaTeX Warning: Reference `takenstructuur' on page 9 undefined on input line 122
+.
 
-[10]
-<Ganttchart.pdf, id=50, 845.0471pt x 597.50829pt>
+[9]
+<Ganttchart.pdf, id=48, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf>
 Package pdftex.def Info: Ganttchart.pdf  used on input line 134.
@@ -332,7 +320,7 @@ File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf>
 Package pdftex.def Info: Ganttchart.pdf  used on input line 134.
 (pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
-<Ganttchart.pdf, id=53, page=1, 845.0471pt x 597.50829pt>
+<Ganttchart.pdf, id=51, page=1, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
 Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 134.
@@ -341,7 +329,7 @@ File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
 Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
- [11]
+ [10]
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
 Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 134.
@@ -353,37 +341,37 @@ Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 134.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
 Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 134.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+ [11 <./Ganttchart.pdf>]
+<Ganttchart.pdf, id=85, page=2, 845.0471pt x 597.50829pt>
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 2>
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 134.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 2>
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 134.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 2>
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [12 <./Ganttchart.pdf>]
-<Ganttchart.pdf, id=87, page=2, 845.0471pt x 597.50829pt>
+<Ganttchart.pdf, id=93, page=3, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
-<use Ganttchart.pdf, page 2>
-Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 134.
+<use Ganttchart.pdf, page 3>
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
-<use Ganttchart.pdf, page 2>
-Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 134.
+<use Ganttchart.pdf, page 3>
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
-<use Ganttchart.pdf, page 2>
-Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 134.
+<use Ganttchart.pdf, page 3>
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 134.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [13 <./Ganttchart.pdf>]
-<Ganttchart.pdf, id=96, page=3, 845.0471pt x 597.50829pt>
-File: Ganttchart.pdf Graphic file (type pdf)
-<use Ganttchart.pdf, page 3>
-Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 134.
-(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
-File: Ganttchart.pdf Graphic file (type pdf)
-<use Ganttchart.pdf, page 3>
-Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 134.
-(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
-File: Ganttchart.pdf Graphic file (type pdf)
-<use Ganttchart.pdf, page 3>
-Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 134.
-(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
- [14 <./Ganttchart.pdf>]
-<Takenstructuur.pdf, id=104, 597.50829pt x 845.0471pt>
+<Takenstructuur.pdf, id=102, 597.50829pt x 845.0471pt>
 File: Takenstructuur.pdf Graphic file (type pdf)
 <use Takenstructuur.pdf>
 Package pdftex.def Info: Takenstructuur.pdf  used on input line 135.
@@ -392,7 +380,7 @@ File: Takenstructuur.pdf Graphic file (type pdf)
 <use Takenstructuur.pdf>
 Package pdftex.def Info: Takenstructuur.pdf  used on input line 135.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<Takenstructuur.pdf, id=107, page=1, 597.50829pt x 845.0471pt>
+<Takenstructuur.pdf, id=105, page=1, 597.50829pt x 845.0471pt>
 File: Takenstructuur.pdf Graphic file (type pdf)
 <use Takenstructuur.pdf, page 1>
 Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 135.
@@ -412,35 +400,35 @@ Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 135.
 File: Takenstructuur.pdf Graphic file (type pdf)
 <use Takenstructuur.pdf, page 1>
 Package pdftex.def Info: Takenstructuur.pdf , page1 used on input line 135.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [14 <./Takenstructuur.pdf>]
+<Takenstructuur.pdf, id=113, page=2, 597.50829pt x 845.0471pt>
+File: Takenstructuur.pdf Graphic file (type pdf)
+<use Takenstructuur.pdf, page 2>
+Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 135.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: Takenstructuur.pdf Graphic file (type pdf)
+<use Takenstructuur.pdf, page 2>
+Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 135.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: Takenstructuur.pdf Graphic file (type pdf)
+<use Takenstructuur.pdf, page 2>
+Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 135.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
  [15 <./Takenstructuur.pdf>]
-<Takenstructuur.pdf, id=115, page=2, 597.50829pt x 845.0471pt>
-File: Takenstructuur.pdf Graphic file (type pdf)
-<use Takenstructuur.pdf, page 2>
-Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 135.
-(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
-File: Takenstructuur.pdf Graphic file (type pdf)
-<use Takenstructuur.pdf, page 2>
-Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 135.
-(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
-File: Takenstructuur.pdf Graphic file (type pdf)
-<use Takenstructuur.pdf, page 2>
-Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 135.
-(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
- [16 <./Takenstructuur.pdf>]
 (./tussentijdsverslag.bbl) (./tussentijdsverslag.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4026 strings out of 480875
- 60009 string characters out of 5911456
- 324240 words of memory out of 5000000
- 19583 multiletter control sequences out of 15000+600000
- 540155 words of font info for 46 fonts, out of 8000000 for 9000
+ 4028 strings out of 480875
+ 60028 string characters out of 5911456
+ 326239 words of memory out of 5000000
+ 19584 multiletter control sequences out of 15000+600000
+ 540507 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,18n,46p,869b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,18n,46p,987b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-di
@@ -450,11 +438,12 @@ c/amsfonts/cm/cmr6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 ><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texl
 ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on tussentijdsverslag.pdf (16 pages, 275368 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/texlive/2020/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on tussentijdsverslag.pdf (15 pages, 275973 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
+ 151 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
