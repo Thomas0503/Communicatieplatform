@@ -67,11 +67,11 @@ Blinde mensen hebben vaak honden nodig om hen te helpen in het dagelijks leven. 
 Op dit moment verloopt die communicatie niet altijd vlot met opleidingscentra. Dit heeft ongunstige gevolgen voor de opleiding van de hond. Daarvoor zoeken wij een oplossing. 
 
 Het doel is om een communicatieplatform te creëren voor die pleeggezinnen en hun trainers.
-Op die manier kan het gezin communiceren met de trainer en omgekeerd. Hiervoor heeft iedereen een persoonlijke login waarmee ze gegevens kunnen vinden over de opleiding van een hond. Ze kunnen een kalender raadplegen waarop ze de trainingen en toediening van medicatie kunnen bekijken. Daarnaast is het ook mogelijk om een dagboek bij te houden van de verschillende activiteiten die het gezin doen met de hond zoals bijvoorbeeld een terrasje doen. Die data kan worden opgevraagd via een overzicht om inzicht te krijgen in welke activiteiten er meer getraind moeten worden. Het gezin kan ook verslagen van trainingen opvragen van de trainers. \\
-Hiervoor is zowel een Android-app als een website nodig: De gezinnen kunnen via hun app herinneringen krijgen voor trainingen van de hond, of voor medicijnen dat de hond moet innemen\texttt{...} Daarnaast kan de trainer via zijn computer de verslagen van trainingen uploaden die belangrijk zijn om te weten waarop er nog getraind moet worden.
+Op die manier kan het gezin communiceren met de trainer en omgekeerd. Hiervoor heeft iedereen een persoonlijke login waarmee ze gegevens kunnen vinden over de opleiding van een hond. Ze kunnen een kalender raadplegen waarop ze de trainingen en toediening van medicatie kunnen bekijken. Daarnaast is het ook mogelijk om een dagboek bij te houden van de verschillende activiteiten die het gezin kan doen met de hond, zoals bijvoorbeeld een terrasje doen. Die data kan worden opgevraagd via een overzicht om inzicht te krijgen in welke activiteiten er meer getraind moeten worden. Het gezin kan ook verslagen van trainingen opvragen van de trainers. \\
+Hiervoor is zowel een Android-app als een website nodig: de gezinnen kunnen via hun app herinneringen krijgen voor trainingen van de hond, of voor medicijnen dat de hond moet innemen\texttt{...} Daarnaast kan de trainer via zijn computer de verslagen van trainingen uploaden die belangrijk zijn om te weten waarop er nog getraind moet worden.
 
 \subsection*{Integratie van vakken}
-Het hoofddoel is een app en website bouwen die samen een communicatieplatform vormen. Het vak 'Beginselen van programmeren' hebben we hierbij nodig aangezien programmeren een hoofdzaak is bij het bouwen van zo'n app en website. In die opleiding hebben we de taal 'Python' geleerd en inzichten gecreëerd die handig kunnen zijn in dit project.
+Het hoofddoel is een app en website te bouwen die samen een communicatieplatform vormen. Het vak 'Beginselen van programmeren' hebben we hierbij nodig aangezien programmeren een hoofdzaak is bij het bouwen van zo'n app en website. In die opleiding hebben we de taal 'Python' geleerd en inzichten gecreëerd die handig kunnen zijn in dit project.
 
 
 \newpage
@@ -96,17 +96,26 @@ Tot slot kan Android Studio makkelijk gekoppeld worden met de database Firebase 
 
 
 \subsection{Website}
-Voor de ontwikkeling van de \textit{back-end}\footnote{De \textit{back-end} van een website is deel van het programma dat onzichtbaar is voor de gebruiker. Dit zorgt ervoor dat de \textit{front-end} van de website werkt.} van de website bestaan er veel verschillende tools. We zochten een gratis tool die op verschillende \textit{browsers} werkt. Hiervoor leken Python Flask, PHP en Node.js ons de beste opties. We hebben ervaring met Python door het vak "Beginselen van programmeren" en moeten Javascript beheersen voor de \textit{front-end} van de website. Daarnaast hebben we ook maar 12 voor ons project, dus besloten we om PHP niet te gebruiken zodat we niet nog een nieuwe syntax moeten leren kennen. De \textit{event-driven} architectuur van Node.js maakt het eenvoudiger om een chat-app te implementeren en is snel en makkelijk te begrijpen, waardoor onze keuze gemaakt was. Node.js is een opensource en multiplatform van JavaScript.
-
+Voor de ontwikkeling van de \textit{back-end}\footnote{De \textit{back-end} van een website is deel van het programma dat onzichtbaar is voor de gebruiker. Dit zorgt ervoor dat de \textit{front-end} van de website werkt.} van de website bestaan er veel verschillende tools. We zochten een gratis tool die op verschillende \textit{browsers} werkt. Hiervoor leken Python Flask, PHP en Node.js ons de beste opties. We hebben ervaring met Python door het vak "Beginselen van programmeren" en moeten Javascript beheersen voor de \textit{front-end} van de website. Daarnaast hebben we ook maar 12 weken voor ons project, dus besloten we om PHP niet te gebruiken zodat we niet nog een nieuwe syntax moeten leren kennen. De \textit{event-driven} architectuur van Node.js maakt het eenvoudiger om een chat-app te implementeren en is snel en makkelijk te begrijpen, waardoor onze keuze gemaakt was. Node.js is een opensource en multiplatform van JavaScript.%deze zin klopt nog niet
+																						
 \newpage
 \subsection{Database} \label{sec:Database}
 % jason: dictonairies in dictionaries --> non sequal 
-Android Studio werkt rechtstreeks via stapsgewijze procedures met Firebase. Daarnaast kan de app ook gekoppeld worden met Google Cloud Endpoints en andere modules die ontwikkeld zijn voor Google App Engine.
+Zowel de trainers als de pleeggezinnen zullen bij het gebruik van de app informatie aan de app toevoegen, zoals documenten, dagboekinzendingen, afspraken ... Al deze informatie moet ergens opgeslagen worden en sommige van deze zaken moeten ook door andere gebruikers gezien kunnen worden. Daarom maken we gebruik van een database. Aangezien onder andere chatberichten zo snel mogelijk gesynchroniseerd moeten worden, hebben we meer bepaald een realtime database nodig.
 
+Onze eerste keuze was om gebruik te maken van de gratis en zeer populaire database MongoDB. Dit bleek echter geen realtime database te zijn en was dus toch niet geschikt voor onze toepassing. 
+
+Daarom zijn we overgeschakeld naar de databases van Firebase. Dit is een platform dat ontwikkeld is om het creëren van apps en websites te vergemakkelijken. De twee databases van Firebase, de Realtime Database en de Firestore database, zijn beide realtime en NoSQL. Aangezien Firebase bovendien een populair platform is, is er veel documentatie over te vinden. Daarnaast heeft Firebase ook enkele andere producten die ons zullen helpen, meer bepaald een beveiligd authenticatiesysteem en de mogelijk tot opslag van foto's en video's in de cloud.
+
+Een nadeel van Firebase is dan weer dat de tool maar beperkt gratis is. Voor elk product moet er vanaf een bepaalde limiet worden bepaald om het verder te kunnen gebruiken. Het is echter zeer onrealistisch dat we deze limieten zullen overschrijden bij het testen. Ook indien de app uitgegeven zou worden, zullen de kosten wegens het relatief kleine gebruikersaantal laag blijven.
+
+Dan rest ons nog de keuze tussen de twee databases. De Firestore database wordt over het algemeen beschouwd als een verbetering van de oudere Realtime Database, maar de Realtime database heeft wel al meer documentatie beschikbaar. We beslissen toch om gebruik te maken van Firestore, vooral omdat het filteren van data hierin gemakkelijker is en dit iets is dat we vaak moeten zullen doen.
+
+Het switchen tussen deze database zal niet veel werk vragen, dus indien de Realtime database toch beter blijkt, kunnen we er toch nog gebruik van maken. Daarnaast kunnen we, indien nodig, de twee databases ook tegelijk gebruiken.
 \newpage
 \section{Resultaten}
-Op dit moment zijn we eraan uit welke tools we gaan gebruiken: Android Studio voor de app, $iets$ voor de website en Firebase voor de database. 
-Daarna hebben we gezocht naar een structuur (die weergegeven wordt op pagina \pageref{flowchart}), die we wouden bereiken voor het communicatieplatform. Hiervoor hebben we verschillende pagina's nodig: login, menu, chatoverzicht, documenten, kalender, dagboek, activiteiten toevoegen, overzicht van activiteiten, documenten toevoegen en chatberichten. \\
+Op dit moment zijn we eraan uit welke tools we gaan gebruiken: Android Studio voor de app, $iets$ voor de website en Firebase als database. 
+Daarna hebben we gezocht naar een structuur (die weergegeven wordt op pagina \pageref{flowchart}), die we wilden bereiken voor het communicatieplatform. Hiervoor hebben we verschillende pagina's nodig: login, menu, chatoverzicht, documenten, kalender, dagboek, activiteiten toevoegen, overzicht van activiteiten, documenten toevoegen en chatberichten. \\
 Voor de app is er al een uitgewerkt idee voor het design. Hierbij zijn de verschillende pagina's al ontworpen en is het al mogelijk om door te klikken tussen de pagina's. Daarnaast is het gelukt om de app te verbinden met de Firebase. \\
 Met diezelfde database is het ook gelukt om de website te verbinden. Voor de website lukt het inlog-systeem al en wordt er gewerkt aan het dagboekje. \\
 Firebase is dus gekoppeld met zowel de app als de website. Aan de structuur om alles weg te schrijven vanuit de app en website naar de database wordt er gewerkt. \\
