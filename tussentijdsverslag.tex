@@ -116,13 +116,14 @@ Het switchen tussen deze databases zal niet veel werk vragen, dus indien de Real
 \newpage
 \section{Resultaten}
 Op dit moment zijn we eraan uit welke tools we gaan gebruiken: Android Studio voor de app, \verb!HTML!, \verb!CSS! en \verb!JavaScript! in combinatie met \verb!Node.js! voor de website en \textit{FireStore} als database. 
-Daarna hebben we gezocht naar een structuur (die weergegeven wordt op pagina \pageref{flowchart}), die we wilden bereiken voor het communicatieplatform. Hiervoor hebben we verschillende pagina's nodig: login, menu, chatoverzicht, documenten, kalender, dagboek, activiteiten toevoegen, overzicht van activiteiten, documenten toevoegen en chatberichten. \\
+Daarna hebben we gezocht naar een structuur (die weergegeven wordt op pagina \pageref{flowchart}), die we wilden bereiken voor het communicatieplatform. Hiervoor hebben we verschillende pagina's nodig: login, menu, chatoverzicht, documenten, kalender, dagboek, activiteiten toevoegen, overzicht van activiteiten, documenten toevoegen en chatberichten. Het pleeggezin kan chatten, documenten lezen, kalender bekijken en een afspraak toevoegen, het dagboekje bekijken. Voor het dagboekje zijn meerdere opties, ofwel wordt er een activiteit toegevoegd, ofwel wordt er een overzichtgevraagd van een bepaalde activiteit. Daarnaast moet de trainer ook bepaalde functies kunnen uitvoeren. Hij kan ook chatten en het dagboek bekijken voor een specifieke hond. Daarnaast kan hij documenten toevoegen en afspraken toevoegen in de kalender, hiervoor kiest hij of hij dat voor een specifieke puppy wil doen of voor alle puppy's tegelijk.\\
 Voor de app is er al een uitgewerkt idee voor het design. Hierbij zijn de verschillende pagina's al ontworpen en is het al mogelijk om door te klikken tussen de pagina's. Ook is er al begonnen aan et programmeren van de kalender. Daarnaast is het gelukt om de app te verbinden met \textit{FireStore}. \\
 Met diezelfde database is het ook gelukt om de website te verbinden. Voor de website lukt het inlog-systeem al en wordt er gewerkt aan het dagboekje. \\
-\textit{FireStore} is dus gekoppeld met zowel de app als de website. Bij zo'n database is de structuur vooral belangrijk. Dit heeft een overzicht (zie pagina \pageref{klasses}) voor hoe we alles gaan wegschrijven vanuit de app en website naar de database. \\
+\textit{FireStore} is dus gekoppeld met zowel de app als de website. Bij zo'n database is de structuur vooral belangrijk. Dit heeft een overzicht (zie pagina \pageref{klasses}) voor hoe we alles gaan wegschrijven vanuit de app en website naar de database. Hierbij maken we verschillende collecties aan: Dagboekje, Berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters/gegevens. \\
 
 Er moeten nog veel pagina's geprogrammeerd worden bij de app. Ook bij de website is er nog veel werk aangezien er nog moet gekeken worden voor bepaalde pagina's te implementeren en voor het design van die pagina's. Tot slot moet alles nog getest worden, of alles juist doorgegeven wordt via de database van de app naar de website en omgekeerd..
 \includepdf[pages=-]{Flowchart} \label{flowchart}
+\includepdf[pages=-]{Database.drawio-2} \label{klasses}
 %voorlopige resultaten + hoe verder in toekomst
 
 \section{Samenwerking}
