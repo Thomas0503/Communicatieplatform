@@ -14,7 +14,8 @@
         <activity android:name=".Kalender"></activity>
         <activity android:name=".Chat"></activity>
         <activity android:name=".Documenten"></activity>
-        <activity android:name=".Afspraak"></activity>
+        <activity android:name=".AfspraakMaken"></activity>
+        <activity android:name=".ProductsActivity" />
     <activity
         android:name="com.communicatieplatform.Welkom"
         android:exported="true"

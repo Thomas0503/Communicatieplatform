@@ -1,11 +1,14 @@
-package com.example.iambe.firestoreexample;
+package com.communicatieplatform;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+
 import android.view.View;
 import android.widget.ProgressBar;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -18,8 +21,8 @@ import java.util.List;
 public class ProductsActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private ProductsAdapter adapter;
-    private List<Product> productList;
+    private com.communicatieplatform.ProductsAdapter adapter;
+    private List<Afspraak> productList;
     private ProgressBar progressBar;
 
 
@@ -37,7 +40,7 @@ public class ProductsActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         productList = new ArrayList<>();
-        adapter = new ProductsAdapter(this, productList);
+        adapter = new com.communicatieplatform.ProductsAdapter(this, productList);
 
         recyclerView.setAdapter(adapter);
 
@@ -45,7 +48,7 @@ public class ProductsActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
 
-        db.collection("products").get()
+        db.collection("afspraken").get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
@@ -58,7 +61,7 @@ public class ProductsActivity extends AppCompatActivity {
 
                             for (DocumentSnapshot d : list) {
 
-                                Product p = d.toObject(Product.class);
+                                Afspraak p = d.toObject(Afspraak.class);
                                 p.setId(d.getId());
                                 productList.add(p);
 

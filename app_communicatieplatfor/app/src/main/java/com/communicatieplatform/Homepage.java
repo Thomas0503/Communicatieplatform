@@ -55,7 +55,7 @@ public class Homepage extends AppCompatActivity {
     }
 
     public void openKalender() {
-        Intent intent = new Intent(this, Kalender.class);
+        Intent intent = new Intent(this, ProductsActivity.class);
         startActivity(intent);
     }
 
