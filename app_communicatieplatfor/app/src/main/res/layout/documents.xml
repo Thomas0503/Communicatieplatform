@@ -8,14 +8,28 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:src="@drawable/logo"
         app:civ_border_color="#F44336"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image2"
+        android:layout_width="244dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/foto_charlotte_BA"
+        app:civ_border_color="#F44336"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -35,7 +49,6 @@
         android:id="@+id/selectFile"
         android:layout_width="375dp"
         android:layout_height="55dp"
-        android:layout_marginTop="150dp"
         android:layout_gravity="center_horizontal"
         android:backgroundTint="#832E2E"
         android:text="kies file"
@@ -43,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/documenten" />
+        tools:layout_editor_absoluteY="307dp" />
 
     <TextView
         android:id="@+id/notification"
