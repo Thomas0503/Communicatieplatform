@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#F44336">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -12,7 +13,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:background="#F44336">
 
             <TextView
                 android:id="@+id/textview_name"
@@ -20,19 +22,22 @@
                 android:layout_height="wrap_content"
                 android:text="Nokia X6"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#832E2E"/>
 
             <TextView
                 android:id="@+id/textview_brand"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nokia"
+                android:textColor="#832E2E"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
             <TextView
                 android:id="@+id/textview_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#832E2E"
                 android:text="6GB Ram Snapdragon 660 SOC, 64gb Storage"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
@@ -42,7 +47,8 @@
                 android:layout_height="wrap_content"
                 android:text="INR 15000"
                 android:textSize="32sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#832E2E" />
 
 
 

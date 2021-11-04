@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#58885A">
+    android:background="#F44336">
 
     <TextView
         android:id="@+id/Dagboek"
@@ -13,9 +13,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
-        android:background="#58885A"
+        android:background="#F44336"
         android:text="Dagboek"
-        android:textColor="#B5EF0A"
+        android:textColor="#4E342E"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +29,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@android:color/holo_green_light"
+        android:backgroundTint="#832E2E"
         android:text="een Activiteit toevoegen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +43,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="50dp"
         android:text="Activiteiten:"
-        android:textColor="#FFB5EF0A"
+        android:textColor="#4E342E"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ActiviteitToev" />
@@ -55,6 +55,7 @@
         android:layout_height="396dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
+        android:textColor="#4E342E"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kiesActiviteit">
 
@@ -72,7 +73,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:background="#58885A"
+                android:background="#F44336"
                 android:text="Terras"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:background="#58885A"
+                android:background="#F44336"
                 android:text="Openbaar Vervoer"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -92,14 +93,17 @@
         </LinearLayout>
     </ScrollView>
 
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="127dp"
-        android:layout_height="134dp"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/logo"
+        app:civ_border_color="#F44336"
+        app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dog_picture" />
-
-
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

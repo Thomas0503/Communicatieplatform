@@ -5,7 +5,17 @@
     android:id="@+id/Activiteit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#58885A">
+    android:background="#F44336">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"
+        app:civ_border_color="#F44336"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Dagboek"
@@ -14,9 +24,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
-        android:background="#58885A"
+        android:background="#F44336"
         android:text="Activiteit toevoegen"
-        android:textColor="#FFB5EF0A"
+        android:textColor="#4E342E"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,11 +40,11 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="40dp"
-        android:background="#90A691"
+        android:background="#AF827E"
         android:endColor="#FFB5EF0A"
         android:progressBackgroundTint="#150D0D"
         android:startColor="#f00"
-        android:thumbTint="#99cc00"
+        android:thumbTint="#F44336"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stressniveau" />
@@ -46,7 +56,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@android:color/holo_green_light"
+        android:backgroundTint="#832E2E"
         android:text="opslaan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +70,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginBottom="10dp"
         android:text="Stressniveau:"
-        android:textColor="#FFB5EF0A"
+        android:textColor="#4E342E"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/seekBar"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,7 +83,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="50dp"
         android:text="Activiteit:"
-        android:textColor="#FFB5EF0A"
+        android:textColor="#4E342E"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Dagboek" />
@@ -86,7 +96,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="50dp"
         android:text="Stresssignaal:"
-        android:textColor="#FFB5EF0A"
+        android:textColor="#4E342E"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
@@ -119,7 +129,7 @@
                 android:layout_marginTop="0dp"
                 android:buttonTint="#38422C"
                 android:text="Terras"
-                android:textColor="#38422C" />
+                android:textColor="#4E342E" />
 
             <CheckBox
                 android:id="@+id/activiteit2"
@@ -129,7 +139,7 @@
                 android:layout_marginTop="0dp"
                 android:buttonTint="#38422C"
                 android:text="Openbaar Vervoer"
-                android:textColor="#38422C" />
+                android:textColor="#4E342E" />
 
         </LinearLayout>
     </ScrollView>
@@ -160,7 +170,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
-                android:buttonTint="#38422C"
+                android:buttonTint="#4E342E"
                 android:text="Platte oren"
                 android:textColor="#38422C" />
 
@@ -170,9 +180,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
-                android:buttonTint="#38422C"
+                android:buttonTint="#4E342E"
                 android:text="Blaffen"
-                android:textColor="#38422C" />
+                android:textColor="#4E342E" />
         </LinearLayout>
     </ScrollView>
 
