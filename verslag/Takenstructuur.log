@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.25)  28 OCT 2021 12:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.25)  4 NOV 2021 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -241,14 +241,14 @@ This may cause the page layout to be inconsistent, however.
 Here is how much of TeX's memory you used:
  2862 strings out of 480875
  38300 string characters out of 5911456
- 312251 words of memory out of 5000000
+ 311251 words of memory out of 5000000
  18506 multiletter control sequences out of 15000+600000
  537824 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,11n,45p,800b,239s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr12.pfb>
-Output written on Takenstructuur.pdf (2 pages, 19935 bytes).
+Output written on Takenstructuur.pdf (2 pages, 19754 bytes).
 PDF statistics:
  15 PDF objects out of 1000 (max. 8388607)
  9 compressed objects within 1 object stream
