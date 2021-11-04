@@ -1,155 +1,3 @@
-<<<<<<< Updated upstream
-\documentclass{article}
-
-\usepackage[dutch]{babel}
-\usepackage{graphicx, titling}
-\usepackage{subfiles}
-\usepackage{pdfpages}
-\usepackage[toc,page]{appendix}
-
-
-\title{Communicatieplatform}
-\author{Thomas Varheust \\
-	Ruben Min Jou \\
-	Manon Delobelle
-                            }
-\date{}
-
-\begin{document}
-\pagestyle{empty}
-
-\begin{center}
-	{{\Large Subfaculteit wetenschappen}
-	
-	\vspace{1cm}
-	
-	\includegraphics[width=6cm]{2013-kulak-cmyk-highres.jpg}
-	
-	\vspace{1cm}
-	
-	\Large Probleemoplossen en ontwerpen 3}
-	
-	\vspace{2cm}
-
-	{\Huge \textbf{Communicatieplatform}}
-	
-	\vspace{1cm}
-	
-	{\Large \textbf{Let the dogs out}}
-	
-	\vspace{1cm}
-	
-	{\Large \textbf{Thomas Varheust}}\\
-	{\Large \textbf{Ruben Min Jou}}\\
-	{\Large \textbf{Manon Delobelle}}\\
-
-\end{center}
-
-\vspace{2cm}
-{\Large Titularis : Koen Van Den Abeele}
-\vspace{1cm}
-
-{\Large Begeleider : Charlotte Deconinck}
-
-
-\vspace{1cm}
-
-\begin{center}
-	{\Large Academiejaar 2021 - 2022}
-\end{center}
-
-
-\newpage
-\tableofcontents
-\newpage
-\section*{Inleiding}
-\normalsize
-Blinde mensen hebben vaak honden nodig om hen te helpen in het dagelijks leven. Die blindengeleidehonden hebben daarvoor eerst een opleiding nodig. Ze moeten zowel  stressbestendig als gehoorzaam zijn in drukke situaties om zo hun baasje optimaal te begeleiden. Hiervoor verblijven ze gedurende een periode bij een pleeggezin en worden ze getraind door hun gezin en trainers. In die periode is goede communicatie erg belangrijk. Zo kunnen de blindengeleidehonden optimaal worden opgeleid om later een blinde te begeleiden. \\
-Op dit moment verloopt die communicatie niet altijd vlot met opleidingscentra. Dit heeft ongunstige gevolgen voor de opleiding van de hond. Daarvoor zoeken wij een oplossing. \\
-
-Het doel is om een communicatieplatform te creëren voor die pleeggezinnen en hun trainers.
-Op die manier kan het gezin communiceren met de trainer en omgekeerd. Hiervoor heeft iedereen een persoonlijke login waarmee ze gegevens kunnen vinden over de opleiding van hun hond. Ze kunnen een kalender raadplegen waarop ze de trainingen en toediening van medicatie kunnen bekijken. Daarnaast is het ook mogelijk om een dagboek bij te houden van de verschillende activiteiten die het gezin kan doen met de hond, zoals bijvoorbeeld een terrasje doen. Die data kan worden opgevraagd via een overzicht om inzicht te krijgen in welke activiteiten er meer getraind moeten worden. Het gezin kan ook verslagen van trainingen opvragen van de trainers. \\
-Hiervoor is zowel een Android-app als een website nodig: de gezinnen kunnen via hun app herinneringen krijgen voor trainingen van de hond, of voor medicijnen dat de hond moet innemen\texttt{...} Daarnaast kan de trainer via zijn computer de verslagen van trainingen uploaden die belangrijk zijn om te weten waarop er nog getraind moet worden.
-
-\subsection*{Integratie van vakken}
-Het hoofddoel is een app en een website te bouwen die samen een communicatieplatform vormen. Het vak 'Beginselen van programmeren' hebben we hierbij nodig aangezien programmeren een hoofdzaak is bij het bouwen van zo'n app en website. In die opleiding hebben we de taal \verb!Python! geleerd en inzichten gecreëerd die handig kunnen zijn in dit project.
-
-
-\newpage
-\section{Studie voor tools}
-\subsection{Taal}
-Er bestaan enorm veel programmeertalen. We kenden enkel \verb!Python!, dus de andere talen zouden we moeten aanleren. Aangezien \verb!Python! niet de beste taal bleek te zijn om een app te ontwikkelen, zochten we verder. Doordat we die talen nog moeten leren kennen, hebben we beslist om bekendere talen te gebruiken. Zodat we het op die manier makkelijker konden aanleren aan de hand van vele online video's die beschikbaar staan op het web. Wij hebben op basis van onze voorkennis en een onderzoek meteen een selectie gemaakt tot 6 talen: \verb!Java!, \verb!JavaScript!, \verb!Python!, \verb!Kotlin!, \verb!C! en \verb!C++!. Daarna zochten we uit welke talen het beste waren voor onze opdracht. \\
-
-\verb!Java! en \verb!Kotlin! blijken de beste programmeertalen te zijn om een app te bouwen. Zowel \verb!Java! als \verb!Kotlin! zijn officiële programmeertalen voor Android development, daardoor sluiten ze goed aan op het besturingssysteem Android. \verb!Kotlin! is makkelijk aan te leren, maar bestaat pas sinds 2011 waardoor er niet zoveel documentatie online staat. Online documentatie is voor sommige onderdelen (zoals bij chat) erg belangrijk doordat het erg moeilijk is om daarvoor van nul te starten met een taal die voor ons niet volledig gekend is. Om een webapp\footnote{Een webapp is een app waarvoor het mogelijk is om die te benaderen met een browser.} te ontwikkelen wordt er aangeraden om dit met talen te doen die populair zijn in de webdevelopment wereld, zoals \verb!Java!. We hebben dus gekozen om \verb!Java! te gebruiken als programmeertaal voor de app.
-%of een hybride app?
-
-Voor de \textit{front-end}\footnote{De \textit{front-end} van een website is deel van het programma dat zichtbaar is voor de gebruiker. Dit zorgt voor het visuele gedeelte van de site.} ontwikkeling van de website kozen we ervoor om gebruik te maken van \verb!HTML!, \verb!CSS! en \verb!JavaScript!. Dit zijn veruit de meest gebruikte talen voor de ontwikkeling van een \textit{front-end} (Meer dan 94\% van de websites maakt gebruik van \verb!HTML!, \verb!CSS! en \verb!JavaScript!). Ook zijn \verb!HTML! en \verb!CSS! de eenvoudige talen om aan te leren en heel overzichtelijk. \verb!HTML! wordt gebruikt voor de structuur. Voor de presentatie wordt \verb!CSS! gebruikt en voor het gedrag van de site \verb!JavaScript!.
-
-\newpage
-\subsection{App}
-Er bestaan veel tools om een app te ontwikkelen voor het besturingssysteem Android. De tool moest voldoen aan verschillende vereisten. Allereerst moet het compatibel zijn met Android. Het moet ook mogelijk zijn om de data weg te schrijven naar een database zodat er een website aan gekoppeld kan worden. Daarnaast hadden we geen budget waardoor we een gratis platform zochten. Tot slot moet de tool ook aan alle vereisten voor ons probleem voldoen, zo moet het mogelijk zijn om documenten up te loaden, om een dagboek bij te houden en om een chatfunctie te installeren. 
-
-Aangezien wij een Android-app moeten ontwikkelen was de keuze snel gemaakt; we kozen voor Android Studio. Het brengt app-ontwikkeling eenvoudiger dankzij de \textit{lay-outeditor}, \textit{APK-analyzer} en \textit{Vector Asset Studio}\texttt{...} Die eerste zorgt ervoor dat een lay-out snel gebouwd kan worden en er later makkelijk onderdelen kunnen gewijzigd worden. De \textit{Analyzer} zorgt dat de \textit{APK}\footnote{APK is een bestandsformaat voor software van het Android-platform.}-grootte verkleint.
-Dankzij de \textit{Vector Asset Studio} kunnen verschillende bestanden gegenereerd worden voor alle schermdichtheden.
-Android Studio is dus specifiek gericht op het Android platform. In Android Studio is het ook makkelijk om programmeertalen \verb!Kotlin!, \verb!Java! en \verb!C++! te combineren bij het programmeren van de app. Het is ook mogelijk om aan de hand van Android-emulators de app te testen.
-Daarnaast kan Android Studio ook gebruikt worden met hulpprogramma's voor een beter en efficiënter groepswerk. Het kan gesynchroniseerd worden met \textit{GitHub}\footnote{\textit{GitHub} is een versiebeheersysteem. Telkens er een wijziging wordt gedaan in de code, wordt deze opgeslaan. Deze kunnen later gepusht worden zodat elk teamlid de wijzigingen ziet.} waardoor alle groepsleden kunnen werken met de meest recente versie van de app. De verschillende functionaliteiten kunnen via deelprogramma's onafhankelijk worden ontwikkeld en getest. 
-Tot slot kan Android Studio makkelijk gekoppeld worden met de database \textit{Firebase} (Dit komt later nog aan bod in hoofdstuk \ref{sec:Database} op pagina \pageref{sec:Database}.) doordat \textit{Firebase}-services rechtstreeks kunnen geïntegreerd worden vanuit Android Studio.
-
-
-\subsection{Website}
-Voor de ontwikkeling van de \textit{back-end}\footnote{De \textit{back-end} van een website is deel van het programma dat onzichtbaar is voor de gebruiker. Dit zorgt ervoor dat de \textit{front-end} van de website werkt.} van de website bestaan er veel verschillende tools. We zochten een gratis tool die op verschillende \textit{browsers} werkt. Hiervoor leken \verb!Python Flask!, \verb!PHP! en \verb!Node.js! ons de beste opties. We hebben ervaring met \verb!Python! door het vak 'Beginselen van programmeren' en moeten \verb!JavaScript! beheersen voor de \textit{front-end} van de website. Daarnaast hebben we ook maar 12 weken voor ons project, dus besloten we om \verb!PHP! niet te gebruiken zodat we niet nog een nieuwe syntax moeten leren kennen. De \textit{event-driven} architectuur van \verb!Node.js! maakt het eenvoudiger om een chat-app te implementeren en is snel en makkelijk te begrijpen, waardoor onze keuze gemaakt was. \verb!Node.js! is een open source en multiplatform van de \verb!JavaScript-runtime-omgeving!.%deze zin klopt nog niet
-																						
-\newpage
-\subsection{Database} \label{sec:Database}
-% jason: dictonairies in dictionaries --> non sequal 
-Zowel de trainers als de pleeggezinnen zullen bij het gebruik van de app informatie aan de app toevoegen, zoals documenten, dagboekinzendingen, afspraken ... Al deze informatie moet ergens opgeslagen worden en sommige van deze zaken moeten ook door andere gebruikers gezien kunnen worden. Daarom maken we gebruik van een database. Aangezien onder andere chatberichten zo snel mogelijk gesynchroniseerd moeten worden, hebben we meer bepaald een realtime database nodig. \\
-
-Onze eerste keuze was om gebruik te maken van de gratis en zeer populaire database \textit{MongoDB}. Dit bleek echter geen realtime database te zijn en was dus toch niet geschikt voor onze toepassing. 
-
-Daarom zijn we overgeschakeld naar de databases van \textit{Firebase}. Dit is een platform dat ontwikkeld is om het creëren van apps en websites te vergemakkelijken. De twee databases van \textit{Firebase}, de Realtime database en de \textit{Firestore} database, zijn beide realtime en NoSQL. Aangezien \textit{Firebase} bovendien een populair platform is, is er veel documentatie over te vinden. Daarnaast heeft \textit{Firebase} ook enkele andere producten die ons zullen helpen, meer bepaald een beveiligd authenticatiesysteem en de mogelijk tot opslag van foto's en video's in de cloud.
-
-Een nadeel van \textit{Firebase} is dan weer dat de tool maar beperkt gratis is. Voor elk product moet er vanaf een bepaalde limiet worden bepaald om het verder te kunnen gebruiken. Het is echter zeer onrealistisch dat we deze limieten zullen overschrijden bij het testen. Ook indien de app uitgegeven zou worden, zullen de kosten wegens het relatief kleine gebruikersaantal laag blijven.
-
-Dan rest ons nog de keuze tussen de twee databases. De \textit{Firestore} database wordt over het algemeen beschouwd als een verbetering van de oudere Realtime database, maar de Realtime database heeft wel al meer documentatie beschikbaar. We beslissen toch om gebruik te maken van \textit{Firestore}, vooral omdat het filteren van data hierin gemakkelijker is en dit iets is dat we vaak moeten zullen doen.
-
-Het switchen tussen deze databases zal niet veel werk vragen, dus indien de Realtime database toch beter blijkt, kunnen we er toch nog gebruik van maken. Daarnaast kunnen we, indien nodig, de twee databases ook tegelijk gebruiken.
-
-\newpage
-\section{Resultaten}
-Op dit moment zijn we eraan uit welke tools we gaan gebruiken: Android Studio voor de app, \verb!HTML!, \verb!CSS! en \verb!JavaScript! in combinatie met \verb!Node.js! voor de website en \textit{FireStore} als database. 
-Daarna hebben we gezocht naar een structuur (die weergegeven wordt op pagina \pageref{flowchart}), die we wilden bereiken voor het communicatieplatform. Hiervoor hebben we verschillende pagina's nodig: login, menu, chatoverzicht, documenten, kalender, dagboek, activiteiten toevoegen, overzicht van activiteiten, documenten toevoegen en chatberichten. \\
-Voor de app is er al een uitgewerkt idee voor het design. Hierbij zijn de verschillende pagina's al ontworpen en is het al mogelijk om door te klikken tussen de pagina's. Ook is er al begonnen aan et programmeren van de kalender. Daarnaast is het gelukt om de app te verbinden met \textit{FireStore}. \\
-Met diezelfde database is het ook gelukt om de website te verbinden. Voor de website lukt het inlog-systeem al en wordt er gewerkt aan het dagboekje. \\
-\textit{FireStore} is dus gekoppeld met zowel de app als de website. Bij zo'n database is de structuur vooral belangrijk. Dit heeft een overzicht (zie pagina \pageref{klasses}) voor hoe we alles gaan wegschrijven vanuit de app en website naar de database. \\
-
-Er moeten nog veel pagina's geprogrammeerd worden bij de app. Ook bij de website is er nog veel werk aangezien er nog moet gekeken worden voor bepaalde pagina's te implementeren en voor het design van die pagina's. Tot slot moet alles nog getest worden, of alles juist doorgegeven wordt via de database van de app naar de website en omgekeerd..
-\includepdf[pages=-]{Flowchart} \label{flowchart}
-%voorlopige resultaten + hoe verder in toekomst
-
-\section{Samenwerking}
-\subsection{Verantwoordelijheden}
-Bij het begin van het project werden er rollen en dus verantwoordelijkheden gecreëerd. Thomas heeft de meeste voorkennis bij het ontwerpen van een website, dus werd de verantwoordelijke voor de site. Daarnaast heeft Ruben de verantwoordelijkheid van de app op zich genomen. En tot slot is Manon verantwoordelijk voor het design van het volledige platform en voor de rapportering van ons project.
-\subsection{Taakverdeling}
-Wij hebben samen gezocht naar verschillende tools om zo'n website en app te bouwen en met elkaar te verbinden via een database. Toen we een idee hadden welke tools we voor het project gingen gebruiken, werd de Gantt-grafiek (in bijlage op pagina \pageref{gantt-grafiek}) opgesteld en hebben we de taken (in bijlage op pagina \pageref{takenstructuur}) opgesplitst. \\
-Thomas is toen begonnen met het connecteren van de database en de website. En hij heeft erna al pagina's van de website geïmplementeerd en de structuur van de database gemaakt. 
-Ruben heeft gekeken voor het connecteren van de database en de app. En hij heeft ervoor gezocht dat Android Studio via Github functioneert om zo een vlotter groepswerk te creëren. 
-Manon is begonnen met de app te ontwerpen: het design van de verschillende pagina's en de doorverwijzingen tussen de pagina's. Daarna is ze begonnen met het tussentijds verslag te schrijven, er structuur in te brengen en bijlagen te ontwerpen. \\
-Voor het maken van het tussentijds verslag hebben we later ook de taken verdeeld. We namen elk een of meerdere onderdelen voor zich. Iedereen kreeg het onderdeel waarvan hij of zij het meest vanaf wist. Tot slot heeft iedereen het verslag doorlezen en goedgekeurd.
-
-
-\section*{Conclusie}
-
-
-\newpage
-\begin{appendices}
-\includepdf[pages=-]{Ganttchart} \label{gantt-grafiek}
-\includepdf[pages=-]{Takenstructuur} \label{takenstructuur}
-\end{appendices}
-
-\bibliography{Bibliografie}
-\bibliographystyle{unsrt}
-\nocite{*}
-=======
 \documentclass{article}
 
 \usepackage[dutch]{babel}
@@ -250,12 +98,12 @@ Tot slot kan Android Studio makkelijk gekoppeld worden met de databases van \tex
 
 
 \subsection{Website}
-Voor de ontwikkeling van de \textit{back-end}\footnote{De \textit{back-end} van een website is deel van het programma dat onzichtbaar is voor de gebruiker. Dit zorgt ervoor dat de \textit{front-end} van de website werkt.} van de website bestaan er veel verschillende tools. We zochten een gratis tool die op verschillende \textit{browsers} werkt. Hiervoor leken \verb!Python Flask!, \verb!PHP! en \verb!Node.js! ons de beste opties. We hebben ervaring met \verb!Python! door het vak 'Beginselen van programmeren' en moeten \verb!JavaScript! beheersen voor de \textit{front-end} van de website. Daarnaast hebben we ook maar 12 weken voor ons project, dus besloten we om \verb!PHP! niet te gebruiken zodat we niet nog een nieuwe syntax moeten leren kennen. De \textit{event-driven} architectuur van \verb!Node.js! maakt het eenvoudiger om een chat-app te implementeren en is snel en makkelijk te begrijpen, waardoor onze keuze gemaakt was. \verb!Node.js! is een open source en multiplatform van \verb!JavaScript!.
+Voor de ontwikkeling van de \textit{back-end}\footnote{De \textit{back-end} van een website is deel van het programma dat onzichtbaar is voor de gebruiker. Dit zorgt ervoor dat de \textit{front-end} van de website werkt.} van de website bestaan er veel verschillende tools. We zochten een gratis tool die op verschillende \textit{browsers} werkt. Hiervoor leken \verb!Python Flask!, \verb!PHP! en \verb!Node.js! ons de beste opties. We hebben ervaring met \verb!Python! door het vak 'Beginselen van programmeren' en moeten \verb!JavaScript! beheersen voor de \textit{front-end} van de website. Daarnaast hebben we ook maar 12 weken voor ons project, dus besloten we om \verb!PHP! niet te gebruiken zodat we niet nog een nieuwe syntax moeten leren kennen. De \textit{event-driven} architectuur van \verb!Node.js! maakt het eenvoudiger om een chat-app te implementeren en is snel en makkelijk te begrijpen, waardoor onze keuze gemaakt was. \verb!Node.js! is een open source en multiplatform van de \verb!JavaScript-runtime-omgeving!.
 																						
 \newpage
 \subsection{Database} \label{sec:Database}
 % jason: dictonairies in dictionaries --> non sequal 
-Zowel de trainers als de pleeggezinnen zullen bij het gebruik van de app informatie, zoals documenten, dagboekinzendingen, afspraken ... aan de app toevoegen. Al deze informatie moet ergens opgeslagen worden en vanuit die opslagplaats weer geraadpleegd kunnen worden. Daarom maken we gebruik van een database. We hebben meer bepaald een real-time database nodig, zodat onder andere chatberichten zo snel mogelijk gesynchroniseerd kunnen worden.
+Zowel de trainers als de pleeggezinnen zullen bij het gebruik van de app informatie, zoals documenten, dagboekinzendingen, afspraken ... aan de app toevoegen. Al deze informatie moet ergens opgeslagen worden en vanuit die opslagplaats weer geraadpleegd kunnen worden. Daarom maken we gebruik van een database. We hebben meer bepaald een real-time database\footnote{Een real-time database is een database waarin aanpassingen quasi onmiddelijk worden doorgevoerd, zodat deze aanpassingen ook op andere apparaten snel zichtbaar zijn.} nodig, zodat onder andere chatberichten zo snel mogelijk gesynchroniseerd kunnen worden.
 \\\\
 Onze eerste keuze was om gebruik te maken van de zeer populaire database \textit{MongoDB}. Dit bleek echter geen real-time database te zijn en was dus toch niet geschikt voor onze toepassing. 
 \\\\
@@ -271,13 +119,13 @@ Het switchen tussen deze databases zal niet veel werk vragen, dus indien de Real
 \section{Resultaten}
 Op dit moment zijn we eraan uit welke tools we gaan gebruiken: Android Studio voor de app, \verb!HTML!, \verb!CSS! en \verb!JavaScript! in combinatie met \verb!Node.js! voor de website en \textit{Cloud Firestore} als database.
 \\\\
-Daarna hebben we gezocht naar een structuur (die weergegeven wordt op pagina \pageref{Flowchart}), die we wilden bereiken voor het communicatieplatform. Hiervoor hebben we verschillende pagina's nodig: login, menu, chatoverzicht, documenten, kalender, dagboek, activiteiten toevoegen, overzicht van activiteiten, documenten toevoegen en chatberichten. Het pleeggezin kan chatten, documenten lezen, hun kalender bekijken, een afspraak toevoegen en het dagboekje bekijken. Voor het dagboekje zijn er meerdere opties, ofwel wordt er een activiteit toegevoegd, ofwel wordt er een overzicht gevraagd van een bepaalde activiteit. Daarnaast moet de trainer ook bepaalde functies kunnen uitvoeren. Hij kan ook chatten en het dagboek bekijken voor een specifieke hond. Daarnaast kan hij zelf ook documenten uploaden en afspraken toevoegen in de kalender. Hiervoor kiest hij of hij dat voor een specifieke puppy wil doen of voor alle puppy's tegelijk.
+Daarna hebben we gezocht naar een structuur (die weergegeven wordt op pagina \pageref{flowchart}), die we wilden bereiken voor het communicatieplatform. Hiervoor hebben we verschillende pagina's nodig: login, menu, chatoverzicht, documenten, kalender, dagboek, activiteiten toevoegen, overzicht van activiteiten, documenten toevoegen en chatberichten. Het pleeggezin kan chatten, documenten lezen, hun kalender bekijken, een afspraak toevoegen en het dagboekje bekijken. Voor het dagboekje zijn er meerdere opties, ofwel wordt er een activiteit toegevoegd, ofwel wordt er een overzicht gevraagd van een bepaalde activiteit. Daarnaast moet de trainer ook bepaalde functies kunnen uitvoeren. Hij kan ook chatten en het dagboek bekijken voor een specifieke hond. Daarnaast kan hij zelf ook documenten uploaden en afspraken toevoegen in de kalender. Hiervoor kiest hij of hij dat voor een specifieke puppy wil doen of voor alle puppy's tegelijk.
 \\\\
 Voor de app is er al een uitgewerkt idee voor het design. Hierbij zijn de verschillende pagina's al ontworpen en is het al mogelijk om door te klikken tussen de pagina's. Ook zijn we al begonnen aan het programmeren van de kalender en het uploaden van documenten. Daarnaast is het gelukt om de app te verbinden met \textit{Cloud Firestore}. 
 \\\\
-Met diezelfde database is het ook gelukt om de website te verbinden. Voor de website lukken het inlog-systeem en het chatten al en wordt er gewerkt aan het dagboekje. 
+Met diezelfde database is het ook gelukt om de website te verbinden. Voor de website lukt het inlogsysteem en het chatten al en wordt er gewerkt aan het dagboekje. 
 \\\\
-\textit{Cloud Firestore} is dus gekoppeld met zowel de app als de website. Bij zo'n database is vooral de structuur belangrijk. Op pagina \pageref{Klasses} is een overzicht te zien van hoe we de gevarieerde informatie gaan wegschrijven vanuit de app en website naar de database. Hierbij maken we verschillende collecties aan: Dagboekje, Berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters/gegevens. 
+\textit{Cloud Firestore} is dus gekoppeld met zowel de app als de website. Bij zo'n database is vooral de structuur belangrijk. Op pagina \pageref{klasses} is een overzicht te zien van hoe we de gevarieerde informatie gaan wegschrijven vanuit de app en website naar de database. Hierbij maken we verschillende collecties aan: Dagboekje, Berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters/gegevens. 
 \\\\
 Er moeten er nog veel pagina's geprogrammeerd worden bij de app. Ook bij de website is er nog veel werk, aangezien er nog moet gekeken worden om bepaalde pagina's te implementeren en voor het design van die pagina's. Daarnaast moet alles nog getest worden, onder andere of de informatie juist doorgegeven wordt tussen de app en de website via de database. Tot slot moet er nog gekeken worden om het onderscheid tussen de functies van trainers en pleeggezinnen te programmeren .
 
@@ -291,10 +139,8 @@ Bij het begin van het project werden er rollen en dus verantwoordelijkheden gecr
 \subsection{Taakverdeling}
 Wij hebben samen gezocht naar verschillende tools om zo'n website en app te bouwen en met elkaar te verbinden via een database. Toen we een idee hadden welke tools we voor het project gingen gebruiken, werd de Gantt-grafiek (in bijlage op pagina \pageref{gantt-grafiek}) opgesteld en hebben we de taken (in bijlage op pagina \pageref{takenstructuur}) opgesplitst. 
 \\\\
-Thomas is toen begonnen met het connecteren van de database en de website. Daarna heeft hij de structuur van de database gemaakt en is hij begonnen met de pagina's van de website te implementeren. 
-Ruben heeft gekeken voor het connecteren van de database en de app. Hij heeft er ook voor gezorgd dat Android Studio via Github functioneert om zo een vlotter groepswerk te creëren. Daarna is hij begonnen met het implementeren van enkele pagina's van de app.
-\\\\
-Manon is begonnen met de app te ontwerpen: het design van de pagina's en de doorverwijzingen tussen de pagina's. Daarna is ze begonnen met het tussentijds verslag te schrijven, er structuur in te brengen en bijlagen te ontwerpen.
+Thomas is toen begonnen met het connecteren van de database en de website. Daarna heeft hij al pagina's van de website geïmplementeerd en de structuur van de database gemaakt.
+Ruben heeft gekeken voor het connecteren van de database en de app. Hij heeft er ook voor gezorgd dat Android Studio via Github functioneert om zo een vlotter groepswerk te creëren. Daarna is hij begonnen met het implementeren van enkele pagina's van de app. Manon is begonnen met de app te ontwerpen: het design van de verschillende pagina's en de doorverwijzingen tussen de pagina's. Daarna is ze begonnen met het tussentijds verslag te schrijven, er structuur in te brengen en bijlagen te ontwerpen.
 \\\\
 Voor het maken van het tussentijds verslag hebben we later ook de taken verdeeld. We namen elk een of meerdere onderdelen voor zich. Iedereen kreeg het onderdeel waarvan hij of zij het meest vanaf wist. Tot slot heeft iedereen het verslag doorgelezen en goedgekeurd.
 
@@ -310,12 +156,11 @@ We hebben dus nog veel werk voor de boeg. De chat- en dagboekfunctie van de app 
 
 \newpage
 \begin{appendices}
-\label{gantt-grafiek}\includepdf[pages=-]{Ganttchart} 
-\label{takenstructuur}\includepdf[pages=-]{Takenstructuur}
+\includepdf[pages=-]{Ganttchart} \label{gantt-grafiek}
+\includepdf[pages=-]{Takenstructuur} \label{takenstructuur}
 \end{appendices}
 
 \bibliography{Bibliografie}
 \bibliographystyle{unsrt}
 \nocite{*}
->>>>>>> Stashed changes
 \end{document}
