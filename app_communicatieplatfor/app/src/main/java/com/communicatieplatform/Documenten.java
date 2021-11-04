@@ -60,17 +60,19 @@ public class Documenten extends AppCompatActivity {
                     selectPdf();
                 } else
                     ActivityCompat.requestPermissions(Documenten.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 9);
-
+                    notification.setText("Bestand geselecteerd");
             }
         });
 
         upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(pdfUri!=null) //user has selected a file
+                if(pdfUri!=null) {//user has selected a file
                     uploadFile(pdfUri);
-                else
-                    Toast.makeText(Documenten.this,"Selecteer een file",Toast.LENGTH_SHORT).show();
+                    notification.setText("Bestand geüpload. Geen nieuw bestand geselecteerd");
+                    pdfUri = null;
+                }else
+                    Toast.makeText(Documenten.this,"Selecteer een bestand",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -80,7 +82,7 @@ public class Documenten extends AppCompatActivity {
     private void uploadFile(Uri pdfUri) {
         progressDialog=new ProgressDialog(this);
         progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-        progressDialog.setTitle("Uploaden van de file...");
+        progressDialog.setTitle("Bestand uploaden...");
         progressDialog.setProgress(0);
         progressDialog.show();
 
@@ -90,7 +92,7 @@ public class Documenten extends AppCompatActivity {
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        String url=taskSnapshot.getDownloadUr().toString(); //return the url for you uploaded file
+                        String url=taskSnapshot.getMetadata().getReference().getDownloadUrl().toString(); //return the url for you uploaded file
                         //store the url in realtime database
                         DatabaseReference reference=database.getReference(); //return the path to root
 
@@ -98,9 +100,9 @@ public class Documenten extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
                                 if(task.isSuccessful())
-                                    Toast.makeText(Documenten.this,"File is succesvol geüpload",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Documenten.this,"Bestand is succesvol geüpload",Toast.LENGTH_SHORT).show();
                                 else
-                                    Toast.makeText(Documenten.this,"File is niet succesvol geüpload",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Documenten.this,"Bestand is niet succesvol geüpload",Toast.LENGTH_SHORT).show();
 
                             }
                         });
@@ -109,7 +111,7 @@ public class Documenten extends AppCompatActivity {
                 }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(Documenten.this,"File is niet succesvol geüpload",Toast.LENGTH_SHORT).show();
+                Toast.makeText(Documenten.this,"Bestand is niet succesvol geüpload",Toast.LENGTH_SHORT).show();
             }
         }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
             @Override
@@ -138,9 +140,15 @@ public class Documenten extends AppCompatActivity {
     private void selectPdf() {
         //to offer user to select a file using file manager
         //we will be using a Intent
-        Intent intent=new Intent();
-        intent.setType("application/pdf");
-        intent.setAction(Intent.ACTION_GET_CONTENT); //to fetch files
+        //Intent intent=new Intent();
+        //intent.setType("application/pdf");
+        //intent.setAction(Intent.ACTION_GET_CONTENT); //to fetch files
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        String [] mimeTypes = {"application/pdf", "docx/*"};
+        intent.setType("*/*");
+        intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes);
+        intent.setAction(Intent.ACTION_GET_CONTENT)
         startActivityForResult(intent,86);
 
     }
@@ -148,7 +156,7 @@ public class Documenten extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        // check whether user has selected a file or not
+        // check whether user has selected a file or no
         if(requestCode==86 && resultCode==RESULT_OK && data!=null)
         {
             pdfUri=data.getData(); // return the uri of selected file

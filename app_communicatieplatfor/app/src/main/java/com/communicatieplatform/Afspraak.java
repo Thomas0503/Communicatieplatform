@@ -8,17 +8,16 @@ public class Afspraak implements Serializable{
 
     @Exclude private String id;
 
-    private String startuur, einduur, datum, description, hond;
+    private String startuur, einduur, datum, description;
     public Afspraak() {
 
     }
 
-    public Afspraak(String startuur, String einduur, String datum, String description, String hond) {
+    public Afspraak(String startuur, String einduur, String datum, String description) {
         this.startuur = startuur;
         this.einduur = einduur;
         this.description = description;
         this.datum= datum;
-        this.hond = hond;
     }
 
     public String getId() {
