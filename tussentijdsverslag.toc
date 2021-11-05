@@ -6,6 +6,6 @@
 \contentsline {subsection}{\numberline {1.4}Database}{6}%
 \contentsline {section}{\numberline {2}Resultaten}{7}%
 \contentsline {section}{\numberline {3}Samenwerking}{11}%
-\contentsline {subsection}{\numberline {3.1}Verantwoordelijheden}{11}%
+\contentsline {subsection}{\numberline {3.1}Verantwoordelijkheden}{11}%
 \contentsline {subsection}{\numberline {3.2}Taakverdeling}{11}%
 \contentsline {section}{Appendices}{13}%
