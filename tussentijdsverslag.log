@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.25)  5 NOV 2021 16:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.25)  5 NOV 2021 18:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -582,8 +582,8 @@ Package pdftex.def Info: Takenstructuur.pdf , page2 used on input line 159.
  [18 <./Takenstructuur.pdf>]
 (./tussentijdsverslag.bbl
 ! Undefined control sequence.
-l.10 \newblock \url
-                   {https://programmeerplaats.nl/}.
+l.5 \newblock \url
+                  {https://programmeerplaats.nl/}, 2021.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -591,123 +591,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.15 \newblock \url
-                   {https://nl.wikipedia.org/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.20   \url
-           {https://www.freecodecamp.org/news/html-css-and-javascript-explai...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--22
-[]\OT1/cmr/m/n/10 Html, css and ja-vascript for be-gin-ners.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--22
-\OT1/cmr/m/n/10 https://www.freecodecamp.org/news/html-css-and-javascript-expla
-ined-
- []
-
-! Undefined control sequence.
-l.26   \url
-           {https://blog.andwork.com/wat-spreken-developers-dit-zijn-de-8-me...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 3019) in paragraph at lines 24--28
-[]\OT1/cmr/m/n/10 Meest ge-bruikte pro-gram-meer-ta-len.  https://blog.andwork.
-com/wat-
- []
-
-! Undefined control sequence.
-l.32   \url
-           {https://onlinerocket.nl/websites/top-9-programmeertalen-voor-web...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--34
-[]\OT1/cmr/m/n/10 Meest ge-bruikte pro-gram-meer-ta-len voor web-si-tes.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--34
-\OT1/cmr/m/n/10 https://onlinerocket.nl/websites/top-9-programmeertalen-voor-we
-bsites/.
- []
-
-! Undefined control sequence.
-l.37 \newblock \url
-                   {https://developer.android.com/studio}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.41 \newblock \url
-                   {https://www.youtube.com/channel/UCi3r7qQejDD-joRZCvso-Bg}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
-[]\OT1/cmr/m/n/10 Youtube tu-to-ri-als voor an-droid stu-dio: Dj ma-lone.
- []
-
-! Undefined control sequence.
-l.46   \url
-           {https://www.youtube.com/channel/UCXIQaYiP3AUQJ1SOfLrGwlg/videos}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--47
-[]\OT1/cmr/m/n/10 Youtube tu-to-ri-als voor an-droid stu-dio: Cn-code.
- []
-
-
-Overfull \hbox (11.73692pt too wide) in paragraph at lines 44--47
-\OT1/cmr/m/n/10 https://www.youtube.com/channel/UCXIQaYiP3AUQJ1SOfLrGwlg/videos
-. 
- []
-
-! Undefined control sequence.
-l.51   \url
-           {https://www.code14.nl/blog/wat-is-het-verschil-tussen-front-end-...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.56   \url
+l.10   \url
            {https://torquemag.io/2018/06/why-millions-of-developers-use-java...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -716,18 +600,134 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--58
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
 []\OT1/cmr/m/n/10 Javascript for web-application-development.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--58
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
 \OT1/cmr/m/n/10 https://torquemag.io/2018/06/why-millions-of-developers-use-jav
 ascript-
  []
 
 ! Undefined control sequence.
-l.61 \newblock \url
+l.20 \newblock \url
+                   {https://nl.wikipedia.org/}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.25   \url
+           {https://www.freecodecamp.org/news/html-css-and-javascript-explai...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--27
+[]\OT1/cmr/m/n/10 Html, css and ja-vascript for be-gin-ners.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--27
+\OT1/cmr/m/n/10 https://www.freecodecamp.org/news/html-css-and-javascript-expla
+ined-
+ []
+
+! Undefined control sequence.
+l.31   \url
+           {https://blog.andwork.com/wat-spreken-developers-dit-zijn-de-8-me...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 3019) in paragraph at lines 29--33
+[]\OT1/cmr/m/n/10 Meest ge-bruikte pro-gram-meer-ta-len.  https://blog.andwork.
+com/wat-
+ []
+
+! Undefined control sequence.
+l.37   \url
+           {https://onlinerocket.nl/websites/top-9-programmeertalen-voor-web...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--39
+[]\OT1/cmr/m/n/10 Meest ge-bruikte pro-gram-meer-ta-len voor web-si-tes.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--39
+\OT1/cmr/m/n/10 https://onlinerocket.nl/websites/top-9-programmeertalen-voor-we
+bsites/,
+ []
+
+! Undefined control sequence.
+l.42 \newblock \url
+                   {https://developer.android.com/studio}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.46 \newblock \url
+                   {https://www.youtube.com/channel/UCi3r7qQejDD-joRZCvso-Bg}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
+[]\OT1/cmr/m/n/10 Youtube tu-to-ri-als voor an-droid stu-dio: Dj ma-lone.
+ []
+
+! Undefined control sequence.
+l.51   \url
+           {https://www.youtube.com/channel/UCXIQaYiP3AUQJ1SOfLrGwlg/videos}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--52
+[]\OT1/cmr/m/n/10 Youtube tu-to-ri-als voor an-droid stu-dio: Cn-code.
+ []
+
+
+Overfull \hbox (11.73692pt too wide) in paragraph at lines 49--52
+\OT1/cmr/m/n/10 https://www.youtube.com/channel/UCXIQaYiP3AUQJ1SOfLrGwlg/videos
+. 
+ []
+
+! Undefined control sequence.
+l.56   \url
+           {https://www.code14.nl/blog/wat-is-het-verschil-tussen-front-end-...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.60 \newblock \url
                    {https://www.educba.com/html5-vs-flash/}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -736,7 +736,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.65 \newblock \url
+l.64 \newblock \url
                    {https://modularfirebase.web.app/common-use-cases/firesto...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -745,8 +745,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.69 \newblock \url
-                   {https://www.monocubed.com/django-vs-express/}.
+l.68 \newblock \url
+                   {https://www.monocubed.com/django-vs-express/}, Aug 2021.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -754,7 +754,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.75   \url
+l.73   \url
            {https://dev.to/leviathanprogramming/php-vs-nodejs-vs-flask-vs-dj...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -763,19 +763,19 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (10.37302pt too wide) in paragraph at lines 73--77
+Overfull \hbox (10.37302pt too wide) in paragraph at lines 71--75
 []\OT1/cmr/m/n/10 Php vs node.js vs flask vs django.  https://dev.to/leviathanp
 rogramming/php-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--77
+Underfull \hbox (badness 10000) in paragraph at lines 71--75
 \OT1/cmr/m/n/10 vs-nodejs-vs-flask-vs-django-which-is-the-best-backend-language
 -in-your-
  []
 
 ! Undefined control sequence.
-l.80 \newblock \url
+l.78 \newblock \url
                    {https://www.lucidchart.com}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -784,7 +784,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.84 \newblock \url
+l.82 \newblock \url
                    {https://www.mongodb.com/}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -793,7 +793,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.88 \newblock \url
+l.86 \newblock \url
                    {https://firebase.google.com/}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -802,7 +802,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.92 \newblock \url
+l.90 \newblock \url
                    {https://firebase.google.com/docs}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -811,7 +811,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.96 \newblock \url
+l.94 \newblock \url
                    {https://firebase.google.com/pricing}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -820,7 +820,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 []\OT1/cmr/m/n/10 Choose a da-ta-base: Cloud fire-store or re-al-time da-ta-bas
 e.
  []
@@ -845,7 +845,7 @@ s/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt10.pfb>
-Output written on tussentijdsverslag.pdf (20 pages, 316921 bytes).
+Output written on tussentijdsverslag.pdf (20 pages, 316885 bytes).
 PDF statistics:
  178 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams
