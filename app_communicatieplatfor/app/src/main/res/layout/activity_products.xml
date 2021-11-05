@@ -58,11 +58,10 @@
         app:layout_constraintTop_toBottomOf="@+id/Kalender" />
 
     <ProgressBar
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:id="@+id/progressbar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
 
 
 </RelativeLayout>
