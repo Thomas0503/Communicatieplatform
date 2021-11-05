@@ -2,13 +2,45 @@
 
 \bibitem{Programmeertaal}
 Programmeertaal.
-\newblock \url{https://programmeerplaats.nl/}, 2021.
+\newblock \url{https://programmeerplaats.nl/}.
+\newblock (Geraadpleegd op 7 oktober 2021).
 
 \bibitem{JavaScript_for_web-app}
 Javascript for web-application-development.
 \newblock
   \url{https://torquemag.io/2018/06/why-millions-of-developers-use-javascript-for-web-application-development/},
   Juni 2018.
+\newblock (Geraadpleegd op 7 oktober 2021).
+
+\bibitem{AndroidStudio}
+Android studio.
+\newblock \url{https://developer.android.com/studio}.
+\newblock (Geraadpleegd op 7 oktober 2021).
+
+\bibitem{MongoDB}
+Mongodb.
+\newblock \url{https://www.mongodb.com/}.
+\newblock (Geraadpleegd op 7 oktober 2021).
+
+\bibitem{Firebase}
+Firebase.
+\newblock \url{https://firebase.google.com/}.
+\newblock (Geraadpleegd op 14 oktober 2021).
+
+\bibitem{documentatie_firebase}
+Firebase documentation.
+\newblock \url{https://firebase.google.com/docs}.
+\newblock (Geraadpleegd op 14 oktober 2021).
+
+\bibitem{pricing_firebase}
+Pricing plans.
+\newblock \url{https://firebase.google.com/pricing}.
+\newblock (Geraadpleegd op 21 oktober 2021).
+
+\bibitem{Realtime_vs_Firestore}
+Choose a database: Cloud firestore or realtime database.
+\newblock \url{https://firebase.google.com/docs/database/rtdb-vs-firestore}.
+\newblock (Geraadpleegd op 21 oktober 2021).
 
 \bibitem{opgave}
 Charlotte Deconinck.
@@ -18,83 +50,66 @@ Charlotte Deconinck.
 \bibitem{Wikipedia}
 Wikipedia.
 \newblock \url{https://nl.wikipedia.org/}.
+\newblock (Geraadpleegd op 2 november 2021).
 
 \bibitem{HTML_CSS_JavaScript}
 Html, css and javascript for beginners.
 \newblock
   \url{https://www.freecodecamp.org/news/html-css-and-javascript-explained-for-beginners/},
   Aug 2021.
+\newblock (Geraadpleegd op 7 oktober 2021).
 
 \bibitem{programmeetalen}
 Meest gebruikte programmeertalen.
 \newblock
   \url{https://blog.andwork.com/wat-spreken-developers-dit-zijn-de-8-meest-gevraagde-programmeertalen/},
   Jan 2021.
+\newblock (Geraadpleegd op 7 oktober 2021).
 
 \bibitem{programmeertalen2}
 Meest gebruikte programmeertalen voor websites.
 \newblock
   \url{https://onlinerocket.nl/websites/top-9-programmeertalen-voor-websites/},
   Juli 2021.
-
-\bibitem{AndroidStudio}
-Androidstudio.
-\newblock \url{https://developer.android.com/studio}.
+\newblock (Geraadpleegd op 7 oktober 2021).
 
 \bibitem{youtube}
 Youtube tutorials voor android studio: Dj malone.
 \newblock \url{https://www.youtube.com/channel/UCi3r7qQejDD-joRZCvso-Bg}.
+\newblock (Geraadpleegd op 14 oktober 2021).
 
 \bibitem{youtube2}
 Youtube tutorials voor android studio: Cn-code.
 \newblock
   \url{https://www.youtube.com/channel/UCXIQaYiP3AUQJ1SOfLrGwlg/videos}.
+\newblock (Geraadpleegd op 14 oktober 2021).
 
 \bibitem{FrontendBackend}
 Verschil tussen front end en back end.
 \newblock
   \url{https://www.code14.nl/blog/wat-is-het-verschil-tussen-front-end-en-back-end/}.
+\newblock (Geraadpleegd op 14 oktober 2021).
 
 \bibitem{HTML5-Flash}
 Html5 vs flash.
 \newblock \url{https://www.educba.com/html5-vs-flash/}.
-
-\bibitem{Firestore}
-Firestore.
-\newblock \url{https://modularfirebase.web.app/common-use-cases/firestore/}.
+\newblock (Geraadpleegd op 14 oktober 2021).
 
 \bibitem{Django-Express}
 Django vs express.
 \newblock \url{https://www.monocubed.com/django-vs-express/}, Aug 2021.
+\newblock (Geraadpleegd op 14 oktober 2021).
 
 \bibitem{Backend_language}
 Php vs node.js vs flask vs django.
 \newblock
   \url{https://dev.to/leviathanprogramming/php-vs-nodejs-vs-flask-vs-django-which-is-the-best-backend-language-in-your-opinion-339c},
   Jan 2021.
+\newblock (Geraadpleegd op 14 oktober 2021).
 
 \bibitem{Lucidchart_flowchart}
 Flowchart - lucidchart.
 \newblock \url{https://www.lucidchart.com}.
-
-\bibitem{MongoDB}
-Mongodb.
-\newblock \url{https://www.mongodb.com/}.
-
-\bibitem{Firebase}
-Firebase.
-\newblock \url{https://firebase.google.com/}.
-
-\bibitem{documentatie_firebase}
-Firebase documentation.
-\newblock \url{https://firebase.google.com/docs}.
-
-\bibitem{pricing_firebase}
-Pricing plans.
-\newblock \url{https://firebase.google.com/pricing}.
-
-\bibitem{Realtime_vs_Firestore}
-Choose a database: Cloud firestore or realtime database.
-\newblock https://firebase.google.com/docs/database/rtdb-vs-firestore.
+\newblock (Geraadpleegd op 28 oktober 2021).
 
 \end{thebibliography}
