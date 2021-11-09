@@ -13,12 +13,12 @@ public class Chatbericht implements Serializable{
 
     }
 
-    public Chatbericht(String naam, String onderwerp, String datum, String bericht, String uur) {
-        this.naam = naam;
-        this.onderwerp = onderwerp;
-        this.datum = datum;
-        this.bericht = bericht;
-        this.uur= uur;
+    public Chatbericht(String Naam, String Onderwerp, String Datum, String Bericht, String Uur) {
+        this.naam = Naam;
+        this.onderwerp = Onderwerp;
+        this.datum = Datum;
+        this.bericht = Bericht;
+        this.uur= Uur;
     }
 
     public String getId() {
