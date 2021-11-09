@@ -1,9 +1,11 @@
 package com.communicatieplatform;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +26,7 @@ public class ProductsActivity extends AppCompatActivity {
     private com.communicatieplatform.ProductsAdapter adapter;
     private List<Afspraak> productList;
     private ProgressBar progressBar;
+    private Button button;
 
 
     private FirebaseFirestore db;
@@ -32,6 +35,13 @@ public class ProductsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_products);
+        button = (Button) findViewById(R.id.afspraakToev);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAfspraakMaken();
+            }
+        });
 
         progressBar = findViewById(R.id.progressbar);
 
@@ -75,5 +85,9 @@ public class ProductsActivity extends AppCompatActivity {
                     }
                 });
 
+    }
+    public void openAfspraakMaken() {
+        Intent intent = new Intent(this, AfspraakMaken.class);
+        startActivity(intent);
     }
 }
