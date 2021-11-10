@@ -35,7 +35,6 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
         Chatbericht product = productList.get(position);
 
         holder.textViewNaam.setText(product.getNaam());
-        holder.textViewOnderwerp.setText(product.getOnderwerp());
         holder.textViewDatum.setText(product.getDatum());
         holder.textViewUur.setText(product.getUur());
         holder.textViewBericht.setText(product.getBericht());
@@ -48,13 +47,12 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
 
     class ChatViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView textViewNaam, textViewOnderwerp, textViewDatum, textViewUur, textViewBericht;
+        TextView textViewNaam, textViewDatum, textViewUur, textViewBericht;
 
         public ChatViewHolder(View itemView) {
             super(itemView);
 
             textViewNaam = itemView.findViewById(R.id.textview_naam);
-            textViewOnderwerp = itemView.findViewById(R.id.textview_onderwerp);
             textViewDatum = itemView.findViewById(R.id.textview_datum);
             textViewUur = itemView.findViewById(R.id.textview_uur);
             textViewBericht = itemView.findViewById(R.id.textview_bericht);

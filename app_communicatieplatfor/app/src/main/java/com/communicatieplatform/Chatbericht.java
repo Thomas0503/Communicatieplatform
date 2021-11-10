@@ -9,9 +9,7 @@ public class Chatbericht implements Serializable{
     @Exclude private String id;
 
     private String naam, onderwerp, datum, bericht, uur;
-    public Chatbericht() {
-
-    }
+    public Chatbericht() {}
 
     public Chatbericht(String Naam, String Onderwerp, String Datum, String Bericht, String Uur) {
         this.naam = Naam;

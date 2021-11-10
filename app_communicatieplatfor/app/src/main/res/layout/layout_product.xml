@@ -20,7 +20,7 @@
                 android:id="@+id/textview_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nokia X6"
+                android:text="Afspraak"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                 android:textStyle="bold"
                 android:textColor="#832E2E"/>
@@ -29,26 +29,28 @@
                 android:id="@+id/textview_brand"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nokia"
+                android:text="beginuur"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:textColor="#832E2E"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textview_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="einduur"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:textColor="#832E2E"
-                android:text="6GB Ram Snapdragon 660 SOC, 64gb Storage"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textview_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="INR 15000"
-                android:textSize="32sp"
-                android:textStyle="bold"
-                android:textColor="#832E2E" />
+                android:text="datum"
+                android:textColor="#832E2E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
 
 

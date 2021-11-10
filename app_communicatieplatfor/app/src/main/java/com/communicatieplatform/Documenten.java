@@ -148,7 +148,7 @@ public class Documenten extends AppCompatActivity {
         String [] mimeTypes = {"application/pdf", "docx/*"};
         intent.setType("*/*");
         intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes);
-        intent.setAction(Intent.ACTION_GET_CONTENT)
+        intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(intent,86);
 
     }
