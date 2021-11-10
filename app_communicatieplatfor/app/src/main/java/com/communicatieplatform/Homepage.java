@@ -60,7 +60,7 @@ public class Homepage extends AppCompatActivity {
     }
 
     public void openDocumenten() {
-        Intent intent = new Intent(this, Documenten.class);
+        Intent intent = new Intent(this, DocumentenToevoegenActivity.class);
         startActivity(intent);
     }
 

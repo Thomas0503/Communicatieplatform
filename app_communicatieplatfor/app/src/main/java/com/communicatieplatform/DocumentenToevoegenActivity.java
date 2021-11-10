@@ -10,8 +10,11 @@ import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.OpenableColumns;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -22,22 +25,26 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.net.URI;
+import java.util.HashMap;
+import java.util.Map;
 
-public class Documenten extends AppCompatActivity {
+public class DocumentenToevoegenActivity extends AppCompatActivity {
 
     Button selectFile, upload;
     TextView notification;
     Uri pdfUri; //Uri are actually URLs that are meant for local storage
 
     FirebaseStorage storage; //used for uploading files
-    FirebaseDatabase database; //used to store URLs of uploaded files
+    private FirebaseFirestore database;; //used to store URLs of uploaded files
     ProgressDialog progressDialog;
 
 
@@ -47,7 +54,7 @@ public class Documenten extends AppCompatActivity {
         setContentView(R.layout.documents);
 
         storage = FirebaseStorage.getInstance(); //return object of Firebase Storage
-        database = FirebaseDatabase.getInstance(); //return object of Firebase Database
+        database = FirebaseFirestore.getInstance(); //return object of Firebase Database
 
         selectFile = findViewById(R.id.selectFile);
         upload = findViewById(R.id.upload);
@@ -56,11 +63,11 @@ public class Documenten extends AppCompatActivity {
         selectFile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (ContextCompat.checkSelfPermission(Documenten.this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+                if (ContextCompat.checkSelfPermission(DocumentenToevoegenActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
                     selectPdf();
                 } else
-                    ActivityCompat.requestPermissions(Documenten.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 9);
-                    notification.setText("Bestand geselecteerd");
+                    ActivityCompat.requestPermissions(DocumentenToevoegenActivity.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 9);
+
             }
         });
 
@@ -72,7 +79,7 @@ public class Documenten extends AppCompatActivity {
                     notification.setText("Bestand geüpload. Geen nieuw bestand geselecteerd");
                     pdfUri = null;
                 }else
-                    Toast.makeText(Documenten.this,"Selecteer een bestand",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DocumentenToevoegenActivity.this,"Selecteer een bestand",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -87,32 +94,36 @@ public class Documenten extends AppCompatActivity {
         progressDialog.show();
 
         final String fileName=System.currentTimeMillis()+"";
+        String directory = "Uploads";
         StorageReference storageReference=storage.getReference(); //return root path
-        storageReference.child("Uploads").child(fileName).putFile(pdfUri)
+        storageReference.child(directory).child(fileName).putFile(pdfUri)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        String url=taskSnapshot.getMetadata().getReference().getDownloadUrl().toString(); //return the url for you uploaded file
                         //store the url in realtime database
-                        DatabaseReference reference=database.getReference(); //return the path to root
-
-                        reference.child(fileName).setValue(url).addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if(task.isSuccessful())
-                                    Toast.makeText(Documenten.this,"Bestand is succesvol geüpload",Toast.LENGTH_SHORT).show();
-                                else
-                                    Toast.makeText(Documenten.this,"Bestand is niet succesvol geüpload",Toast.LENGTH_SHORT).show();
-
-                            }
-                        });
-
+                        String[] fileInfo = getFileInfo(pdfUri);
+                        String url = directory + "/" + fileName;
+                        CollectionReference reference = database.collection("documents");
+                        Map<String, Object> image= new HashMap<>();
+                        image.put("url", url);
+                        image.put("name", fileInfo[0]);
+                        image.put("size", fileInfo[1]);
+                        reference.document(fileName).set(image)
+                                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void aVoid) {
+                                        Log.d("document_upload", "DocumentSnapshot successfully written!");
+                                        Toast.makeText(DocumentenToevoegenActivity.this,"Bestand is succesvol geüpload",Toast.LENGTH_SHORT).show();
+                                    }
+                                })
+                                .addOnFailureListener(new OnFailureListener() {
+                                    @Override
+                                    public void onFailure(@NonNull Exception e) {
+                                        Log.w("document_upload", "Error adding document", e);
+                                        Toast.makeText(DocumentenToevoegenActivity.this,"Bestand is niet succesvol geüpload",Toast.LENGTH_SHORT).show();
+                                    }
+                                });
                     }
-                }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(Documenten.this,"Bestand is niet succesvol geüpload",Toast.LENGTH_SHORT).show();
-            }
         }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
@@ -133,7 +144,7 @@ public class Documenten extends AppCompatActivity {
             selectPdf();
         }
         else
-            Toast.makeText(Documenten.this,"Geef toestemming alstublieft...",Toast.LENGTH_SHORT).show();
+            Toast.makeText(DocumentenToevoegenActivity.this,"Geef toestemming alstublieft...",Toast.LENGTH_SHORT).show();
     }
 
 
@@ -145,14 +156,27 @@ public class Documenten extends AppCompatActivity {
         //intent.setAction(Intent.ACTION_GET_CONTENT); //to fetch files
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         intent.addCategory(Intent.CATEGORY_OPENABLE);
-        String [] mimeTypes = {"application/pdf", "docx/*"};
+        String [] mimeTypes = {"application/pdf", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "rtapplication/msword"};
         intent.setType("*/*");
         intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes);
-        intent.setAction(Intent.ACTION_GET_CONTENT)
+        intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(intent,86);
-
     }
-
+    private String[] getFileInfo(Uri pdfUri) {
+        Cursor returnCursor =
+                getContentResolver().query(pdfUri, null, null, null, null);
+        /*
+         * Get the column indexes of the data in the Cursor,
+         * move to the first row in the Cursor, get the data,
+         * and display it.
+         */
+        returnCursor.moveToFirst();
+        int nameIndex = returnCursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
+        int sizeIndex = returnCursor.getColumnIndex(OpenableColumns.SIZE);
+        String fileName = returnCursor.getString(nameIndex);
+        String fileSize =  Long.toString(returnCursor.getLong(sizeIndex));
+        return new String[] {fileName, fileSize};
+    }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -160,9 +184,16 @@ public class Documenten extends AppCompatActivity {
         if(requestCode==86 && resultCode==RESULT_OK && data!=null)
         {
             pdfUri=data.getData(); // return the uri of selected file
+            String[] fileInfo = getFileInfo(pdfUri);
+
+            if(Long.valueOf(fileInfo[1]) > 5000000) {
+                Toast.makeText(DocumentenToevoegenActivity.this,"Dit bestand is te groot",Toast.LENGTH_SHORT).show();
+            } else {
+                notification.setText(fileInfo[0] + " geselecteerd");
+            }
         }
         else{
-            Toast.makeText(Documenten.this,"Selecteer een file",Toast.LENGTH_SHORT).show();
+            Toast.makeText(DocumentenToevoegenActivity.this,"Selecteer een bestand",Toast.LENGTH_SHORT).show();
         }
     }
 }

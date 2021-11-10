@@ -1,4 +1,4 @@
-package com.communicatieplatform
+package com.communicatieplatform.not_used_scripts
 
 
 import android.app.Activity
@@ -22,7 +22,8 @@ import com.google.firebase.ktx.Firebase
 import java.util.*
 import kotlin.collections.HashMap
 
-
+//errors in code, daarom staat alles in commentaar
+/*/*/*
 class RegisterActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -197,3 +198,4 @@ class RegisterActivity : AppCompatActivity() {
 
 }
 
+*/*/*/

@@ -1,15 +1,16 @@
-package com.communicatieplatform
+package com.communicatieplatform.not_used_scripts
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.communicatieplatform.Homepage
 import com.communicatieplatform.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 
-
+//errors in code, dus alles staat in commentaar
+/*/*/*
 class LoginActivity:AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
@@ -69,3 +70,4 @@ class LoginActivity:AppCompatActivity() {
 
 
 }
+*/*/*/
