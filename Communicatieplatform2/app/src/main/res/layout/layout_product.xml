@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F44336">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="#F44336">
+
+            <TextView
+                android:id="@+id/textview_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Afspraak"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                android:textColor="#832E2E"/>
+
+            <TextView
+                android:id="@+id/textview_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="beginuur"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="#832E2E"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textview_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="einduur"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="#832E2E"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textview_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="datum"
+                android:textColor="#832E2E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
