@@ -2,12 +2,20 @@ package com.communicatieplatform;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
+
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.List;
 
 public class Dagboek extends AppCompatActivity {
     private Button button;
+    private FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

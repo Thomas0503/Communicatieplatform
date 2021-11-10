@@ -17,43 +17,41 @@
             android:background="#F44336">
 
             <TextView
-                android:id="@+id/textview_name"
+                android:id="@+id/textview_naam"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Afspraak"
+                android:text="Naam"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                 android:textStyle="bold"
                 android:textColor="#832E2E"/>
 
             <TextView
-                android:id="@+id/textview_brand"
+                android:id="@+id/textview_datum"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="beginuur"
+                android:text="Datum"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:textColor="#832E2E"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textview_desc"
+                android:id="@+id/textview_uur"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="einduur"
+                android:text="Uur"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:textColor="#832E2E"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textview_price"
+                android:id="@+id/textview_bericht"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="datum"
+                android:text="Bericht"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:textColor="#832E2E"
                 android:textSize="20sp"
-                android:textStyle="bold" />
-
-
-
+                android:textStyle="bold"/>
 
         </LinearLayout>
 

@@ -18,6 +18,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image2"
+        android:layout_width="244dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/foto_charlotte_gras_VA"
+        app:civ_border_color="#F44336"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
@@ -38,7 +51,7 @@
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="60dp"
         android:backgroundTint="#832E2E"
         android:text="kies file"
         android:typeface="serif"
@@ -46,6 +59,7 @@
         app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_image2" />
+
 
     <TextView
         android:id="@+id/notification"
