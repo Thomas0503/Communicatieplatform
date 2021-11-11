@@ -117,10 +117,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <SearchView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
             <CheckBox
                 android:id="@+id/activiteit1"
                 android:layout_width="wrap_content"
@@ -128,7 +124,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
                 android:buttonTint="#38422C"
-                android:text="Terras"
+                android:text="openbare plaatsen"
                 android:textColor="#4E342E" />
 
             <CheckBox
@@ -138,7 +134,17 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
                 android:buttonTint="#38422C"
-                android:text="Openbaar Vervoer"
+                android:text="vervoer"
+                android:textColor="#4E342E" />
+
+            <CheckBox
+                android:id="@+id/activiteit3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:buttonTint="#38422C"
+                android:text="shopping"
                 android:textColor="#4E342E" />
 
         </LinearLayout>
@@ -160,9 +166,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <SearchView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
 
             <CheckBox
                 android:id="@+id/stresssignaal1"
@@ -171,7 +174,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
                 android:buttonTint="#4E342E"
-                android:text="Platte oren"
+                android:text="bevriezen"
                 android:textColor="#38422C" />
 
             <CheckBox
@@ -181,7 +184,17 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
                 android:buttonTint="#4E342E"
-                android:text="Blaffen"
+                android:text="gapen"
+                android:textColor="#4E342E" />
+
+            <CheckBox
+                android:id="@+id/stresssignaal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:buttonTint="#4E342E"
+                android:text="krabben"
                 android:textColor="#4E342E" />
         </LinearLayout>
     </ScrollView>

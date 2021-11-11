@@ -4,15 +4,19 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.google.firebase.firestore.FirebaseFirestore;
-import java.util.List;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class Activiteit extends AppCompatActivity {
     private Button button;
@@ -105,6 +109,7 @@ public class Activiteit extends AppCompatActivity {
         } );
 
     }
+
     private void initializeVariables() {
         seekBar = (SeekBar) findViewById(R.id.seekBar);
         textView = (TextView) findViewById(R.id.niveau);
