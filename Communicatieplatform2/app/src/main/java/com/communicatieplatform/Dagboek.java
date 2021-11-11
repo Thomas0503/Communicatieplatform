@@ -46,17 +46,18 @@ public class Dagboek extends AppCompatActivity {
                 openDagboek();
             }
         });
+
         searchView = findViewById(R.id.searchView);
         listView = findViewById(R.id.listView);
         list.add("openbare plaatsen");
         list.add("vervoer");
         list.add("shopping");
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,list);
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,getActiviteitLijst());
         listView.setAdapter(adapter);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                if(list.contains(query)){
+                if(getActiviteitLijst().contains(query)){
                     adapter.getFilter().filter(query);
                 }else{
                     Toast.makeText(Dagboek.this, "No Match found",Toast.LENGTH_LONG).show();
@@ -70,6 +71,26 @@ public class Dagboek extends AppCompatActivity {
             }
         });
     }
+
+    public ArrayList<String> getActiviteitLijst(){
+        DocumentReference docRef = db.collection("dagboek").document("oefening1");
+        docRef.get()
+                .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                        if (task.isSuccessful()) {
+                            DocumentSnapshot document = task.getResult();
+                            if (document.exists()) {
+                                //Processing when the value can be obtained
+                                list = (ArrayList) document.get("oefening");//
+                            } else {
+                                //What to do when the value does not exist
+                            }
+                        }
+                    }});
+        return list;
+    }
+
 
     public void openDagboek() {
         Intent intent = new Intent(this, Activiteit.class);
