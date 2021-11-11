@@ -8,15 +8,14 @@ public class Chatbericht implements Serializable{
 
     @Exclude private String id;
 
-    private String naam, onderwerp, datum, bericht, uur;
+    private String Naam, Datum, Bericht, Uur;
     public Chatbericht() {}
 
-    public Chatbericht(String Naam, String Onderwerp, String Datum, String Bericht, String Uur) {
-        this.naam = Naam;
-        this.onderwerp = Onderwerp;
-        this.datum = Datum;
-        this.bericht = Bericht;
-        this.uur= Uur;
+    public Chatbericht(String Naam, String Datum, String Bericht, String Uur) {
+        this.Naam = Naam;
+        this.Datum = Datum;
+        this.Bericht = Bericht;
+        this.Uur= Uur;
     }
 
     public String getId() {
@@ -28,23 +27,19 @@ public class Chatbericht implements Serializable{
     }
 
     public String getNaam() {
-        return naam;
-    }
-
-    public String getOnderwerp() {
-        return onderwerp;
+        return Naam;
     }
 
     public String getDatum() {
-        return datum;
+        return Datum;
     }
 
     public String getBericht() {
-        return bericht;
+        return Bericht;
     }
 
     public String getUur() {
-        return uur;
+        return Uur;
     }
 
 

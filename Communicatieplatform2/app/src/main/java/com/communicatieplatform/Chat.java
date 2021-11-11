@@ -21,7 +21,7 @@ import java.util.List;
 public class Chat extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private com.communicatieplatform.ChatAdapter adapter;
+    private ChatAdapter adapter;
     private List<Chatbericht> productList;
     private ProgressBar progressBar;
 
@@ -40,7 +40,7 @@ public class Chat extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         productList = new ArrayList<>();
-        adapter = new com.communicatieplatform.ChatAdapter(this, productList);
+        adapter = new ChatAdapter(this, productList);
 
         recyclerView.setAdapter(adapter);
 
