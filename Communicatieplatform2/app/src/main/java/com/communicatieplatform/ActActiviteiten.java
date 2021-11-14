@@ -15,7 +15,6 @@ public class ActActiviteiten{
     public ActActiviteiten(Boolean activiteit) {
         this.Activiteit = activiteit;
     }
-    public ActActiviteiten() {}
     public boolean getActiviteit() {
         return Activiteit;
     }

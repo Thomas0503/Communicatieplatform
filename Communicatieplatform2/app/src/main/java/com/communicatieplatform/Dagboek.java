@@ -24,10 +24,12 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Dagboek extends AppCompatActivity {
     private Button button;
+    private Button button2;
     private FirebaseFirestore db;
     private SearchView searchView;
     private ListView listView;
@@ -44,6 +46,13 @@ public class Dagboek extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openDagboek();
+            }
+        });
+        button2 = (Button) findViewById(R.id.ActiviteitZoeken);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActZoeken();
             }
         });
 
@@ -70,6 +79,7 @@ public class Dagboek extends AppCompatActivity {
                 return false;
             }
         });
+
     }
 
     public ArrayList<String> getActiviteitLijst(){
@@ -94,6 +104,11 @@ public class Dagboek extends AppCompatActivity {
 
     public void openDagboek() {
         Intent intent = new Intent(this, Activiteit.class);
+        startActivity(intent);
+    }
+
+    public void openActZoeken() {
+        Intent intent = new Intent(this, ActZoeken.class);
         startActivity(intent);
     }
 }
