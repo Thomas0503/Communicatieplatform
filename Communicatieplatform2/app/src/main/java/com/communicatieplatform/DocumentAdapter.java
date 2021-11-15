@@ -26,6 +26,8 @@ import com.google.firebase.storage.StorageReference;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.net.URI;
+
 
 public class DocumentAdapter extends RecyclerView.Adapter<DocumentAdapter.ProductViewHolder> {
 
@@ -77,33 +79,45 @@ public class DocumentAdapter extends RecyclerView.Adapter<DocumentAdapter.Produc
 
         @Override
         public void onClick(View v) {
+
                 Document bestand = productList.get(getAbsoluteAdapterPosition());
-                /*CharSequence options[] = new CharSequence[]{
+                Log.d("Error", "DocumentSnapshot successfully written!");
+                String bestandsNaam = bestand.getName();
+                storage = FirebaseStorage.getInstance();
+
+                String message = bestand.getUrl();
+                StorageReference storageReference = storage.getReference();
+                CharSequence options[] = new CharSequence[]{
                         "Download",
-                        "View",
                         "Cancel"
                 };
                 AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
-                builder.setTitle("Choose One");
+                builder.setTitle("Wat wil je doen met "+ bestandsNaam + "?");
                 builder.setItems(options, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // we will be downloading the pdf
                         if (which == 0) {
-                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(message));
-                            mCtx.startActivity();
-                        }
-                        // We will view the pdf
-                        if (which == 1) {
-                            Intent intent = new Intent(v.getContext(), ViewPdfActivity.class);
-                            intent.putExtra("url", message);
-                            mCtx.startActivity();
+                            storageReference.child(bestand.getUrl()).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                @Override
+                                public void onSuccess(Uri uri) {
+                                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                                    intent.setData(uri);
+                                    mCtx.startActivity(intent);
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                                        @Override
+                                                        public void onFailure(@NonNull Exception exception) {
+                                                            // Handle any errors
+                                                        }
+                            });
+
                         }
                     }
                 });
                 builder.show();
             }
-
+            /*
             Document bestand = productList.get(getAbsoluteAdapterPosition());
             Log.d("Error", "DocumentSnapshot successfully written!");
             String bestandsNaam = bestand.getName();
@@ -138,8 +152,8 @@ public class DocumentAdapter extends RecyclerView.Adapter<DocumentAdapter.Produc
                             // Handle any errors
                     }
                 });
-            }*/
-        }
+            }
+        }*/
     }
 }
 

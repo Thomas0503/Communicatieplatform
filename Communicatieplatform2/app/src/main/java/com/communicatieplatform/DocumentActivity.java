@@ -23,7 +23,7 @@ public class DocumentActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private DocumentAdapter adapter;
     private List<Document> productList;
-   // private ProgressBar progressBar;
+    private ProgressBar progressBar;
 
 
     private FirebaseFirestore db;
@@ -33,7 +33,7 @@ public class DocumentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.documents_pleeggezin);
 
-        //progressBar = findViewById(R.id.progressbar);
+        progressBar = findViewById(R.id.progressbar);
 
         recyclerView = findViewById(R.id.recyclerview_products);
         recyclerView.setHasFixedSize(true);
@@ -53,7 +53,7 @@ public class DocumentActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
 
-                       // progressBar.setVisibility(View.GONE);
+                        progressBar.setVisibility(View.GONE);
 
                         if (!queryDocumentSnapshots.isEmpty()) {
 

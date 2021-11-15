@@ -53,5 +53,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database-ktx'
     implementation 'com.google.firebase:firebase-firestore-ktx'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
 
 }
