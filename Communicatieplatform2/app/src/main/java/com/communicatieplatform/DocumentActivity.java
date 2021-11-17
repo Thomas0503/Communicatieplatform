@@ -1,5 +1,6 @@
 package com.communicatieplatform;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -10,7 +11,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.communicatieplatform.databinding.ActivityMainBinding;
+import com.communicatieplatform.databinding.DocumentsPleeggezinBinding;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -24,6 +28,7 @@ public class DocumentActivity extends AppCompatActivity {
     private DocumentAdapter adapter;
     private List<Document> productList;
     private ProgressBar progressBar;
+    private DocumentsPleeggezinBinding binding;
 
 
     private FirebaseFirestore db;
@@ -31,7 +36,9 @@ public class DocumentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.documents_pleeggezin);
+
+        binding = DocumentsPleeggezinBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         progressBar = findViewById(R.id.progressbar);
 
@@ -74,6 +81,14 @@ public class DocumentActivity extends AppCompatActivity {
 
                     }
                 });
+        binding.fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openDocumentenToevoegen();}
+        });
 
+    }
+    public void openDocumentenToevoegen() {
+        Intent intent = new Intent(this, DocumentenToevoegenActivity.class);
+        startActivity(intent);
     }
 }

@@ -35,7 +35,6 @@ public class Dagboek extends AppCompatActivity {
     private ListView listView;
     private ArrayList list;
     private ArrayAdapter adapter;
-    private String query;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +49,12 @@ public class Dagboek extends AppCompatActivity {
             }
         });
         button2 = (Button) findViewById(R.id.ActiviteitZoeken);
-
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //openActZoeken();
+            }
+        });
 
         searchView = findViewById(R.id.searchView);
         listView = findViewById(R.id.listView);
@@ -64,13 +68,6 @@ public class Dagboek extends AppCompatActivity {
             public boolean onQueryTextSubmit(String query) {
                 if(getActiviteitLijst().contains(query)){
                     adapter.getFilter().filter(query);
-                    button2.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            openActZoeken();
-                        }
-                    });
-                    // geselecteerde activiteit onthouden ==> getActiviteit
                 }else{
                     Toast.makeText(Dagboek.this, "No Match found",Toast.LENGTH_LONG).show();
                 }
@@ -79,12 +76,6 @@ public class Dagboek extends AppCompatActivity {
             @Override
             public boolean onQueryTextChange(String newText) {
                 adapter.getFilter().filter(newText);
-                button2.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        openActZoeken();
-                    }
-                });
                 return false;
             }
         });
@@ -115,12 +106,9 @@ public class Dagboek extends AppCompatActivity {
         Intent intent = new Intent(this, Activiteit.class);
         startActivity(intent);
     }
-
+/*
     public void openActZoeken() {
         Intent intent = new Intent(this, ActZoeken.class);
         startActivity(intent);
-    }
-    public String getActiviteit() {
-        return query;
-    }
+    }*/
 }
