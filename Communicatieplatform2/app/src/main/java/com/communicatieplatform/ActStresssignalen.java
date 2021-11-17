@@ -4,7 +4,10 @@ import com.google.firebase.firestore.Exclude;
 
 public class ActStresssignalen{
     @Exclude private String id;
-    public ActStresssignalen() {}
+
+    public ActStresssignalen() {
+        }
+
     public String getId() {
         return id;
     }

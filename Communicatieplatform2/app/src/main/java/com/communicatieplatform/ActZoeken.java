@@ -20,7 +20,7 @@ public class ActZoeken extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private ActzoekAdapter adapter;
-    private List<Activiteit> productList;
+    private List<Activiteit2> productList;
     private ProgressBar progressBar;
 
 
@@ -37,7 +37,7 @@ public class ActZoeken extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        productList = new ArrayList<Activiteit>();
+        productList = new ArrayList<Activiteit2>();
         adapter = new ActzoekAdapter(this, productList);
 
         recyclerView.setAdapter(adapter);
@@ -59,7 +59,7 @@ public class ActZoeken extends AppCompatActivity {
 
                             for (DocumentSnapshot d : list) {
 
-                                Activiteit p = d.toObject(Activiteit.class);
+                                Activiteit2 p = d.toObject(Activiteit2.class);
                                 p.setId(d.getId());
                                 productList.add(p);
 

@@ -4,21 +4,24 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+import android.widget.TextView;
+import android.widget.TextView;
 
 public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductViewHolder> {
 
     private Context mCtx;
-    private Activiteit productList;
+    private List<Activiteit2> productList;
 
-    public ActzoekAdapter(Context mCtx, List<Activiteit> productList) {
+    public ActzoekAdapter(Context mCtx, List<Activiteit2> productList) {
         this.mCtx = mCtx;
-        this.productList = (Activiteit) productList;
+        this.productList = productList;
     }
 
 
@@ -31,10 +34,11 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
 
     @Override
     public void onBindViewHolder(@NonNull ActzoekAdapter.ProductViewHolder holder, int position) {
-        Activiteit product = productList.get(position);
+        Activiteit2 product = productList.get(position);
 
-        holder.textViewDatum.setText(product.getDatum());
-        holder.textViewSignalen.setText(product.getStresssignalenLijst());
+
+        holder.textViewDatum.setText((CharSequence) product.getDatum());
+        holder.textViewSignalen.setText((CharSequence) product.getStresssignalenLijst());
         holder.textNiveau.setText(product.getNiveau());
     }
 
@@ -60,7 +64,7 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
 
         @Override
         public void onClick(View v) {
-            Afspraak product = productList.get(getAdapterPosition());
+            Activiteit2 product = productList.get(getAdapterPosition());
 
         }
     }

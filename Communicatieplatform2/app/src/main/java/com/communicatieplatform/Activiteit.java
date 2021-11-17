@@ -23,8 +23,8 @@ public class Activiteit extends AppCompatActivity {
     @Exclude
     private String id;
     private Button button;
-    private CheckBox s1,s2;
-    private CheckBox a1,a2;
+    private CheckBox s1, s2;
+    private CheckBox a1, a2;
     private ArrayList<ActStresssignalen> signalenLijst;
     ActStresssignalen actStresssignalen;
     private ArrayList<ActActiviteiten> activiteitenLijst;
@@ -33,7 +33,7 @@ public class Activiteit extends AppCompatActivity {
     private SeekBar seekBar;
     EditText test;
     FirebaseFirestore db;
-    private View datum;
+    private EditText datum;
     private Integer progress;
 
     @Override
@@ -46,12 +46,12 @@ public class Activiteit extends AppCompatActivity {
         a2 = findViewById(R.id.activiteit2);
         String a1 = "Activiteit1";
         String a2 = "Activiteit2";
-        HashMap<String, List<ActActiviteiten>> data=new HashMap<>();
-        data.put("stressniveau",activiteitenLijst);
+        HashMap<String, List<ActActiviteiten>> data = new HashMap<>();
+        data.put("stressniveau", activiteitenLijst);
         db.collection("dagboek").document().set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
-                Toast.makeText(Activiteit.this,"Data toegevoegd", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Activiteit.this, "Data toegevoegd", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -60,12 +60,12 @@ public class Activiteit extends AppCompatActivity {
         s2 = findViewById(R.id.stresssignaal2);
         String s1 = "Stresssignaal1";
         String s2 = "Stressignaal2";
-        HashMap<String, List<ActStresssignalen>> data2=new HashMap<>();
-        data2.put("stressniveau",signalenLijst);
+        HashMap<String, List<ActStresssignalen>> data2 = new HashMap<>();
+        data2.put("stressniveau", signalenLijst);
         db.collection("dagboek").document().set(data2).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
-                Toast.makeText(Activiteit.this,"Data toegevoegd", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Activiteit.this, "Data toegevoegd", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -75,29 +75,25 @@ public class Activiteit extends AppCompatActivity {
                 final CheckBox a1 = (CheckBox) findViewById(R.id.activiteit1);
                 if (a1.isChecked()) {
                     actActiviteiten.setActiviteit(true);
-                }
-                else {
+                } else {
                     actActiviteiten.setActiviteit(false);
                 }
                 final CheckBox a2 = (CheckBox) findViewById(R.id.activiteit2);
                 if (a2.isChecked()) {
                     actActiviteiten.setActiviteit(true);
-                }
-                else {
+                } else {
                     actActiviteiten.setActiviteit(false);
                 }
                 final CheckBox s1 = (CheckBox) findViewById(R.id.stresssignaal1);
                 if (s1.isChecked()) {
                     actStresssignalen.setStresssignaal(true);
-                }
-                else {
+                } else {
                     actStresssignalen.setStresssignaal(false);
                 }
                 final CheckBox s2 = (CheckBox) findViewById(R.id.stresssignaal2);
                 if (s2.isChecked()) {
                     actStresssignalen.setStresssignaal(true);
-                }
-                else {
+                } else {
                     actStresssignalen.setStresssignaal(false);
                 }
             }
@@ -108,8 +104,8 @@ public class Activiteit extends AppCompatActivity {
         test = (EditText) findViewById(R.id.niveau);
         initializeVariables();
         int progress = 0;
-        textView.setText( seekBar.getProgress() + "/" + seekBar.getMax() );
-        seekBar.setOnSeekBarChangeListener( new SeekBar.OnSeekBarChangeListener() {
+        textView.setText(seekBar.getProgress() + "/" + seekBar.getMax());
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progress = 0;
 
             @Override
@@ -124,28 +120,28 @@ public class Activiteit extends AppCompatActivity {
             @Override
             public void onStopTrackingTouch(final SeekBar seekBar) {
 
-                textView.setText( progress + "/" + seekBar.getMax() );
+                textView.setText(progress + "/" + seekBar.getMax());
                 String strI = String.valueOf(progress);
             }
-        } );
+        });
 
 
-        HashMap<String, Integer> data3=new HashMap<>();
-        data3.put("stressniveau",progress);
+        HashMap<String, Integer> data3 = new HashMap<>();
+        data3.put("stressniveau", progress);
         db.collection("dagboek").document().set(data3).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
-                Toast.makeText(Activiteit.this,"Data toegevoegd", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Activiteit.this, "Data toegevoegd", Toast.LENGTH_SHORT).show();
             }
         });
 
         datum = findViewById(R.id.datum);
-        HashMap<String, View> data4=new HashMap<>();
-        data4.put("datum",datum);
+        HashMap<String, EditText> data4 = new HashMap<>();
+        data4.put("datum", datum);
         db.collection("dagboek").document().set(data4).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
-                Toast.makeText(Activiteit.this,"Data toegevoegd", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Activiteit.this, "Data toegevoegd", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -156,22 +152,20 @@ public class Activiteit extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.niveau);
     }
 
-    public Activiteit(View datum, ArrayList<ActStresssignalen> signalenLijst, Integer progress) {
-        this.datum = datum;
-        this.signalenLijst = signalenLijst;
-        this.progress = progress;
-    }
-    public View getDatum() {
-        return datum;
+    public void setId(String id) {
+        this.id = id;
     }
 
+    public String getId() {
+        return id;
+    }
+    public EditText getDatum() {
+        return datum;
+    }
     public ArrayList<ActStresssignalen> getStresssignalenLijst(){
         return signalenLijst;
     }
     public Integer getNiveau() {
         return progress;
-    }
-    public void setId(String id) {
-        this.id = id;
     }
 }
