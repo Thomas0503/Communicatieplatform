@@ -9,19 +9,25 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class ActZoeken extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private ActzoekAdapter adapter;
     private List<Activiteit2> productList;
+    private Dagboek product;
+    String activiteit = product.getActiviteit();
     private ProgressBar progressBar;
+    Map<String, Boolean> data;
 
 
     private FirebaseFirestore db;
@@ -46,7 +52,7 @@ public class ActZoeken extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
 
-        db.collection("dagboek").get()
+        db.collection("dagboek").get() //get activiteit --> get onderdelen
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
@@ -65,9 +71,33 @@ public class ActZoeken extends AppCompatActivity {
 
                             }
 
+                            //for (Map.Entry<String, Boolean> o : data.entrySet()) {
+                            //    String key = product.getActiviteit();
+                            //    Boolean value = o.getValue();
+                            //    if (value == true){
+                            //        for (Map.Entry<String, Boolean> m : data.entrySet()) {
+                            //            String key2 = m.getKey();
+                            //            Boolean value2 = m.getValue();}
+                            //    }
+                            //}
+
                             adapter.notifyDataSetChanged();
 
                         }
+                        //if (db.collection("dagboek").document("oefening1").get(activiteit) == true) {
+                        //    db.collection("dagboek").document("oefening1").get();
+                        //}
+                        // Create a reference to the cities collection
+                        //CollectionReference cities = db.collection("dagboek");
+                        // Create a query against the collection.
+                        //Query query = cities.whereEqualTo(activiteit, true);
+                        // retrieve  query results asynchronously using query.get()
+                        //signalen = cities.whereEqualTo(,true);
+                        //ApiFuture<QuerySnapshot> querySnapshot = query.get();
+
+                        //for (DocumentSnapshot document : querySnapshot.get().getDocuments()) {
+                        //    System.out.println(document.getId());
+                        //}
 
 
                     }

@@ -12,7 +12,7 @@ public class Activiteit2 implements Serializable {
     private Activiteit product;
     //private String id;
     //private ArrayList<ActStresssignalen> signalenLijst;
-    // private EditText datum;
+    //private EditText datum;
     //private Integer progress;
     String id = product.getId();
     EditText datum = product.getDatum();
