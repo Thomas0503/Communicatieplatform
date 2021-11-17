@@ -15,7 +15,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
 public class ActZoeken extends AppCompatActivity {
 
     private RecyclerView recyclerView;
@@ -75,3 +75,4 @@ public class ActZoeken extends AppCompatActivity {
 
     }
 }
+*/

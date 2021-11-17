@@ -52,7 +52,7 @@ public class Dagboek extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActZoeken();
+                //openActZoeken();
             }
         });
 
@@ -106,9 +106,9 @@ public class Dagboek extends AppCompatActivity {
         Intent intent = new Intent(this, Activiteit.class);
         startActivity(intent);
     }
-
+/*
     public void openActZoeken() {
         Intent intent = new Intent(this, ActZoeken.class);
         startActivity(intent);
-    }
+    }*/
 }
