@@ -1,6 +1,10 @@
-package com.communicatieplatform;
+package com.communicatieplatform.documenten;
 
 import static java.lang.Math.round;
+
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
 
 import com.google.firebase.firestore.Exclude;
 
@@ -37,20 +41,17 @@ public class Document implements Serializable{
         return name;
     }
     public String getSize() {
-        return size;
-    }
-    /*public String getSize() {
-        Long numSize = Long.getLong(size);
+        Double numSize = Double.parseDouble(size);
         if(numSize < 1000) {
             return size + "B";
         } else if(numSize < 1000000){
-            int kB =  round(numSize/1000);
-            return Integer.toString(kB) + "kB";
+            Long kB = round(numSize / 10.00)/100;
+            return Long.toString(kB) + " kB";
         } else {
-            int mB = round(numSize / 1000000);
-            return Integer.toString(mB) + "mB";
+            Long MB = round(numSize / 10000.00)/100;
+            return Long.toString(MB) + " MB";
         }
-    }*/
+    }
 
 
 

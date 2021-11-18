@@ -1,4 +1,4 @@
-package com.communicatieplatform;
+package com.communicatieplatform.dagboek;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,11 +8,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.communicatieplatform.R;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
@@ -25,8 +24,8 @@ public class ActZoeken extends AppCompatActivity {
     private ActzoekAdapter adapter;
     private List<Activiteit2> productList;
     private ProgressBar progressBar;
-    private Dagboek product;
-    String activiteit = product.getActiviteit();
+   // private Dagboek product;
+//    String activiteit = product.getActiviteit();
     Map<String, Boolean> data;
 
     private FirebaseFirestore db;
@@ -63,8 +62,8 @@ public class ActZoeken extends AppCompatActivity {
                             List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
 
                             for (DocumentSnapshot d : list) {
-
-                                Activiteit2 p = d.toObject(Activiteit2.class);
+                                List<String> stresssignalen = (List<String>) d.get("stresssignalen");
+                                Activiteit2 p = new Activiteit2(d.getString("datum"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen);
                                 p.setId(d.getId());
                                 productList.add(p);
 

@@ -1,10 +1,11 @@
-package com.communicatieplatform;
+package com.communicatieplatform.documenten;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
+import com.communicatieplatform.R;
 import com.github.barteksc.pdfviewer.PDFView;
 
 import java.io.BufferedInputStream;

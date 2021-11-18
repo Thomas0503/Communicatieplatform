@@ -1,4 +1,4 @@
-package com.communicatieplatform;
+package com.communicatieplatform.documenten;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -10,23 +10,19 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.communicatieplatform.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.List;
-import java.net.URI;
 
 
 public class DocumentAdapter extends RecyclerView.Adapter<DocumentAdapter.ProductViewHolder> {

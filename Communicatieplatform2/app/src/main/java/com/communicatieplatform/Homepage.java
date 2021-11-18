@@ -8,6 +8,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.communicatieplatform.chat.Chat;
+import com.communicatieplatform.dagboek.Dagboek;
+import com.communicatieplatform.documenten.DocumentActivity;
+import com.communicatieplatform.kalender.AfspraakActivity;
+
 public class Homepage extends AppCompatActivity {
     private Button button;
 

@@ -1,19 +1,17 @@
-package com.communicatieplatform;
-
-import android.widget.EditText;
+package com.communicatieplatform.dagboek;
 
 import com.google.firebase.firestore.Exclude;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Activiteit2 implements Serializable {
     //private Activiteit product;
     @Exclude private String id;
-    private ArrayList<String> signalenLijst;
+    private List<String> signalenLijst;
     private String datum;
-    private String stressniveau;
+    private String oefening;
+    private Integer stressniveau;
     /*String id = product.getId();
     EditText datum = product.getDatum();
     Integer progress = product.getNiveau();
@@ -21,10 +19,11 @@ public class Activiteit2 implements Serializable {
     public Activiteit2() {
 
     }
-    public Activiteit2(String datum, ArrayList<ActStresssignalen> oefening, String stressniveau, ArrayList<String> stresssignalen) {
+    public Activiteit2(String datum, String oefening, Integer stressniveau, List<String> stresssignalen) {
         this.datum =  datum;
         this.signalenLijst = stresssignalen;
         this.stressniveau = stressniveau;
+        this.oefening = oefening;
     }
 
     public String getId() {
@@ -38,11 +37,14 @@ public class Activiteit2 implements Serializable {
     public String getDatum() {
         return datum;
     }
+    public String getOefening() {
+        return oefening;
+    }
 
-    public ArrayList<String> getStresssignalenLijst(){
+    public List<String> getStresssignalenLijst(){
         return signalenLijst;
     }
-    public String getNiveau() {
+    public Integer getNiveau() {
         return stressniveau;
     }
 

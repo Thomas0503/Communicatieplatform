@@ -1,10 +1,9 @@
-package com.communicatieplatform;
+package com.communicatieplatform.dagboek;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,8 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-import android.widget.TextView;
-import android.widget.TextView;
+import com.communicatieplatform.R;
 
 public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductViewHolder> {
 
@@ -39,8 +37,8 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
 
 
         holder.textViewDatum.setText((CharSequence) product.getDatum());
-        holder.textViewSignalen.setText((CharSequence) product.getStresssignalenLijst());
-        holder.textNiveau.setText((CharSequence) product.getNiveau());
+        holder.textViewSignalen.setText((CharSequence) "product.getStresssignalenLijst()");
+        holder.textNiveau.setText((CharSequence) "product.getNiveau()");
     }
 
     @Override

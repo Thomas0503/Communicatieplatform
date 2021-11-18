@@ -18,16 +18,16 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Dagboek"></activity>
-        <activity android:name=".Kalender"></activity>
-        <activity android:name=".Chat"></activity>
-        <activity android:name=".DocumentenToevoegenActivity"></activity>
-        <activity android:name=".DocumentActivity"></activity>
-        <activity android:name=".AfspraakMaken"></activity>
-        <activity android:name=".ActZoeken"></activity>
-        <activity android:name=".AfspraakActivity" />
-        <activity android:name=".Activiteit" />
-        <activity android:name=".ViewPdfActivity" />
+        <activity android:name=".dagboek.Dagboek"></activity>
+        <activity android:name=".kalender.Kalender"></activity>
+        <activity android:name=".chat.Chat"></activity>
+        <activity android:name=".documenten.DocumentenToevoegenActivity"></activity>
+        <activity android:name=".documenten.DocumentActivity"></activity>
+        <activity android:name=".kalender.AfspraakMaken"></activity>
+        <activity android:name=".dagboek.ActZoeken"></activity>
+        <activity android:name=".kalender.AfspraakActivity" />
+        <activity android:name=".dagboek.Activiteit" />
+        <activity android:name=".documenten.ViewPdfActivity" />
         <activity
             android:name="com.communicatieplatform.MainActivity"
             android:exported="true"

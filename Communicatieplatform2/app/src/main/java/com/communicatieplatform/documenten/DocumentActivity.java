@@ -1,17 +1,18 @@
-package com.communicatieplatform;
+package com.communicatieplatform.documenten;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 
 import android.view.View;
-import android.widget.Button;
 import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.communicatieplatform.R;
+import com.communicatieplatform.databinding.DocumentsPleeggezinBinding;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -20,27 +21,23 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AfspraakActivity extends AppCompatActivity {
+public class DocumentActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private AfspraakAdapter adapter;
-    private List<Afspraak> productList;
+    private DocumentAdapter adapter;
+    private List<Document> productList;
     private ProgressBar progressBar;
-    private Button button;
+    private DocumentsPleeggezinBinding binding;
+
 
     private FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_products);
-        button = (Button) findViewById(R.id.afspraakToev);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openAfspraakMaken();
-            }
-        });
+
+        binding = DocumentsPleeggezinBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         progressBar = findViewById(R.id.progressbar);
 
@@ -49,7 +46,7 @@ public class AfspraakActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         productList = new ArrayList<>();
-        adapter = new AfspraakAdapter(this, productList);
+        adapter = new DocumentAdapter(this, productList);
 
         recyclerView.setAdapter(adapter);
 
@@ -57,7 +54,7 @@ public class AfspraakActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
 
-        db.collection("afspraken").get()
+        db.collection("documents").get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
@@ -70,7 +67,7 @@ public class AfspraakActivity extends AppCompatActivity {
 
                             for (DocumentSnapshot d : list) {
 
-                                Afspraak p = d.toObject(Afspraak.class);
+                                Document p = d.toObject(Document.class);
                                 p.setId(d.getId());
                                 productList.add(p);
 
@@ -83,9 +80,14 @@ public class AfspraakActivity extends AppCompatActivity {
 
                     }
                 });
+        binding.fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openDocumentenToevoegen();}
+        });
+
     }
-    public void openAfspraakMaken() {
-        Intent intent = new Intent(this, AfspraakMaken.class);
+    public void openDocumentenToevoegen() {
+        Intent intent = new Intent(this, DocumentenToevoegenActivity.class);
         startActivity(intent);
     }
 }

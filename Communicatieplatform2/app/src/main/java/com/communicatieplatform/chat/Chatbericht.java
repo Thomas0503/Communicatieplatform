@@ -1,4 +1,4 @@
-package com.communicatieplatform;
+package com.communicatieplatform.chat;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;

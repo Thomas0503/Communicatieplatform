@@ -1,4 +1,4 @@
-package com.communicatieplatform;
+package com.communicatieplatform.kalender;
 
 import com.google.firebase.firestore.Exclude;
 

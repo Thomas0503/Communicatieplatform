@@ -1,7 +1,6 @@
-package com.communicatieplatform;
+package com.communicatieplatform.kalender;
 
 import android.content.Context;
-import android.content.Intent;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.communicatieplatform.R;
 
 import java.util.List;
 
