@@ -1,0 +1,11 @@
+WEBSITE:
+Chat werkt volledig
+
+Dagboek: 
+
+Documenten: naam documenten toepassen
+
+Kalender: 
+
+Trainer-Pleeggezin: onderscheid app
+afstemmen op app --> database
