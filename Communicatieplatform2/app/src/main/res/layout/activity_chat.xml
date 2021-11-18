@@ -4,23 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F44336">
+    android:background="#F44336"
+    tools:context=".Chat">
 
+    <TextView
+        android:id="@+id/Chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="1dp"
+        android:background="#F44336"
+        android:text="Chat"
+        android:textColor="#F44336"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Chat" />
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#F44336"
+    tools:ignore="MissingConstraints">
+    <TextView
+        android:id="@+id/username_messageTv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="15dp"
+        android:text="Username"
+        android:textColor="#832E2E"
+        android:drawableStart="@drawable/ic_baseline_keyboard_arrow_left_24">
+    </TextView>
+</androidx.cardview.widget.CardView>
 
     <ListView
         android:id="@+id/list_message"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
         android:stackFromBottom="true"
         android:transcriptMode="alwaysScroll"
-        android:dividerHeight="16dp"
-        android:divider="@android:color/transparent"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -35,16 +75,21 @@
             android:id="@+id/user_message"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:hint="Geef bericht" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/send_image"
             android:padding="7dp"
+            android:hint="Search"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_weight="5"
-            android:src="@drawable/ic_send" />
+            android:background="#F44336"
+            android:src="@drawable/ic_baseline_send_24"
+            tools:ignore="MissingConstraints"/>
+
 
     </LinearLayout>
 

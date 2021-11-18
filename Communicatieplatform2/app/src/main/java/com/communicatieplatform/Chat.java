@@ -1,10 +1,15 @@
 package com.communicatieplatform;
 
+import android.database.Cursor;
 import android.os.Bundle;
 
 
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -75,5 +80,4 @@ public class Chat extends AppCompatActivity {
                     }
                 });
 
-    }
-}
+}}

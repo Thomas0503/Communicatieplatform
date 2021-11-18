@@ -83,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="174dp"
                 android:layout_below="@+id/searchView"
-                android:divider="#ad5"
+                android:divider="#4E342E"
                 android:dividerHeight="2dp"
                 android:textColor="#4E342E" />
 

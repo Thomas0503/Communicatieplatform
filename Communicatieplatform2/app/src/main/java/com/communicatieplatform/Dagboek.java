@@ -88,7 +88,7 @@ public class Dagboek extends AppCompatActivity {
                 button2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        //openActZoeken();
+                        openActZoeken();
                     }
                 });
                 return false;
@@ -126,7 +126,7 @@ public class Dagboek extends AppCompatActivity {
     public String getActiviteit(){
         return query;
     }
-/*
+
     public void openActZoeken() {
         Intent intent = new Intent(this, ActZoeken.class);
         startActivity(intent);
