@@ -11,13 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
-<<<<<<< Updated upstream
+
 import android.widget.TextView;
 import android.widget.TextView;
 
-=======
-/*
->>>>>>> Stashed changes
 public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductViewHolder> {
 
     private Context mCtx;
@@ -43,7 +40,7 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
 
         holder.textViewDatum.setText((CharSequence) product.getDatum());
         holder.textViewSignalen.setText((CharSequence) product.getStresssignalenLijst());
-        holder.textNiveau.setText(product.getNiveau());
+        holder.textNiveau.setText((CharSequence) product.getNiveau());
     }
 
     @Override
@@ -73,4 +70,3 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
         }
     }
 }
-*/

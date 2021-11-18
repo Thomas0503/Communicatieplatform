@@ -50,13 +50,20 @@ public class Dagboek extends AppCompatActivity {
             }
         });
         button2 = (Button) findViewById(R.id.ActiviteitZoeken);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActZoeken();
+            }
+        });
 
         searchView = findViewById(R.id.searchView);
         listView = findViewById(R.id.listView);
+        list = new ArrayList<String>();
         list.add("openbare plaatsen");
         list.add("vervoer");
         list.add("shopping");
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,getActiviteitLijst());
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,list);
         listView.setAdapter(adapter);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -91,7 +98,8 @@ public class Dagboek extends AppCompatActivity {
     }
 
     public ArrayList<String> getActiviteitLijst(){
-        DocumentReference docRef = db.collection("dagboek").document("oefening1");
+        db = FirebaseFirestore.getInstance();
+        DocumentReference docRef = db.collection("dagboektest").document("oefening2");
         docRef.get()
                 .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                     @Override
@@ -100,8 +108,9 @@ public class Dagboek extends AppCompatActivity {
                             DocumentSnapshot document = task.getResult();
                             if (document.exists()) {
                                 //Processing when the value can be obtained
-                                list = (ArrayList) document.get("oefening");//
+                                ArrayList<String> list = (ArrayList<String>) document.get("oefening");//
                             } else {
+                                list = new ArrayList<String>();
                                 //What to do when the value does not exist
                             }
                         }
@@ -121,5 +130,5 @@ public class Dagboek extends AppCompatActivity {
     public void openActZoeken() {
         Intent intent = new Intent(this, ActZoeken.class);
         startActivity(intent);
-    }*/
+    }
 }

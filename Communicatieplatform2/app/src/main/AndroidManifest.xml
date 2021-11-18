@@ -24,6 +24,7 @@
         <activity android:name=".DocumentenToevoegenActivity"></activity>
         <activity android:name=".DocumentActivity"></activity>
         <activity android:name=".AfspraakMaken"></activity>
+        <activity android:name=".ActZoeken"></activity>
         <activity android:name=".AfspraakActivity" />
         <activity android:name=".Activiteit" />
         <activity android:name=".ViewPdfActivity" />

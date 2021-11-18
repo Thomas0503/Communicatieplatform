@@ -51,7 +51,7 @@ public class ActZoeken extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
 
-        db.collection("dagboek").get() //get activiteit --> get onderdelen
+        db.collection("dagboektest").get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
@@ -104,4 +104,3 @@ public class ActZoeken extends AppCompatActivity {
 
     }
 }
-*/

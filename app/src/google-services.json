@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "810641112920",
+    "project_id": "dogcommunication-19158",
+    "storage_bucket": "dogcommunication-19158.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810641112920:android:1b1d857dd8cc344decef2d",
+        "android_client_info": {
+          "package_name": "com.example.dogcommunication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810641112920-bee7p72unkiafpjj1gtfb4bi8vjd7nea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8SRs6vqCMP7a-pYigfuv8EGCzq-RbILM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810641112920-bee7p72unkiafpjj1gtfb4bi8vjd7nea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

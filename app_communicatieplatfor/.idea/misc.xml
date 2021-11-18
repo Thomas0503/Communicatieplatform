@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/activiteit.xml" value="0.1" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/activity_chat.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/afspraak.xml" value="0.4" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/chat.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/chat_example.xml" value="0.2966485507246377" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/dagboek.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/documents.xml" value="0.2015625" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/homepage.xml" value="0.2015625" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/kalender.xml" value="0.2015625" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/layout.xml" value="0.13405797101449277" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/message_example.xml" value="0.2966485507246377" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/sign_in_example.xml" value="0.2966485507246377" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/app_communicatieplatform/app/src/main/res/layout/title.xml" value="0.264" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/drawable-v24/button_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/drawable-v24/edittext_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/drawable/foto_charlotte_ba.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/activiteit.xml" value="0.264" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/activity_chat.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/activity_products.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/afspraak.xml" value="0.24682971014492755" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/chat.xml" value="0.24682971014492755" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/dagboek.xml" value="0.264" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/documents.xml" value="0.264" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/documents_pleeggezin.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/homepage.xml" value="0.14855072463768115" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/kalender.xml" value="0.264" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/layout_bestand.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/layout_document.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/layout_product.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/list_msg.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/search_activity.xml" value="0.24682971014492755" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/trainer_keuze.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/zoek_activiteit.xml" value="0.24682971014492755" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/menu/lijst_activiteiten.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/mipmap-anydpi-v26/logo.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/app_communicatieplatfor/app/src/main/res/mipmap-anydpi-v26/logo_round.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/activiteit.xml" value="0.264" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/activity_chat.xml" value="0.18704710144927536" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/activity_products.xml" value="0.264" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/afspraak.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/chat.xml" value="0.4" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/dagboek.xml" value="0.264" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/documents.xml" value="0.264" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/documents_pleeggezin.xml" value="0.264" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/homepage.xml" value="0.264" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/kalender.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/layout_product.xml" value="0.264" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/layout_product_chat.xml" value="0.3696682464454976" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/list_msg.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/manon/OneDrive/Documenten/Manon/School/KULAK/2e fase semester 1/P&amp;O/Github DogCommunication/Communicatieplatform/app_communicatieplatfor/app/src/main/res/layout/trainer_keuze.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

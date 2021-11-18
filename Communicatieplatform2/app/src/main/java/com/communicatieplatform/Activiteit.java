@@ -48,7 +48,8 @@ public class Activiteit extends AppCompatActivity {
         String a2 = "Activiteit2";
         HashMap<String, List<ActActiviteiten>> data = new HashMap<>();
         data.put("stressniveau", activiteitenLijst);
-        db.collection("dagboek").document().set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
+        db = FirebaseFirestore.getInstance();
+        db.collection("dagboektest").document().set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
                 Toast.makeText(Activiteit.this, "Data toegevoegd", Toast.LENGTH_SHORT).show();
@@ -62,7 +63,7 @@ public class Activiteit extends AppCompatActivity {
         String s2 = "Stressignaal2";
         HashMap<String, List<ActStresssignalen>> data2 = new HashMap<>();
         data2.put("stressniveau", signalenLijst);
-        db.collection("dagboek").document().set(data2).addOnSuccessListener(new OnSuccessListener<Void>() {
+        db.collection("dagboektest").document().set(data2).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
                 Toast.makeText(Activiteit.this, "Data toegevoegd", Toast.LENGTH_SHORT).show();
@@ -128,7 +129,7 @@ public class Activiteit extends AppCompatActivity {
 
         HashMap<String, Integer> data3 = new HashMap<>();
         data3.put("stressniveau", progress);
-        db.collection("dagboek").document().set(data3).addOnSuccessListener(new OnSuccessListener<Void>() {
+        db.collection("dagboektest").document().set(data3).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
                 Toast.makeText(Activiteit.this, "Data toegevoegd", Toast.LENGTH_SHORT).show();
@@ -136,9 +137,9 @@ public class Activiteit extends AppCompatActivity {
         });
 
         datum = findViewById(R.id.datum);
-        HashMap<String, EditText> data4 = new HashMap<>();
-        data4.put("datum", datum);
-        db.collection("dagboek").document().set(data4).addOnSuccessListener(new OnSuccessListener<Void>() {
+        HashMap<String, String> data4 = new HashMap<>();
+        data4.put("datum", datum.getText().toString());
+        db.collection("dagboektest").document().set(data4).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
                 Toast.makeText(Activiteit.this, "Data toegevoegd", Toast.LENGTH_SHORT).show();

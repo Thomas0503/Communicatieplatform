@@ -9,20 +9,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Activiteit2 implements Serializable {
-    private Activiteit product;
-    //private String id;
-    //private ArrayList<ActStresssignalen> signalenLijst;
-    //private EditText datum;
-    //private Integer progress;
-    String id = product.getId();
+    //private Activiteit product;
+    @Exclude private String id;
+    private ArrayList<String> signalenLijst;
+    private String datum;
+    private String stressniveau;
+    /*String id = product.getId();
     EditText datum = product.getDatum();
     Integer progress = product.getNiveau();
-    ArrayList<ActStresssignalen> signalenLijst = product.getStresssignalenLijst();
+    ArrayList<ActStresssignalen> signalenLijst = product.getStresssignalenLijst();*/
+    public Activiteit2() {
 
-    public Activiteit2(EditText datum, ArrayList<ActStresssignalen> signalenLijst, Integer progress) {
-        this.datum = (EditText) datum;
-        this.signalenLijst = signalenLijst;
-        this.progress = progress;
+    }
+    public Activiteit2(String datum, ArrayList<ActStresssignalen> oefening, String stressniveau, ArrayList<String> stresssignalen) {
+        this.datum =  datum;
+        this.signalenLijst = stresssignalen;
+        this.stressniveau = stressniveau;
     }
 
     public String getId() {
@@ -33,16 +35,16 @@ public class Activiteit2 implements Serializable {
         this.id = id;
     }
 
-    public EditText getDatum() {
+    public String getDatum() {
         return datum;
     }
 
-    public ArrayList<ActStresssignalen> getStresssignalenLijst(){
+    public ArrayList<String> getStresssignalenLijst(){
         return signalenLijst;
     }
-    public Integer getNiveau() {
-        return progress;
+    public String getNiveau() {
+        return stressniveau;
     }
 
-
 }
+
