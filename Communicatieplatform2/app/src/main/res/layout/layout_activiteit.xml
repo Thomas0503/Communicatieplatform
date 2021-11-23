@@ -26,9 +26,17 @@
                 android:textColor="#832E2E"/>
 
             <TextView
+                android:id="@+id/textview_oefening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="oefening"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#832E2E"
+                android:textSize="20sp" />
+            <TextView
                 android:id="@+id/textview_stresssignalen"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:text="stressignalen"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:textColor="#832E2E"

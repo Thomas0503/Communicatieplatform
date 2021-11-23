@@ -33,6 +33,7 @@ public class ActZoeken extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        String zoekQuery = getIntent().getStringExtra("zoekQuery");
         setContentView(R.layout.activiteit_zoeken);
 
         progressBar = findViewById(R.id.progressbar);
@@ -49,8 +50,59 @@ public class ActZoeken extends AppCompatActivity {
 
         db = FirebaseFirestore.getInstance();
 
+        if(!zoekQuery.equals("")) {
+            db.collection("dagboektest").whereEqualTo("oefening", zoekQuery).get()
+                    .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                        @Override
+                        public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
 
-        db.collection("dagboektest").get()
+                            progressBar.setVisibility(View.GONE);
+
+                            if (!queryDocumentSnapshots.isEmpty()) {
+
+                                List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
+
+                                for (DocumentSnapshot d : list) {
+
+                                    List<String> stresssignalen = (List<String>) d.get("stresssignalen");
+                                    Activiteit2 p = new Activiteit2(d.getString("datum"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen);
+                                    p.setId(d.getId());
+                                    productList.add(p);
+
+                                }
+
+                                //for (Map.Entry<String, Boolean> o : data.entrySet()) {
+                                //    String key = product.getActiviteit();
+                                //    Boolean value = o.getValue();
+                                //    if (value == true){
+                                //        for (Map.Entry<String, Boolean> m : data.entrySet()) {
+                                //            String key2 = m.getKey();
+                                //            Boolean value2 = m.getValue();}
+                                //    }
+                                //}
+
+                                adapter.notifyDataSetChanged();
+
+                            }
+                            //if (db.collection("dagboek").document("oefening1").get(activiteit) == true) {
+                            //    db.collection("dagboek").document("oefening1").get();
+                            //}
+                            // Create a reference to the cities collection
+                            //CollectionReference cities = db.collection("dagboek");
+                            // Create a query against the collection.
+                            //Query query = cities.whereEqualTo(activiteit, true);
+                            // retrieve  query results asynchronously using query.get()
+                            //signalen = cities.whereEqualTo(,true);
+                            //ApiFuture<QuerySnapshot> querySnapshot = query.get();
+
+                            //for (DocumentSnapshot document : querySnapshot.get().getDocuments()) {
+                            //    System.out.println(document.getId());
+                            //}
+
+
+                        }
+                    });
+        } else {db.collection("dagboektest").whereEqualTo("oefening", zoekQuery).get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
@@ -62,44 +114,16 @@ public class ActZoeken extends AppCompatActivity {
                             List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
 
                             for (DocumentSnapshot d : list) {
+
                                 List<String> stresssignalen = (List<String>) d.get("stresssignalen");
                                 Activiteit2 p = new Activiteit2(d.getString("datum"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen);
                                 p.setId(d.getId());
                                 productList.add(p);
 
                             }
-
-                            //for (Map.Entry<String, Boolean> o : data.entrySet()) {
-                            //    String key = product.getActiviteit();
-                            //    Boolean value = o.getValue();
-                            //    if (value == true){
-                            //        for (Map.Entry<String, Boolean> m : data.entrySet()) {
-                            //            String key2 = m.getKey();
-                            //            Boolean value2 = m.getValue();}
-                            //    }
-                            //}
-
-                            adapter.notifyDataSetChanged();
-
                         }
-                        //if (db.collection("dagboek").document("oefening1").get(activiteit) == true) {
-                        //    db.collection("dagboek").document("oefening1").get();
-                        //}
-                        // Create a reference to the cities collection
-                        //CollectionReference cities = db.collection("dagboek");
-                        // Create a query against the collection.
-                        //Query query = cities.whereEqualTo(activiteit, true);
-                        // retrieve  query results asynchronously using query.get()
-                        //signalen = cities.whereEqualTo(,true);
-                        //ApiFuture<QuerySnapshot> querySnapshot = query.get();
-
-                        //for (DocumentSnapshot document : querySnapshot.get().getDocuments()) {
-                        //    System.out.println(document.getId());
-                        //}
-
-
                     }
                 });
-
+        }
     }
 }

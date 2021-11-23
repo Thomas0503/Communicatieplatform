@@ -41,9 +41,21 @@ public class Activiteit2 implements Serializable {
         return oefening;
     }
 
-    public List<String> getStresssignalenLijst(){
+    public List<String> getStresssignalenLijst() {
         return signalenLijst;
     }
+
+    public String getStresssignalenString(){
+        String x;
+        String tekst = "";
+      for(String i : signalenLijst){
+          x = i + "\n";
+          tekst += x;
+      }
+      StringBuffer tekstAangepast= new StringBuffer(tekst);
+      tekst = tekstAangepast.deleteCharAt(tekstAangepast.length()-1).toString();
+      return tekst;
+    };
     public Integer getNiveau() {
         return stressniveau;
     }

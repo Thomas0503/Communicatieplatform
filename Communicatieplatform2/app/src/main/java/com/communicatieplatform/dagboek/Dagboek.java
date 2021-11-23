@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -21,6 +23,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
+import android.widget.AdapterView.OnItemClickListener;
 
 public class Dagboek extends AppCompatActivity {
     private Button button;
@@ -48,17 +51,18 @@ public class Dagboek extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActZoeken();
+                openActZoeken("");
             }
         });
 
-        searchView = findViewById(R.id.searchView);
-        listView = findViewById(R.id.listView);
+        SearchView searchView = findViewById(R.id.searchView);
+        ListView listView = findViewById(R.id.listview);
         list = new ArrayList<String>();
         list.add("openbare plaatsen");
         list.add("vervoer");
         list.add("shopping");
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,list);
+        listView.setVisibility(View.INVISIBLE);
         listView.setAdapter(adapter);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -68,28 +72,38 @@ public class Dagboek extends AppCompatActivity {
                     button2.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            openActZoeken();
+                            openActZoeken(query);
                         }
+
                     });
                     // geselecteerde activiteit onthouden ==> getActiviteit
                 }else{
                     Toast.makeText(Dagboek.this, "No Match found",Toast.LENGTH_LONG).show();
                 }
+                listView.setVisibility(View.INVISIBLE);
                 return false;
             }
             @Override
             public boolean onQueryTextChange(String newText) {
+                listView.setVisibility(View.VISIBLE);
                 adapter.getFilter().filter(newText);
                 button2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        openActZoeken();
+                        openActZoeken(newText);
                     }
                 });
                 return false;
             }
         });
-
+        listView.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                searchView.setQuery(adapter.getItem(position).toString(), false);
+                searchView.clearFocus();
+                listView.setVisibility(View.INVISIBLE);
+            }
+        });
     }
 
     public ArrayList<String> getActiviteitLijst(){
@@ -122,8 +136,10 @@ public class Dagboek extends AppCompatActivity {
         return query;
     }
 
-    public void openActZoeken() {
+    public void openActZoeken(String query) {
         Intent intent = new Intent(this, ActZoeken.class);
+        intent.putExtra("zoekQuery", query );
         startActivity(intent);
     }
+
 }

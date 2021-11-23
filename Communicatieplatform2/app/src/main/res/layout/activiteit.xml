@@ -50,24 +50,36 @@
         app:layout_constraintTop_toBottomOf="@+id/stressniveau" />
 
     <Button
+        android:id="@+id/afbeeldingToevoegen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#832E2E"
+        android:text="voeg afbeelding toe"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+    <Button
         android:id="@+id/opslaanActi"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#832E2E"
         android:text="opslaan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+        app:layout_constraintTop_toBottomOf="@+id/afbeeldingToevoegen" />
 
     <TextView
         android:id="@+id/stressniveau"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="10dp"
         android:text="Stressniveau:"
         android:textColor="#4E342E"
@@ -94,12 +106,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:text="Stresssignaal:"
         android:textColor="#4E342E"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="307dp"
@@ -115,39 +128,42 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+
+            <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#FF5252"
                 android:orientation="vertical">
-            <RadioButton
-                android:id="@+id/activiteit1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="0dp"
-                android:buttonTint="#38422C"
-                android:text="openbare plaatsen"
-                android:textColor="#4E342E" />
 
-            <RadioButton
-                android:id="@+id/activiteit2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="0dp"
-                android:buttonTint="#38422C"
-                android:text="vervoer"
-                android:textColor="#4E342E" />
+                <RadioButton
+                    android:id="@+id/activiteit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="openbare plaatsen"
+                    android:textColor="#4E342E" />
 
-            <RadioButton
-                android:id="@+id/activiteit3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="0dp"
-                android:buttonTint="#38422C"
-                android:text="shopping"
-                android:textColor="#4E342E" />
+                <RadioButton
+                    android:id="@+id/activiteit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="vervoer"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="shopping"
+                    android:textColor="#4E342E" />
             </RadioGroup>
         </LinearLayout>
     </ScrollView>
@@ -166,6 +182,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#FF5252"
             android:orientation="vertical">
 
 
@@ -206,10 +223,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
         android:text="0"
         android:textColor="#4E342E"
         android:textSize="20sp"
-        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/seekBar"
         app:layout_constraintStart_toEndOf="@+id/stressniveau" />
 
@@ -237,6 +254,16 @@
         android:textColor="#4E342E"
         app:layout_constraintStart_toEndOf="@+id/datum"
         app:layout_constraintTop_toBottomOf="@+id/Dagboek" />
+
+    <ImageView
+        android:id="@+id/toegevoegdeAfbeelding"
+        android:layout_width="87dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/opslaanActi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@drawable/legeafbeelding" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

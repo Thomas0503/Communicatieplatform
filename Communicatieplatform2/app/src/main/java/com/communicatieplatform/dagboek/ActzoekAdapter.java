@@ -37,8 +37,9 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
 
 
         holder.textViewDatum.setText((CharSequence) product.getDatum());
-        holder.textViewSignalen.setText((CharSequence) "product.getStresssignalenLijst()");
-        holder.textNiveau.setText((CharSequence) "product.getNiveau()");
+        holder.textViewSignalen.setText((CharSequence) product.getStresssignalenString());
+        holder.textNiveau.setText((CharSequence) product.getNiveau().toString());
+        holder.textOefening.setText((CharSequence) product.getOefening());
     }
 
     @Override
@@ -48,7 +49,7 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
 
     class ProductViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView textViewDatum, textViewSignalen, textNiveau;
+        TextView textViewDatum, textViewSignalen, textNiveau, textOefening;
 
         public ProductViewHolder(View itemView) {
             super(itemView);
@@ -56,6 +57,7 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
             textViewDatum = itemView.findViewById(R.id.textview_datum);
             textViewSignalen = itemView.findViewById(R.id.textview_stresssignalen);
             textNiveau = itemView.findViewById(R.id.textview_stressniveau);
+            textOefening = itemView.findViewById(R.id.textview_oefening);
 
             itemView.setOnClickListener(this);
 
