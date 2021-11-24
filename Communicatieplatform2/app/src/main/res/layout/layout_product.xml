@@ -23,25 +23,9 @@
                 android:text="Afspraak"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                 android:textStyle="bold"
-                android:textColor="#832E2E"/>
-
-            <TextView
-                android:id="@+id/textview_brand"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="beginuur"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:textColor="#832E2E"
-                android:textSize="18sp" />
+                android:textSize="22sp"/>
 
-            <TextView
-                android:id="@+id/textview_desc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="einduur"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:textColor="#832E2E"
-                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textview_price"
@@ -49,8 +33,27 @@
                 android:layout_height="wrap_content"
                 android:text="datum"
                 android:textColor="#832E2E"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/textview_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="beginuur"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#832E2E"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textview_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="einduur"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#832E2E"
+                android:textSize="18sp" />
 
 
 

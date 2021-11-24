@@ -33,17 +33,17 @@
                     android:layout_height="wrap_content"
                     android:text="Name"
                     android:textColor="#832E2E"
-                    android:textSize="32sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textSize="28sp"/>
 
                 <TextView
                     android:id="@+id/textview_size"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Size"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                     android:textColor="#832E2E"
-                    android:textStyle="bold" />
+                    android:textSize="18sp"/>
 
 
             </LinearLayout>

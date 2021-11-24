@@ -6,20 +6,34 @@ import android.os.Bundle;
 
 
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.SearchView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.communicatieplatform.MessageActivity;
 import com.communicatieplatform.R;
+import com.communicatieplatform.dagboek.ActZoeken;
+import com.communicatieplatform.dagboek.Dagboek;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -34,6 +48,10 @@ public class Chat extends AppCompatActivity {
     private List<Chatbericht> productList;
     private ProgressBar progressBar;
     private ChatAdapter.ChatViewHolder viewholder;
+    private SearchView searchView;
+    private ListView listView;
+    private ArrayList list;
+    private ArrayAdapter adapter2;
 
 
     private FirebaseFirestore db;
@@ -92,9 +110,61 @@ public class Chat extends AppCompatActivity {
             }
         });
 
+        searchView = findViewById(R.id.search_userch);
+        listView = findViewById(R.id.recyclerview_products);
+        list = new ArrayList<>();
+        list.add("Pieter");
+        list.add("Marie");
+        list.add("Josephine");
+        list.add("Jef");
+
+        adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,list);
+        listView.setAdapter(adapter2);
+        listView.setVisibility(View.INVISIBLE);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                if(list.contains(query)){
+                    adapter2.getFilter().filter(query);
+                    viewholder.getButton().setOnClickListener(new View.OnClickListener(){
+                        @Override
+                        public void onClick(View v){openMessage2(query); }
+                    });
+
+                }else{
+                    Toast.makeText(Chat.this, "No Match found",Toast.LENGTH_LONG).show();
+                }
+                listView.setVisibility(View.INVISIBLE);
+                return false;
+            }
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter2.getFilter().filter(newText);
+                viewholder.getButton().setOnClickListener(new View.OnClickListener(){
+                    @Override
+                    public void onClick(View v){openMessage2(newText); }
+                });
+                return false;
+            }
+        });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                searchView.setQuery(adapter2.getItem(position).toString(), false);
+                searchView.clearFocus();
+                listView.setVisibility(View.INVISIBLE);
+            }
+        });
+
 }
+
     public void openMessage() {
         Intent intent = new Intent(this, MessageActivity.class);
+        startActivity(intent);
+    }
+    public void openMessage2(String query) {
+        Intent intent = new Intent(this, MessageActivity.class);
+        intent.putExtra("zoekQuery", query );
         startActivity(intent);
     }
 }

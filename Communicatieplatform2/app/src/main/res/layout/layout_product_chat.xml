@@ -25,7 +25,8 @@
                 android:textStyle="bold"
                 android:backgroundTint="#F44336"
                 android:gravity="left"
-                android:textColor="#832E2E"/>
+                android:textSize="25sp"
+                android:textColor="#832E2E" />
 
             <TextView
                 android:id="@+id/textview_datum"

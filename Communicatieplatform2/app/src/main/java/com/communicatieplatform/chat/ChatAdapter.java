@@ -65,6 +65,9 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
         public View getButton(){
             return textViewNaam;
         }
+        public View getName(){
+            return textViewNaam;
+        }
 
         @Override
         public void onClick(View v) {
