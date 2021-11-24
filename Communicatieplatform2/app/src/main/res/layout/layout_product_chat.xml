@@ -16,13 +16,15 @@
             android:padding="5dp"
             android:background="#F44336">
 
-            <TextView
+            <Button
                 android:id="@+id/textview_naam"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Naam"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                 android:textStyle="bold"
+                android:backgroundTint="#F44336"
+                android:gravity="left"
                 android:textColor="#832E2E"/>
 
             <TextView

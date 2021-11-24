@@ -1,5 +1,6 @@
 package com.communicatieplatform.chat;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 
@@ -7,6 +8,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -15,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.communicatieplatform.MessageActivity;
 import com.communicatieplatform.R;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -30,6 +33,7 @@ public class Chat extends AppCompatActivity {
     private ChatAdapter adapter;
     private List<Chatbericht> productList;
     private ProgressBar progressBar;
+    private ChatAdapter.ChatViewHolder viewholder;
 
 
     private FirebaseFirestore db;
@@ -81,4 +85,16 @@ public class Chat extends AppCompatActivity {
                     }
                 });
 
-}}
+        viewholder.getButton().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMessage();
+            }
+        });
+
+}
+    public void openMessage() {
+        Intent intent = new Intent(this, MessageActivity.class);
+        startActivity(intent);
+    }
+}
