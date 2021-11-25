@@ -37,6 +37,7 @@
         android:ems="10"
         android:hint="Afspraak"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/afspraak" />
@@ -49,6 +50,7 @@
         android:ems="10"
         android:hint="Datum"
         android:inputType="date"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/naamafspraak" />
@@ -61,6 +63,7 @@
         android:ems="10"
         android:hint="Locatie"
         android:inputType="textPostalAddress"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/datum" />
@@ -73,6 +76,7 @@
         android:ems="10"
         android:hint="Opmerkingen"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/locatie" />

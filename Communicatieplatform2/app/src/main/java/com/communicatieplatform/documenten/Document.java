@@ -14,12 +14,13 @@ public class Document implements Serializable{
 
     @Exclude private String id;
 
-    private String url, name, size;
+    private String url, name;
+    private Integer size;
     public Document() {
 
     }
 
-    public Document(String url, String name, String size) {
+    public Document(String url, String name, Integer size) {
         this.url = url;
         this.name = name;
         this.size = size;
@@ -41,14 +42,14 @@ public class Document implements Serializable{
         return name;
     }
     public String getSize() {
-        Double numSize = Double.parseDouble(size);
+        Double numSize = size.doubleValue();
         if(numSize < 1000) {
             return size + "B";
         } else if(numSize < 1000000){
-            Long kB = round(numSize / 10.00)/100;
+            Long kB = round(numSize / 1000);
             return Long.toString(kB) + " kB";
         } else {
-            Long MB = round(numSize / 10000.00)/100;
+            Long MB = round(numSize / 1000000);
             return Long.toString(MB) + " MB";
         }
     }

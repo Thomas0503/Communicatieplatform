@@ -23,6 +23,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
+
 import android.widget.AdapterView.OnItemClickListener;
 
 public class Dagboek extends AppCompatActivity {
@@ -61,13 +62,13 @@ public class Dagboek extends AppCompatActivity {
         list.add("openbare plaatsen");
         list.add("vervoer");
         list.add("shopping");
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,list);
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
         listView.setVisibility(View.INVISIBLE);
         listView.setAdapter(adapter);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                if(getActiviteitLijst().contains(query)){
+                if (getActiviteitLijst().contains(query)) {
                     adapter.getFilter().filter(query);
                     button2.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -77,12 +78,13 @@ public class Dagboek extends AppCompatActivity {
 
                     });
                     // geselecteerde activiteit onthouden ==> getActiviteit
-                }else{
-                    Toast.makeText(Dagboek.this, "No Match found",Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(Dagboek.this, "No Match found", Toast.LENGTH_LONG).show();
                 }
                 listView.setVisibility(View.INVISIBLE);
                 return false;
             }
+
             @Override
             public boolean onQueryTextChange(String newText) {
                 listView.setVisibility(View.VISIBLE);
@@ -106,7 +108,7 @@ public class Dagboek extends AppCompatActivity {
         });
     }
 
-    public ArrayList<String> getActiviteitLijst(){
+    public ArrayList<String> getActiviteitLijst() {
         db = FirebaseFirestore.getInstance();
         DocumentReference docRef = db.collection("dagboektest").document("oefening2");
         docRef.get()
@@ -123,7 +125,8 @@ public class Dagboek extends AppCompatActivity {
                                 //What to do when the value does not exist
                             }
                         }
-                    }});
+                    }
+                });
         return list;
     }
 
@@ -132,13 +135,14 @@ public class Dagboek extends AppCompatActivity {
         Intent intent = new Intent(this, Activiteit.class);
         startActivity(intent);
     }
-    public String getActiviteit(){
+
+    public String getActiviteit() {
         return query;
     }
 
     public void openActZoeken(String query) {
         Intent intent = new Intent(this, ActZoeken.class);
-        intent.putExtra("zoekQuery", query );
+        intent.putExtra("zoekQuery", query);
         startActivity(intent);
     }
 

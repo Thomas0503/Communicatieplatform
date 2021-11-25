@@ -50,80 +50,83 @@ public class ActZoeken extends AppCompatActivity {
 
         db = FirebaseFirestore.getInstance();
 
-        if(!zoekQuery.equals("")) {
-            db.collection("dagboektest").whereEqualTo("oefening", zoekQuery).get()
-                    .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                        @Override
-                        public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+            if(!zoekQuery.equals("")) {
+                db.collection("dagboekje").document("dagboekje").collection(
+                        "EqI10LALkGOjjonWT9LGSUIdc572").whereEqualTo("oefening", zoekQuery).get()
+                        .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                            @Override
+                            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
 
-                            progressBar.setVisibility(View.GONE);
+                                progressBar.setVisibility(View.GONE);
 
-                            if (!queryDocumentSnapshots.isEmpty()) {
+                                if (!queryDocumentSnapshots.isEmpty()) {
 
-                                List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
+                                    List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
 
-                                for (DocumentSnapshot d : list) {
+                                    for (DocumentSnapshot d : list) {
 
-                                    List<String> stresssignalen = (List<String>) d.get("stresssignalen");
-                                    Activiteit2 p = new Activiteit2(d.getString("datum"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen);
-                                    p.setId(d.getId());
-                                    productList.add(p);
+                                        List<String> stresssignalen = (List<String>) d.get("stresssignalen");
+                                        Activiteit2 p = new Activiteit2(d.getTimestamp("createdAt"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen, d.getString("desc"));
+                                        p.setId(d.getId());
+                                        productList.add(p);
+
+                                    }
+
+                                    //for (Map.Entry<String, Boolean> o : data.entrySet()) {
+                                    //    String key = product.getActiviteit();
+                                    //    Boolean value = o.getValue();
+                                    //    if (value == true){
+                                    //        for (Map.Entry<String, Boolean> m : data.entrySet()) {
+                                    //            String key2 = m.getKey();
+                                    //            Boolean value2 = m.getValue();}
+                                    //    }
+                                    //}
+
+                                    adapter.notifyDataSetChanged();
 
                                 }
+                                //if (db.collection("dagboek").document("oefening1").get(activiteit) == true) {
+                                //    db.collection("dagboek").document("oefening1").get();
+                                //}
+                                // Create a reference to the cities collection
+                                //CollectionReference cities = db.collection("dagboek");
+                                // Create a query against the collection.
+                                //Query query = cities.whereEqualTo(activiteit, true);
+                                // retrieve  query results asynchronously using query.get()
+                                //signalen = cities.whereEqualTo(,true);
+                                //ApiFuture<QuerySnapshot> querySnapshot = query.get();
 
-                                //for (Map.Entry<String, Boolean> o : data.entrySet()) {
-                                //    String key = product.getActiviteit();
-                                //    Boolean value = o.getValue();
-                                //    if (value == true){
-                                //        for (Map.Entry<String, Boolean> m : data.entrySet()) {
-                                //            String key2 = m.getKey();
-                                //            Boolean value2 = m.getValue();}
-                                //    }
+                                //for (DocumentSnapshot document : querySnapshot.get().getDocuments()) {
+                                //    System.out.println(document.getId());
                                 //}
 
-                                adapter.notifyDataSetChanged();
 
                             }
-                            //if (db.collection("dagboek").document("oefening1").get(activiteit) == true) {
-                            //    db.collection("dagboek").document("oefening1").get();
-                            //}
-                            // Create a reference to the cities collection
-                            //CollectionReference cities = db.collection("dagboek");
-                            // Create a query against the collection.
-                            //Query query = cities.whereEqualTo(activiteit, true);
-                            // retrieve  query results asynchronously using query.get()
-                            //signalen = cities.whereEqualTo(,true);
-                            //ApiFuture<QuerySnapshot> querySnapshot = query.get();
+                        });
+            } else {
+                db.collection("dagboekje").document("dagboekje").collection(
+                        "EqI10LALkGOjjonWT9LGSUIdc572").get()
+                        .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                            @Override
+                            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
 
-                            //for (DocumentSnapshot document : querySnapshot.get().getDocuments()) {
-                            //    System.out.println(document.getId());
-                            //}
+                                progressBar.setVisibility(View.GONE);
 
+                                if (!queryDocumentSnapshots.isEmpty()) {
 
-                        }
-                    });
-        } else {db.collection("dagboektest").whereEqualTo("oefening", zoekQuery).get()
-                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                    @Override
-                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                                    List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
 
-                        progressBar.setVisibility(View.GONE);
+                                    for (DocumentSnapshot d : list) {
 
-                        if (!queryDocumentSnapshots.isEmpty()) {
+                                        List<String> stresssignalen = (List<String>) d.get("stresssignalen");
+                                        Activiteit2 p = new Activiteit2(d.getTimestamp("createdAt"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen, d.getString("desc"));
+                                        p.setId(d.getId());
+                                        productList.add(p);
 
-                            List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
+                                    }
 
-                            for (DocumentSnapshot d : list) {
+            }}
+                        });
 
-                                List<String> stresssignalen = (List<String>) d.get("stresssignalen");
-                                Activiteit2 p = new Activiteit2(d.getString("datum"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen);
-                                p.setId(d.getId());
-                                productList.add(p);
-
-                            }
-                        }
-                    }
-                });
-        }
     }
-}
+}}

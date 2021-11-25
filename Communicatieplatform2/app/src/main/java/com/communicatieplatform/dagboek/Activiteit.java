@@ -7,10 +7,12 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -29,8 +31,14 @@ import android.widget.Toast;
 
 import com.communicatieplatform.R;
 import com.communicatieplatform.documenten.DocumentenToevoegenActivity;
+import com.google.android.gms.tasks.Continuation;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.Timestamp;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.Exclude;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -41,6 +49,7 @@ import com.google.firebase.storage.UploadTask;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -63,6 +72,7 @@ public class Activiteit extends AppCompatActivity {
     FirebaseStorage storage; //used for uploading files
     FirebaseFirestore database; //used to store URLs of uploaded files
     ProgressDialog progressDialog;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,10 +115,13 @@ public class Activiteit extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(imageUri!= null){ uploadImage(imageUri);}
-                else {uploadData("null");}
+                if (imageUri != null) {
+                    uploadImage(imageUri);
+                } else {
+                    uploadData("");
+                }
                 imageUri = null;
-              }
+            }
 
         });
         button_afbeelding.setOnClickListener(new View.OnClickListener() {
@@ -119,7 +132,7 @@ public class Activiteit extends AppCompatActivity {
                 } else {
                     ActivityCompat.requestPermissions(Activiteit.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 9);
 
-            }
+                }
 
             }
 
@@ -129,18 +142,19 @@ public class Activiteit extends AppCompatActivity {
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void uploadData(String databaseUrl) {
         ArrayList<String> signaalLijst = new ArrayList<String>(40);
         String oefening = null;
-        // String datum = null;
+        String description = "";
         final RadioButton a1 = (RadioButton) findViewById(R.id.activiteit1);
         final RadioButton a2 = (RadioButton) findViewById(R.id.activiteit2);
         final RadioButton a3 = (RadioButton) findViewById(R.id.activiteit3);
         if (a1.isChecked()) {
             oefening = a1.getText().toString();
-        }else if (a2.isChecked()) {
+        } else if (a2.isChecked()) {
             oefening = a2.getText().toString();
-        }else if (a3.isChecked()) {
+        } else if (a3.isChecked()) {
             oefening = a3.getText().toString();
         }
 
@@ -161,22 +175,22 @@ public class Activiteit extends AppCompatActivity {
         omschrijving = findViewById(R.id.omschrijving);
         int stressniveau = seekBar.getProgress();
 
-        if(oefening == null){
-            Toast.makeText(this,"Kies een oefening",Toast.LENGTH_SHORT).show();
-            variableIsNull =0;
-        }else if (omschrijving.getText().toString().equals("")){
-            Toast.makeText(this,"Schrijf een omschrijving",Toast.LENGTH_SHORT).show();
-            variableIsNull =0;
-        }else if(signaalLijst.isEmpty()){
-            Toast.makeText(Activiteit.this,"Kies stresssignalen",Toast.LENGTH_SHORT).show();
-            variableIsNull =0;
+        if (oefening == null) {
+            Toast.makeText(this, "Kies een oefening", Toast.LENGTH_SHORT).show();
+            variableIsNull = 0;
+        } else if (signaalLijst.isEmpty()) {
+            Toast.makeText(Activiteit.this, "Kies stresssignalen", Toast.LENGTH_SHORT).show();
+            variableIsNull = 0;
         }
-        //else {omschrijving = omschrijving.getText().toString();}
+        if (!editTextDate.toString().isEmpty()) {
+            description = editTextDate.toString();
 
-        if(variableIsNull == 1) {
+        }
+        if (variableIsNull == 1) {
             HashMap<String, Object> data = new HashMap<>();
             data.put("stressniveau", stressniveau);
-            data.put("omschrijving", omschrijving);
+            data.put("datum", Timestamp.now());
+            data.put("desc", description);
             data.put("oefening", oefening);
             data.put("stresssignalen", signaalLijst);
             data.put("imageUrl", databaseUrl);
@@ -187,7 +201,7 @@ public class Activiteit extends AppCompatActivity {
                 public void onSuccess(Void unused) {
                     Toast.makeText(Activiteit.this, "Activiteit toegevoegd", Toast.LENGTH_SHORT).show();
                 }
-            }) .addOnFailureListener(new OnFailureListener() {
+            }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
                     Log.w("TAG", "Error adding document", e);
@@ -195,36 +209,39 @@ public class Activiteit extends AppCompatActivity {
             });
         }
     }
+
     private void initializeVariables() {
         seekBar = (SeekBar) findViewById(R.id.seekBar);
         textView = (TextView) findViewById(R.id.niveau);
     }
+
     private void uploadImage(Uri pdfUri) {
-        progressDialog=new ProgressDialog(this);
+        progressDialog = new ProgressDialog(this);
         progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
         progressDialog.setTitle("Bestand uploaden...");
         progressDialog.setProgress(0);
         progressDialog.show();
 
-        final String fileName=System.currentTimeMillis()+"";
+        final String fileName = System.currentTimeMillis() + "";
         String directory = "Images_dagboek";
-        StorageReference storageReference=storage.getReference(); //return root path
-        storageReference.child(directory).child(fileName).putFile(pdfUri)
-                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+        StorageReference storageReference = storage.getReference().child(directory).child(fileName); //return root path
+        storageReference.putFile(pdfUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                     @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        //store the url in realtime database
-                        String url = directory + "/" + fileName;
-                        uploadData(url);
+                    public void onSuccess(Uri uri) {
+                        Uri downloadUrl = uri;
+                        uploadData(downloadUrl.toString());
                     }
-                })
-                .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                });
+            }
+        }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
                 //track the progress of =our upload
-                int currentProgress= (int) (100*taskSnapshot.getBytesTransferred()/taskSnapshot.getTotalByteCount());
+                int currentProgress = (int) (100 * taskSnapshot.getBytesTransferred() / taskSnapshot.getTotalByteCount());
                 progressDialog.setProgress(currentProgress);
-                if(currentProgress == 100) {progressDialog.dismiss();}
             }
         });
     }
@@ -233,12 +250,10 @@ public class Activiteit extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if(requestCode==9 && grantResults[0]==PackageManager.PERMISSION_GRANTED)
-        {
+        if (requestCode == 9 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             selectPdf();
-        }
-        else
-            Toast.makeText(Activiteit.this,"Geef toestemming alstublieft...",Toast.LENGTH_SHORT).show();
+        } else
+            Toast.makeText(Activiteit.this, "Geef toestemming alstublieft...", Toast.LENGTH_SHORT).show();
     }
 
 
@@ -256,6 +271,7 @@ public class Activiteit extends AppCompatActivity {
         intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(intent, 86);
     }
+
     private Long getFileInfo(Uri pdfUri) {
         Cursor returnCursor =
                 getContentResolver().query(pdfUri, null, null, null, null);
@@ -266,33 +282,32 @@ public class Activiteit extends AppCompatActivity {
          */
         returnCursor.moveToFirst();
         int sizeIndex = returnCursor.getColumnIndex(OpenableColumns.SIZE);
-        Long fileSize =  returnCursor.getLong(sizeIndex);
+        Long fileSize = returnCursor.getLong(sizeIndex);
         return fileSize;
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         // check whether user has selected a file or no
-        if(requestCode==86 && resultCode==RESULT_OK && data!=null)
-        {
-            imageUri=data.getData(); // return the uri of selected file
+        if (requestCode == 86 && resultCode == RESULT_OK && data != null) {
+            imageUri = data.getData(); // return the uri of selected file
             Long fileInfo = getFileInfo(imageUri);
-            if(fileInfo > 5000000) {
-                Toast.makeText(Activiteit.this,"Dit bestand is te groot",Toast.LENGTH_SHORT).show();
+            if (fileInfo > 5000000) {
+                Toast.makeText(Activiteit.this, "Dit bestand is te groot", Toast.LENGTH_SHORT).show();
             } else {
                 button_afbeelding.setText("Andere afbeelding kiezen");
                 Drawable yourDrawable;
                 try {
                     InputStream inputStream = getContentResolver().openInputStream(imageUri);
-                    yourDrawable = Drawable.createFromStream(inputStream, imageUri.toString() );
+                    yourDrawable = Drawable.createFromStream(inputStream, imageUri.toString());
                 } catch (FileNotFoundException e) {
                     yourDrawable = getResources().getDrawable(R.drawable.legeafbeelding);
                 }
                 imageView.setImageDrawable(yourDrawable);
             }
-        }
-        else{
-            Toast.makeText(Activiteit.this,"Selecteer een afbeelding",Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(Activiteit.this, "Selecteer een afbeelding", Toast.LENGTH_SHORT).show();
         }
     }
 }

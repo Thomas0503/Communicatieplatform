@@ -40,7 +40,8 @@ public class DocumentenToevoegenActivity extends AppCompatActivity {
     Uri pdfUri; //Uri are actually URLs that are meant for local storage
 
     FirebaseStorage storage; //used for uploading files
-    private FirebaseFirestore database;; //used to store URLs of uploaded files
+    private FirebaseFirestore database;
+    ; //used to store URLs of uploaded files
     ProgressDialog progressDialog;
 
 
@@ -70,12 +71,12 @@ public class DocumentenToevoegenActivity extends AppCompatActivity {
         upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(pdfUri!=null) {//user has selected a file
+                if (pdfUri != null) {//user has selected a file
                     uploadFile(pdfUri);
                     notification.setText("Bestand geüpload. Geen nieuw bestand geselecteerd");
                     pdfUri = null;
-                }else
-                    Toast.makeText(DocumentenToevoegenActivity.this,"Selecteer een bestand",Toast.LENGTH_SHORT).show();
+                } else
+                    Toast.makeText(DocumentenToevoegenActivity.this, "Selecteer een bestand", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -83,15 +84,15 @@ public class DocumentenToevoegenActivity extends AppCompatActivity {
     }
 
     private void uploadFile(Uri pdfUri) {
-        progressDialog=new ProgressDialog(this);
+        progressDialog = new ProgressDialog(this);
         progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
         progressDialog.setTitle("Bestand uploaden...");
         progressDialog.setProgress(0);
         progressDialog.show();
 
-        final String fileName=System.currentTimeMillis()+"";
+        final String fileName = System.currentTimeMillis() + "";
         String directory = "Uploads";
-        StorageReference storageReference=storage.getReference(); //return root path
+        StorageReference storageReference = storage.getReference(); //return root path
         storageReference.child(directory).child(fileName).putFile(pdfUri)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
@@ -100,31 +101,31 @@ public class DocumentenToevoegenActivity extends AppCompatActivity {
                         String[] fileInfo = getFileInfo(pdfUri);
                         String url = directory + "/" + fileName;
                         CollectionReference reference = database.collection("documents");
-                        Map<String, Object> image= new HashMap<>();
+                        Map<String, Object> image = new HashMap<>();
                         image.put("url", url);
                         image.put("name", fileInfo[0]);
-                        image.put("size", fileInfo[1]);
+                        image.put("size", Long.parseLong(fileInfo[1]));
                         reference.document(fileName).set(image)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void aVoid) {
                                         Log.d("document_upload", "DocumentSnapshot successfully written!");
-                                        Toast.makeText(DocumentenToevoegenActivity.this,"Bestand is succesvol geüpload",Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(DocumentenToevoegenActivity.this, "Bestand is succesvol geüpload", Toast.LENGTH_SHORT).show();
                                     }
                                 })
                                 .addOnFailureListener(new OnFailureListener() {
                                     @Override
                                     public void onFailure(@NonNull Exception e) {
                                         Log.w("document_upload", "Error adding document", e);
-                                        Toast.makeText(DocumentenToevoegenActivity.this,"Bestand is niet succesvol geüpload",Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(DocumentenToevoegenActivity.this, "Bestand is niet succesvol geüpload", Toast.LENGTH_SHORT).show();
                                     }
                                 });
                     }
-        }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
                 //track the progress of =our upload
-                int currentProgress= (int) (100*taskSnapshot.getBytesTransferred()/taskSnapshot.getTotalByteCount());
+                int currentProgress = (int) (100 * taskSnapshot.getBytesTransferred() / taskSnapshot.getTotalByteCount());
                 progressDialog.setProgress(currentProgress);
 
             }
@@ -135,12 +136,10 @@ public class DocumentenToevoegenActivity extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if(requestCode==9 && grantResults[0]==PackageManager.PERMISSION_GRANTED)
-        {
+        if (requestCode == 9 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             selectPdf();
-        }
-        else
-            Toast.makeText(DocumentenToevoegenActivity.this,"Geef toestemming alstublieft...",Toast.LENGTH_SHORT).show();
+        } else
+            Toast.makeText(DocumentenToevoegenActivity.this, "Geef toestemming alstublieft...", Toast.LENGTH_SHORT).show();
     }
 
 
@@ -152,12 +151,13 @@ public class DocumentenToevoegenActivity extends AppCompatActivity {
         //intent.setAction(Intent.ACTION_GET_CONTENT); //to fetch files
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         intent.addCategory(Intent.CATEGORY_OPENABLE);
-        String [] mimeTypes = {"application/pdf", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "rtapplication/msword"};
+        String[] mimeTypes = {"application/pdf", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "rtapplication/msword"};
         intent.setType("*/*");
         intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes);
         intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(intent,86);
+        startActivityForResult(intent, 86);
     }
+
     private String[] getFileInfo(Uri pdfUri) {
         Cursor returnCursor =
                 getContentResolver().query(pdfUri, null, null, null, null);
@@ -170,26 +170,25 @@ public class DocumentenToevoegenActivity extends AppCompatActivity {
         int nameIndex = returnCursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
         int sizeIndex = returnCursor.getColumnIndex(OpenableColumns.SIZE);
         String fileName = returnCursor.getString(nameIndex);
-        String fileSize =  Long.toString(returnCursor.getLong(sizeIndex));
-        return new String[] {fileName, fileSize};
+        String fileSize = Long.toString(returnCursor.getLong(sizeIndex));
+        return new String[]{fileName, fileSize};
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         // check whether user has selected a file or no
-        if(requestCode==86 && resultCode==RESULT_OK && data!=null)
-        {
-            pdfUri=data.getData(); // return the uri of selected file
+        if (requestCode == 86 && resultCode == RESULT_OK && data != null) {
+            pdfUri = data.getData(); // return the uri of selected file
             String[] fileInfo = getFileInfo(pdfUri);
 
-            if(Long.valueOf(fileInfo[1]) > 5000000) {
-                Toast.makeText(DocumentenToevoegenActivity.this,"Dit bestand is te groot",Toast.LENGTH_SHORT).show();
+            if (Long.valueOf(fileInfo[1]) > 5000000) {
+                Toast.makeText(DocumentenToevoegenActivity.this, "Dit bestand is te groot", Toast.LENGTH_SHORT).show();
             } else {
                 notification.setText(fileInfo[0] + " geselecteerd");
             }
-        }
-        else{
-            Toast.makeText(DocumentenToevoegenActivity.this,"Selecteer een bestand",Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(DocumentenToevoegenActivity.this, "Selecteer een bestand", Toast.LENGTH_SHORT).show();
         }
     }
 }

@@ -30,6 +30,7 @@ public class DocumentAdapter extends RecyclerView.Adapter<DocumentAdapter.Produc
     private Context mCtx;
     private List<Document> productList;
     private FirebaseStorage storage;
+
     public DocumentAdapter(Context mCtx, List<Document> productList) {
         this.mCtx = mCtx;
         this.productList = productList;
@@ -76,43 +77,43 @@ public class DocumentAdapter extends RecyclerView.Adapter<DocumentAdapter.Produc
         @Override
         public void onClick(View v) {
 
-                Document bestand = productList.get(getAbsoluteAdapterPosition());
-                Log.d("Error", "DocumentSnapshot successfully written!");
-                String bestandsNaam = bestand.getName();
-                storage = FirebaseStorage.getInstance();
+            Document bestand = productList.get(getAbsoluteAdapterPosition());
+            Log.d("Error", "DocumentSnapshot successfully written!");
+            String bestandsNaam = bestand.getName();
+            storage = FirebaseStorage.getInstance();
 
-                String message = bestand.getUrl();
-                StorageReference storageReference = storage.getReference();
-                CharSequence options[] = new CharSequence[]{
-                        "Download",
-                        "Cancel"
-                };
-                AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
-                builder.setTitle("Wat wil je doen met "+ bestandsNaam + "?");
-                builder.setItems(options, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // we will be downloading the pdf
-                        if (which == 0) {
-                            storageReference.child(bestand.getUrl()).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                                @Override
-                                public void onSuccess(Uri uri) {
-                                    Intent intent = new Intent(Intent.ACTION_VIEW);
-                                    intent.setData(uri);
-                                    mCtx.startActivity(intent);
-                                }
-                            }).addOnFailureListener(new OnFailureListener() {
-                                                        @Override
-                                                        public void onFailure(@NonNull Exception exception) {
-                                                            // Handle any errors
-                                                        }
-                            });
+            String message = bestand.getUrl();
+            StorageReference storageReference = storage.getReference();
+            CharSequence options[] = new CharSequence[]{
+                    "Download",
+                    "Cancel"
+            };
+            AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
+            builder.setTitle("Wat wil je doen met " + bestandsNaam + "?");
+            builder.setItems(options, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    // we will be downloading the pdf
+                    if (which == 0) {
+                        storageReference.child(bestand.getUrl()).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                            @Override
+                            public void onSuccess(Uri uri) {
+                                Intent intent = new Intent(Intent.ACTION_VIEW);
+                                intent.setData(uri);
+                                mCtx.startActivity(intent);
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception exception) {
+                                // Handle any errors
+                            }
+                        });
 
-                        }
                     }
-                });
-                builder.show();
-            }
+                }
+            });
+            builder.show();
+        }
             /*
             Document bestand = productList.get(getAbsoluteAdapterPosition());
             Log.d("Error", "DocumentSnapshot successfully written!");
