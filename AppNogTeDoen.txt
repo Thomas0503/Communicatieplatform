@@ -1,8 +1,8 @@
 APP:
 Documenten werkt volledig
 
-Chatoverzicht werkt; nog zoekfunctie
-chatbericht: nog juiste database connecteren
+Chatoverzicht werkt; nog checken
+chatbericht: nog juiste database connecteren + checken
 
 Kalenderoverzicht: chronologisch ordenen
 afspraak toevoegen: nog checken
