@@ -55,13 +55,13 @@ public class Activiteit extends AppCompatActivity {
     private SeekBar seekBar;
     TextView test;
     FirebaseFirestore db;
-    private EditText editTextDate;
+    private EditText omschrijving;
     private Integer progress;
     TextView notification;
     Uri imageUri; //Uri are actually URLs that are meant for local storage
     ImageView imageView;
     FirebaseStorage storage; //used for uploading files
-    FirebaseFirestore database;; //used to store URLs of uploaded files
+    FirebaseFirestore database; //used to store URLs of uploaded files
     ProgressDialog progressDialog;
 
     @Override
@@ -132,7 +132,7 @@ public class Activiteit extends AppCompatActivity {
     public void uploadData(String databaseUrl) {
         ArrayList<String> signaalLijst = new ArrayList<String>(40);
         String oefening = null;
-        String datum = null;
+        // String datum = null;
         final RadioButton a1 = (RadioButton) findViewById(R.id.activiteit1);
         final RadioButton a2 = (RadioButton) findViewById(R.id.activiteit2);
         final RadioButton a3 = (RadioButton) findViewById(R.id.activiteit3);
@@ -158,26 +158,25 @@ public class Activiteit extends AppCompatActivity {
         }
 
         int variableIsNull = 1;
-        editTextDate = findViewById(R.id.editTextDate);
+        omschrijving = findViewById(R.id.omschrijving);
         int stressniveau = seekBar.getProgress();
 
         if(oefening == null){
             Toast.makeText(this,"Kies een oefening",Toast.LENGTH_SHORT).show();
             variableIsNull =0;
-        }else if (editTextDate.getText().toString().equals("")){
-            Toast.makeText(this,"Kies een datum",Toast.LENGTH_SHORT).show();
+        }else if (omschrijving.getText().toString().equals("")){
+            Toast.makeText(this,"Schrijf een omschrijving",Toast.LENGTH_SHORT).show();
             variableIsNull =0;
         }else if(signaalLijst.isEmpty()){
             Toast.makeText(Activiteit.this,"Kies stresssignalen",Toast.LENGTH_SHORT).show();
             variableIsNull =0;
-        } else {
-        datum = editTextDate.getText().toString();
         }
+        //else {omschrijving = omschrijving.getText().toString();}
 
         if(variableIsNull == 1) {
             HashMap<String, Object> data = new HashMap<>();
             data.put("stressniveau", stressniveau);
-            data.put("datum", datum);
+            data.put("omschrijving", omschrijving);
             data.put("oefening", oefening);
             data.put("stresssignalen", signaalLijst);
             data.put("imageUrl", databaseUrl);

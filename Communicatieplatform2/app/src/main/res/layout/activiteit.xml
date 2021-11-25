@@ -100,7 +100,7 @@
         android:textColor="#4E342E"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/datum" />
+        app:layout_constraintTop_toBottomOf="@+id/omschrijving" />
 
 
     <TextView
@@ -232,34 +232,6 @@
         app:layout_constraintBottom_toTopOf="@+id/seekBar"
         app:layout_constraintStart_toEndOf="@+id/stressniveau" />
 
-    <TextView
-        android:id="@+id/datum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
-        android:text="Datum:"
-        android:textColor="#4E342E"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Dagboek" />
-
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:ems="10"
-        android:inputType="date"
-        android:textColor="#4E342E"
-        android:textColorHighlight="#4E342E"
-        android:textColorHint="#4E342E"
-        android:textColorLink="#4E342E"
-        app:layout_constraintStart_toEndOf="@+id/datum"
-        app:layout_constraintTop_toBottomOf="@+id/Dagboek" />
-
     <ImageView
         android:id="@+id/toegevoegdeAfbeelding"
         android:layout_width="87dp"
@@ -271,6 +243,22 @@
         app:layout_constraintStart_toEndOf="@+id/afbeeldingToevoegen"
         app:layout_constraintTop_toBottomOf="@+id/seekBar"
         app:srcCompat="@drawable/legeafbeelding" />
+
+    <EditText
+        android:id="@+id/omschrijving"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Geef een omschrijving:"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dagboek" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
