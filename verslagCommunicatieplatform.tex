@@ -1,0 +1,167 @@
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage[dutch]{babel}
+\usepackage{graphicx, titling}
+\usepackage{subfiles}
+\usepackage{pdfpages}
+\usepackage[toc,page]{appendix}
+\usepackage{amsmath}
+
+\title{Communicatieplatform}
+\author{Thomas Varheust \\
+	Ruben Min Jou \\
+	Manon Delobelle
+}
+\date{}
+
+\begin{document}
+	\pagestyle{plain}
+	
+	\begin{center}
+		{{\Large Subfaculteit wetenschappen}
+			
+			\vspace{1cm}
+			
+			\includegraphics[width=6cm]{2013-kulak-cmyk-highres.jpg}
+			
+			\vspace{1cm}
+			
+			\Large Probleemoplossen en ontwerpen 3}
+		
+		\vspace{2cm}
+		
+		{\Huge \textbf{Communicatieplatform}}
+		
+		\vspace{1cm}
+		
+		{\Large \textbf{Let the dogs out}}
+		
+		\vspace{1cm}
+		
+		{\Large \textbf{Thomas Varheust}}\\
+		{\Large \textbf{Ruben Min Jou}}\\
+		{\Large \textbf{Manon Delobelle}}\\
+		
+	\end{center}
+	
+	\vspace{2cm}
+	{\Large Titularis : Koen Van Den Abeele}
+	\vspace{1cm}
+	
+	{\Large Begeleider : Charlotte Deconinck}
+	
+	
+	\vspace{1cm}
+	
+	\begin{center}
+		{\Large Academiejaar 2021 - 2022}
+	\end{center}
+	
+	
+	\newpage
+	\tableofcontents
+	\newpage
+	\section*{Inleiding}
+	\normalsize
+	Blinde mensen hebben vaak honden nodig om hen te helpen in het dagelijks leven. Die blindengeleidehonden hebben daarvoor eerst een opleiding nodig. Ze moeten zowel stressbestendig als gehoorzaam zijn in drukke situaties om zo hun baasje optimaal te begeleiden. Hiervoor verblijven ze gedurende een periode bij een pleeggezin en worden ze getraind door hun gezin en trainers. In die periode is goede communicatie erg belangrijk. Zo kunnen de blindengeleidehonden optimaal worden opgeleid om later een blinde te begeleiden. 
+	\\
+	Op dit moment verloopt die communicatie niet altijd vlot met opleidingscentra. Dit heeft ongunstige gevolgen voor de opleiding van de hond. Daarvoor zoeken wij een oplossing.
+	\\\\
+	Het doel is om een communicatieplatform te creëren voor die pleeggezinnen en hun trainers.
+	Op die manier kan het gezin communiceren met de trainer en omgekeerd. Hiervoor heeft iedereen een persoonlijke login waarmee ze gegevens kunnen vinden over de opleiding van hun hond. Ze kunnen een kalender raadplegen waarop ze de trainingen en toediening van medicatie kunnen bekijken. Daarnaast is het ook mogelijk om een dagboek bij te houden van de verschillende activiteiten die het gezin kan doen met de hond, zoals bijvoorbeeld een terrasje doen. Die data kan worden opgevraagd via een overzicht om inzicht te krijgen in welke activiteiten er meer getraind moet worden. Het gezin kan ook verslagen van trainingen opvragen van de trainers.
+	\\\\
+	Hiervoor is zowel een Android-app als een website nodig: de gezinnen kunnen via hun app herinneringen krijgen voor trainingen van de hond, voor medicijnen die de hond moet innemen \texttt{...} Daarnaast kan de trainer via zijn computer de verslagen van trainingen uploaden, die belangrijk zijn om te weten waarop er nog getraind moet worden. Trainers en pleeggezinnen kunnen echter ook gebruik maken van het andere platform, indien ze dit willen.
+	
+	\subsection*{Integratie van vakken}
+	Het hoofddoel is een app en een website te bouwen die samen een communicatieplatform vormen. Het vak 'Beginselen van programmeren' hebben we hierbij nodig aangezien programmeren een hoofdzaak is bij het bouwen van zo'n app en website. In die opleiding hebben we de taal \verb!Python! geleerd en inzichten gecreëerd die handig kunnen zijn in dit project.
+	
+	
+	\newpage
+	\section{Studie voor tools}
+	\subsection{Taal}
+	Er bestaan enorm veel programmeertalen. 
+	\verb!Java! en \verb!Kotlin! blijken de beste programmeertalen te zijn om een app te bouwen volgens bron \cite{Programmeertaal}. Aangezien zowel \verb!Java! als \verb!Kotlin! officiële programmeertalen zijn voor Android development, sluiten ze goed aan op het besturingssysteem Android. \verb!Java! bestaat al langer dan \verb!Kotlin!. Hierdoor bestaat er meer online documentatie voor \verb!Java!, die nuttig is voor onderdelen die moeilijk te implementeren zijn (zoals bij chat). We hebben gekozen om \verb!Java! te gebruiken als programmeertaal voor de app.
+	\\\\%of een hybride app?
+	Voor de \textit{front-end}\footnote{De \textit{front-end} van een website is deel van het programma dat zichtbaar is voor de gebruiker. Dit zorgt voor het visuele gedeelte van de site.} ontwikkeling van de website kozen we ervoor om gebruik te maken van \verb!HTML!, \verb!CSS! en \verb!JavaScript!. Dit zijn veruit de meest gebruikte talen  \cite{JavaScript_for_web-app} voor de ontwikkeling van een \textit{front-end}.
+	
+	\subsection{App}
+	Er bestaan veel tools om een app te ontwikkelen voor het besturingssysteem Android. De tool moest voldoen aan verschillende vereisten. Het moet compatibel zijn met Android,  mogelijk zijn om de data weg te schrijven naar een database zodat er een website aan gekoppeld kan worden en voldoen aan alle vereisten voor ons probleem. Zo moet het mogelijk zijn om documenten up te loaden, om een dagboek bij te houden en om een chatfunctie te installeren. 
+	\\\\
+	We kozen voor Android Studio \cite{AndroidStudio}, die app-ontwikkeling eenvoudiger maakt dankzij de \textit{lay-outeditor}, \textit{APK-analyzer} en \textit{Vector Asset Studio}.
+	Android Studio is specifiek gericht op het Android platform en makkelijk testbaar aan de hand van Android-emulators. 
+	Daarnaast kan Android Studio gesynchroniseerd worden met GitHub\footnote{GitHub is een versiebeheersysteem. Telkens er een wijziging wordt gedaan in de code, wordt deze opgeslaan. Deze kunnen later gepusht worden zodat elk teamlid de wijzigingen ziet.} die bijdragen voor een optimaal groepswerk. De verschillende functionaliteiten kunnen via deelprogramma's onafhankelijk worden ontwikkeld en getest.
+	\\\\
+	Tot slot kan Android Studio makkelijk gekoppeld worden met de databases van Firebase (dit komt aan bod in hoofdstuk \ref{sec:Database}) doordat Firebase-services rechtstreeks kunnen gekoppeld worden met Android Studio.
+	
+	\subsection{Website}
+	Voor de ontwikkeling van de \textit{back-end}\footnote{De \textit{back-end} van een website is deel van het programma dat onzichtbaar is voor de gebruiker. Dit zorgt ervoor dat de \textit{front-end} van de website werkt.} van de website bestaan er veel verschillende tools. \verb!Node.js! leek ons de beste optie. De \textit{event-driven} architectuur van \verb!Node.js! maakt het eenvoudiger om een chat-app te implementeren en is snel en makkelijk te begrijpen, waardoor onze keuze gemaakt was. \verb!Node.js! is een open source en multiplatform van de \verb!JavaScript-runtime-omgeving!.
+	
+	\subsection{Database} \label{sec:Database}
+	% jason: dictonairies in dictionaries --> non sequal 
+	Zowel de trainers als de pleeggezinnen zullen bij het gebruik van de app informatie, zoals documenten, dagboekinzendingen, afspraken ... aan de app toevoegen. Al deze informatie moet ergens opgeslagen worden en vanuit die opslagplaats weer geraadpleegd kunnen worden. Daarom maken we gebruik van een database. We hebben een \textit{real-time} database\footnote{Een real-time database is een database waarin aanpassingen quasi onmiddellijk worden doorgevoerd, zodat deze aanpassingen ook op andere apparaten snel zichtbaar zijn.} nodig, zodat onder andere chatberichten zo snel mogelijk gesynchroniseerd kunnen worden.
+	\\\\
+	Firebase is een platform dat verschillende producten huisvest om het creëren van apps en websites te vergemakkelijken. De Realtime database en de Cloud Firestore zijn de twee real-time databases uit deze producten. Firebase is bovendien een populair platform, waardoor er ook een uitgebreide online documentatie \cite{documentatie_firebase} beschikbaar is. Daarnaast heeft het platform ook een beveiligd authenticatiesysteem en een mogelijkheid tot opslag van foto's en video's in de cloud.
+	\\\\
+	Na de keuze voor Firebase moet de keuze tussen de twee databases nog gemaakt worden. Over het algemeen \cite{Realtime_vs_Firestore} wordt Cloud Firestore beschouwd als een verbetering van de oudere Realtime database. Daarnaast is het filteren van data in Firestore gemakkelijker.
+	
+	\newpage
+	\section{Resultaten}
+	Na onze studie van de verschillende tools, waren we eraan uit welke we gingen gebruiken: Android Studio voor de app, \verb!HTML!, \verb!CSS! en \verb!JavaScript! in combinatie met \verb!Node.js! voor de website en Cloud Firestore als database.
+	\\\\
+	Daarna hebben we gezocht naar de structuur (die weergegeven wordt op \ref{flowchart}), die we wilden bereiken voor het communicatieplatform. Hiervoor hebben we verschillende pagina's nodig: login, menu, chatoverzicht, documenten, kalender, dagboek, activiteiten toevoegen, overzicht van activiteiten, documenten toevoegen en chatberichten. Het pleeggezin kan chatten, documenten lezen, hun kalender bekijken, een afspraak toevoegen en het dagboekje bekijken. Voor het dagboekje zijn er meerdere opties, ofwel wordt er een activiteit toegevoegd, ofwel wordt er een overzicht gevraagd van een bepaalde activiteit. Daarnaast moet de trainer ook bepaalde functies kunnen uitvoeren. Hij kan ook chatten en het dagboek bekijken voor een specifieke hond. Daarnaast kan hij zelf ook documenten uploaden en afspraken toevoegen in de kalender. Hiervoor kiest hij of hij dat voor een specifieke puppy wil doen of voor alle puppy's tegelijk.
+	\\\\
+	\subsection{App}
+	De app is verbonden met Cloud Firestore. 
+	Via de login-pagina kun je met een gekregen account via e-mailadres en wachtwoord inloggen. Dit account staat gelinkt met je pleeghond. Op de hoofdpagina zijn de vier grote functies terug te vinden: chat, documenten, kalender en dagboek. 
+	Indien er doorgeklikt wordt op chat, wordt er een overzicht getoond van de voorbije chats. Bovenaan is er een zoekbalk te vinden die ervoor zorgt dat chats makkelijk worden teruggevonden indien het overzicht van chats lang is. Hierbij kan er doorgeklikt worden naar het gesprek met een andere gebruiker. Die berichten worden upgeload naar en vanuit de database. 
+	Bij documenten krijgt een lid van het pleeggezin een overzicht van de verschillende documenten die opgeslagen zijn in de database en die te downloaden zijn. De trainer heeft die documenten geupload. Hij moet eerst een file selecteren, wat duidelijk wordt weergegeven op de app. Daarna moet hij deze uploaden naar de database.
+	Er kan ook gekozen worden om naar de kalender te kijken.
+	Het dagboek is ook te vinden via de hoofdpagina.
+	
+	\subsection{Website}
+	Met diezelfde database is het ook gelukt om de website te verbinden. Het login-systeem werkt op een gelijke manier als de app. Je kan inloggen met een e-mailadres en wachtwoord die geconnecteerd staan met je hond indien je een lid bent van het pleeggezin. Als je een trainer bent, kun je bij elke specifieke actie een hond kiezen waarvoor je dit wilt uitvoeren.
+	
+	\subsection{Database}
+	Cloud Firestore is dus gekoppeld met zowel de app als de website. Bij zo'n database is vooral de structuur belangrijk. Op \ref{programmeerstructuur} is een overzicht te zien van hoe we de gevarieerde informatie gaan wegschrijven vanuit de app en website naar de database. Hierbij maken we verschillende collecties aan: Dagboekje, Berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters/gegevens. 
+	\\\\
+	
+	\newpage
+	\section{Ontwikkelingen in de toekomst}
+	Voor de app kan er nog gekeken worden om het onderscheid tussen de functies van trainers en pleeggezinnen te programmeren. Deze functie is wel op de website mogelijk. Zo kan een lid van het pleeggezin geen documenten toevoegen omdat hij hiervoor niet bevoegd is.\\ 
+	% via een hoofdpagina meteen doorklikken naar een andere hoofdpagina en kunnen terugklikken
+	
+	\label{flowchart}\includepdf[pages=-]{Flowchart}
+	%voorlopige resultaten + hoe verder in toekomst
+	
+	\newpage
+	\section{Samenwerking}
+	\subsection{Verantwoordelijkheden}
+	Bij het begin van het project werden er rollen en dus verantwoordelijkheden gecreëerd. Thomas heeft de meeste voorkennis bij het ontwerpen van een website en werd dus de verantwoordelijke voor de site. Daarnaast heeft Ruben de verantwoordelijkheid van de app op zich genomen. Tot slot is Manon verantwoordelijk voor het design van het volledige platform en voor de rapportering van ons project.
+	\subsection{Taakverdeling}
+	Wij hebben samen gezocht naar verschillende tools om zo'n website en app te bouwen en met elkaar te verbinden via een database. Toen we een idee hadden welke tools we voor het project gingen gebruiken, werd de Gantt-grafiek (in bijlage op pagina \pageref{gantt-grafiek}) opgesteld en hebben we de taken (in bijlage op pagina \pageref{takenstructuur}) opgesplitst. 
+	\\\\
+	Thomas is toen begonnen met het connecteren van de database en de website. Daarna heeft hij al pagina's van de website geïmplementeerd en de structuur van de database gemaakt.
+	Ruben heeft gekeken voor het connecteren van de database en de app. Hij heeft er ook voor gezorgd dat Android Studio via GitHub functioneert om zo een vlotter groepswerk te creëren. Daarna is hij begonnen met het implementeren van enkele pagina's van de app. Manon is begonnen met de app te ontwerpen: het design van de verschillende pagina's en de doorverwijzingen tussen de pagina's. Daarna is ze begonnen met het tussentijds verslag te schrijven, er structuur in te brengen en bijlagen te ontwerpen.
+	\\\\
+	Voor het maken van het tussentijds verslag hebben we later ook de taken verdeeld. We namen elk een of meerdere onderdelen voor zich. Iedereen kreeg het onderdeel waarvan hij of zij het meest vanaf wist. Tot slot heeft iedereen het verslag doorgelezen en goedgekeurd.
+	
+	\newpage
+	\section*{Conclusie}
+	Het doel is om een communicatieplatform te vormen voor trainers en pleeggezinnen van blindengeleidehonden in wording. Honden in opleiding logeren bij pleeggezinnen en worden doorheen het dagelijks leven getraind. Tijdens die training is er niet altijd een optimale communicatie met de trainer. Daarvoor ontwikkelen wij een app en website die in connectie staan met elkaar via een database.
+	\\\\
+	Om het communicatieplatform te creëren was de eerste stap de tools zoeken die we konden gebruiken voor de app en website. Dit nam veel tijd in beslag aangezien dit een belangrijk gegeven was in ons project. De tools moeten kunnen voldoen aan alle eisen van de probleemstelling. Daarna was het belangrijk om kennis te maken met de werking van de tools. Voordat we begonnen aan het ontwerpen van de app en website, bouwden we een kennis op van het gebruik van de programma's. Toen we dit onder de knie hadden, konden we beginnen met het echte werk. We brainstormden over hoe we het project het best konden aanpakken. We dachten na over de structuur van de app en website en bedachten ook hoe we de verschillende functies die de trainers en pleeggezinnen moeten kunnen doen, gingen implementeren. Tot slot begonnen we met het design en het implementeren van de app en website.
+	\\\\
+	Er is nog ruimte voor optimalisatie bij de werking van de app en bij het design van de website. Aangezien we in tijdsnood kwamen hebben we gekozen voor een optimale werking van de website voor zowel trainer als pleeggezin, en bij de app voor een optimaal design en een optimale werking voor het pleeggezin.\\\\
+	
+	
+	\newpage
+	\begin{appendices}
+		\label{gantt-grafiek}\includepdf[pages=-]{Ganttchart}
+		\label{takenstructuur}\includepdf[pages=-]{Takenstructuur}
+		\label{programmeerstructuur}\includepdf[pages=-]{Database.drawio-2}
+	\end{appendices}
+	
+	\bibliography{Bibliografie}
+	\bibliographystyle{unsrt}
+	\nocite{*}
+\end{document}
