@@ -16,6 +16,15 @@
             android:padding="5dp"
             android:background="#F44336">
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitCenter"/>
+
             <TextView
                 android:id="@+id/textview_datum"
                 android:layout_width="match_parent"

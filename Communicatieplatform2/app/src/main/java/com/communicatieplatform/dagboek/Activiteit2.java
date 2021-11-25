@@ -1,5 +1,7 @@
 package com.communicatieplatform.dagboek;
 
+import android.widget.ImageView;
+
 import com.google.firebase.firestore.Exclude;
 
 import java.io.Serializable;
@@ -16,9 +18,7 @@ public class Activiteit2 implements Serializable {
     EditText datum = product.getDatum();
     Integer progress = product.getNiveau();
     ArrayList<ActStresssignalen> signalenLijst = product.getStresssignalenLijst();*/
-    public Activiteit2() {
 
-    }
     public Activiteit2(String datum, String oefening, Integer stressniveau, List<String> stresssignalen) {
         this.datum =  datum;
         this.signalenLijst = stresssignalen;

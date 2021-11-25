@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,6 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import com.communicatieplatform.R;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductViewHolder> {
 
@@ -50,6 +53,7 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
     class ProductViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView textViewDatum, textViewSignalen, textNiveau, textOefening;
+        ImageView imageView;
 
         public ProductViewHolder(View itemView) {
             super(itemView);
@@ -58,6 +62,7 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
             textViewSignalen = itemView.findViewById(R.id.textview_stresssignalen);
             textNiveau = itemView.findViewById(R.id.textview_stressniveau);
             textOefening = itemView.findViewById(R.id.textview_oefening);
+            imageView = itemView.findViewById(R.id.imageView);
 
             itemView.setOnClickListener(this);
 
