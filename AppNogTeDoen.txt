@@ -2,10 +2,10 @@ APP:
 Documenten werkt volledig
 
 Chatoverzicht werkt; nog zoekfunctie
-juiste database
+chatbericht: nog juiste database connecteren
 
 Kalenderoverzicht: chronologisch ordenen
-afspraak toevoegen: nog doen
+afspraak toevoegen: nog checken
 
 Dagboek werkt volledig
 
