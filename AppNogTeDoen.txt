@@ -2,14 +2,12 @@ APP:
 Documenten werkt volledig
 
 Chatoverzicht werkt; nog zoekfunctie
-Chatlezen: nog controleren
-mensen kiezen: nog doen
+juiste database
 
 Kalenderoverzicht: chronologisch ordenen
 afspraak toevoegen: nog doen
 
-Dagboek: zoekfunctie werkt niet volledig
-	overzicht leest ook niet juist uit database
+Dagboek werkt volledig
 
 Trainer-Pleeggezin: onderscheid app
 alles toepassen voor één userID
