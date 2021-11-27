@@ -2,6 +2,7 @@ package com.communicatieplatform.chat;
 
 import android.content.Context;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.communicatieplatform.MessageActivity;
 import com.communicatieplatform.R;
 
 import java.util.List;
@@ -19,10 +21,12 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
 
     private Context mCtx;
     private List<Chatbericht> productList;
+    String query;
 
     public ChatAdapter(Context mCtx, List<Chatbericht> productList) {
         this.mCtx = mCtx;
         this.productList = productList;
+        this.query = "";
     }
 
     @Override
@@ -53,7 +57,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
 
         public ChatViewHolder(View itemView) {
             super(itemView);
-
+            String query;
             textViewNaam = itemView.findViewById(R.id.textview_naam);
             textViewDatum = itemView.findViewById(R.id.textview_datum);
             textViewUur = itemView.findViewById(R.id.textview_uur);
@@ -62,17 +66,32 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
             itemView.setOnClickListener(this);
 
         }
-        public View getButton(){
+
+        public View getButton() {
             return textViewNaam;
         }
-        public View getName(){
+
+        public View getName() {
             return textViewNaam;
         }
 
         @Override
         public void onClick(View v) {
-            Chatbericht chatbericht = productList.get(getAdapterPosition());
-
+            String query = getQuery();
+            Intent intent = new Intent(mCtx, MessageActivity.class);
+            if (!query.equals("")) {
+                intent.putExtra("zoekQuery", query);
+            }
+            mCtx.startActivity(intent);
         }
+    }
+
+    public void setQuery(String query) {
+        this.query = query;
+    }
+
+    public String getQuery() {
+        return this.query;
+
     }
 }

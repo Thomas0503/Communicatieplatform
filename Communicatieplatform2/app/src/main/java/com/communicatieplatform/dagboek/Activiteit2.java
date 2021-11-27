@@ -24,8 +24,6 @@ public class Activiteit2 implements Serializable {
     Integer progress = product.getNiveau();
     ArrayList<ActStresssignalen> signalenLijst = product.getStresssignalenLijst();*/
 
-    }
-
     public Activiteit2(Timestamp datum, String oefening, Integer stressniveau, List<String> stresssignalen, String description) {
         this.datum = datum.toDate();
         this.signalenLijst = stresssignalen;

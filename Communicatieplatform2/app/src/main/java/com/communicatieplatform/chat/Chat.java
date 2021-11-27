@@ -1,5 +1,7 @@
 package com.communicatieplatform.chat;
 
+import static com.google.api.AnnotationsProto.http;
+
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -25,11 +27,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
+import android.view.ViewGroup;
 import com.communicatieplatform.MessageActivity;
 import com.communicatieplatform.R;
 import com.communicatieplatform.dagboek.ActZoeken;
 import com.communicatieplatform.dagboek.Dagboek;
+import com.communicatieplatform.documenten.DocumentAdapter;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -60,22 +63,15 @@ public class Chat extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chat);
-
         progressBar = findViewById(R.id.progressbar);
 
         recyclerView = findViewById(R.id.recyclerview_products);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
         productList = new ArrayList<>();
         adapter = new ChatAdapter(this, productList);
-
         recyclerView.setAdapter(adapter);
-
-
         db = FirebaseFirestore.getInstance();
-
-
         db.collection("chat").get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
@@ -103,15 +99,15 @@ public class Chat extends AppCompatActivity {
                     }
                 });
 
-        viewholder.getButton().setOnClickListener(new View.OnClickListener() {
+        /*viewholder.getButton().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openMessage();
+                openMessage()
             }
-        });
+        });*/
 
         searchView = findViewById(R.id.search_userch);
-        listView = findViewById(R.id.recyclerview_products);
+        listView = findViewById(R.id.list);
         list = new ArrayList<>();
         list.add("Pieter");
         list.add("Marie");
@@ -120,16 +116,17 @@ public class Chat extends AppCompatActivity {
 
         adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,list);
         listView.setAdapter(adapter2);
-        listView.setVisibility(View.INVISIBLE);
+        listView.setVisibility(View.VISIBLE);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 if(list.contains(query)){
                     adapter2.getFilter().filter(query);
-                    viewholder.getButton().setOnClickListener(new View.OnClickListener(){
+                    adapter.setQuery(query);
+                    /*viewholder.getButton().setOnClickListener(new View.OnClickListener(){
                         @Override
                         public void onClick(View v){openMessage2(query); }
-                    });
+                    });*/
 
                 }else{
                     Toast.makeText(Chat.this, "No Match found",Toast.LENGTH_LONG).show();
@@ -140,10 +137,11 @@ public class Chat extends AppCompatActivity {
             @Override
             public boolean onQueryTextChange(String newText) {
                 adapter2.getFilter().filter(newText);
-                viewholder.getButton().setOnClickListener(new View.OnClickListener(){
+                adapter.setQuery(newText);
+                /*viewholder.getButton().setOnClickListener(new View.OnClickListener(){
                     @Override
                     public void onClick(View v){openMessage2(newText); }
-                });
+                });*/
                 return false;
             }
         });

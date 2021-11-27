@@ -182,8 +182,8 @@ public class Activiteit extends AppCompatActivity {
             Toast.makeText(Activiteit.this, "Kies stresssignalen", Toast.LENGTH_SHORT).show();
             variableIsNull = 0;
         }
-        if (!editTextDate.toString().isEmpty()) {
-            description = editTextDate.toString();
+        if (!omschrijving.toString().isEmpty()) {
+            description = omschrijving.toString();
 
         }
         if (variableIsNull == 1) {

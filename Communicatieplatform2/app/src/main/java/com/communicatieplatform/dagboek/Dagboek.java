@@ -26,7 +26,8 @@ import java.util.ArrayList;
 
 import android.widget.AdapterView.OnItemClickListener;
 
-public class Dagboek extends AppCompatActivity {
+public class
+Dagboek extends AppCompatActivity {
     private Button button;
     private Button button2;
     private FirebaseFirestore db;
@@ -40,7 +41,6 @@ public class Dagboek extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dagboek);
-
         button = (Button) findViewById(R.id.ActiviteitToev);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +68,6 @@ public class Dagboek extends AppCompatActivity {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                if (getActiviteitLijst().contains(query)) {
                     adapter.getFilter().filter(query);
                     button2.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -78,9 +77,7 @@ public class Dagboek extends AppCompatActivity {
 
                     });
                     // geselecteerde activiteit onthouden ==> getActiviteit
-                } else {
-                    Toast.makeText(Dagboek.this, "No Match found", Toast.LENGTH_LONG).show();
-                }
+
                 listView.setVisibility(View.INVISIBLE);
                 return false;
             }

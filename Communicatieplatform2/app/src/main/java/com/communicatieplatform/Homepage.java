@@ -12,6 +12,7 @@ import com.communicatieplatform.chat.Chat;
 import com.communicatieplatform.dagboek.Dagboek;
 import com.communicatieplatform.documenten.DocumentActivity;
 import com.communicatieplatform.kalender.AfspraakActivity;
+import com.communicatieplatform.test_chat.KiesContactActivity;
 
 public class Homepage extends AppCompatActivity {
     private Button button;
@@ -70,7 +71,7 @@ public class Homepage extends AppCompatActivity {
     }
 
     public void openChat() {
-        Intent intent = new Intent(this, Chat.class);
+        Intent intent = new Intent(this, KiesContactActivity.class);
         startActivity(intent);
     }
 }
