@@ -1,13 +1,16 @@
 APP:
 Documenten werkt volledig
 
-Chatoverzicht werkt; nog checken
-chatbericht: nog juiste database connecteren + checken
+Chatten: contactpersoon zoeken werkt, layout hiervan moet nog verbeterd worden
+Bij zoeken en bij berichten zelf chronologische ordening nodig
+Voor beide is er nog een listener nodig voor real time updates
 
 Kalenderoverzicht: chronologisch ordenen
 afspraak toevoegen: nog checken
 
-Dagboek werkt volledig
+Dagboek: layout overzicht activiteiten moet wss nog aangepast worden door verandering van database
+(doordat we nu dezelfde database als de website gebruiken)
+Nu worden er de activiteiten niet meer geladen (ik krijg geen error maar gewoon een lege pagina)
 
 Trainer-Pleeggezin: onderscheid app
 alles toepassen voor één userID
