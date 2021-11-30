@@ -15,6 +15,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -23,8 +24,12 @@ import com.communicatieplatform.R;
 import com.communicatieplatform.dagboek.Activiteit2;
 import com.communicatieplatform.dagboek.ActzoekAdapter;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.text.SimpleDateFormat;
@@ -59,6 +64,7 @@ public class test_MessageActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         final LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setStackFromEnd(true);
+       // layoutManager.setReverseLayout(true);
         recyclerView.setLayoutManager(layoutManager);
 
         productList = new ArrayList<>();
@@ -75,6 +81,7 @@ public class test_MessageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SendMessage();
+                adapter.notifyDataSetChanged();
             }
         });
 
@@ -85,31 +92,28 @@ public class test_MessageActivity extends AppCompatActivity {
             document = receiver + currentUid;}
         else {
             document = currentUid+ receiver;}
-        db.collection("messages").document(document).collection("chat").get()
-                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+        db.collection("messages").document(document).collection("chat").orderBy("createdAt")
+                .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
-                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-
-                        //progressBar.setVisibility(View.GONE);
-
-                        if (!queryDocumentSnapshots.isEmpty()) {
-
-                            List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
-
-                            for (DocumentSnapshot d : list) {
-
-                                Message p = new Message(d.getTimestamp("createdAt"), d.getString("from"), d.getString("to"), d.getString("text"));
-                                p.setId(d.getId());
-                                productList.add(p);
-
-                            }
-
-
-                            adapter.notifyDataSetChanged();
-
+                    public void onEvent(@Nullable QuerySnapshot value,
+                                        @Nullable FirebaseFirestoreException e) {
+                        if (e != null) {
+                            Log.w("TAG", "Listen failed.", e);
+                            return;
                         }
 
-
+                        for (DocumentChange dc : value.getDocumentChanges()) {
+                            switch (dc.getType()) {
+                                case ADDED:
+                                    DocumentSnapshot d = dc.getDocument();
+                                    Message p = new Message(d.getTimestamp("createdAt"), d.getString("from"), d.getString("to"), d.getString("text"));
+                                    p.setId(d.getId());
+                                    productList.add(p);
+                                    break;
+                            }
+                        }
+                        adapter.notifyDataSetChanged();
+                        recyclerView.scrollToPosition(productList.size()-1);
                     }
                 });
         }

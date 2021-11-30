@@ -25,20 +25,31 @@ public class AfspraakMaken extends AppCompatActivity {
     private TextView datum;
     private TextView locatie;
     private TextView opmerkingen;
+    private Button opslaanAfspraak;
     FirebaseFirestore db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.afspraak);
+
+        opslaanAfspraak = findViewById(R.id.opslaanAfspr);
+        opslaanAfspraak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                voegAfspraakToe();
+            }
+        });
+    }
+    public void voegAfspraakToe() {
         afspraak = findViewById(R.id.afspraak);
         datum = findViewById(R.id.datum);
         locatie = findViewById(R.id.locatie);
         opmerkingen = findViewById(R.id.opmerkingen);
         HashMap<String, Object> data = new HashMap<>();
-        data.put("afspraak", afspraak);
-        data.put("datum", datum);
-        data.put("locatie", locatie);
-        data.put("opmerkingen", opmerkingen);
+        data.put("afspraak", afspraak.getText());
+        data.put("datum", datum.getText());
+        data.put("locatie", locatie.getText());
+        data.put("opmerkingen", opmerkingen.getText());
         db = FirebaseFirestore.getInstance();
 
         db.collection("afspraak").document().set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -46,7 +57,7 @@ public class AfspraakMaken extends AppCompatActivity {
             public void onSuccess(Void unused) {
                 Toast.makeText(AfspraakMaken.this, "Afspraak toegevoegd", Toast.LENGTH_SHORT).show();
             }
-        }) .addOnFailureListener(new OnFailureListener() {
+        }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 Log.w("TAG", "Error adding document", e);
