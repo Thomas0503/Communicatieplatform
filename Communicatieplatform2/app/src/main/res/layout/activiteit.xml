@@ -314,7 +314,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
                     android:buttonTint="#38422C"
-                    android:text="Overige (zie omschrijving)"
+                    android:text="Overige"
                     android:textColor="#4E342E" />
             </RadioGroup>
         </LinearLayout>
@@ -435,7 +435,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
                 android:buttonTint="#4E342E"
-                android:text="Overige (zie omschrijving)"
+                android:text="Overige"
                 android:textColor="#4E342E" />
         </LinearLayout>
     </ScrollView>

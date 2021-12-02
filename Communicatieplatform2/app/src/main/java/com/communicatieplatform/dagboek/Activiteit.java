@@ -259,7 +259,7 @@ public class Activiteit extends AppCompatActivity {
             variableIsNull = 0;
         }
         if (!omschrijving.toString().isEmpty()) {
-            description = omschrijving.toString();
+            description = omschrijving.getText().toString();
 
         }
         if (variableIsNull == 1) {
@@ -272,7 +272,8 @@ public class Activiteit extends AppCompatActivity {
             data.put("imageUrl", databaseUrl);
             db = FirebaseFirestore.getInstance();
 
-            db.collection("dagboektest").document().set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
+            db.collection("dagboekje").document("dagboekje").collection(
+                    "EqI10LALkGOjjonWT9LGSUIdc572").document().set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void unused) {
                     Toast.makeText(Activiteit.this, "Activiteit toegevoegd", Toast.LENGTH_SHORT).show();
