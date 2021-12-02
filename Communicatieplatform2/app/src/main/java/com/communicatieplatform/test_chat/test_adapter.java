@@ -71,8 +71,6 @@ public class test_adapter extends RecyclerView.Adapter<com.communicatieplatform.
             super(itemView);
             textViewNaam = itemView.findViewById(R.id.textview_naam);
             textViewDatum = itemView.findViewById(R.id.textview_datum);
-            textViewUur = itemView.findViewById(R.id.textview_uur);
-            textViewBericht = itemView.findViewById(R.id.textview_bericht);
 
             itemView.setOnClickListener(this);
 

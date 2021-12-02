@@ -60,8 +60,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
             String query;
             textViewNaam = itemView.findViewById(R.id.textview_naam);
             textViewDatum = itemView.findViewById(R.id.textview_datum);
-            textViewUur = itemView.findViewById(R.id.textview_uur);
-            textViewBericht = itemView.findViewById(R.id.textview_bericht);
+
 
             itemView.setOnClickListener(this);
 

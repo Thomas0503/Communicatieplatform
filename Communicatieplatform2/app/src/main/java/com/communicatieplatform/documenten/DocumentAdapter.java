@@ -85,7 +85,7 @@ public class DocumentAdapter extends RecyclerView.Adapter<DocumentAdapter.Produc
             StorageReference storageReference = storage.getReference();
             CharSequence options[] = new CharSequence[]{
                     "Download",
-                    "Cancel"
+                    "Annuleer"
             };
             AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
             builder.setTitle("Wat wil je doen met " + bestandsNaam + "?");
