@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import com.communicatieplatform.R;
 import com.communicatieplatform.databinding.ChatBinding;
-import com.communicatieplatform.databinding.DocumentsPleeggezinBinding;
+import com.communicatieplatform.databinding.DocumentenBinding;
 import com.communicatieplatform.documenten.Document;
 import com.communicatieplatform.documenten.DocumentAdapter;
 import com.communicatieplatform.documenten.DocumentenToevoegenActivity;

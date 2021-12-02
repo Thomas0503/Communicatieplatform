@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.communicatieplatform.R;
-import com.communicatieplatform.databinding.TrainerDocumentsBinding;
+import com.communicatieplatform.databinding.DocumentenBinding;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -21,13 +21,13 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DocumentActivity extends AppCompatActivity {
+public class PleeggezinDocumenten extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private DocumentAdapter adapter;
     private List<Document> productList;
     private ProgressBar progressBar;
-    private TrainerDocumentsBinding binding;
+    private DocumentenBinding binding;
 
 
     private FirebaseFirestore db;
@@ -36,7 +36,7 @@ public class DocumentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = TrainerDocumentsBinding.inflate(getLayoutInflater());
+        binding = DocumentenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         progressBar = findViewById(R.id.progressbar);
@@ -80,14 +80,6 @@ public class DocumentActivity extends AppCompatActivity {
 
                     }
                 });
-        binding.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { openDocumentenToevoegen();}
-        });
 
-    }
-    public void openDocumentenToevoegen() {
-        Intent intent = new Intent(this, DocumentenToevoegenActivity.class);
-        startActivity(intent);
     }
 }

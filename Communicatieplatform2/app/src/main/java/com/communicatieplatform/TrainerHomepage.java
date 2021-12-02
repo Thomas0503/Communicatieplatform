@@ -10,12 +10,15 @@ import android.widget.Button;
 
 import com.communicatieplatform.chat.Chat;
 import com.communicatieplatform.dagboek.Dagboek;
+import com.communicatieplatform.dagboek.TrainerDagboek;
+import com.communicatieplatform.dagboek.TrainerDagboek_keuze;
+import com.communicatieplatform.dagboek.TrainerDocumenten_keuze;
 import com.communicatieplatform.documenten.DocumentActivity;
-import com.communicatieplatform.documenten.PleeggezinDocumenten;
 import com.communicatieplatform.kalender.AfspraakActivity;
+import com.communicatieplatform.kalender.TrainerKalender_keuze;
 import com.communicatieplatform.test_chat.KiesContactActivity;
 
-public class Homepage extends AppCompatActivity {
+public class TrainerHomepage extends AppCompatActivity {
     private Button button;
 
     @Override
@@ -57,17 +60,17 @@ public class Homepage extends AppCompatActivity {
     }
 
     public void openDagboek() {
-        Intent intent = new Intent(this, Dagboek.class);
+        Intent intent = new Intent(this, TrainerDagboek_keuze.class);
         startActivity(intent);
     }
 
     public void openKalender() {
-        Intent intent = new Intent(this, AfspraakActivity.class);
+        Intent intent = new Intent(this, TrainerKalender_keuze.class);
         startActivity(intent);
     }
 
     public void openDocumenten() {
-        Intent intent = new Intent(this, PleeggezinDocumenten.class);
+        Intent intent = new Intent(this, TrainerDocumenten_keuze.class);
         startActivity(intent);
     }
 
