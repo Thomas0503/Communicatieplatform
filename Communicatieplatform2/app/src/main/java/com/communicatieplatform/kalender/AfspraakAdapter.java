@@ -36,9 +36,9 @@ public class AfspraakAdapter extends RecyclerView.Adapter<AfspraakAdapter.Produc
     public void onBindViewHolder(@NonNull ProductViewHolder holder, int position) {
         Afspraak product = productList.get(position);
 
-        holder.textViewName.setText(product.getStartuur());
-        holder.textViewBrand.setText(product.getEinduur());
-        holder.textViewDesc.setText(product.getDescription());
+        holder.textViewName.setText(product.getDescription());
+        holder.textViewBrand.setText(product.getStartuur());
+        holder.textViewDesc.setText(product.getEinduur());
         holder.textViewPrice.setText(product.getDatum());
     }
 
