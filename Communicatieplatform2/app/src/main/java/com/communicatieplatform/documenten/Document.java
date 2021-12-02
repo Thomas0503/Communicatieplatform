@@ -6,9 +6,11 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
+import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.Exclude;
 
 import java.io.Serializable;
+import java.sql.Time;
 
 public class Document implements Serializable{
 
@@ -16,14 +18,16 @@ public class Document implements Serializable{
 
     private String url, name;
     private Integer size;
+    private Timestamp datum;
     public Document() {
 
     }
 
-    public Document(String url, String name, Integer size) {
-        this.url = url;
+    public Document(String link, String name, Integer size, Timestamp createdAt) {
+        this.url = link;
         this.name = name;
         this.size = size;
+        this.datum = createdAt;
     }
 
     public String getId() {
@@ -33,6 +37,8 @@ public class Document implements Serializable{
     public void setId(String id) {
         this.id = id;
     }
+
+    public Timestamp getDatum() {return datum;}
 
     public String getUrl() {
         return url;

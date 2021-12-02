@@ -54,7 +54,7 @@ public class DocumentActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
 
-        db.collection("documents").get()
+        db.collection("formulier").document("formulier").collection("EqI10LALkGOjjonWT9LGSUIdc572").orderBy("createdAt").get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {

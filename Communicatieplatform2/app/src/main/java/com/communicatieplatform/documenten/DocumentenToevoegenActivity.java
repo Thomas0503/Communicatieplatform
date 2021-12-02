@@ -23,6 +23,7 @@ import android.widget.Toast;
 import com.communicatieplatform.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
@@ -100,11 +101,12 @@ public class DocumentenToevoegenActivity extends AppCompatActivity {
                         //store the url in realtime database
                         String[] fileInfo = getFileInfo(pdfUri);
                         String url = directory + "/" + fileName;
-                        CollectionReference reference = database.collection("documents");
+                        CollectionReference reference = database.collection("formulier").document("formulier").collection("EqI10LALkGOjjonWT9LGSUIdc572");
                         Map<String, Object> image = new HashMap<>();
-                        image.put("url", url);
+                        image.put("link", url);
                         image.put("name", fileInfo[0]);
                         image.put("size", Long.parseLong(fileInfo[1]));
+                        image.put("createdAt", Timestamp.now());
                         reference.document(fileName).set(image)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override

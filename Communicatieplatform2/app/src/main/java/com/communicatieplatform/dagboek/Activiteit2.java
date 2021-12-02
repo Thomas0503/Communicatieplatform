@@ -1,5 +1,6 @@
 package com.communicatieplatform.dagboek;
 
+import android.media.Image;
 import android.widget.ImageView;
 
 import com.google.firebase.Timestamp;
@@ -18,6 +19,7 @@ public class Activiteit2 implements Serializable {
     private String oefening;
     private String description;
     private Integer stressniveau;
+    private ImageView imageView;
 
     /*String id = product.getId();
     EditText datum = product.getDatum();
@@ -31,6 +33,8 @@ public class Activiteit2 implements Serializable {
         this.oefening = oefening;
         this.description = description;
     }
+
+    public  ImageView getImageView() {return imageView;}
 
     public String getId() {
         return id;

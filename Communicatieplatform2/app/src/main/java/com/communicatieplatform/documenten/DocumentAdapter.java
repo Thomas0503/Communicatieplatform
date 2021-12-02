@@ -68,7 +68,6 @@ public class DocumentAdapter extends RecyclerView.Adapter<DocumentAdapter.Produc
 
             textViewName = itemView.findViewById(R.id.textview_name);
             textViewSize = itemView.findViewById(R.id.textview_size);
-            button = itemView.findViewById(R.id.imageButton);
 
             itemView.setOnClickListener(this);
 
