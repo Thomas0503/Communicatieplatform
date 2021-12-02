@@ -50,10 +50,12 @@ public class MessageAdapter extends RecyclerView.Adapter<com.communicatieplatfor
 
         if(currentUid.equals(senderuid)){
             holder.receivertv.setVisibility(View.GONE);
+            holder.sendertv.setVisibility(View.VISIBLE);
             holder.sendertv.setText(message);
         }
-        else if(currentUid.equals(receiveruid)){
+        else {
             holder.sendertv.setVisibility(View.GONE);
+            holder.receivertv.setVisibility(View.VISIBLE);
             holder.receivertv.setText(message);
         }
     }

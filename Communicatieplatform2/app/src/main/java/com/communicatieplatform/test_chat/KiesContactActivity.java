@@ -41,7 +41,6 @@ public class KiesContactActivity extends AppCompatActivity {
     private test_adapter adapter;
     private List<Model_User> productList, copy;
     private ProgressBar progressBar;
-    private DocumentsPleeggezinBinding binding;
 
 
     private FirebaseFirestore db;

@@ -107,12 +107,6 @@ public class Chat extends AppCompatActivity {
         });*/
 
         searchView = findViewById(R.id.search_userch);
-        listView = findViewById(R.id.list);
-        list = new ArrayList<>();
-        list.add("Pieter");
-        list.add("Marie");
-        list.add("Josephine");
-        list.add("Jef");
 
         adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,list);
         listView.setAdapter(adapter2);
