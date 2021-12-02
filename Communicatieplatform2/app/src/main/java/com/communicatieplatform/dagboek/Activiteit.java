@@ -58,15 +58,15 @@ public class Activiteit extends AppCompatActivity {
     @Exclude
     private String id;
     private Button button, button_afbeelding;
-    private CheckBox s1, s2;
-    private RadioButton a1, a2;
+    private CheckBox s1, s2, s3, s4, s5, s6, s7, s8, s9, s10;
+    private RadioButton a1, a2, a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17, a18;
     private TextView textView;
     private SeekBar seekBar;
     TextView test;
     FirebaseFirestore db;
     private EditText omschrijving;
-    private Integer progress;
     TextView notification;
+    private Integer progress;
     Uri imageUri; //Uri are actually URLs that are meant for local storage
     ImageView imageView;
     FirebaseStorage storage; //used for uploading files
@@ -150,13 +150,61 @@ public class Activiteit extends AppCompatActivity {
         final RadioButton a1 = (RadioButton) findViewById(R.id.activiteit1);
         final RadioButton a2 = (RadioButton) findViewById(R.id.activiteit2);
         final RadioButton a3 = (RadioButton) findViewById(R.id.activiteit3);
+        final RadioButton a4 = (RadioButton) findViewById(R.id.activiteit4);
+        final RadioButton a5 = (RadioButton) findViewById(R.id.activiteit5);
+        final RadioButton a6 = (RadioButton) findViewById(R.id.activiteit6);
+        final RadioButton a7 = (RadioButton) findViewById(R.id.activiteit7);
+        final RadioButton a8 = (RadioButton) findViewById(R.id.activiteit8);
+        final RadioButton a9 = (RadioButton) findViewById(R.id.activiteit9);
+        final RadioButton a10 = (RadioButton) findViewById(R.id.activiteit10);
+        final RadioButton a11= (RadioButton) findViewById(R.id.activiteit11);
+        final RadioButton a12 = (RadioButton) findViewById(R.id.activiteit12);
+        final RadioButton a13 = (RadioButton) findViewById(R.id.activiteit13);
+        final RadioButton a14 = (RadioButton) findViewById(R.id.activiteit14);
+        final RadioButton a15 = (RadioButton) findViewById(R.id.activiteit15);
+        final RadioButton a16 = (RadioButton) findViewById(R.id.activiteit16);
+        final RadioButton a17 = (RadioButton) findViewById(R.id.activiteit17);
+        final RadioButton a18 = (RadioButton) findViewById(R.id.activiteit18);
+
+
         if (a1.isChecked()) {
             oefening = a1.getText().toString();
         } else if (a2.isChecked()) {
             oefening = a2.getText().toString();
         } else if (a3.isChecked()) {
             oefening = a3.getText().toString();
-        }
+        } else if (a4.isChecked()) {
+            oefening = a4.getText().toString();
+        } else if (a5.isChecked()) {
+            oefening = a5.getText().toString();
+        } else if (a6.isChecked()) {
+            oefening = a6.getText().toString();
+        } else if (a7.isChecked()) {
+            oefening = a7.getText().toString();
+        } else if (a8.isChecked()) {
+            oefening = a8.getText().toString();
+        } else if (a9.isChecked()) {
+            oefening = a9.getText().toString();
+        } else if (a10.isChecked()) {
+            oefening = a10.getText().toString();
+        } else if (a11.isChecked()) {
+            oefening = a11.getText().toString();
+        } else if (a12.isChecked()) {
+            oefening = a12.getText().toString();
+        } else if (a13.isChecked()) {
+            oefening = a13.getText().toString();
+        } else if (a14.isChecked()) {
+            oefening = a14.getText().toString();
+        } else if (a15.isChecked()) {
+            oefening = a15.getText().toString();
+        } else if (a16.isChecked()) {
+            oefening = a16.getText().toString();
+        } else if (a17.isChecked()) {
+            oefening = a17.getText().toString();
+        } else if (a18.isChecked()) {
+            oefening = a18.getText().toString();}
+
+
 
         final CheckBox s1 = (CheckBox) findViewById(R.id.stresssignaal1);
         if (s1.isChecked()) {
@@ -169,6 +217,34 @@ public class Activiteit extends AppCompatActivity {
         final CheckBox s3 = (CheckBox) findViewById(R.id.stresssignaal3);
         if (s3.isChecked()) {
             signaalLijst.add(s3.getText().toString());
+        }
+        final CheckBox s4 = (CheckBox) findViewById(R.id.stresssignaal4);
+        if (s4.isChecked()) {
+            signaalLijst.add(s4.getText().toString());
+        }
+        final CheckBox s5 = (CheckBox) findViewById(R.id.stresssignaal5);
+        if (s5.isChecked()) {
+            signaalLijst.add(s5.getText().toString());
+        }
+        final CheckBox s6 = (CheckBox) findViewById(R.id.stresssignaal6);
+        if (s6.isChecked()) {
+            signaalLijst.add(s6.getText().toString());
+        }
+        final CheckBox s7 = (CheckBox) findViewById(R.id.stresssignaal7);
+        if (s7.isChecked()) {
+            signaalLijst.add(s7.getText().toString());
+        }
+        final CheckBox s8 = (CheckBox) findViewById(R.id.stresssignaal8);
+        if (s8.isChecked()) {
+            signaalLijst.add(s8.getText().toString());
+        }
+        final CheckBox s9 = (CheckBox) findViewById(R.id.stresssignaal9);
+        if (s9.isChecked()) {
+            signaalLijst.add(s9.getText().toString());
+        }
+        final CheckBox s10 = (CheckBox) findViewById(R.id.stresssignaal10);
+        if (s10.isChecked()) {
+            signaalLijst.add(s10.getText().toString());
         }
 
         int variableIsNull = 1;

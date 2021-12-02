@@ -144,7 +144,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
                     android:buttonTint="#38422C"
-                    android:text="openbare plaatsen"
+                    android:text="Bench"
                     android:textColor="#4E342E" />
 
                 <RadioButton
@@ -154,7 +154,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
                     android:buttonTint="#38422C"
-                    android:text="vervoer"
+                    android:text="Dierenarts"
                     android:textColor="#4E342E" />
 
                 <RadioButton
@@ -164,7 +164,157 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
                     android:buttonTint="#38422C"
-                    android:text="shopping"
+                    android:text="Houdingen"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Kinderen"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Korte lijn zonder prikkels"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Korte lijn met prikkels"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Mee naar het werk"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Op dingen springen / onder dingen kruipen"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Stofzuiger"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Tafeloefening"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Voedselweigering"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Vreemde ondergronden"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Privé vervoer"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Openbare vervoer"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Openbare plaatsen"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Shopping"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Horeca"
+                    android:textColor="#4E342E" />
+
+                <RadioButton
+                    android:id="@+id/activiteit18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:buttonTint="#38422C"
+                    android:text="Overige (zie omschrijving)"
                     android:textColor="#4E342E" />
             </RadioGroup>
         </LinearLayout>
@@ -195,7 +345,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
                 android:buttonTint="#4E342E"
-                android:text="bevriezen"
+                android:text="Bevriezen"
                 android:textColor="#38422C" />
 
             <CheckBox
@@ -205,7 +355,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
                 android:buttonTint="#4E342E"
-                android:text="gapen"
+                android:text="Gapen"
                 android:textColor="#4E342E" />
 
             <CheckBox
@@ -215,7 +365,77 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
                 android:buttonTint="#4E342E"
-                android:text="krabben"
+                android:text="Hijgen"
+                android:textColor="#4E342E" />
+
+            <CheckBox
+                android:id="@+id/stresssignaal4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:buttonTint="#4E342E"
+                android:text="Krabben"
+                android:textColor="#4E342E" />
+
+            <CheckBox
+                android:id="@+id/stresssignaal5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:buttonTint="#4E342E"
+                android:text="Oogwit"
+                android:textColor="#4E342E" />
+
+            <CheckBox
+                android:id="@+id/stresssignaal6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:buttonTint="#4E342E"
+                android:text="Tongelen"
+                android:textColor="#4E342E" />
+
+            <CheckBox
+                android:id="@+id/stresssignaal7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:buttonTint="#4E342E"
+                android:text="Trillen"
+                android:textColor="#4E342E" />
+
+            <CheckBox
+                android:id="@+id/stresssignaal8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:buttonTint="#4E342E"
+                android:text="Uitschudden"
+                android:textColor="#4E342E" />
+
+            <CheckBox
+                android:id="@+id/stresssignaal9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:buttonTint="#4E342E"
+                android:text="Wegkijken"
+                android:textColor="#4E342E" />
+
+            <CheckBox
+                android:id="@+id/stresssignaal10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:buttonTint="#4E342E"
+                android:text="Overige (zie omschrijving)"
                 android:textColor="#4E342E" />
         </LinearLayout>
     </ScrollView>
