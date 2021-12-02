@@ -265,11 +265,11 @@ public class Activiteit extends AppCompatActivity {
         if (variableIsNull == 1) {
             HashMap<String, Object> data = new HashMap<>();
             data.put("stressniveau", stressniveau);
-            data.put("datum", Timestamp.now());
+            data.put("createdAt", Timestamp.now());
             data.put("desc", description);
             data.put("oefening", oefening);
             data.put("stresssignalen", signaalLijst);
-            data.put("imageUrl", databaseUrl);
+            data.put("link", databaseUrl);
             db = FirebaseFirestore.getInstance();
 
             db.collection("dagboekje").document("dagboekje").collection(
