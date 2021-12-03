@@ -11,7 +11,7 @@ const Loading = () => {
           transform: "translate(-50%, -50%)",
         }}
       >
-        Loading...
+        Aan het laden...
       </h2>
     </div>
   );

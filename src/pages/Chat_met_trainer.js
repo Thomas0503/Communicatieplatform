@@ -18,7 +18,7 @@ import User from "../components/User";
 import MessageForm from "../components/MessageForm";
 import Message from "../components/Message";
 
-const Home = () => {
+const Chat_met_trainer = () => {
   const [users, setUsers] = useState([]);
   const [chat, setChat] = useState("");
   const [text, setText] = useState("");
@@ -30,22 +30,18 @@ const Home = () => {
   useEffect(() => {
     const usersRef = collection(db, "users");
     // create query object
-    const q = query(usersRef, where("uid", "not-in", [user1]));
+    const q = query(usersRef, where("trainer", "==", true));
     // execute query
     const unsub = onSnapshot(q, (querySnapshot) => {
       let users = [];
       querySnapshot.forEach((doc) => {
-        try{
           if (doc.data().pleeggezinnen.includes(user1)){
             users.push(doc.data());
           }
-        }catch(e){
-          console.log("geen trainer")
-        }
         
-        //users.push(doc.data());
       });
       setUsers(users);
+      setChat(users[0])
     });
     return () => unsub();
   }, []);
@@ -148,11 +144,11 @@ const Home = () => {
             />
           </>
         ) : (
-          <h3 className="no_conv">Select a user to start conversation</h3>
+          <h3 className="no_conv">Selecteer een gebruiker</h3>
         )}
       </div>
     </div>
   );
 };
 
-export default Home;
+export default Chat_met_trainer;

@@ -27,7 +27,7 @@ const Login = () => {
       setData({ ...data, error: "All fields are required" });
     }
     try {
-      const result = await signInWithEmailAndPassword(auth, email, password);
+      const result = await signInWithEmailAndPassword(auth, email+ "@gmail.com", password);
 
       await updateDoc(doc(db, "users", result.user.uid), {
         isOnline: true,
@@ -45,19 +45,20 @@ const Login = () => {
   };
   return (
     <section>
-      <h3>Log into your Account</h3>
+      <h3>Log in</h3>
       <form className="form" onSubmit={handleSubmit}>
         <div className="input_container">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="gebruikersnaam">Gebruikersnaam</label>
           <input
             type="text"
             name="email"
             value={email}
             onChange={handleChange}
+            autoComplete="none"
           />
         </div>
         <div className="input_container">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Wachtwoord</label>
           <input
             type="password"
             name="password"

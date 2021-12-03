@@ -18,36 +18,57 @@ import User from "../components/User";
 import MessageForm from "../components/MessageForm";
 import Message from "../components/Message";
 
-const Home = () => {
+const Chat_trainer = () => {
   const [users, setUsers] = useState([]);
   const [chat, setChat] = useState("");
   const [text, setText] = useState("");
   const [img, setImg] = useState("");
   const [msgs, setMsgs] = useState([]);
-
+  const [gezinnen, setGezinnen] = useState([0]);
+  const [loading, setLoading] = useState(false)
   const user1 = auth.currentUser.uid;
 
+  var gezinnen1 = [0];
   useEffect(() => {
+
+
+    // create query object
+    // execute query
+
     const usersRef = collection(db, "users");
     // create query object
-    const q = query(usersRef, where("uid", "not-in", [user1]));
+    const q1 = query(usersRef, where("uid", "==", user1));
     // execute query
-    const unsub = onSnapshot(q, (querySnapshot) => {
-      let users = [];
+    const unsub1 = onSnapshot(q1, (querySnapshot) => {
+
       querySnapshot.forEach((doc) => {
-        try{
-          if (doc.data().pleeggezinnen.includes(user1)){
-            users.push(doc.data());
-          }
-        }catch(e){
-          console.log("geen trainer")
-        }
-        
-        //users.push(doc.data());
+        gezinnen1 = doc.data().pleeggezinnen;
+
+      })
+      console.log(gezinnen1)
+      const q = query(usersRef, where("uid", "in", gezinnen1));
+      const unsub = onSnapshot(q, (querySnapshot) => {
+        let users = [];
+        querySnapshot.forEach((doc) => {
+
+          users.push(doc.data());
+
+          console.log(users)
+        });
+        setUsers(users);
       });
-      setUsers(users);
-    });
-    return () => unsub();
+      setGezinnen(gezinnen1);
+    })
+
+
+
+    // create query object
+    console.log(gezinnen1)
+
+    // execute query
+
+
+
   }, []);
 
   const selectUser = async (user) => {
@@ -89,6 +110,7 @@ const Home = () => {
         storage,
         `images/${new Date().getTime()} - ${img.name}`
       );
+      setLoading(true)
       const snap = await uploadBytes(imgRef, img);
       const dlUrl = await getDownloadURL(ref(storage, snap.ref.fullPath));
       url = dlUrl;
@@ -113,6 +135,7 @@ const Home = () => {
     url = "";
     setText("");
     setImg("");
+    setLoading(false)
   };
   return (
     <div className="home_container">
@@ -136,8 +159,8 @@ const Home = () => {
             <div className="messages">
               {msgs.length
                 ? msgs.map((msg, i) => (
-                    <Message key={i} msg={msg} user1={user1} />
-                  ))
+                  <Message key={i} msg={msg} user1={user1} />
+                ))
                 : null}
             </div>
             <MessageForm
@@ -145,14 +168,15 @@ const Home = () => {
               text={text}
               setText={setText}
               setImg={setImg}
+              loading={loading}
             />
           </>
         ) : (
-          <h3 className="no_conv">Select a user to start conversation</h3>
+          <h3 className="no_conv">Selecteer een gebruiker</h3>
         )}
       </div>
     </div>
   );
 };
 
-export default Home;
+export default Chat_trainer;

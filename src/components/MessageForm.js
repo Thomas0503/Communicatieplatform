@@ -1,7 +1,7 @@
 import React from "react";
 import Attachment from "./svg/Attachment";
 
-const MessageForm = ({ handleSubmit, text, setText, setImg }) => {
+const MessageForm = ({ handleSubmit, text, setText, setImg, loading }) => {
   return (
     <form className="message_form" onSubmit={handleSubmit}>
       <label htmlFor="img">
@@ -17,14 +17,17 @@ const MessageForm = ({ handleSubmit, text, setText, setImg }) => {
       <div>
         <input
           type="text"
-          placeholder="Enter message"
+          placeholder="Typ hier uw bericht"
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
       </div>
       <div>
-        <button className="btn">Send</button>
-      </div>
+      
+      <button className="btn" disabled={loading}>
+                        {loading ? "Aan het verzenden..." : "Verzend"}
+                    </button>
+                    </div>
     </form>
   );
 };
