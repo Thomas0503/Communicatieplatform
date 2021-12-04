@@ -475,6 +475,8 @@
         android:hint="Geef een omschrijving:"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
+        android:textColorHighlight="#A34F47"
+        android:textColorLink="#A34F47"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Dagboek" />

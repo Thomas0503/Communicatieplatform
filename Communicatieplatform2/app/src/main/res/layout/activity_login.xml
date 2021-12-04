@@ -74,6 +74,8 @@
         android:hint="E-mail"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
+        android:textColorHighlight="#A34F47"
+        android:textColorLink="#A34F47"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_image" />
@@ -89,6 +91,8 @@
         android:hint="Wachtwoord"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:textColorHighlight="#A34F47"
+        android:textColorLink="#A34F47"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
