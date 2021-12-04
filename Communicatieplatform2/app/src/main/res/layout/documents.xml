@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F44336">
+    android:background="@color/vriendenDerBlinden">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="#F44336"
+        android:background="#00F44336"
         android:text="Documenten"
         android:textColor="#4E342E"
         android:textSize="34sp"
@@ -65,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
-        android:background="#F44336"
+        android:background="#00F44336"
         android:text="Er is geen file geselecteerd"
         android:textColor="#4E342E"
         android:textSize="20sp"

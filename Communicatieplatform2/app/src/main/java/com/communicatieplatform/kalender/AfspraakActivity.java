@@ -63,7 +63,8 @@ public class AfspraakActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
 
-        db.collection("afspraken").get()
+        db.collection("calenderT").document("calenderT").collection("EqI10LALkGOjjonWT9LGSUIdc572")
+                .orderBy("start").get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
@@ -76,7 +77,8 @@ public class AfspraakActivity extends AppCompatActivity {
 
                             for (DocumentSnapshot d : list) {
 
-                                Afspraak p = d.toObject(Afspraak.class);
+                                Afspraak p = new Afspraak(d.getTimestamp("start"), d.getTimestamp("end"),d.getString("title"),
+                                        d.getString("locatie"), d.getString("opmerkingen"));
                                 p.setId(d.getId());
                                 productList.add(p);
 

@@ -260,8 +260,9 @@ public class Activiteit extends AppCompatActivity {
         }
         if (!omschrijving.toString().isEmpty()) {
             description = omschrijving.getText().toString();
-
-        }
+        }else {
+            description = "";
+            }
         if (variableIsNull == 1) {
             HashMap<String, Object> data = new HashMap<>();
             data.put("stressniveau", stressniveau);

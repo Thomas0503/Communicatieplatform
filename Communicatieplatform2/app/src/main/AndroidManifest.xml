@@ -30,6 +30,7 @@
         <activity android:name=".documenten.ViewPdfActivity" />
         <activity android:name=".test_chat.KiesContactActivity" />
         <activity android:name=".MessageActivity" />
+        <activity android:name=".documenten.PleeggezinDocumenten" />
         <activity android:name=".test_chat.test_MessageActivity" />
         <activity
             android:name="com.communicatieplatform.MainActivity"

@@ -66,7 +66,7 @@ public class TrainerActZoeken extends AppCompatActivity {
                                 for (DocumentSnapshot d : list) {
 
                                     List<String> stresssignalen = (List<String>) d.get("stresssignalen");
-                                    Activiteit2 p = new Activiteit2(d.getTimestamp("createdAt"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen, d.getString("desc"));
+                                    Activiteit2 p = new Activiteit2(d.getTimestamp("createdAt"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen, d.getString("desc"), d.getString("imageUrl"));
                                     p.setId(d.getId());
                                     productList.add(p);
 
@@ -119,7 +119,7 @@ public class TrainerActZoeken extends AppCompatActivity {
                                 for (DocumentSnapshot d : list) {
 
                                     List<String> stresssignalen = (List<String>) d.get("stresssignalen");
-                                    Activiteit2 p = new Activiteit2(d.getTimestamp("createdAt"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen, d.getString("desc"));
+                                    Activiteit2 p = new Activiteit2(d.getTimestamp("createdAt"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen, d.getString("desc"), d.getString("imageUrl"));
                                     p.setId(d.getId());
                                     productList.add(p);
 

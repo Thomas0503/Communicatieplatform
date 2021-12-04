@@ -5,7 +5,7 @@
     android:id="@+id/Activiteit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F44336">
+    android:background="@color/vriendenDerBlinden">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
@@ -24,7 +24,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
-        android:background="#F44336"
+        android:background="#00F44336"
         android:text="Activiteit toevoegen"
         android:textColor="#4E342E"
         android:textSize="34sp"
@@ -467,12 +467,12 @@
     <EditText
         android:id="@+id/omschrijving"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
         android:ems="10"
-        android:hint="Geef een omschrijving:"
+        android:hint="Geef een omschrijving (optioneel):"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
         android:textColorHighlight="#A34F47"
@@ -480,7 +480,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Dagboek" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

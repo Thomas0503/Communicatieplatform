@@ -16,29 +16,32 @@ public class Activiteit2 implements Serializable {
     private String id;
     private List<String> signalenLijst;
     private Date datum;
-    private String oefening;
+    private String oefening, url;
     private String description;
     private Integer stressniveau;
-    private ImageView imageView;
 
     /*String id = product.getId();
     EditText datum = product.getDatum();
     Integer progress = product.getNiveau();
     ArrayList<ActStresssignalen> signalenLijst = product.getStresssignalenLijst();*/
+    public Activiteit2() {
+    }
 
-    public Activiteit2(Timestamp datum, String oefening, Integer stressniveau, List<String> stresssignalen, String description) {
+    public Activiteit2(Timestamp datum, String oefening, Integer stressniveau, List<String> stresssignalen, String description, String url) {
         this.datum = datum.toDate();
         this.signalenLijst = stresssignalen;
         this.stressniveau = stressniveau;
         this.oefening = oefening;
         this.description = description;
+        this.url = url;
     }
 
-    public  ImageView getImageView() {return imageView;}
 
     public String getId() {
         return id;
     }
+
+    public String getUrl(){return url;}
 
     public void setId(String id) {
         this.id = id;

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#F44336">
+    android:background="@color/vriendenDerBlinden">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -12,9 +12,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#F44336"
             android:orientation="vertical"
-            android:padding="5dp"
-            android:background="#F44336">
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/textview_name"
@@ -22,9 +22,9 @@
                 android:layout_height="wrap_content"
                 android:text="Afspraak"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textStyle="bold"
                 android:textColor="#832E2E"
-                android:textSize="22sp"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
 
             <TextView
@@ -32,30 +32,37 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="datum"
-                android:textColor="#832E2E"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textSize="22sp"/>
+                android:textColor="#832E2E"
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/textview_brand"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="beginuur"
+                android:text="uur"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="#832E2E"
-                android:textStyle="bold"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textview_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="einduur"
+                android:text="locatie"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="#832E2E"
                 android:textSize="18sp" />
 
-
+            <TextView
+                android:id="@+id/textview_opmerking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="opmerking"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#832E2E"
+                android:textSize="18sp" />
 
 
         </LinearLayout>

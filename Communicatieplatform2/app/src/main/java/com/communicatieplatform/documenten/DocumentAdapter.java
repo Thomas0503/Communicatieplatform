@@ -61,7 +61,6 @@ public class DocumentAdapter extends RecyclerView.Adapter<DocumentAdapter.Produc
     class ProductViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView textViewName, textViewSize;
-        ImageButton button;
 
         public ProductViewHolder(View itemView) {
             super(itemView);

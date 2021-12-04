@@ -26,7 +26,6 @@ public class ActZoeken extends AppCompatActivity {
     private ProgressBar progressBar;
    // private Dagboek product;
 //    String activiteit = product.getActiviteit();
-    Map<String, Boolean> data;
 
     private FirebaseFirestore db;
 
@@ -66,7 +65,7 @@ public class ActZoeken extends AppCompatActivity {
                                     for (DocumentSnapshot d : list) {
 
                                         List<String> stresssignalen = (List<String>) d.get("stresssignalen");
-                                        Activiteit2 p = new Activiteit2(d.getTimestamp("createdAt"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen, d.getString("desc"));
+                                        Activiteit2 p = new Activiteit2(d.getTimestamp("createdAt"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen, d.getString("desc"), d.getString("link"));
                                         p.setId(d.getId());
                                         productList.add(p);
 
@@ -103,30 +102,57 @@ public class ActZoeken extends AppCompatActivity {
 
                             }
                         });
-            } else {
-                db.collection("dagboekje").document("dagboekje").collection(
-                        "EqI10LALkGOjjonWT9LGSUIdc572").get()
-                        .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                            @Override
-                            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+            } else {db.collection("dagboekje").document("dagboekje").collection(
+                    "EqI10LALkGOjjonWT9LGSUIdc572").get()
+                    .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                        @Override
+                        public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
 
-                                progressBar.setVisibility(View.GONE);
+                            progressBar.setVisibility(View.GONE);
 
-                                if (!queryDocumentSnapshots.isEmpty()) {
+                            if (!queryDocumentSnapshots.isEmpty()) {
 
-                                    List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
+                                List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
 
-                                    for (DocumentSnapshot d : list) {
+                                for (DocumentSnapshot d : list) {
 
-                                        List<String> stresssignalen = (List<String>) d.get("stresssignalen");
-                                        Activiteit2 p = new Activiteit2(d.getTimestamp("createdAt"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen, d.getString("desc"));
-                                        p.setId(d.getId());
-                                        productList.add(p);
+                                    List<String> stresssignalen = (List<String>) d.get("stresssignalen");
+                                    Activiteit2 p = new Activiteit2(d.getTimestamp("createdAt"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen, d.getString("desc"), d.getString("link"));
+                                    p.setId(d.getId());
+                                    productList.add(p);
 
-                                    }
+                                }
 
-            }}
-                        });
+                                //for (Map.Entry<String, Boolean> o : data.entrySet()) {
+                                //    String key = product.getActiviteit();
+                                //    Boolean value = o.getValue();
+                                //    if (value == true){
+                                //        for (Map.Entry<String, Boolean> m : data.entrySet()) {
+                                //            String key2 = m.getKey();
+                                //            Boolean value2 = m.getValue();}
+                                //    }
+                                //}
 
+                                adapter.notifyDataSetChanged();
+
+                            }
+                            //if (db.collection("dagboek").document("oefening1").get(activiteit) == true) {
+                            //    db.collection("dagboek").document("oefening1").get();
+                            //}
+                            // Create a reference to the cities collection
+                            //CollectionReference cities = db.collection("dagboek");
+                            // Create a query against the collection.
+                            //Query query = cities.whereEqualTo(activiteit, true);
+                            // retrieve  query results asynchronously using query.get()
+                            //signalen = cities.whereEqualTo(,true);
+                            //ApiFuture<QuerySnapshot> querySnapshot = query.get();
+
+                            //for (DocumentSnapshot document : querySnapshot.get().getDocuments()) {
+                            //    System.out.println(document.getId());
+                            //}
+
+
+                        }
+                    });
     }
 }}

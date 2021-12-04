@@ -12,16 +12,42 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.communicatieplatform.R;
 
+import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.List;
 
 public class AfspraakAdapter extends RecyclerView.Adapter<AfspraakAdapter.ProductViewHolder> {
 
     private Context mCtx;
     private List<Afspraak> productList;
+    private HashMap<Integer, String> weekDagomzetten, maandOmzetten;
 
     public AfspraakAdapter(Context mCtx, List<Afspraak> productList) {
         this.mCtx = mCtx;
         this.productList = productList;
+        HashMap<Integer, String> weekDagOmzetten = new HashMap<>();
+        weekDagOmzetten.put(1, "Maandag");
+        weekDagOmzetten.put(2, "Dinsdag");
+        weekDagOmzetten.put(3, "Woensdag");
+        weekDagOmzetten.put(4, "Donderdag");
+        weekDagOmzetten.put(5, "Vrijdag");
+        weekDagOmzetten.put(6, "Zaterdag");
+        weekDagOmzetten.put(7, "Zondag");
+        HashMap<Integer, String> maandOmzetten = new HashMap<>();
+        maandOmzetten.put(1, "januari");
+        maandOmzetten.put(2, "februari");
+        maandOmzetten.put(3, "maart");
+        maandOmzetten.put(4, "april");
+        maandOmzetten.put(5, "mei");
+        maandOmzetten.put(6, "juni");
+        maandOmzetten.put(7, "juli");
+        maandOmzetten.put(8, "augustus");
+        maandOmzetten.put(9, "september");
+        maandOmzetten.put(10, "oktober");
+        maandOmzetten.put(11, "november");
+        maandOmzetten.put(12, "december");
+        this.weekDagomzetten = weekDagOmzetten;
+        this.maandOmzetten = maandOmzetten;
     }
 
 
@@ -35,11 +61,27 @@ public class AfspraakAdapter extends RecyclerView.Adapter<AfspraakAdapter.Produc
     @Override
     public void onBindViewHolder(@NonNull ProductViewHolder holder, int position) {
         Afspraak product = productList.get(position);
+        LocalDateTime localDateTime = product.getLocalDateTime();
+        String textDatum = weekDagomzetten.get(Integer.valueOf(localDateTime.getDayOfWeek().getValue()))
+                + " " + localDateTime.getDayOfMonth() + " " +
+                maandOmzetten.get(Integer.valueOf(localDateTime.getMonthValue())) + " "
+                + localDateTime.getYear();
 
-        holder.textViewName.setText(product.getDescription());
-        holder.textViewBrand.setText(product.getStartuur());
-        holder.textViewDesc.setText(product.getEinduur());
-        holder.textViewPrice.setText(product.getDatum());
+        holder.textViewName.setText(product.getTitle());
+        holder.textViewBrand.setText(product.getStartuur()+ " - " + product.getEinduur());
+        holder.textViewPrice.setText(textDatum);
+        if(product.getLocatie().equals("")){
+            holder.textViewDesc.setVisibility(View.GONE);
+        } else {
+            holder.textViewDesc.setVisibility(View.VISIBLE);
+            holder.textViewDesc.setText(product.getLocatie());
+        }
+        if(product.getLocatie().equals("")){
+            holder.textViewOpmerking.setVisibility(View.GONE);
+        } else {
+            holder.textViewOpmerking.setVisibility(View.VISIBLE);
+            holder.textViewOpmerking.setText(product.getOpmerkingen());
+        }
     }
 
     @Override
@@ -49,7 +91,7 @@ public class AfspraakAdapter extends RecyclerView.Adapter<AfspraakAdapter.Produc
 
     class ProductViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView textViewName, textViewBrand, textViewDesc, textViewPrice;
+        TextView textViewName, textViewBrand, textViewDesc, textViewPrice, textViewOpmerking;
 
         public ProductViewHolder(View itemView) {
             super(itemView);
@@ -58,6 +100,7 @@ public class AfspraakAdapter extends RecyclerView.Adapter<AfspraakAdapter.Produc
             textViewBrand = itemView.findViewById(R.id.textview_brand);
             textViewDesc = itemView.findViewById(R.id.textview_desc);
             textViewPrice = itemView.findViewById(R.id.textview_price);
+            textViewOpmerking = itemView.findViewById(R.id.textview_opmerking);
 
             itemView.setOnClickListener(this);
 
