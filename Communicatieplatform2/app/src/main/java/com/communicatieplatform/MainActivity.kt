@@ -1,5 +1,6 @@
 package com.communicatieplatform
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -9,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.communicatieplatform.databinding.ActivityLoginBinding
 import com.communicatieplatform.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.DocumentSnapshot
+import com.google.firebase.firestore.FirebaseFirestore
 
 
 class MainActivity:AppCompatActivity() {
@@ -29,6 +32,25 @@ class MainActivity:AppCompatActivity() {
 
 
     }
+
+    //class FirebaseUtils {
+    //    val fireStoreDatabase = FirebaseFirestore.getInstance()
+    //}
+    //val db = FirebaseFirestore.getInstance()
+    //private fun readData(){
+    //    binding.LoginButton.setOnClickListener {
+    //        FirebaseUtils().fireStoreDatabase.collection("users")
+    //                .get()
+    //                .addOnSuccessListener { querySnapshot ->
+    //                    querySnapshot.forEach { document ->
+    //                        Log.d(TAG, "Read document with ID ${document.id}")
+    //                    }
+    //                }
+    //                .addOnFailureListener { exception ->
+    //                    Log.w(TAG, "Error getting documents $exception")
+    //                }
+    //    }
+    //}
 
     private fun performLogin() {
         val email = binding.editTextTextEmailAddress.text.toString()
@@ -61,6 +83,7 @@ class MainActivity:AppCompatActivity() {
 
 
     }
+
 
 
 }
