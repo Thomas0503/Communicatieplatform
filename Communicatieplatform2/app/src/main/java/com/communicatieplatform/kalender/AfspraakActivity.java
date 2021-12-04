@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.communicatieplatform.R;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -63,7 +64,7 @@ public class AfspraakActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
 
-        db.collection("calenderT").document("calenderT").collection("EqI10LALkGOjjonWT9LGSUIdc572")
+        db.collection("calenderT").document("calenderT").collection(FirebaseAuth.getInstance().getCurrentUser().getUid())
                 .orderBy("start").get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override

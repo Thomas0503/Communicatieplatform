@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.communicatieplatform.R;
 import com.communicatieplatform.databinding.DocumentenBinding;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -54,7 +55,7 @@ public class PleeggezinDocumenten extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
 
-        db.collection("formulier").document("formulier").collection("EqI10LALkGOjjonWT9LGSUIdc572").orderBy("createdAt").get()
+        db.collection("formulier").document("formulier").collection(FirebaseAuth.getInstance().getCurrentUser().getUid()).orderBy("createdAt").get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {

@@ -56,7 +56,7 @@ class MainActivity:AppCompatActivity() {
                 startActivity(intent)
             }
             .addOnFailureListener {
-                Toast.makeText(this, "Failed to log in: ${it.message}", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Mislukt om in te loggen: Het wachtwoord is verkeerd of de gebruiker heeft geen account.", Toast.LENGTH_LONG).show()
             }
 
 

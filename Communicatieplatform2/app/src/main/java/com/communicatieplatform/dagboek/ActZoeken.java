@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.communicatieplatform.R;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -28,6 +30,7 @@ public class ActZoeken extends AppCompatActivity {
 //    String activiteit = product.getActiviteit();
 
     private FirebaseFirestore db;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +54,7 @@ public class ActZoeken extends AppCompatActivity {
 
             if(!zoekQuery.equals("")) {
                 db.collection("dagboekje").document("dagboekje").collection(
-                        "EqI10LALkGOjjonWT9LGSUIdc572").whereEqualTo("oefening", zoekQuery).get()
+                        FirebaseAuth.getInstance().getCurrentUser().getUid()).whereEqualTo("oefening", zoekQuery).get()
                         .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                             @Override
                             public void onSuccess(QuerySnapshot queryDocumentSnapshots) {

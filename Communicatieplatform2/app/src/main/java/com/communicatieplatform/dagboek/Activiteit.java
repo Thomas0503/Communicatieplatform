@@ -274,7 +274,7 @@ public class Activiteit extends AppCompatActivity {
             db = FirebaseFirestore.getInstance();
 
             db.collection("dagboekje").document("dagboekje").collection(
-                    "EqI10LALkGOjjonWT9LGSUIdc572").document().set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    FirebaseAuth.getInstance().getCurrentUser().getUid()).document().set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void unused) {
                     Toast.makeText(Activiteit.this, "Activiteit toegevoegd", Toast.LENGTH_SHORT).show();
