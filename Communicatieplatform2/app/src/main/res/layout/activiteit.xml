@@ -12,7 +12,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/logo"
-        app:civ_border_color="#F44336"
+        app:civ_border_color="@color/vriendenDerBlinden"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
         android:layout_marginEnd="20dp"
         android:background="#00F44336"
         android:text="Activiteit toevoegen"
@@ -134,7 +135,7 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#F44336"
+                android:background="@color/vriendenDerBlinden"
                 android:orientation="vertical">
 
                 <RadioButton
@@ -334,7 +335,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#F44336"
+            android:background="@color/vriendenDerBlinden"
             android:orientation="vertical">
 
 

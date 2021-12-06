@@ -14,6 +14,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:background="#00F44336"
+        android:gravity="center_horizontal"
         android:text="Dagboek"
         android:textColor="#4E342E"
         android:textSize="34sp"
@@ -97,7 +98,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:src="@drawable/logo"
-        app:civ_border_color="#F44336"
+        app:civ_border_color="@color/vriendenDerBlinden"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
