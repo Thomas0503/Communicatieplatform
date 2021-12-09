@@ -1,0 +1,4 @@
+\babel@toc {dutch}{}\relax 
+\beamer@sectionintoc {1}{Database}{3}{0}{1}
+\beamer@sectionintoc {2}{Pleeggezin}{4}{0}{2}
+\beamer@sectionintoc {3}{Trainer}{10}{0}{3}
