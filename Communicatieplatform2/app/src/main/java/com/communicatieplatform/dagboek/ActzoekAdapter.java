@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.List;
 
 import com.communicatieplatform.R;
@@ -32,9 +34,33 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
     private Context mCtx;
     private List<Activiteit2> productList;
     private FirebaseStorage storage;
+    private HashMap<Integer, String> weekDagomzetten, maandOmzetten;
     public ActzoekAdapter(Context mCtx, List<Activiteit2> productList) {
         this.mCtx = mCtx;
         this.productList = productList;
+        HashMap<Integer, String> weekDagOmzetten = new HashMap<>();
+        weekDagOmzetten.put(1, "Maandag");
+        weekDagOmzetten.put(2, "Dinsdag");
+        weekDagOmzetten.put(3, "Woensdag");
+        weekDagOmzetten.put(4, "Donderdag");
+        weekDagOmzetten.put(5, "Vrijdag");
+        weekDagOmzetten.put(6, "Zaterdag");
+        weekDagOmzetten.put(7, "Zondag");
+        HashMap<Integer, String> maandOmzetten = new HashMap<>();
+        maandOmzetten.put(1, "januari");
+        maandOmzetten.put(2, "februari");
+        maandOmzetten.put(3, "maart");
+        maandOmzetten.put(4, "april");
+        maandOmzetten.put(5, "mei");
+        maandOmzetten.put(6, "juni");
+        maandOmzetten.put(7, "juli");
+        maandOmzetten.put(8, "augustus");
+        maandOmzetten.put(9, "september");
+        maandOmzetten.put(10, "oktober");
+        maandOmzetten.put(11, "november");
+        maandOmzetten.put(12, "december");
+        this.weekDagomzetten = weekDagOmzetten;
+        this.maandOmzetten = maandOmzetten;
     }
 
 
@@ -48,15 +74,20 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
     @Override
     public void onBindViewHolder(@NonNull ActzoekAdapter.ProductViewHolder holder, int position) {
         Activiteit2 product = productList.get(position);
-
-        holder.textOefening.setText((CharSequence) product.getOefening());
-        holder.textViewDatum.setText((CharSequence) product.getDatum());
-        holder.textViewSignalen.setText((CharSequence) product.getStresssignalenString());
-        holder.textNiveau.setText((CharSequence) product.getNiveau().toString());
-        if(product.getDescription().equals("")){
+        LocalDateTime localDateTime = product.getLocalDateTime();
+        String textDatum = localDateTime.getDayOfMonth() + " " +
+                maandOmzetten.get(Integer.valueOf(localDateTime.getMonthValue())) + " "
+                + localDateTime.getYear();
+        holder.textOefening.setText(product.getOefening());
+        holder.textViewDatum.setText(textDatum);
+        holder.textViewSignalen.setText(product.getStresssignalenString());
+        holder.textNiveau.setText(product.getNiveau().toString());
+        if(product.getDescription().equals("") || product.getDescription().isEmpty()){
             holder.textOmschrijving.setVisibility(View.GONE);
+            holder.titleOmschrijving.setVisibility(View.GONE);
         } else {
             holder.textOmschrijving.setVisibility(View.VISIBLE);
+            holder.titleOmschrijving.setVisibility(View.VISIBLE);
             holder.textOmschrijving.setText(product.getDescription());
         }
         if(product.getUrl().equals("")){
@@ -78,7 +109,7 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
 
     class ProductViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView textViewDatum, textViewSignalen, textNiveau, textOefening, textOmschrijving;
+        TextView textViewDatum, textViewSignalen, textNiveau, textOefening, textOmschrijving, titleOmschrijving;
         ImageView imageView;
 
         public ProductViewHolder(View itemView) {
@@ -90,6 +121,7 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
             textOefening = itemView.findViewById(R.id.textview_oefening);
             textOmschrijving = itemView.findViewById(R.id.textview_omschrijving);
             imageView = itemView.findViewById(R.id.imageView);
+            titleOmschrijving = itemView.findViewById(R.id.title_omschrijving);
             itemView.setOnClickListener(this);
 
         }

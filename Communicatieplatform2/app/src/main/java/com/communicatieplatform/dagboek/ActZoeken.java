@@ -106,7 +106,7 @@ public class ActZoeken extends AppCompatActivity {
                             }
                         });
             } else {db.collection("dagboekje").document("dagboekje").collection(
-                    FirebaseAuth.getInstance().getCurrentUser().getUid()).get()
+                    FirebaseAuth.getInstance().getCurrentUser().getUid()).orderBy("createdAt").get()
                     .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                         @Override
                         public void onSuccess(QuerySnapshot queryDocumentSnapshots) {

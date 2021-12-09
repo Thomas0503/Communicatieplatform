@@ -7,6 +7,8 @@ import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.Exclude;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Date;
 import java.util.List;
 
@@ -15,7 +17,7 @@ public class Activiteit2 implements Serializable {
     @Exclude
     private String id;
     private List<String> signalenLijst;
-    private Date datum;
+    private Timestamp datum;
     private String oefening, url;
     private String description;
     private Integer stressniveau;
@@ -28,7 +30,7 @@ public class Activiteit2 implements Serializable {
     }
 
     public Activiteit2(Timestamp datum, String oefening, Integer stressniveau, List<String> stresssignalen, String description, String url) {
-        this.datum = datum.toDate();
+        this.datum = datum;
         this.signalenLijst = stresssignalen;
         this.stressniveau = stressniveau;
         this.oefening = oefening;
@@ -47,8 +49,20 @@ public class Activiteit2 implements Serializable {
         this.id = id;
     }
 
-    public String getDatum() {
-        return datum.toString();
+    public Timestamp getDatum() {
+        return datum;
+    }
+    public String getDatumString() {
+        LocalDateTime localDateTime = LocalDateTime.ofInstant(
+                getDatum().toDate().toInstant(), ZoneId.systemDefault());
+        String datum = localDateTime.getDayOfMonth() + " " +
+                localDateTime.getMonth().toString() + " " + localDateTime.getYear();
+        return datum;
+    }
+    public LocalDateTime getLocalDateTime() {
+        LocalDateTime localDateTime = LocalDateTime.ofInstant(
+                getDatum().toDate().toInstant(), ZoneId.systemDefault());
+        return localDateTime;
     }
 
     public String getOefening() {
