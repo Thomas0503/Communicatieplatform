@@ -1,0 +1,55 @@
+https://www.youtube.com/channel/UCxBXSL74oOJ_0yqC4bHc18Q
+
+
+
+Chat
+
+Via de chat is er de optie om berichten en foto's te versturen naar andere gebruikers. Er kan een conversatie gekozen worden door een gebruiker te selecteren ... met een zoekbalk om de juiste . Elke conversatie wordt uniek opgeslagen in de database door een combinatie van de twee gebruikers-id's onder de vorm ('grootste gebruikers-id'+'kleinste gebruikers-id'). Voor elk bericht wordt er opgeslagen wie de verzender en ontvanger is, de inhoud, de µdatum/tijd en eventueel een referentie naar de media. Aan de hand van de verzender en ontvanger verandert de stijl van het bericht voor een duidelijk onderscheid tussen de verzonden en ontvangen berichten. 
+
+$Voor elke conversatie wordt ook het laatst verzonden bericht opgeslagen. Deze wordt telkens overschreven wanneer er een nieuw bericht wordt verzonden. Voor dit bericht wordt er opgeslagen of dit bericht gelezen is ofniet. Een bericht wordt als gelezen beschouwd wanneer de conversatie met de gebruiker wordt geopend. Bij de website  wordt elk laatst verzonden bericht wordt weergegeven onder de naam van de geselecteerde gebruiker. Hierbij wordt ook een onderscheid gemaakt tussen een verzonden en een ontvangen bericht.$
+
+
+
+
+
+Documenten
+
+Bij \it{documenten} kan de trainer documenten toevoegen aan een bepaald overzicht van documenten die enkel door een bepaalde gebruiker kunnen worden gezien of algemene documenten toevoegen die door elke gebruiker kunnen worden gezien. Elk document wordt gekenmerkt door een datum waarop het toegevoegd werd, een referentie naar de \it{firebase storage}, een naam en een grootte. En wordt opgeslagen onder volgens het unieke gebruikers-id voor de lid van het pleeggezin waarvoor het bedoeld is.
+Elk lid van een peeggezin krijgt een overzicht van de documenten die voor hem toegevoegd werden (geordend op toegevoegde tijd) door de trainer met daarbij een knop om het bestand te downloaden, hierbij wordt ook de grootte van het bestand weergegeven. Er wordt de mogelijkheid gegeven om pdf- en word-bestanden te uploaden. De trainer kan per pleeggezin de documenten opvragen en  hierbij ook deze bestanden downloaden.
+
+Kalender
+
+Via de hoofdpagina kan er ook gekozen worden voor kalender. Op dat moment
+wordt je doorverwezen naar een pagina waar je een chronologisch overzicht krijgt
+van de verschillende activiteiten die in de toekomst staan gepland. Hierbij is er
+een duidelijk onderscheid te maken tussen de app en website.
+Via de applicatie krijg je een overzicht in de vorm van een chronologische lijst
+met alle activiteiten. Hierbij zijn een omschrijving van de afspraak, het beginen eindmoment, de locatie en vrije opmerkingen onmiddellijk op leesbaar. Je kan
+ook een nieuwe activiteit aanmaken door verder te klikken. Op dat moment
+moet je al deze vijf gegevens ingeven. Voor de datum kan je via een kalender
+de geplande dag kiezen, ook het begin- en einduur kunnen gekozen worden
+via een klok. Als je hiermee klaar bent, worden de data terug doorgestuurd
+naar de database. Vanaf dat moment zijn ze toegevoegd aan het overzicht van
+activiteiten op zowel de app als website.
+7
+Net zoals bij de app, krijg je bij de website een overzicht van alle activiteiten,
+maar deze keer in een ′
+echte′ kalendervorm. De rest is gelijkaardig als op de
+app: dezelfde vijf gegevens zijn ook meteen leesbaar en om een activiteit toe te
+voegen moeten deze data ook worden doorgegeven. In de kalendervorm zijn de omschrijving van de afspraak en het begin en eindmoment visueel zichtbaar.
+Wanneer er dubbel geklikt wordt op een afspraak, worden de locatie en de vrije opmerkingen zichtbaar en ook een optie om de afspraak te verwijderen. Door een afspraak te verwijderen worden al zijn gegevens uit de database gewist.
+
+
+
+Indien een trainer op het kalenderoverzicht wil terechtkomen, moet hij kiezen
+opnieuw eerst kiezen voor wie deze informatie wil. Hij heeft hierbij drie opties:
+zichzelf of een specifieke hond. Indien je een lid bent van het pleeggezin krijg je
+onmiddellijk de afspraken voor jullie pleeghond.
+
+
+
+
+
+
+
+
