@@ -1,4 +1,4 @@
-package com.communicatieplatform.dagboek;
+package com.communicatieplatform.documenten;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -33,7 +33,7 @@ public class TrainerDocumenten_keuze extends AppCompatActivity {
         });
     }
     public void openDocumenten() {
-        Intent intent = new Intent(this, Dagboek.class);
+        Intent intent = new Intent(this, DocumentActivity.class);
         startActivity(intent);
     }
 }

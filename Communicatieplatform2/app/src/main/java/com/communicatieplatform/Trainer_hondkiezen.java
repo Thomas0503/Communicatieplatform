@@ -28,8 +28,7 @@ import java.util.ArrayList;
 
 import android.widget.AdapterView.OnItemClickListener;
 
-public class
-Trainer_hondkiezen extends AppCompatActivity {
+public class Trainer_hondkiezen extends AppCompatActivity {
     private Button button;
     private Button button2;
     private FirebaseFirestore db;
