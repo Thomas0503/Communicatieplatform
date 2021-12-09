@@ -6,6 +6,8 @@
 \contentsline {subsection}{\numberline {1.4}Database}{5}{subsection.1.4}%
 \contentsline {section}{\numberline {2}Resultaten}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Database}{6}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Foto's}{6}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}PDF-bestanden}{6}{subsubsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.2}Login-pagina}{6}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Chat}{7}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Documenten}{7}{subsection.2.4}%
