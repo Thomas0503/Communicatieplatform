@@ -6,6 +6,7 @@
 \usepackage{pdfpages}
 \usepackage[toc,page]{appendix}
 \usepackage{amsmath}
+\usepackage{pdflscape}
 
 
 \title{Communicatieplatform}
@@ -114,21 +115,29 @@
 	Zowel de app als website zijn verbonden met de database Cloud Firestore. Hier worden alle gegevens gestructureerd opgeslagen die worden geüpload of ingegeven via de applicatie en website. Het is dus een plek waar alle data te vinden is, maar ook een $ontmoetingsplaats$ van de website en app. Alle gegevens van beide tools komen hier samen. Op die manier kunnen alle data ook opgevraagd worden via website en app. \\
 	Bij zo'n database is vooral de structuur belangrijk. Op pagina \pageref{programmeerstructuur} in de appendices is een overzicht te zien van hoe we de gevarieerde informatie gaan wegschrijven vanuit de app en website naar de database. Hierbij maken we verschillende collecties aan: Dagboekje, Berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters$/$gegevens. 
 	\subsubsection{Foto's}
-	\subsubsection{PDF-bestanden}
+	Om foto's weg te schrijven naar en uit te lezen vanuit de database moest dit op eenzelfde manier gebeuren bij zowel de app als de website. We hebben de volgende methode gebruikt: 
+	\subsubsection{Pdf-bestanden}
+	Ook om pdf-bestanden in te lezen en weg te schrijven naar de database, moesten we een methode vinden die voor zowel de website als applicatie compatibel is.
 	
 	\subsection{Login-pagina}
 	Via de login-pagina kun je met een gekregen account via e-mailadres en wachtwoord inloggen. Dit account staat gelinkt met je pleeghond. Op die manier komt elke gebruiker bij de data terecht dat over hun hond gaat. Voor de trainer gaat het net een beetje anders. Hij zal bij sommige functies kunnen kiezen voor welke hond hij informatie wil opvragen, maar daar komen we later op terug. \\
 	% Hij kan van elke hond de data opvragen, hiervoor moet hij telkens aangeven voor welke hond hij verder wil gaan. Wil hij de gegevens van één specifieke hond dan selecteert hij die naam. Indien hij meerdere honden tegelijk wil opvragen, kan hij kiezen voor alle honden.
 	Indien het inloggen succesvol gelukt is, kom je op de hoofdpagina terecht. Daar zijn de vier functies van de applicatie en website terug te vinden: chat, documenten, kalender en dagboek. 
 	\subsection{Chat}
-	Indien er doorgeklikt wordt op chat, wordt er een overzicht getoond van de alle gebruikers. Bovenaan is er een zoekbalk te vinden die ervoor zorgt dat chats makkelijk worden teruggevonden indien het overzicht van gebruikers lang is. Hierbij kan er doorgeklikt worden naar het gesprek met die gebruiker. Die berichten worden geüpload naar en vanuit de database. Zo kan er snel gecommuniceerd worden tussen het pleeggezin en de trainer mochten er bijkomende problemen of vragen, omtrent bijvoorbeeld de volgende training, zijn. Trainers kunnen ook onderling met elkaar chatten, zodat ze makkelijk kunnen afspreken voor bijvoorbeeld een meeting. Indien pleeggezinnen willen afspreken om bijvoorbeeld samen te gaan wandelen, kunnen ze ook naar elkaar sturen om af te spreken.
+	Indien er doorgeklikt wordt op chat, wordt er een overzicht getoond van de alle gebruikers. Via de chat is er de optie om berichten $en foto's$ te versturen naar andere gebruikers. Bovenaan is er een zoekbalk te vinden die ervoor zorgt dat chats makkelijk worden teruggevonden indien het overzicht van gebruikers lang is. Hierbij kan er doorgeklikt worden naar het gesprek met die gebruiker. Elke conversatie wordt uniek opgeslagen in de database door een combinatie van de twee gebruikers-id's onder de vorm ('grootste gebruikers-id'+'kleinste gebruikers-id'). Voor elk bericht wordt er opgeslagen wie de verzender en ontvanger is, de inhoud, de datum$/$tijd $en eventueel een referentie naar de media$. Aan de hand van de verzender en ontvanger verandert de stijl van het bericht voor een duidelijk onderscheid tussen de verzonden en ontvangen berichten. $Voor elke conversatie wordt ook het laatst verzonden bericht opgeslagen. Deze wordt telkens overschreven wanneer er een nieuw bericht wordt verzonden. Voor dit bericht wordt er opgeslagen of dit bericht gelezen is ofniet. Een bericht wordt als gelezen beschouwd wanneer de conversatie met de gebruiker wordt geopend. Bij de website  wordt elk laatst verzonden bericht wordt weergegeven onder de naam van de geselecteerde gebruiker. Hierbij wordt ook een onderscheid gemaakt tussen een verzonden en een ontvangen bericht.$ 
+	Zo kan er snel gecommuniceerd worden tussen het pleeggezin en de trainer mochten er bijkomende problemen of vragen zijn, omtrent bijvoorbeeld de volgende training. Trainers kunnen ook onderling met elkaar chatten, zodat ze makkelijk kunnen afspreken voor bijvoorbeeld een meeting. Indien pleeggezinnen willen afspreken om bijvoorbeeld samen te gaan wandelen, kunnen ze ook naar elkaar sturen om af te spreken.
+	
+	
 	\subsection{Documenten}
 	Bij documenten krijgt een lid van het pleeggezin een chronologisch overzicht van verschillende documenten. Zij zijn opgeslagen in de database en vallen te downloaden. Die documenten zijn specifiek gericht voor het gezin van een bepaalde pleeghond. Geen ander gezin kan aan deze informatie. De documentnaam en -grootte zijn hierbij weergegeven. Er is ook een knop voor het downloaden. \\
-	De trainer heeft diezelfde documenten geüpload. Hij kiest voor wie hij bestanden wil uploaden: doet hij dit voor één specifieke hond of voor alle honden. $Op de app werkt de algemene functie van de trainer nog niet.$ Daarna moet de trainer een pdf-file selecteren, wat duidelijk wordt weergegeven op de app. Dan moet hij deze uploaden, op dat moment worden die documenten ook geüpload naar de database. De trainer kan ook een overzicht van de documenten opvragen voor een specifieke hond. Op de website kan er ook nog gezocht worden via een zoekbalk naar een bepaald document op basis van de documentnaam. \\
+	De trainer heeft diezelfde documenten geüpload. Hij kiest voor wie hij bestanden wil uploaden: voegt hij documenten toe  die enkel door een bepaalde gebruiker kunnen worden gezien of algemene documenten die door elke gebruiker kunnen worden gezien? $Op de app werkt de algemene functie van de trainer nog niet.$ Daarna moet de trainer een pdf-file selecteren, wat duidelijk wordt weergegeven op de app. Dan moet hij deze uploaden, op dat moment worden die documenten ook geüpload naar de database. De trainer kan ook een overzicht van de documenten opvragen voor een specifieke hond. Elk document wordt gekenmerkt door een datum waarop het toegevoegd werd, een referentie naar de Firebase Storage, een naam en een grootte. En wordt opgeslagen onder volgens het unieke gebruikers-id voor de lid van het pleeggezin waarvoor het bedoeld is. De trainer kan per pleeggezin de documenten opvragen en hierbij ook deze bestanden downloaden. 
+	Op de website kan er ook nog gezocht worden via een zoekbalk naar een bepaald document op basis van de documentnaam. \\
+
 	\subsection{Kalender}
 	Via de hoofdpagina kan er ook gekozen worden voor kalender. Op dat moment wordt je doorverwezen naar een pagina waar je een chronologisch overzicht krijgt van de verschillende activiteiten die in de toekomst staan gepland. Hierbij is er een duidelijk onderscheid te maken tussen de app en website. \\
-	Via de applicatie krijg je een overzicht in de vorm van een chronologische lijst met alle activiteiten. Hierbij zijn een omschrijving van de afspraak, het begin- en einduur, de locatie en vrije opmerkingen onmiddellijk op leesbaar. Je kan ook een nieuwe activiteit aanmaken door verder te klikken. Op dat moment moet je al deze vijf gegevens ingeven. Voor de datum kan je via een kalender de geplande dag kiezen, ook het begin- en einduur kunnen gekozen worden via een klok. Als je hiermee klaar bent, worden de data terug doorgestuurd naar de database. Vanaf dat moment zijn ze toegevoegd aan het overzicht van activiteiten op zowel de app als website. \\
-	Net zoals bij de app, krijg je bij de website een overzicht van alle activiteiten, maar deze keer in een $'$echte$'$ kalendervorm. De rest is gelijkaardig als op de app:  dezelfde vijf gegevens zijn ook meteen leesbaar en om een activiteit toe te voegen moeten deze data ook worden doorgegeven. \\
+	Via de applicatie krijg je een overzicht in de vorm van een chronologische lijst met alle activiteiten. Hierbij zijn een omschrijving van de afspraak, het begin- en einduur, de locatie en vrije opmerkingen onmiddellijk op leesbaar. Je kan ook een nieuwe activiteit aanmaken door verder te klikken. Op dat moment moet je al deze vijf gegevens ingeven. Voor de datum kan je via een kalender de geplande dag kiezen, ook het begin- en einduur kunnen gekozen worden via een klok. Als je hiermee klaar bent, wordt de data terug doorgestuurd naar de database. Vanaf dat moment zijn ze toegevoegd aan het overzicht van activiteiten op zowel de app als website. \\
+	Net zoals bij de applicatie, krijg je bij de website een overzicht van alle activiteiten, maar deze keer in een $'$echte$'$ kalendervorm. De rest is gelijkaardig als op de app: dezelfde vijf gegevens zijn ook meteen leesbaar en om een activiteit toe te voegen moeten deze data ook worden doorgegeven. In de kalendervorm zijn de omschrijving van de afspraak, het begin- en eindmoment visueel zichtbaar. Wanneer er dubbel geklikt wordt op een afspraak, worden de locatie en de vrije opmerkingen zichtbaar en ook een optie om de afspraak te verwijderen. Door een afspraak te verwijderen worden al zijn gegevens uit de database gewist. Deze wijziging is meteen zichtbaar op het overzicht in zowel de applicatie als website.
+	\\
 	Indien een trainer op het kalenderoverzicht wil terechtkomen, moet hij kiezen opnieuw eerst kiezen voor wie deze informatie wil. Hij heeft hierbij drie opties: zichzelf of een specifieke hond. Indien je een lid bent van het pleeggezin krijg je onmiddellijk de afspraken voor jullie pleeghond. 
 	
 	\subsection{Dagboek}
@@ -149,15 +158,25 @@
 	
 	%\subsection{Database}
 	%Cloud Firestore is dus gekoppeld met zowel de app als de website. Bij zo'n database is vooral de structuur belangrijk. Op \ref{programmeerstructuur} is een overzicht te zien van hoe we de gevarieerde informatie gaan wegschrijven vanuit de app en website naar de database. Hierbij maken we verschillende collecties aan: Dagboekje, Berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters/gegevens. 
-	
 	\label{flowchart}\includepdf[pages=-]{Flowchart}
 	
 	\newpage
 	\section{Ontwikkelingen in de toekomst}
-	Voor de app kan er nog gekeken worden om het onderscheid tussen de functies van trainers en pleeggezinnen te programmeren. Deze functie is wel op de website mogelijk. Zo kan een lid van het pleeggezin geen documenten toevoegen omdat hij hiervoor niet bevoegd is.\\ 
-	% via een hoofdpagina meteen doorklikken naar een andere hoofdpagina en kunnen terugklikken
-	% vriendenlijst maken ipv iedereen zien voor bij de chat
-	%voorlopige resultaten + hoe verder in toekomst
+	\subsection{App}
+	Voor de applicatie zijn er nog verschillende verbeteringen mogelijk. 
+	De functies voor trainer kunnen nog worden geoptimaliseerd. Zo kan er gezocht worden dat een trainer niet op verschillende pagina's telkens moet doorklikken, maar dit allemaal op eenzelfde pagina kan.\\
+	Het zou makkelijker zijn mocht het mogelijk zijn om via bepaalde pagina's rechtstreeks te kunnen teruggaan naar de hoofdpagina. Bijvoorbeeld als je vanuit een chatgesprek snel je agenda wilt checken, dan moet je al twee keer terug klikken om op de hoofdpagina uit te komen en dan nog eens verder klikken naar kalender. Dit zou veel efficiënter kunnen door een 'snelkoppeling' naar de verschillende pagina's, of zelfs gewoon naar de hoofdpagina te hebben. \\
+	\subsection{Website}
+	Voor de website zijn er minder gebreken. Hier kan vooral het design nog geoptimaliseerd worden door bijvoorbeeld foto's toe te voegen van honden. \\ 
+	\subsection{Algemene functies}
+	Er zijn nog vele ontwikkelingen nodig die we niet hebben uitgevoerd omwille van tijdsgebrek. Zo zou het handig zijn om een vriendenlijst te maken. Op deze manier zal je geen overbodige spam hebben van mensen waarmee je niet bevriend bent.
+	Het zou ook handig zijn voor een trainer, mocht het mogelijk zijn om documenten toe te voegen voor bijvoorbeeld twee puppy's in één keer, in plaats van ofwel voor iedereen ofwel voor één puppy.
+	In de chat is het nu niet mogelijk om foto's en filmpjes te versturen. Op dit moment kunnen enkel mogelijk om tekstberichtjes met emoji's te sturen. Foto's uploaden kan wel via het dagboek en bestanden via documenten.
+	Het zou handig zijn mocht het mogelijk zijn om melding te krijgen van bijvoorbeeld een kalenderafspraak, nieuw chatbericht of beschikbare documenten.
+	Op dit moment hebben pleeggezinnen met meerdere honden verschillende accounts nodig. Het zou voor hen makkelijker zijn om dit te kunnen combineren via één account. Dit zou kunnen door bij dagboek, documenten en kalender een onderscheid te maken tussen de honden. En dus te vragen voor welke hond het gezin de informatie wil. Dit zou gelijkaardig zijn aan de trainer-functie. Hierbij wordt er ook gevraagd voor welke hond er data wil worden geüpload of opgevraagd.
+	
+	\section{Planning}
+	Onze oorspronkelijke planning is te vinden op pagina \pageref{gantt-grafiek} in appendices. Deze is niet de uiteindelijke planning geworden aangezien we doorheen het project doorhadden dat dit misschien niet de beste volgorde was om het project uit te voeren. We zijn begonnen met de tools te zoeken en de pro en contra's kort samen te vatten. Om deze later in een degelijk verslag te gieten. Daarna zijn we begonnen met zowel de app als de website. De volgorde van het creëren van beide tools zijn wel gebeurd zoals aangegeven in de planning. Hoewel het design van de app nog vele keren moest worden aangepast, was deze voor het grote deel al klaar tegen dat we aan het tussentijds verslag begonnen. Tijdens het implementeren van de app en website werd ook de database geprogrammeerd. En op het einde van ons project werden de database-collecties van de applicatie en website op elkaar afgestemd en getest. Ondertussen werd ons eindverslag gemaakt, het intensief werken aan de verdere uitwerking werd wel veel later gestart dan voorzien. We zijn wel op het vooraf-vastgelegde moment begonnen met de presentatie te maken. 
 	
 	\newpage
 	\section{Samenwerking}
@@ -166,10 +185,14 @@
 	\subsection{Taakverdeling}
 	Wij hebben samen gezocht naar verschillende tools om zo'n website en app te bouwen en met elkaar te verbinden via een database. Toen we een idee hadden welke tools we voor het project gingen gebruiken, werd de Gantt-grafiek (in bijlage op pagina \pageref{gantt-grafiek}) opgesteld en hebben we de taken (in bijlage op pagina \pageref{takenstructuur}) opgesplitst. 
 	\\\\
-	Thomas is toen begonnen met het connecteren van de database en de website. Daarna heeft hij al pagina's van de website geïmplementeerd en de structuur van de database gemaakt.
-	Ruben heeft gekeken voor het connecteren van de database en de app. Hij heeft er ook voor gezorgd dat Android Studio via GitHub functioneert om zo een vlotter groepswerk te creëren. Daarna is hij begonnen met het implementeren van enkele pagina's van de app. Manon is begonnen met de app te ontwerpen: het design van de verschillende pagina's en de doorverwijzingen tussen de pagina's. Daarna is ze begonnen met het tussentijds verslag te schrijven, er structuur in te brengen en bijlagen te ontwerpen.
-	\\\\
+	Thomas is toen begonnen met het connecteren van de website en database. Daarna is hij begonnen met het implementeren van de website. 
+	Ruben heeft gekeken voor het connecteren van de applicatie en database. Hij heeft er ook voor gezorgd dat Android Studio via GitHub functioneert om zo een vlotter groepswerk te creëren. Daarna is hij begonnen met het implementeren van de app. 
+	Manon is meteen begonnen met de app te ontwerpen: het design van de verschillende pagina's en de doorverwijzingen tussen de pagina's. Daarna is ze begonnen met het tussentijds verslag te schrijven. \\
 	Voor het maken van het tussentijds verslag hebben we later ook de taken verdeeld. We namen elk een of meerdere onderdelen voor zich. Iedereen kreeg het onderdeel waarvan hij of zij het meest vanaf wist. Tot slot heeft iedereen het verslag doorgelezen en goedgekeurd.
+	\\\\
+	Toen dat tussentijds verslag ingediend was, hebben Thomas en Ruben gekeken om de database-collecties van de app en website op elkaar af te stemmen. Ondertussen heeft Manon verder de applicatie geïmplementeerd.
+	Tot slot heeft Ruben verdergewerkt aan de app, terwijl Thomas en Manon bezig waren met het eindverslag en de presentatie voor te bereiden. \\
+	Op het einde van ons project heeft iedereen het verslag doorgelezen en goedgekeurd.
 	
 	\newpage
 	\section*{Conclusie}
@@ -177,7 +200,8 @@
 	\\\\
 	Om het communicatieplatform te creëren was de eerste stap de tools zoeken die we konden gebruiken voor de app en website. Dit nam veel tijd in beslag aangezien dit een belangrijk gegeven was in ons project. De tools moeten kunnen voldoen aan alle eisen van de probleemstelling. Daarna was het belangrijk om kennis te maken met de werking van de tools. Voordat we begonnen aan het ontwerpen van de app en website, bouwden we een kennis op van het gebruik van de programma's. Toen we dit onder de knie hadden, konden we beginnen met het echte werk. We brainstormden over hoe we het project het best konden aanpakken. We dachten na over de structuur van de app en website en bedachten ook hoe we de verschillende functies die de trainers en pleeggezinnen moeten kunnen doen, gingen implementeren. Tot slot begonnen we met het design en het implementeren van de app en website.
 	\\\\
-	Er is nog ruimte voor optimalisatie bij de werking van de app en bij het design van de website. Aangezien we in tijdsnood kwamen hebben we gekozen voor een optimale werking van de website voor zowel trainer als pleeggezin, en bij de app voor een optimaal design en een optimale werking voor het pleeggezin.\\\\
+	Er was nog ruimte voor optimalisatie bij de werking van de applicatie en bij het design van de website. Aangezien we in tijdsnood kwamen hebben we gekozen voor een optimale werking van de website en een optimaal design app, maar vooral voor een compatibele werking van beide tools met de database.\\\\
+	$Gelukkig bleven we ons best doen en vond Charlotte ons een topteam! :) $
 	
 	
 	\newpage

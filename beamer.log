@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.21)  9 DEC 2021 16:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.21)  9 DEC 2021 17:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -884,16 +884,23 @@ Dictionary: translator-numbers-dictionary, Language: English
 (c:/texlive/2021/texmf-dist/tex/latex/translator/translator-theorem-dictionary-
 English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./beamer.nav) [1
+) (./beamer.nav)
+<2013-kulak-cmyk-highres.jpg, id=25, 602.25pt x 125.46875pt>
+File: 2013-kulak-cmyk-highres.jpg Graphic file (type jpg)
+<use 2013-kulak-cmyk-highres.jpg>
+Package pdftex.def Info: 2013-kulak-cmyk-highres.jpg  used on input line 31.
+(pdftex.def)             Requested size: 170.71652pt x 35.5656pt.
+ [1
 
-{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./beamer.toc) 
-[2
+{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./2013-kulak-cm
+yk-highres.jpg>] (./beamer.toc) [2
 
 ] [3
 
 ] [4
 
-] [5
+]
+[5
 
 ] [6
 
@@ -907,14 +914,15 @@ Dictionary: translator-theorem-dictionary, Language: English
 
 ] [11
 
-]
-[12
+] [12
 
 ] [13
 
 ] [14
 
 ] [15
+
+] [16
 
 ]
 \tf@nav=\write6
@@ -927,24 +935,30 @@ Dictionary: translator-theorem-dictionary, Language: English
 \openout8 = `beamer.snm'.
 
  (./beamer.aux)
-Package rerunfilecheck Info: File `beamer.out' has not changed.
-(rerunfilecheck)             Checksum: 6EBA9665511C515BEBDEBC1DCEE49F18;254.
+
+Package rerunfilecheck Warning: File `beamer.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `beamer.out':
+(rerunfilecheck)             Before: 6EBA9665511C515BEBDEBC1DCEE49F18;254
+(rerunfilecheck)             After:  AC081888A9750D1494A38911F28EB004;377.
  ) 
 Here is how much of TeX's memory you used:
- 22487 strings out of 478371
- 432269 string characters out of 5852527
- 709235 words of memory out of 5000000
- 40125 multiletter control sequences out of 15000+600000
+ 22499 strings out of 478371
+ 432539 string characters out of 5852527
+ 710235 words of memory out of 5000000
+ 40132 multiletter control sequences out of 15000+600000
  405242 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,14n,122p,410b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/tex
 live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2021
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on beamer.pdf (15 pages, 53913 bytes).
+Output written on beamer.pdf (16 pages, 108230 bytes).
 PDF statistics:
- 437 PDF objects out of 1000 (max. 8388607)
- 403 compressed objects within 5 object streams
- 34 named destinations out of 1000 (max. 500000)
- 67 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 467 PDF objects out of 1000 (max. 8388607)
+ 431 compressed objects within 5 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 72 words of extra memory for PDF output out of 10000 (max. 10000000)
 
