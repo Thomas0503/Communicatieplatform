@@ -9,53 +9,39 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SearchView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.communicatieplatform.R;
+import com.communicatieplatform.documenten.TrainerDocumentActivity;
+import com.communicatieplatform.documenten.TrainerDocumentenToevoegenActivity;
+import com.communicatieplatform.documenten.TrainerDocumentenToevoegenActivitySpecifiek;
+import com.communicatieplatform.documenten.TrainerDocumenten_keuze;
 import com.communicatieplatform.test_chat.KiesContactActivity;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Toast;
 
 public class TrainerDagboek_keuze extends AppCompatActivity {
     private Button button;
-    private Button button2;
-    private FirebaseFirestore db;
-    private SearchView searchView;
-    private ListView listView;
     private ArrayList list;
     private ArrayAdapter adapter;
-    private String query;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.trainer_keuze);
-        button = (Button) findViewById(R.id.Algemeen);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openAlgemeen();
-            }
-        });
-        button2 = (Button) findViewById(R.id.Specifiek);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSpecifiek("");
-            }
-        });
+        setContentView(R.layout.trainer_keuze_dagboek);
+
+        button = (Button) findViewById(R.id.Specifiek);
 
         SearchView searchView = findViewById(R.id.searchView);
         ListView listView = findViewById(R.id.listview);
         list = new ArrayList<String>();
-        list.add("Hond1");
-        list.add("Hond2");
+        list.add("tt");
+        list.add("pcm");
+        HashMap<String, String> dict = new HashMap<>();
+        dict.put("tt","wVEKX0xL6xRiSvztD1EFV3gHos12");
+        dict.put("pcm","EqI10LALkGOjjonWT9LGSUIdc572");
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
         listView.setVisibility(View.INVISIBLE);
         listView.setAdapter(adapter);
@@ -63,15 +49,17 @@ public class TrainerDagboek_keuze extends AppCompatActivity {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 adapter.getFilter().filter(query);
-                button2.setOnClickListener(new View.OnClickListener() {
+                button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        openSpecifiek(query);
+                        if(list.contains(query)){
+                            voegDocumentenSpecifiek(dict.get(query));
+                        } else {
+                            Toast.makeText(TrainerDagboek_keuze.this,"Kies een pleeggezin", Toast.LENGTH_SHORT).show();
+                        }
                     }
-
                 });
                 // geselecteerde activiteit onthouden ==> getActiviteit
-
                 listView.setVisibility(View.INVISIBLE);
                 return false;
             }
@@ -80,16 +68,21 @@ public class TrainerDagboek_keuze extends AppCompatActivity {
             public boolean onQueryTextChange(String newText) {
                 listView.setVisibility(View.VISIBLE);
                 adapter.getFilter().filter(newText);
-                button2.setOnClickListener(new View.OnClickListener() {
+                button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        openSpecifiek(newText);
+                        if(list.contains(newText)){
+                            voegDocumentenSpecifiek(dict.get(newText));
+                        } else {
+                            Toast.makeText(TrainerDagboek_keuze.this,"Kies een pleeggezin", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 });
                 return false;
             }
         });
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+        listView.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 searchView.setQuery(adapter.getItem(position).toString(), false);
@@ -99,41 +92,9 @@ public class TrainerDagboek_keuze extends AppCompatActivity {
         });
     }
 
-    public ArrayList<String> getHondenLijst() {
-        db = FirebaseFirestore.getInstance();
-        DocumentReference docRef = db.collection("users").document("pleeggezinnen");
-        docRef.get()
-                .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                        if (task.isSuccessful()) {
-                            DocumentSnapshot document = task.getResult();
-                            if (document.exists()) {
-                                //Processing when the value can be obtained
-                                ArrayList<String> list = (ArrayList<String>) document.get("pleeggezinnen");//
-                            } else {
-                                list = new ArrayList<String>();
-                                //What to do when the value does not exist
-                            }
-                        }
-                    }
-                });
-        return list;
-    }
-
-
-    public void openAlgemeen() {
+    public void voegDocumentenSpecifiek(String query) {
         Intent intent = new Intent(this, TrainerDagboek.class);
-        startActivity(intent);
-    }
-
-    public String getHond() {
-        return query;
-    }
-
-    public void openSpecifiek(String query) {
-        Intent intent = new Intent(this, TrainerDagboek.class);
-        intent.putExtra("zoekQuery", query);
+        intent.putExtra("pleeggezin", query);
         startActivity(intent);
     }
 

@@ -10,8 +10,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.communicatieplatform.databinding.ActivityLoginBinding
 import com.communicatieplatform.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 
 class MainActivity:AppCompatActivity() {
@@ -73,9 +76,38 @@ class MainActivity:AppCompatActivity() {
 
                 Log.d("Login", "Successfully logged in: ${it.result?.user?.uid}")
                 //Login
-                val intent = Intent(this, Homepage::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
-                startActivity(intent)
+                val user = Firebase.auth.currentUser
+                val uid = null
+                user?.let {val uid = user.uid
+                }
+                val db = Firebase.firestore
+                db.collection("users").document(user?.uid.toString()).get()
+                    .addOnSuccessListener { document ->
+                        if (document != null) {
+                            val trainer = document.get("trainer")
+                            if(trainer == true){
+                                val pleeggezin:ArrayList<String> = document.get("pleeggezinnen") as ArrayList<String>
+                                val intent = Intent(this, TrainerHomepage::class.java)
+                                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+                                intent.putExtra("pleeggezin", pleeggezin)
+                                startActivity(intent)
+                            } else if(trainer != null) {
+                                val intent = Intent(this, Homepage::class.java)
+                                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+                                startActivity(intent)
+                            } else {
+                                Toast.makeText(this, "1Onverwachte fout, probeer opnieuw", Toast.LENGTH_LONG).show()
+                            }
+                        } else {
+                            Toast.makeText(this, "2Onverwachte fout, probeer opnieuw", Toast.LENGTH_LONG).show()
+
+                            Log.d(TAG, "No such document")
+                        }
+                    }
+                    .addOnFailureListener { exception ->
+                        Toast.makeText(this, "3     Onverwachte fout, probeer opnieuw", Toast.LENGTH_LONG).show()
+                        Log.d(TAG, "get failed with ", exception)
+                    }
             }
             .addOnFailureListener {
                 Toast.makeText(this, "Mislukt om in te loggen: Het wachtwoord is verkeerd of de gebruiker heeft geen account.", Toast.LENGTH_LONG).show()

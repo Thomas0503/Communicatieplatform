@@ -40,12 +40,12 @@ public class TrainerDagboek extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.trainer_dagboek);
-
+        String gezin = getIntent().getStringExtra("pleeggezin");
         button2 = (Button) findViewById(R.id.ActiviteitZoeken);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActZoeken("");
+                openActZoeken("", gezin);
             }
         });
 
@@ -80,7 +80,7 @@ public class TrainerDagboek extends AppCompatActivity {
                 button2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        openActZoeken(query);
+                        openActZoeken(query, gezin);
                     }
 
                 });
@@ -97,7 +97,7 @@ public class TrainerDagboek extends AppCompatActivity {
                 button2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        openActZoeken(newText);
+                        openActZoeken(newText, gezin);
                     }
                 });
                 return false;
@@ -113,36 +113,16 @@ public class TrainerDagboek extends AppCompatActivity {
         });
     }
 
-    public ArrayList<String> getActiviteitLijst() {
-        db = FirebaseFirestore.getInstance();
-        DocumentReference docRef = db.collection("dagboektest").document("oefening2");
-        docRef.get()
-                .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                        if (task.isSuccessful()) {
-                            DocumentSnapshot document = task.getResult();
-                            if (document.exists()) {
-                                //Processing when the value can be obtained
-                                ArrayList<String> list = (ArrayList<String>) document.get("oefening");//
-                            } else {
-                                list = new ArrayList<String>();
-                                //What to do when the value does not exist
-                            }
-                        }
-                    }
-                });
-        return list;
-    }
 
 
     public String getActiviteit() {
         return query;
     }
 
-    public void openActZoeken(String query) {
+    public void openActZoeken(String query, String gezin) {
         Intent intent = new Intent(this, TrainerActZoeken.class);
         intent.putExtra("zoekQuery", query);
+        intent.putExtra("pleeggezin", gezin);
         startActivity(intent);
     }
 

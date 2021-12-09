@@ -47,13 +47,13 @@ public class TrainerActZoeken extends AppCompatActivity {
         adapter = new ActzoekAdapter(this, productList);
 
         recyclerView.setAdapter(adapter);
-
+        String gezin = getIntent().getStringExtra("pleeggezin");
 
         db = FirebaseFirestore.getInstance();
 
         if(!zoekQuery.equals("")) {
             db.collection("dagboekje").document("dagboekje").collection(
-                    FirebaseAuth.getInstance().getCurrentUser().getUid()).whereEqualTo("oefening", zoekQuery).get()
+                    gezin).whereEqualTo("oefening", zoekQuery).get()
                     .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                         @Override
                         public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
@@ -67,7 +67,7 @@ public class TrainerActZoeken extends AppCompatActivity {
                                 for (DocumentSnapshot d : list) {
 
                                     List<String> stresssignalen = (List<String>) d.get("stresssignalen");
-                                    Activiteit2 p = new Activiteit2(d.getTimestamp("createdAt"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen, d.getString("desc"), d.getString("imageUrl"));
+                                    Activiteit2 p = new Activiteit2(d.getTimestamp("createdAt"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen, d.getString("desc"), d.getString("link"));
                                     p.setId(d.getId());
                                     productList.add(p);
 
@@ -106,7 +106,7 @@ public class TrainerActZoeken extends AppCompatActivity {
                     });
         } else {
             db.collection("dagboekje").document("dagboekje").collection(
-                    "EqI10LALkGOjjonWT9LGSUIdc572").get()
+                    "gezin").get()
                     .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                         @Override
                         public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
@@ -120,7 +120,7 @@ public class TrainerActZoeken extends AppCompatActivity {
                                 for (DocumentSnapshot d : list) {
 
                                     List<String> stresssignalen = (List<String>) d.get("stresssignalen");
-                                    Activiteit2 p = new Activiteit2(d.getTimestamp("createdAt"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen, d.getString("desc"), d.getString("imageUrl"));
+                                    Activiteit2 p = new Activiteit2(d.getTimestamp("createdAt"), d.getString("oefening"), d.getLong("stressniveau").intValue(), stresssignalen, d.getString("desc"), d.getString("link"));
                                     p.setId(d.getId());
                                     productList.add(p);
 

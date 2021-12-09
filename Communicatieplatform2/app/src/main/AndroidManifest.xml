@@ -32,6 +32,19 @@
         <activity android:name=".MessageActivity" />
         <activity android:name=".documenten.PleeggezinDocumenten" />
         <activity android:name=".test_chat.test_MessageActivity" />
+        <activity android:name=".dagboek.TrainerActZoeken" />
+        <activity android:name=".dagboek.TrainerDagboek" />
+        <activity android:name=".dagboek.TrainerDagboek_keuze" />
+        <activity android:name=".documenten.TrainerDocumenten_keuze" />
+        <activity android:name=".kalender.TrainerKalender_keuze" />
+        <activity android:name=".kalender.TrainerAfspraakActivity" />
+        <activity android:name=".kalender.TrainerAfspraakMaken" />
+        <activity android:name=".TrainerHomepage" />
+        <activity android:name=".Trainer_hondkiezen" />
+        <activity android:name=".documenten.TrainerDocumentenToevoegenActivity" />
+        <activity android:name=".documenten.TrainerDocumentenToevoegenActivitySpecifiek" />
+        <activity android:name=".documenten.TrainerDocumentActivity" />
+
         <activity
             android:name="com.communicatieplatform.MainActivity"
             android:exported="true"

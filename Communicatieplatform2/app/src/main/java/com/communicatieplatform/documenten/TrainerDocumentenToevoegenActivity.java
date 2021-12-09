@@ -1,11 +1,5 @@
 package com.communicatieplatform.documenten;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -20,22 +14,34 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import com.communicatieplatform.R;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-public class DocumentenToevoegenActivity extends AppCompatActivity {
+public class TrainerDocumentenToevoegenActivity extends AppCompatActivity {
 
     Button selectFile, upload;
     TextView notification;
@@ -62,13 +68,14 @@ public class DocumentenToevoegenActivity extends AppCompatActivity {
         selectFile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (ContextCompat.checkSelfPermission(DocumentenToevoegenActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+                if (ContextCompat.checkSelfPermission(TrainerDocumentenToevoegenActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
                     selectPdf();
                 } else
-                    ActivityCompat.requestPermissions(DocumentenToevoegenActivity.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 9);
+                    ActivityCompat.requestPermissions(TrainerDocumentenToevoegenActivity.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 9);
 
             }
         });
+
         upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -77,7 +84,7 @@ public class DocumentenToevoegenActivity extends AppCompatActivity {
                     notification.setText("Bestand geüpload. Geen nieuw bestand geselecteerd");
                     pdfUri = null;
                 } else
-                    Toast.makeText(DocumentenToevoegenActivity.this, "Selecteer een bestand", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TrainerDocumentenToevoegenActivity.this, "Selecteer een bestand", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -101,28 +108,31 @@ public class DocumentenToevoegenActivity extends AppCompatActivity {
                         //store the url in realtime database
                         String[] fileInfo = getFileInfo(pdfUri);
                         String url = directory + "/" + fileName;
-                        CollectionReference reference = database.collection("formulier").document("formulier").collection(FirebaseAuth.getInstance().getCurrentUser().getUid());
                         Map<String, Object> image = new HashMap<>();
                         image.put("link", url);
                         image.put("name", fileInfo[0]);
                         image.put("size", Long.parseLong(fileInfo[1]));
                         image.put("createdAt", Timestamp.now());
+                        ArrayList<String> pleeggezin = getIntent().getStringArrayListExtra("pleeggezin");
+
+                        for(String gezin : pleeggezin){
+                            CollectionReference reference = database.collection("formulier").document("formulier").collection(gezin);
                         reference.document(fileName).set(image)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void aVoid) {
                                         Log.d("document_upload", "DocumentSnapshot successfully written!");
-                                        Toast.makeText(DocumentenToevoegenActivity.this, "Bestand is succesvol geüpload", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(TrainerDocumentenToevoegenActivity.this, "Bestand is succesvol geüpload", Toast.LENGTH_SHORT).show();
                                     }
                                 })
                                 .addOnFailureListener(new OnFailureListener() {
                                     @Override
                                     public void onFailure(@NonNull Exception e) {
                                         Log.w("document_upload", "Error adding document", e);
-                                        Toast.makeText(DocumentenToevoegenActivity.this, "Bestand is niet succesvol geüpload", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(TrainerDocumentenToevoegenActivity.this, "Bestand is niet succesvol geüpload", Toast.LENGTH_SHORT).show();
                                     }
                                 });
-                    }
+                    }}
                 }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
@@ -141,7 +151,7 @@ public class DocumentenToevoegenActivity extends AppCompatActivity {
         if (requestCode == 9 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             selectPdf();
         } else
-            Toast.makeText(DocumentenToevoegenActivity.this, "Geef toestemming alstublieft...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(TrainerDocumentenToevoegenActivity.this, "Geef toestemming alstublieft...", Toast.LENGTH_SHORT).show();
     }
 
 
@@ -185,12 +195,12 @@ public class DocumentenToevoegenActivity extends AppCompatActivity {
             String[] fileInfo = getFileInfo(pdfUri);
 
             if (Long.valueOf(fileInfo[1]) > 5000000) {
-                Toast.makeText(DocumentenToevoegenActivity.this, "Dit bestand is te groot", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TrainerDocumentenToevoegenActivity.this, "Dit bestand is te groot", Toast.LENGTH_SHORT).show();
             } else {
                 notification.setText(fileInfo[0] + " geselecteerd");
             }
         } else {
-            Toast.makeText(DocumentenToevoegenActivity.this, "Selecteer een bestand", Toast.LENGTH_SHORT).show();
+            Toast.makeText(TrainerDocumentenToevoegenActivity.this, "Selecteer een bestand", Toast.LENGTH_SHORT).show();
         }
     }
 }

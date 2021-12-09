@@ -1,10 +1,5 @@
 package com.communicatieplatform.kalender;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
-import com.google.firebase.Timestamp;
-import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
@@ -12,38 +7,33 @@ import android.os.Bundle;
 import android.text.format.DateFormat;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewDebug;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+
 import com.communicatieplatform.R;
-import com.communicatieplatform.dagboek.Activiteit;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.type.DateTime;
 
-import org.w3c.dom.Text;
-
+import java.text.ParseException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.HashMap;
-import java.util.List;
 
-public class AfspraakMaken extends AppCompatActivity {
+public class TrainerAfspraakMaken extends AppCompatActivity {
     private EditText afspraak;
     private EditText datum;
     private EditText locatie;
@@ -55,13 +45,6 @@ public class AfspraakMaken extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.afspraak);
-
-        datum = findViewById(R.id.datum);
-        beginTijd = findViewById(R.id.begintijdText);
-        eindTijd = findViewById(R.id.eindtijdText);
-        datum.setEnabled(false);
-        beginTijd.setEnabled(false);
-        eindTijd.setEnabled(false);
         opslaanAfspraak = findViewById(R.id.opslaanAfspr);
         opslaanAfspraak.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,13 +90,13 @@ public class AfspraakMaken extends AppCompatActivity {
             Toast.makeText(this, "Benoem de afspraak", Toast.LENGTH_SHORT).show();
             variableIsNull = 0;
         } else if (datum.getText().toString().equals("")) {
-            Toast.makeText(AfspraakMaken.this, "Kies een datum", Toast.LENGTH_SHORT).show();
+            Toast.makeText(TrainerAfspraakMaken.this, "Kies een datum", Toast.LENGTH_SHORT).show();
             variableIsNull = 0;
         } else if (beginTijd.getText().toString().equals("")) {
-            Toast.makeText(AfspraakMaken.this, "Kies een starttijd", Toast.LENGTH_SHORT).show();
+            Toast.makeText(TrainerAfspraakMaken.this, "Kies een starttijd", Toast.LENGTH_SHORT).show();
             variableIsNull = 0;
         } else if (eindTijd.getText().toString().equals("")) {
-            Toast.makeText(AfspraakMaken.this, "Kies een eindtijd", Toast.LENGTH_SHORT).show();
+            Toast.makeText(TrainerAfspraakMaken.this, "Kies een eindtijd", Toast.LENGTH_SHORT).show();
             variableIsNull = 0;}
         if (variableIsNull == 1) {
             LocalTime begintijd = LocalTime.parse(beginTijd.getText().toString());
@@ -121,10 +104,10 @@ public class AfspraakMaken extends AppCompatActivity {
             LocalDate datumAfspraak = LocalDate.parse(datum.getText().toString());
             LocalDateTime startAfspraak = LocalDateTime.of(datumAfspraak, begintijd);
             LocalDateTime eindAfspraak = LocalDateTime.of(datumAfspraak, eindtijd);
-            Date startAfspraakDate = java.util.Date
+            Date startAfspraakDate = Date
                     .from(startAfspraak.atZone(ZoneId.systemDefault())
                             .toInstant());
-            Date eindAfspraakDate = java.util.Date
+            Date eindAfspraakDate = Date
                     .from(eindAfspraak.atZone(ZoneId.systemDefault())
                             .toInstant());
             Timestamp startTimestamp = new Timestamp(startAfspraakDate);
@@ -136,11 +119,11 @@ public class AfspraakMaken extends AppCompatActivity {
             data.put("locatie", locatie.getText().toString());
             data.put("opmerkingen", opmerkingen.getText().toString());
             db = FirebaseFirestore.getInstance();
-
-            db.collection("calenderT").document("calenderT").collection(FirebaseAuth.getInstance().getCurrentUser().getUid()).document().set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
+            String gezin = getIntent().getStringExtra("pleeggezin");
+            db.collection("calenderT").document("calenderT").collection(gezin).document().set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void unused) {
-                    Toast.makeText(AfspraakMaken.this, "Afspraak toegevoegd", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TrainerAfspraakMaken.this, "Afspraak toegevoegd", Toast.LENGTH_SHORT).show();
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
@@ -226,7 +209,7 @@ public class AfspraakMaken extends AppCompatActivity {
 
         public void onDateSet(DatePicker view, int year, int month, int day) {
             EditText begintijd = getActivity().findViewById(R.id.datum);
-            LocalDate date = LocalDate.of(year, month, day);
+            LocalDate date = LocalDate.of(year, month+1, day);
             begintijd.setText(date.toString());
         }
     }

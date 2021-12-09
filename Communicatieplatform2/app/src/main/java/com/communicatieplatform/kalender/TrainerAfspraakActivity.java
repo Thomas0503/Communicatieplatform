@@ -2,8 +2,6 @@ package com.communicatieplatform.kalender;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -24,7 +22,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AfspraakActivity extends AppCompatActivity {
+public class TrainerAfspraakActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private AfspraakAdapter adapter;
@@ -43,10 +41,11 @@ public class AfspraakActivity extends AppCompatActivity {
         button = (Button) findViewById(R.id.afspraakToev);
         storage = FirebaseStorage.getInstance(); //return object of Firebase Storage
         database = FirebaseFirestore.getInstance(); //return object of Firebase Database
+        String gezin = getIntent().getStringExtra("pleeggezin");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openAfspraakMaken();
+                openAfspraakMaken(gezin);
             }
         });
 
@@ -65,7 +64,7 @@ public class AfspraakActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
 
-        db.collection("calenderT").document("calenderT").collection(FirebaseAuth.getInstance().getCurrentUser().getUid())
+        db.collection("calenderT").document("calenderT").collection(gezin)
                 .whereGreaterThanOrEqualTo("start", Timestamp.now())
                 .orderBy("start").get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
@@ -79,7 +78,6 @@ public class AfspraakActivity extends AppCompatActivity {
                             List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
 
                             for (DocumentSnapshot d : list) {
-
                                 Afspraak p = new Afspraak(d.getTimestamp("start"), d.getTimestamp("end"),d.getString("title"),
                                         d.getString("locatie"), d.getString("opmerkingen"));
                                 p.setId(d.getId());
@@ -95,8 +93,9 @@ public class AfspraakActivity extends AppCompatActivity {
                     }
                 });
     }
-    public void openAfspraakMaken() {
-        Intent intent = new Intent(this, AfspraakMaken.class);
+    public void openAfspraakMaken(String pleeggezin) {
+        Intent intent = new Intent(this, TrainerAfspraakMaken.class);
+        intent.putExtra("pleeggezin", pleeggezin);
         startActivity(intent);
     }
 }

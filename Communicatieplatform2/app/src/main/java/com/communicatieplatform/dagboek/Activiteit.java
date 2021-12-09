@@ -278,6 +278,8 @@ public class Activiteit extends AppCompatActivity {
                 @Override
                 public void onSuccess(Void unused) {
                     Toast.makeText(Activiteit.this, "Activiteit toegevoegd", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Activiteit.this, Dagboek.class);
+                    startActivity(intent);
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
