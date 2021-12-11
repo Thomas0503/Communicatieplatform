@@ -45,6 +45,13 @@ public class TrainerAfspraakMaken extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.afspraak);
+
+        datum = findViewById(R.id.datum);
+        beginTijd = findViewById(R.id.begintijdText);
+        eindTijd = findViewById(R.id.eindtijdText);
+        datum.setEnabled(false);
+        beginTijd.setEnabled(false);
+        eindTijd.setEnabled(false);
         opslaanAfspraak = findViewById(R.id.opslaanAfspr);
         opslaanAfspraak.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -226,7 +226,7 @@ public class AfspraakMaken extends AppCompatActivity {
 
         public void onDateSet(DatePicker view, int year, int month, int day) {
             EditText begintijd = getActivity().findViewById(R.id.datum);
-            LocalDate date = LocalDate.of(year, month, day);
+            LocalDate date = LocalDate.of(year, month+1, day);
             begintijd.setText(date.toString());
         }
     }
