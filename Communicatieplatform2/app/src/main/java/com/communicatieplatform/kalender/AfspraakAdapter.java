@@ -72,12 +72,14 @@ public class AfspraakAdapter extends RecyclerView.Adapter<AfspraakAdapter.Produc
         holder.textViewPrice.setText(textDatum);
         if(product.getLocatie().equals("")){
             holder.textViewDesc.setVisibility(View.GONE);
+            holder.titleViewDesc.setVisibility(View.GONE);
         } else {
             holder.textViewDesc.setVisibility(View.VISIBLE);
             holder.textViewDesc.setText(product.getLocatie());
         }
-        if(product.getLocatie().equals("")){
+        if(product.getOpmerkingen().equals("")){
             holder.textViewOpmerking.setVisibility(View.GONE);
+            holder.titleViewOpmerking.setVisibility(View.GONE);
         } else {
             holder.textViewOpmerking.setVisibility(View.VISIBLE);
             holder.textViewOpmerking.setText(product.getOpmerkingen());
@@ -91,7 +93,7 @@ public class AfspraakAdapter extends RecyclerView.Adapter<AfspraakAdapter.Produc
 
     class ProductViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView textViewName, textViewBrand, textViewDesc, textViewPrice, textViewOpmerking;
+        TextView textViewName, textViewBrand, textViewDesc, textViewPrice, textViewOpmerking, titleViewDesc, titleViewOpmerking;
 
         public ProductViewHolder(View itemView) {
             super(itemView);
@@ -101,6 +103,8 @@ public class AfspraakAdapter extends RecyclerView.Adapter<AfspraakAdapter.Produc
             textViewDesc = itemView.findViewById(R.id.textview_desc);
             textViewPrice = itemView.findViewById(R.id.textview_price);
             textViewOpmerking = itemView.findViewById(R.id.textview_opmerking);
+            titleViewDesc = itemView.findViewById(R.id.titleview_desc);
+            titleViewOpmerking = itemView.findViewById(R.id.titleview_opmerking);
 
             itemView.setOnClickListener(this);
 

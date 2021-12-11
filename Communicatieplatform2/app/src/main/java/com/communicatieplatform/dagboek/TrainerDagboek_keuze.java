@@ -39,9 +39,13 @@ public class TrainerDagboek_keuze extends AppCompatActivity {
         list = new ArrayList<String>();
         list.add("tt");
         list.add("pcm");
+        list.add("Thomas");
+        list.add("Charlotte");
         HashMap<String, String> dict = new HashMap<>();
         dict.put("tt","wVEKX0xL6xRiSvztD1EFV3gHos12");
         dict.put("pcm","EqI10LALkGOjjonWT9LGSUIdc572");
+        dict.put("Thomas","gbua3TQ24nUWY0JITHPIDk5uMc43");
+        dict.put("Charlotte","LDQHVSjkIeZ0yBLwe0zr6NWFwgM2");
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
         listView.setVisibility(View.INVISIBLE);
         listView.setAdapter(adapter);
