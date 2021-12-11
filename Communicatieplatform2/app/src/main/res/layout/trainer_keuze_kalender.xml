@@ -32,6 +32,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/eigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Bekijk je eigen kalender:"
+        android:textColor="#4E342E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Algemeen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Keuze"
+        app:layout_constraintVertical_bias="0.709" />
 
     <Button
         android:id="@+id/Algemeen"

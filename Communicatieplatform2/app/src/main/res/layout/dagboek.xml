@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="50dp"
-        android:text="Filter activiteiten (optioneel):"
+        android:text="Kies een activiteit (optioneel):"
         android:textColor="#4E342E"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"

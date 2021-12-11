@@ -106,7 +106,7 @@ public class TrainerActZoeken extends AppCompatActivity {
                     });
         } else {
             db.collection("dagboekje").document("dagboekje").collection(
-                    "gezin").get()
+                    gezin).orderBy("createdAt").get()
                     .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                         @Override
                         public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
@@ -125,6 +125,7 @@ public class TrainerActZoeken extends AppCompatActivity {
                                     productList.add(p);
 
                                 }
+                                adapter.notifyDataSetChanged();
 
                             }}
                     });

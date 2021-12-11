@@ -92,7 +92,7 @@
                 android:textColor="#832E2E"
                 android:textSize="18sp" />
         </LinearLayout>
-            <LinearLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#F44336"
