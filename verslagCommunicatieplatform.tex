@@ -102,9 +102,9 @@
 	% jason: dictonairies in dictionaries --> non sequal 
 	Zowel de trainers als de pleeggezinnen zullen bij het gebruik van de app informatie, zoals documenten, dagboekinzendingen, afspraken ... aan de app toevoegen. Al deze informatie moet ergens opgeslagen worden en vanuit die opslagplaats weer geraadpleegd kunnen worden. Daarom maken we gebruik van een database. We hebben een \textit{real-time} database\footnote{Een real-time database is een database waarin aanpassingen quasi onmiddellijk worden doorgevoerd, zodat deze aanpassingen ook op andere apparaten snel zichtbaar zijn.} nodig, zodat onder andere chatberichten zo snel mogelijk gesynchroniseerd kunnen worden.
 	\\\\
-	Firebase is een platform dat verschillende producten huisvest om het creëren van apps en websites te vergemakkelijken. De Realtime database en de Cloud Firestore zijn de twee real-time databases uit deze producten. Firebase is bovendien een populair platform, waardoor er ook een uitgebreide online documentatie \cite{documentatie_firebase} beschikbaar is. Daarnaast heeft het platform ook een beveiligd authenticatiesysteem en een mogelijkheid tot opslag van foto's en video's in de cloud.
+	Firebase is een platform dat verschillende producten huisvest om het creëren van apps en websites te vergemakkelijken. De Realtime database en de Cloud Firestore zijn de twee real-time databases uit deze producten. Firebase is bovendien een populair platform, waardoor er ook een uitgebreide online documentatie \cite{Firebase} beschikbaar is. Daarnaast heeft het platform ook een beveiligd authenticatiesysteem en een mogelijkheid tot opslag van foto's en video's in de cloud.
 	\\\\
-	Na de keuze voor Firebase moet de keuze tussen de twee databases nog gemaakt worden. Over het algemeen \cite{Realtime_vs_Firestore} wordt Cloud Firestore beschouwd als een verbetering van de oudere Realtime database. Daarnaast is het filteren van data in Firestore gemakkelijker.
+	Na de keuze voor Firebase moet de keuze tussen de twee databases nog gemaakt worden. Over het algemeen \cite{Firebase} wordt Cloud Firestore beschouwd als een verbetering van de oudere Realtime database. Daarnaast is het filteren van data in Firestore gemakkelijker.
 	
 	\newpage
 	\section{Resultaten}
@@ -175,8 +175,11 @@
 	Het zou handig zijn mocht het mogelijk zijn om melding te krijgen van bijvoorbeeld een kalenderafspraak, nieuw chatbericht of beschikbare documenten.
 	Op dit moment hebben pleeggezinnen met meerdere honden verschillende accounts nodig. Het zou voor hen makkelijker zijn om dit te kunnen combineren via één account. Dit zou kunnen door bij dagboek, documenten en kalender een onderscheid te maken tussen de honden. En dus te vragen voor welke hond het gezin de informatie wil. Dit zou gelijkaardig zijn aan de trainer-functie. Hierbij wordt er ook gevraagd voor welke hond er data wil worden geüpload of opgevraagd.
 	
+	\newpage
 	\section{Planning}
-	Onze oorspronkelijke planning is te vinden op pagina \pageref{gantt-grafiek} in appendices. Deze is niet de uiteindelijke planning geworden aangezien we doorheen het project doorhadden dat dit misschien niet de beste volgorde was om het project uit te voeren. We zijn begonnen met de tools te zoeken en de pro en contra's kort samen te vatten. Om deze later in een degelijk verslag te gieten. Daarna zijn we begonnen met zowel de app als de website. De volgorde van het creëren van beide tools zijn wel gebeurd zoals aangegeven in de planning. Hoewel het design van de app nog vele keren moest worden aangepast, was deze voor het grote deel al klaar tegen dat we aan het tussentijds verslag begonnen. Tijdens het implementeren van de app en website werd ook de database geprogrammeerd. En op het einde van ons project werden de database-collecties van de applicatie en website op elkaar afgestemd en getest. Ondertussen werd ons eindverslag gemaakt, het intensief werken aan de verdere uitwerking werd wel veel later gestart dan voorzien. We zijn wel op het vooraf-vastgelegde moment begonnen met de presentatie te maken. 
+	Onze oorspronkelijke planning is te vinden op pagina \pageref{gantt-grafiek} in appendices. Deze is niet de uiteindelijke planning geworden aangezien we doorheen het project doorhadden dat dit misschien niet de beste volgorde was om het project uit te voeren. We zijn begonnen met de tools te zoeken en de pro en contra's kort samen te vatten. Om deze later in een degelijk verslag te gieten. Daarna zijn we begonnen met zowel de app als de website. De volgorde van het creëren van beide tools zijn wel gebeurd zoals aangegeven in de planning. Hoewel het design van de app nog vele keren moest worden aangepast, was deze voor het grote deel al klaar tegen dat we aan het tussentijds verslag begonnen. Tijdens het implementeren van de app en website werd ook de database geprogrammeerd. En op het einde van ons project werden de database-collecties van de applicatie en website op elkaar afgestemd en getest. Ondertussen werd ons eindverslag gemaakt, het intensief werken aan de verdere uitwerking werd wel veel later gestart dan voorzien. We zijn wel op het vooraf-vastgelegde moment begonnen met de presentatie te maken. \\
+	Bij het maken van de app en website konden we het werk in twee splitsen: het design en programmeren. Beiden bestonden uit de verschillende hoofdfuncties van onze media: inlogsysteem, dagboek, kalender, documenten en chat. Daarbovenop moest het onderscheid tussen trainer en pleeggezin worden gecreëerd. In de database moesten diezelfde vijf functies ook worden geïmplementeerd. Tot slot moest alles getest en afgestemd worden op elkaar. \\
+	Voor de rapportering konden we het werk in drie stukken splitsen: tussentijds verslag, eindverslag en presentatie. Bij deze eerste twee verantwoordden we de tools die we gebruikten, verklaarden we uitgebreid de resultaten en toonden we eventuele verbeteringen$/$ontwikkelingen voor de toekomst. Voor de presentatie was het grootste werk kijken hoe we onze media efficiënt zouden kunnen tonen en tot in welke mate het nodig was om een beamer te gebruiken. We hebben ook goed besproken hoe we de demo zouden aanpakken.
 	
 	\newpage
 	\section{Samenwerking}
@@ -207,7 +210,6 @@
 	\newpage
 	\begin{appendices}
 		\label{gantt-grafiek}\includepdf[pages=-]{Ganttchart}
-		\label{takenstructuur}\includepdf[pages=-]{Takenstructuur}
 		\label{programmeerstructuur}\includepdf[pages=-]{Database.drawio-2}
 	\end{appendices}
 	
