@@ -3,46 +3,48 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: verslagCommunicatieplatform.aux
 The style file: unsrt.bst
 Database file #1: Bibliografie.bib
+Warning--I didn't find a database entry for "documentatie_firebase"
+Warning--I didn't find a database entry for "Realtime_vs_Firestore"
 Warning--empty journal in opgave
-You've used 20 entries,
+You've used 15 entries,
             1791 wiz_defined-function locations,
-            525 strings with 5904 characters,
-and the built_in function-call counts, 2257 in all, are:
-= -- 206
-> -- 23
+            511 strings with 5411 characters,
+and the built_in function-call counts, 1712 in all, are:
+= -- 156
+> -- 18
 < -- 0
-+ -- 21
++ -- 16
 - -- 1
 * -- 23
-:= -- 249
-add.period$ -- 60
-call.type$ -- 20
-change.case$ -- 20
+:= -- 194
+add.period$ -- 45
+call.type$ -- 15
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 103
-empty$ -- 357
+cite$ -- 16
+duplicate$ -- 78
+empty$ -- 267
 format.name$ -- 1
-if$ -- 585
+if$ -- 440
 int.to.chr$ -- 0
-int.to.str$ -- 20
+int.to.str$ -- 15
 missing$ -- 1
-newline$ -- 103
+newline$ -- 78
 num.names$ -- 1
-pop$ -- 151
+pop$ -- 111
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 59
+skip$ -- 44
 stack$ -- 0
 substring$ -- 0
-swap$ -- 19
+swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
 while$ -- 1
-width$ -- 22
-write$ -- 188
-(There was 1 warning)
+width$ -- 17
+write$ -- 143
+(There were 3 warnings)
