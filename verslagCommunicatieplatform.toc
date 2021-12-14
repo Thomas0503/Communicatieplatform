@@ -1,4 +1,4 @@
-\babel@toc {dutch}{}\relax 
+\babel@toc {dutch}{}
 \contentsline {section}{\numberline {1}Studie voor tools}{4}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Taal}{4}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}App}{4}{subsection.1.2}%
@@ -7,12 +7,13 @@
 \contentsline {section}{\numberline {2}Resultaten}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Database}{6}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Foto's}{6}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Pdf-bestanden}{6}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2}Pdf-bestanden}{7}{subsubsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.2}Login-pagina}{7}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Chat}{7}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Documenten}{7}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Kalender}{8}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Dagboek}{9}{subsection.2.6}%
+<<<<<<< refs/remotes/origin/Eindverslag
 \contentsline {section}{\numberline {3}Ontwikkelingen in de toekomst}{12}{section.3}%
 \contentsline {subsection}{\numberline {3.1}App}{12}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Website}{12}{subsection.3.2}%
@@ -22,3 +23,14 @@
 \contentsline {subsection}{\numberline {5.1}Verantwoordelijkheden}{14}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Taakverdeling}{14}{subsection.5.2}%
 \contentsline {section}{Appendices}{16}{section*.5}%
+=======
+\contentsline {section}{\numberline {3}Ontwikkelingen in de toekomst}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}App}{11}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Website}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Algemene functies}{11}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Planning}{11}{section.4}%
+\contentsline {section}{\numberline {5}Samenwerking}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Verantwoordelijkheden}{13}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Taakverdeling}{13}{subsection.5.2}%
+\contentsline {section}{Appendices}{15}{section*.5}%
+>>>>>>> 2.1.1 en 2.1.2
