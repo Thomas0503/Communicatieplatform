@@ -5,14 +5,14 @@
     android:id="@+id/Activiteit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DC3343">
+    android:background="@color/vriendenDerBlinden">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@mipmap/logo"
-        app:civ_border_color="#DC3343"
+        app:civ_border_color="@color/vriendenDerBlinden"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,9 +23,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="20dp"
-        android:background="#DC3343"
         android:gravity="center_horizontal"
+        android:layout_marginEnd="20dp"
+        android:background="#00F44336"
         android:text="Activiteit toevoegen"
         android:textColor="#4E342E"
         android:textSize="34sp"
@@ -39,6 +39,7 @@
         android:layout_width="0dp"
         android:layout_height="51dp"
         android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="40dp"
         android:background="#AF827E"
         android:endColor="#5E7C07"
@@ -54,9 +55,9 @@
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#832E2E"
         android:text="voeg afbeelding toe"
-        app:layout_constraintBottom_toTopOf="@+id/opslaanActi"
         app:layout_constraintLeft_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar" />
@@ -71,29 +72,30 @@
         android:text="opslaan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/afbeeldingToevoegen" />
 
     <TextView
         android:id="@+id/stressniveau"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
         android:text="Stressniveau:"
-        android:layout_marginTop="10dp"
-
         android:textColor="#4E342E"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
     <TextView
         android:id="@+id/kiesActiviteit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
         android:text="Activiteit:"
-        android:layout_marginTop="10dp"
-
         android:textColor="#4E342E"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,9 +107,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
         android:text="Stresssignaal:"
         android:textColor="#4E342E"
-        android:layout_marginTop="10dp"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
@@ -131,7 +133,7 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#DC3343"
+                android:background="@color/vriendenDerBlinden"
                 android:orientation="vertical">
 
                 <RadioButton
@@ -322,7 +324,7 @@
         android:layout_width="307dp"
         android:layout_height="105dp"
         android:layout_marginStart="60dp"
-
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -331,7 +333,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#DC3343"
+            android:background="@color/vriendenDerBlinden"
             android:orientation="vertical">
 
 
@@ -442,12 +444,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
         android:text="0"
-        android:layout_marginTop="10dp"
         android:textColor="#4E342E"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/stressniveau"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintStart_toEndOf="@+id/stressniveau" />
 
     <ImageView
         android:id="@+id/toegevoegdeAfbeelding"
@@ -467,16 +469,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="20dp"
         android:ems="10"
         android:hint="Geef een omschrijving (optioneel):"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
         android:textColorHighlight="#A34F47"
         android:textColorLink="#A34F47"
-        app:layout_constraintBottom_toTopOf="@+id/kiesActiviteit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Dagboek" />

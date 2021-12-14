@@ -16,7 +16,7 @@
         android:background="#00F44336"
         android:gravity="center_horizontal"
         android:text="Dagboek"
-        android:textColor="#4E342E"
+        android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,12 +24,12 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="182dp"
-        android:layout_height="210dp"
-        android:layout_marginTop="310dp"
+        android:layout_width="179dp"
+        android:layout_height="189dp"
         android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ActiviteitToev"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
         app:srcCompat="@drawable/foto_charlotte_sneeuw" />
 
     <Button
@@ -37,7 +37,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#832E2E"
         android:text="een Activiteit toevoegen"
@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:text="Kies een activiteit (optioneel):"
         android:textColor="#4E342E"
         android:textSize="20sp"
@@ -61,8 +61,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="337dp"
-        android:layout_height="310dp"
+        android:layout_width="347dp"
+        android:layout_height="222dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
         android:textColor="#4E342E"
@@ -97,7 +97,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:src="@drawable/logo"
+        android:src="@mipmap/logo"
         app:civ_border_color="#DC3343"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -111,7 +111,9 @@
         android:layout_marginEnd="30dp"
         android:backgroundTint="#832E2E"
         android:text="Activiteit zoeken"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 

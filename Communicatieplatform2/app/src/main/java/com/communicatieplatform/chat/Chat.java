@@ -68,7 +68,7 @@ public class Chat extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerview_products);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        productList = new ArrayList<>();
+        productList = new ArrayList<Chatbericht>();
         adapter = new ChatAdapter(this, productList);
         recyclerView.setAdapter(adapter);
         db = FirebaseFirestore.getInstance();

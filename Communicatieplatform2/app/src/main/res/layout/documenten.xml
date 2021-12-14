@@ -32,7 +32,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:src="@drawable/logo"
+        android:src="@mipmap/logo"
         app:civ_border_color="#DC3343"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"

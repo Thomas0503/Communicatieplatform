@@ -26,8 +26,7 @@ import java.util.ArrayList;
 
 import android.widget.AdapterView.OnItemClickListener;
 
-public class
-Dagboek extends AppCompatActivity {
+public class Dagboek extends AppCompatActivity {
     private Button button;
     private Button button2;
     private FirebaseFirestore db;
