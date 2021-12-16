@@ -93,7 +93,7 @@
 	We kozen ervoor om Android Studio \cite{AndroidStudio} te gebruiken
 	Deze IDE, die mede ontwikkeld is door Google, is specifiek gericht op het Android platform en er kan makkelijk op getest worden aan de hand van Android-emulators. Een ander voordeel is de ingebouwde \textit{lay-outeditor}, waarmee relatief gemakkelijk de lay-out van de app ontwikkeld kan worden.
 	Daarnaast kan Android Studio gesynchroniseerd worden met GitHub\footnote{GitHub is een versiebeheersysteem. Telkens er een wijziging wordt gedaan in de code, wordt deze opgeslagen. Deze kunnen later gepusht worden zodat elk teamlid de wijzigingen ziet.}. Dit vereenvoudigt de samenwerking tussen verschillende groepsleden. Daarnaast kunnen de verschillende functionaliteiten via deelprogramma's zo ook onafhankelijk worden ontwikkeld en getest.
-	\\\\
+	\\
 	Tot slot kan Android Studio makkelijk gekoppeld worden met de databases van Firebase (dit komt aan bod in hoofdstuk \ref{sec:Database}) doordat de Firebase-services rechtstreeks met Android Studio kunnen gekoppeld worden.
 	
 	\subsection{Website}
@@ -104,9 +104,9 @@
 	Zowel de trainers als de pleeggezinnen zullen bij het gebruik van de app en de website informatie, zoals documenten, dagboekinzendingen, afspraken ... toevoegen. Al deze informatie moet ergens opgeslagen worden en vanuit die opslagplaats weer geraadpleegd kunnen worden, en dit vanaf verschillende apparaten. Een database is hiervoor de beste optie. In deze toepassing hebben we een \textit{real-time} database\footnote{Een real-time database is een database waarin aanpassingen quasi onmiddellijk worden doorgevoerd, zodat deze aanpassingen ook op andere apparaten snel zichtbaar zijn.} nodig, zodat onder andere chatberichten zo snel mogelijk gesynchroniseerd kunnen worden.
 	\\\\
 	Firebase leek ons de beste optie. Dit is een platform dat verschillende producten huisvest om het creëren van apps en websites te vergemakkelijken. De Realtime database en de Cloud Firestore zijn de twee real-time databases uit deze producten. Daarnaast zullen we ook het beveiligd authenticatiesysteem en de opslag van foto's en video's in de cloud gebruiken. 
-	\\\\
+	\\
 	Firebase heeft als voordeel dat het een populair platform is, waardoor er ook een uitgebreide online documentatie \cite{Firebase} beschikbaar is. Het platform is echter maar beperkt gratis. Wegens het verwachte lage gebruikersaantal van de app en de website zal er echter geen of slechts een zeer beperkte kostprijs zijn.
-	\\\\
+	\\
 	We verkiezen uiteindelijk Cloud Firestore als database. Over het algemeen \cite{Firebase} wordt deze beschouwd als een verbetering van de oudere Realtime database. Daarnaast is het filteren van data in Firestore gemakkelijker.	
 	\newpage
 	\section{Resultaten}
@@ -116,87 +116,83 @@
 	\subsection{Database}
 	Zowel de app als website zijn verbonden met de database Cloud Firestore. Hier worden alle gegevens die worden geüpload of ingegeven via de applicatie en website, gestructureerd opgeslagen . Het is dus een plek waar alle data te vinden is, maar ook een $ontmoetingsplaats$ van de website en app. Alle gegevens van beide tools komen hier samen. Op die manier kunnen alle data ook opgevraagd worden via website en app. \\
 	Bij zo'n database is vooral de structuur belangrijk. Op pagina \pageref{programmeerstructuur} in de appendices is een overzicht te zien van hoe we de gevarieerde informatie gaan wegschrijven vanuit de app en website naar de database. Hierbij maken we verschillende collecties aan: Dagboekje, Berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters$/$gegevens. 
-	
 	Afbeeldingen en pdf-documenten worden eerst opgeslagen in de Cloud Storage van Firebase. Daarna wordt er een link naar de opslagplaats in de database geplaatst. Bij pdf-documenten wordt ook de naam en de grootte van het document opgeslagen, aangezien we deze zullen gebruiken in de lay-out. Aan de hand van de link kunnen afbeeldingen uit de Cloud Storage weergegeven worden in de app en de website en kunnen pdf-documenten gedownload worden.  
 	
 	\subsection{Login-pagina}
 	%Via de login-pagina kan je met een gekregen account via e-mailadres en wachtwoord inloggen. Dit account staat gelinkt met je pleeghond. Op die manier komt elke gebruiker bij de data terecht dat over hun hond gaat. Voor de trainer gaat het net een beetje anders. Hij zal bij sommige functies kunnen kiezen voor welke hond hij informatie wil opvragen, maar daar komen we later op terug. \\
 	% Hij kan van elke hond de data opvragen, hiervoor moet hij telkens aangeven voor welke hond hij verder wil gaan. Wil hij de gegevens van één specifieke hond dan selecteert hij die naam. Indien hij meerdere honden tegelijk wil opvragen, kan hij kiezen voor alle honden.
 	%Indien het inloggen succesvol gelukt is, kom je op de hoofdpagina terecht. Daar zijn de vier functies van de applicatie en website terug te vinden: chat, documenten, kalender en dagboek. 
-	
-	///// Voor het inloggen wordt gebruik gemaakt van \textit{Firebase Authentication}, een ingebouwde functionaliteit in de gebruikte database die zorgt voor een betere bescherming van de wachtwoorden van de gebruikers. Elke gebruiker kan met een door ons gekregen account via een email en bijhorend wachtwoord inloggen. Wanneer een juiste email-wachtwoord combinatie wordt ingegeven, wordt de gebruiker doorverwezen naar de hoofdpagina \ref{fig: oo} voor de website en de chat voor de website ( ref..). Elke pagina van de website bevat een navigatiebalk zodat er telkens eenvoudig kan gewisseld worden tussen de functionaliteiten en een hoofdpagina overbodig wordt.
+	Voor het inloggen wordt gebruik gemaakt van \textit{Firebase Authentication}, een ingebouwde functionaliteit in de gebruikte database die zorgt voor een betere bescherming van de wachtwoorden van de gebruikers. Elke gebruiker kan met een door ons gekregen account via een email en bijhorend wachtwoord inloggen, zoals weergegeven in figuur \ref{App_login} voor de app. Wanneer een juiste email-wachtwoord combinatie wordt ingegeven, wordt de gebruiker doorverwezen naar de hoofdpagina (figuur \ref{App_homepage}) voor de app en chat voor de website (figuur \ref{website_homepage}). Op de hoofdpagina van de applicatie zijn de vier hoofdfuncties terug te vinden: chat, documenten, kalender en dagboek. \\ 
+	Elke pagina van de website bevat een navigatiebalk zodat er telkens eenvoudig kan gewisseld worden tussen de functionaliteiten en een hoofdpagina overbodig wordt.
 	\begin{figure}[h]
 		\begin{minipage}[t]{0.4\linewidth}
 			\includegraphics[width=3.5cm]{App_login}
-			\caption{Login-pagina}\label{l}
+			\caption{Login-pagina}\label{App_login}
 		\end{minipage}\hfill
 		\begin{minipage}[t]{0.4\linewidth}
 			\includegraphics[width=3.5cm]{App_homepage}
-			\caption{Hoofdpagina}\label{m}
+			\caption{Hoofdpagina}\label{App_homepage}
 		\end{minipage}
 	\end{figure}
 	\begin{figure}[h]
 	\centering
-	\includegraphics[width=1.0\textwidth]{screen_web_dagboek.jpg}
-	\caption{moet nog mooiere afb Schermafbeelding van ... van de website met 1) de filteroptie (pleeggezinnen beschikken niet over de optie om het dagboek van een andere gebruiker te zien) 2) statistieken 3) De ...}
+	\includegraphics[width=1.0\textwidth]{screen_web_dagboek}
+	\caption{moet nog mooiere afb Schermafbeelding van ... van de website met 1) de filteroptie (pleeggezinnen beschikken niet over de optie om het dagboek van een andere gebruiker te zien) 2) statistieken 3) De ...}\label{website_homepage}
+	\end{figure}
 	
-\end{figure}
-	
-	\newpage
 	\subsection{Chat}
-	Indien er doorgeklikt wordt op chat, wordt er een overzicht getoond van de alle gebruikers. Via de chat is er de optie om berichten (en foto's) te versturen naar andere gebruikers. Bovenaan is er een zoekbalk te vinden die ervoor zorgt dat chats makkelijk worden teruggevonden indien het overzicht van gebruikers lang is. Hierbij kan er doorgeklikt worden naar het gesprek met die gebruiker. Elke conversatie wordt uniek opgeslagen in de database door een combinatie van de twee gebruikers-id's onder de vorm ('grootste gebruikers-id'+'kleinste gebruikers-id'). Voor elk bericht wordt er opgeslagen wie de verzender en ontvanger is, de inhoud, de datum$/$tijd en eventueel een referentie naar de media. Aan de hand van de verzender en ontvanger verandert de stijl van het bericht voor een duidelijk onderscheid tussen de verzonden en ontvangen berichten. $Voor elke conversatie wordt ook het laatst verzonden bericht opgeslagen. Deze wordt telkens$ \\ $overschreven wanneer er een nieuw bericht wordt verzonden. Voor dit bericht wordt er$ \\ $opgeslagen of dit bericht gelezen is ofniet. Een bericht wordt als gelezen beschouwd$ \\
-	$wanneer de conversatie met de gebruiker wordt geopend. Bij de website  wordt elk laatst$ \\ $verzonden bericht wordt weergegeven onder de naam van de geselecteerde gebruiker. $\\
-	$Hierbij wordt ook een onderscheid gemaakt tussen een verzonden en een ontvangen bericht.$ 
+	Indien er doorgeklikt wordt op chat, wordt er een overzicht (figuur \ref{App_chatoverzicht} voor de app en figuur \ref{web_chat} voor de website) getoond van de alle gebruikers. Via de chat is er de optie om berichten (en foto's) te versturen naar andere gebruikers. Bovenaan is er een zoekbalk (zie figuur \ref{App_zoekfunctie}) te vinden die ervoor zorgt dat chats makkelijk worden teruggevonden indien het overzicht van gebruikers lang is. Hierbij kan er doorgeklikt worden naar het gesprek met die gebruiker. Elke conversatie wordt uniek opgeslagen in de database door een combinatie van de twee gebruikers-id's onder de vorm ($grootste gebruikers-id$+$kleinste gebruikers-id$). Voor elk bericht wordt er opgeslagen wie de verzender en ontvanger is, berichtinhoud, datum$/$tijd en eventueel een referentie naar de media. Dankzij de kleur van de berichten (zoals weergegeven op figuur \ref{App_chat}), wordt ook een onderscheid gemaakt tussen verzonden en ontvangen berichten. \\\\
+	%Voor elke conversatie wordt ook het laatst verzonden bericht opgeslagen. Deze wordt telkens overschreven wanneer er een nieuw bericht wordt verzonden. Voor dit bericht wordt er opgeslagen of dit bericht gelezen is ofniet. Een bericht wordt als gelezen beschouwd wanneer de conversatie met de gebruiker wordt geopend. Bij de website  wordt elk laatst verzonden bericht wordt weergegeven onder de naam van de geselecteerde gebruiker. \\
 	Zo kan er snel gecommuniceerd worden tussen het pleeggezin en de trainer mochten er bijkomende problemen of vragen zijn, omtrent bijvoorbeeld de volgende training. Trainers kunnen ook onderling met elkaar chatten, zodat ze makkelijk kunnen afspreken voor bijvoorbeeld een meeting. Indien pleeggezinnen willen afspreken om bijvoorbeeld samen te gaan wandelen, kunnen ze ook naar elkaar sturen om af te spreken.
 	\begin{figure}[h]
 		\begin{minipage}[t]{0.33\linewidth}
 			\includegraphics[width=3.5cm]{App_chat2}
-			\caption{Chatoverzicht}\label{l}
+			\caption{Chatoverzicht}\label{App_chatoverzicht}
 		\end{minipage}\hfill
 		\begin{minipage}[t]{0.33\linewidth}
 			\includegraphics[width=3.5cm]{App_chat}
-			\caption{Zoekfunctie}\label{m}
+			\caption{Zoekfunctie}\label{App_zoekfunctie}
 		\end{minipage}\hfill
 		\begin{minipage}[t]{0.3\linewidth}
 			\includegraphics[width=3.5cm]{App_chat3}
-			\caption{Chat}\label{r}
+			\caption{Chat}\label{App_chat}
 		\end{minipage}
 	\end{figure}
 	\begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{screen_web_chat.jpg}
-	\caption{moet nog mooiere afb er is ook zoekbalk Schermafbeelding van ... van de website met a) de andere gebruikers van het platform, weergegeven door hun naam. 1) aanduiding voor een ongelezen bericht. 2) weergave van het laatste bericht(ontvangen) 3) weergave van het laatste bericht (verstuurd) 6) de zoekbalk en b) de weergave van de chat met 4) een verzonden bericht 5) ontvangen bericht.}
-	\label{fig: web_chat}
-\end{figure}
+	\caption{Er wordt links een overzicht gegeven van chats met de andere gebruikers van het platform: weergegeven door hun naam, 1) aanduiding voor een ongelezen bericht, 2) weergave van het laatste bericht (ontvangen), of 3)laatste bericht (verstuurd) en 6) de zoekbalk.
+	Rechts is de weergave van de chat met 4) een verzonden bericht en 5) een ontvangen bericht.}
+	\label{web_chat}
+	\end{figure}
 	
 	\subsection{Documenten}
-	Bij documenten krijgt een lid van het pleeggezin een chronologisch overzicht van verschillende documenten. Zij zijn opgeslagen in de database en vallen te downloaden. Die documenten zijn specifiek gericht voor het gezin van een bepaalde pleeghond. Geen ander gezin kan aan deze informatie. De documentnaam en -grootte zijn hierbij weergegeven. Er is ook een knop voor het downloaden. \\
-	De trainer heeft diezelfde documenten geüpload. Hij kiest voor wie hij bestanden wil uploaden: voegt hij documenten toe  die enkel door een bepaalde gebruiker kunnen worden gezien of algemene documenten die door elke gebruiker kunnen worden gezien? Daarna moet de trainer een pdf-file selecteren, wat duidelijk wordt weergegeven op de app. Dan moet hij deze uploaden, op dat moment worden die documenten ook geüpload naar de database. De trainer kan ook een overzicht van de documenten opvragen voor een specifieke hond. Elk document wordt gekenmerkt door een datum waarop het toegevoegd werd, een referentie naar de Firebase Storage, een naam en grootte. En wordt opgeslagen onder volgens het unieke gebruikers-id voor de lid van het pleeggezin waarvoor het bedoeld is. De trainer kan per pleeggezin de documenten opvragen en hierbij ook deze bestanden downloaden. 
+	Bij documenten krijgt een lid van het pleeggezin een chronologisch overzicht (zie figuur \ref{App_document} voor de app en figuur \ref{web_documenten}) van verschillende documenten. Zij zijn opgeslagen in de database en vallen te downloaden. Die documenten zijn specifiek gericht voor het gezin van een bepaalde pleeghond. Geen ander gezin kan aan deze informatie. De documentnaam en -grootte zijn hierbij weergegeven. Er is ook een knop voor het downloaden. \\
+	De trainer heeft diezelfde documenten geüpload. Hij kiest voor wie hij bestanden wil uploaden(voor de app is dit weergegeven op figuur \ref{App_trainerdoc}): voegt hij documenten toe  die enkel door een bepaalde gebruiker kunnen worden gezien of algemene documenten die door elke gebruiker kunnen worden gezien? Daarna moet de trainer een pdf-file selecteren, wat duidelijk wordt weergegeven op de app \ref{App_trainerdoctoev}. Dan moet hij deze uploaden, op dat moment worden die documenten ook geüpload naar de database. De trainer kan ook een overzicht van de documenten opvragen voor een specifieke hond, daarbij staat er rechtsonder ook nog een knop om rechtstreeks een document up te loaden \ref{App_trainerdocoverz}. Elk document wordt gekenmerkt door een datum waarop het toegevoegd werd, een referentie naar de Firebase Storage, een naam en grootte. En wordt opgeslagen onder volgens het unieke gebruikers-id voor de lid van het pleeggezin waarvoor het bedoeld is. De trainer kan per pleeggezin de documenten opvragen en hierbij ook deze bestanden downloaden. 
 	Op de website kan er ook nog gezocht worden via een zoekbalk naar een bepaald document op basis van de documentnaam. \\
 	\begin{figure}[h]
 		\begin{minipage}[t]{0.2\linewidth}
 			\includegraphics[width=3cm]{App_documenten}
-			\caption{Documenten- overzicht}\label{m}
+			\caption{Documenten- overzicht}\label{App_document}
 		\end{minipage}\hfill
 		\begin{minipage}[t]{0.2\linewidth}
 			\includegraphics[width=3cm]{App_documenten3}
-			\caption{Documenten menu trainer}\label{r}
+			\caption{Documenten menu trainer}\label{App_trainerdoc}
 		\end{minipage}\hfill
 		\begin{minipage}[t]{0.2\linewidth}
 			\includegraphics[width=3cm]{App_documenten2}
-			\caption{Documenten- overzicht \\trainer}\label{l}
+			\caption{Documenten- overzicht \\trainer}\label{App_trainerdocoverz}
 		\end{minipage}\hfill
 		\begin{minipage}[t]{0.2\linewidth}
 			\includegraphics[width=3cm]{App_documenten4}
-			\caption{Documenten toevoegen trainer}\label{r}
+			\caption{Documenten toevoegen trainer}\label{App_trainerdoctoev}
 		\end{minipage}
 	\end{figure}
 	\begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{screen_web_dagboek.jpg}
-	\caption{moet nog mooiere afb Schermafbeelding van ... van de website met 1) de filteroptie (pleeggezinnen beschikken niet over de optie om het dagboek van een andere gebruiker te zien) 2) statistieken 3) De ...}
-	
-\end{figure}
+	\caption{moet nog mooiere afb Schermafbeelding van ... van de website met 1) de filteroptie (pleeggezinnen beschikken niet over de optie om het dagboek van een andere gebruiker te zien) 2) statistieken 3) De ...} \label{web_documenten}
+	\end{figure}
 
 	\subsection{Kalender}
 	Via de hoofdpagina kan er ook gekozen worden voor kalender. Op dat moment wordt je doorverwezen naar een pagina waar je een chronologisch overzicht krijgt van de verschillende activiteiten die in de toekomst staan gepland. Hierbij is er een duidelijk onderscheid te maken tussen de app en website. \\
