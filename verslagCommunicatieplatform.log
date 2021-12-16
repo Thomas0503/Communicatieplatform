@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.21)  16 DEC 2021 15:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.21)  16 DEC 2021 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -797,33 +797,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--287
  []
 
 [13] [14 <./App_kalender2.jpg> <./App_kalender.jpg> <./App_kalender3.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 299--309
+Underfull \hbox (badness 10000) in paragraph at lines 296--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--309
+Underfull \hbox (badness 10000) in paragraph at lines 296--302
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--302
 
  []
 
 [15] [16 <./App_dagboek.jpg> <./App_dagboek3.jpg> <./App_dagboek2.jpg> <./App_d
 agboek5.jpg> <./App_dagboek4.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 312--318
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 312--318
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 312--318
+Underfull \hbox (badness 10000) in paragraph at lines 307--312
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 323--325
+Underfull \hbox (badness 10000) in paragraph at lines 317--327
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--327
 
  []
 
@@ -1045,16 +1045,16 @@ jango-[]which-[]is-[]the-[]best-[]backend-[]language-[]in-[]your-[]opinion-[]33
 ) [25] (./verslagCommunicatieplatform.aux)
 Package rerunfilecheck Info: File `verslagCommunicatieplatform.out' has not cha
 nged.
-(rerunfilecheck)             Checksum: EFFC5DF283513B1F02750529336B4B20;2544.
+(rerunfilecheck)             Checksum: F3C32D0B83B3196D2EB15CFBEBF24D27;2557.
  ) 
 Here is how much of TeX's memory you used:
  11794 strings out of 478371
- 188159 string characters out of 5852527
+ 188173 string characters out of 5852527
  505011 words of memory out of 5000000
  29643 multiletter control sequences out of 15000+600000
  409753 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,17n,75p,1182b,552s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,17n,75p,1182b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-di
@@ -1068,7 +1068,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb>
-Output written on verslagCommunicatieplatform.pdf (25 pages, 1307533 bytes).
+Output written on verslagCommunicatieplatform.pdf (25 pages, 1307044 bytes).
 PDF statistics:
  617 PDF objects out of 1000 (max. 8388607)
  507 compressed objects within 6 object streams
