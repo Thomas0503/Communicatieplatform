@@ -51,7 +51,7 @@ public class TrainerDocumenten_keuze extends AppCompatActivity {
         HashMap<String, String> dict = new HashMap<>();
         db = FirebaseFirestore.getInstance();
         for(String user:getIntent().getStringArrayListExtra("pleeggezin")){
-            db.collection("users").document("user").get()
+            db.collection("users").document(user).get()
                     .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                         @Override
                         public void onComplete(@NonNull Task<DocumentSnapshot> task) {
