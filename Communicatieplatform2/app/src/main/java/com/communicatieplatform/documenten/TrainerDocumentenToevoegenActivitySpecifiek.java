@@ -91,7 +91,7 @@ public class TrainerDocumentenToevoegenActivitySpecifiek extends AppCompatActivi
         progressDialog.setProgress(0);
         progressDialog.show();
 
-        final String fileName = System.currentTimeMillis() + "";
+        final String fileName = System.currentTimeMillis() + "" + FirebaseAuth.getInstance().getCurrentUser().getUid();
         String directory = "Uploads";
         StorageReference storageReference = storage.getReference(); //return root path
         storageReference.child(directory).child(fileName).putFile(pdfUri)

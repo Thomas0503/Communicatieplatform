@@ -94,7 +94,7 @@ public class test_MessageActivity extends AppCompatActivity {
 
         db = FirebaseFirestore.getInstance();
         document = "";
-        if(currentUid.compareTo(receiver)<0) {
+        if(currentUid.compareTo(receiver)<=0) {
             document = receiver + currentUid;}
         else {
             document = currentUid+ receiver;}
@@ -112,7 +112,14 @@ public class test_MessageActivity extends AppCompatActivity {
                             switch (dc.getType()) {
                                 case ADDED:
                                     DocumentSnapshot d = dc.getDocument();
-                                    Message p = new Message(d.getTimestamp("createdAt"), d.getString("from"), d.getString("to"), d.getString("text"));
+                                    String media = "";
+                                    try{
+                                        media = d.getString("media");
+
+                                    } catch(Error f) {
+                                        media = "";
+                                }
+                                    Message p = new Message(d.getTimestamp("createdAt"), d.getString("from"), d.getString("to"), d.getString("text"), media);
                                     p.setId(d.getId());
                                     productList.add(p);
                                     break;

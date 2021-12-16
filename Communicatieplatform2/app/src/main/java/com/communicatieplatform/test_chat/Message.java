@@ -10,17 +10,18 @@ import java.util.List;
 public class Message implements Serializable{
 
     private Date datum;
-    private String sender, receiver, text;
+    private String sender, receiver, text, media;
     @Exclude private String id;
     public Message() {
 
     }
 
-    public Message(Timestamp datum, String sender, String receiver, String text) {
+    public Message(Timestamp datum, String sender, String receiver, String text, String media) {
         this.datum = datum.toDate();
         this.sender = sender;
         this.receiver = receiver;
         this.text = text;
+        this.media = media;
     }
 
     public String getId() {
@@ -42,7 +43,9 @@ public class Message implements Serializable{
     public String getReceiver() {
         return receiver;
     }
-
+    public String getMedia() {
+        return media;
+    }
     public String getText() {
         return text;
     }
