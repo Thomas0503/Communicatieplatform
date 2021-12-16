@@ -112,13 +112,10 @@ public class test_MessageActivity extends AppCompatActivity {
                             switch (dc.getType()) {
                                 case ADDED:
                                     DocumentSnapshot d = dc.getDocument();
-                                    String media = "";
-                                    try{
-                                        media = d.getString("media");
-
-                                    } catch(Error f) {
+                                    String media = d.getString("media");
+                                    if(media == null){
                                         media = "";
-                                }
+                                    }
                                     Message p = new Message(d.getTimestamp("createdAt"), d.getString("from"), d.getString("to"), d.getString("text"), media);
                                     p.setId(d.getId());
                                     productList.add(p);

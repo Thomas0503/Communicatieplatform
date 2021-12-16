@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CommunicatieplatformApp" >
         <activity android:name=".Homepage"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="sensorPortrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>

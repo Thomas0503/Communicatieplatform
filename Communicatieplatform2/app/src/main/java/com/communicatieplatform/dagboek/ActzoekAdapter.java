@@ -93,8 +93,6 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
             holder.imageView.setVisibility(View.GONE);
         } else {
             holder.imageView.setVisibility(View.VISIBLE);
-            storage = FirebaseStorage.getInstance();
-            StorageReference storageReference = storage.getReference();
             Uri uri = Uri.parse(product.getUrl());
             Picasso.get().load(product.getUrl()).fit().centerInside().into(holder.imageView);
         }
