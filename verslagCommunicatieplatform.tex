@@ -76,38 +76,39 @@
 	Hiervoor is zowel een Android-app als een website nodig: de gezinnen kunnen via hun app herinneringen krijgen voor trainingen van de hond, voor medicijnen die de hond moet innemen \texttt{...} Daarnaast kan de trainer via zijn computer de verslagen van trainingen uploaden, die belangrijk zijn om te weten waarop er nog getraind moet worden. Trainers en pleeggezinnen kunnen echter ook gebruik maken van het andere platform, indien ze dit willen.
 	
 	\subsection*{Integratie van vakken}
-	Het hoofddoel is een app en een website te bouwen die samen een communicatieplatform vormen. Het vak 'Beginselen van programmeren' hebben we hierbij nodig aangezien programmeren een hoofdzaak is bij het bouwen van zo'n app en website. In die opleiding hebben we de taal \verb!Python! geleerd en inzichten gecreëerd die handig kunnen zijn in dit project. \\
+	Het hoofddoel is een app en een website te bouwen die samen een communicatieplatform vormen. Het vak 'Beginselen van programmeren' hebben we hierbij nodig, aangezien programmeren een hoofdzaak is bij het bouwen van zo'n app en website. In die opleiding hebben we de taal \verb!Python! geleerd en inzichten gecreëerd die handig kunnen zijn in dit project. \\
 	In P\&O1 leerden we hoe we professioneel een verslag kunnen opstellen en een presentatie kunnen geven. Die vaardigheden werden nog eens getraind in P\&O2. Deze zijn ook handig in P\&O3 aangezien we voor de rapportering van ons project opnieuw een eindverslag indienen en presentatie met demo zullen geven. \\
 	
 	
 	\newpage
 	\section{Studie voor tools}
-	\subsection{Taal}
-	Er bestaan enorm veel programmeertalen. 
-	\verb!Java! en \verb!Kotlin! blijken de beste programmeertalen te zijn om een app te bouwen volgens bron \cite{Programmeertaal}. Aangezien zowel \verb!Java! als \verb!Kotlin! officiële programmeertalen zijn voor Android development, sluiten ze goed aan op het besturingssysteem Android. \verb!Java! bestaat al langer dan \verb!Kotlin!. Hierdoor bestaat er meer online documentatie voor \verb!Java!, die nuttig is voor onderdelen die moeilijk te implementeren zijn (zoals bij chat). We hebben gekozen om \verb!Java! te gebruiken als programmeertaal voor de app.
+	\subsection{Programmertalen} 
+	\verb!Java! en \verb!Kotlin! blijken de beste programmeertalen te zijn om een app te bouwen volgens bron \cite{Programmeertaal}. Aangezien zowel \verb!Java! als \verb!Kotlin! officiële programmeertalen zijn voor Android development, sluiten ze goed aan op het besturingssysteem Android. \verb!Java! bestaat al langer dan \verb!Kotlin!. Hierdoor bestaat er meer online documentatie voor \verb!Java!, die nuttig is voor onderdelen die moeilijk te implementeren zijn (zoals bij chat). Daarom hebben we gekozen om \verb!Java! te gebruiken als programmeertaal voor de app.
 	\\\\%of een hybride app?
 	Voor de \textit{front-end}\footnote{De \textit{front-end} van een website is deel van het programma dat zichtbaar is voor de gebruiker. Dit zorgt voor het visuele gedeelte van de site.} ontwikkeling van de website kozen we ervoor om gebruik te maken van \verb!HTML!, \verb!CSS! en \verb!JavaScript!. Dit zijn veruit de meest gebruikte talen  \cite{JavaScript_for_web-app} voor de ontwikkeling van een \textit{front-end}.
 	
 	\subsection{App}
-	Er bestaan veel tools om een app te ontwikkelen voor het besturingssysteem Android. De tool moest voldoen aan verschillende vereisten. Het moet compatibel zijn met Android,  mogelijk zijn om de data weg te schrijven naar een database zodat er een website aan gekoppeld kan worden en voldoen aan alle vereisten voor ons probleem. Zo moet het mogelijk zijn om documenten te uploaden, om een dagboek bij te houden en om een chatfunctie te installeren. 
+	Er bestaan veel tools om een app te ontwikkelen voor het besturingssysteem Android. De tool die wij wilden gebruiken, moest voldoen aan verschillende vereisten. Het moet compatibel zijn met Android, het moet mogelijk zijn om de data weg te schrijven naar een database zodat er een website aan gekoppeld kan worden,  en we moeten alle klantenvereisten er mee kunnen implementeren. Zo moet het mogelijk zijn om documenten te uploaden, om een dagboek bij te houden en om een chatfunctie te installeren. 
 	\\\\
-	We kozen voor Android Studio \cite{AndroidStudio}, die app-ontwikkeling eenvoudiger maakt dankzij de \textit{lay-outeditor}, \textit{APK-analyzer} en \textit{Vector Asset Studio}.
-	Android Studio is specifiek gericht op het Android platform en makkelijk testbaar aan de hand van Android-emulators. 
-	Daarnaast kan Android Studio gesynchroniseerd worden met GitHub\footnote{GitHub is een versiebeheersysteem. Telkens er een wijziging wordt gedaan in de code, wordt deze opgeslagen. Deze kunnen later gepusht worden zodat elk teamlid de wijzigingen ziet.} die bijdragen voor een optimaal groepswerk. De verschillende functionaliteiten kunnen via deelprogramma's onafhankelijk worden ontwikkeld en getest.
+	We kozen ervoor om Android Studio \cite{AndroidStudio} te gebruiken
+	Deze IDE, die mede ontwikkeld is door Google, is specifiek gericht op het Android platform en er kan makkelijk op getest worden aan de hand van Android-emulators. Een ander voordeel is de ingebouwde \textit{lay-outeditor}, waarmee relatief gemakkelijk de lay-out van de app ontwikkeld kan worden.
+	Daarnaast kan Android Studio gesynchroniseerd worden met GitHub\footnote{GitHub is een versiebeheersysteem. Telkens er een wijziging wordt gedaan in de code, wordt deze opgeslagen. Deze kunnen later gepusht worden zodat elk teamlid de wijzigingen ziet.}. Dit vereenvoudigt de samenwerking tussen verschillende groepsleden. Daarnaast kunnen de verschillende functionaliteiten via deelprogramma's zo ook onafhankelijk worden ontwikkeld en getest.
 	\\\\
-	Tot slot kan Android Studio makkelijk gekoppeld worden met de databases van Firebase (dit komt aan bod in hoofdstuk \ref{sec:Database}) doordat Firebase-services rechtstreeks kunnen gekoppeld worden met Android Studio.
+	Tot slot kan Android Studio makkelijk gekoppeld worden met de databases van Firebase (dit komt aan bod in hoofdstuk \ref{sec:Database}) doordat de Firebase-services rechtstreeks met Android Studio kunnen gekoppeld worden.
 	
 	\subsection{Website}
 	Voor de ontwikkeling van de \textit{back-end}\footnote{De \textit{back-end} van een website is deel van het programma dat onzichtbaar is voor de gebruiker. Dit zorgt ervoor dat de \textit{front-end} van de website werkt.} van de website bestaan er veel verschillende tools. \verb!Node.js! leek ons de beste optie. De \textit{event-driven} architectuur van \verb!Node.js! maakt het eenvoudiger om een chat-app te implementeren en is snel en makkelijk te begrijpen, waardoor onze keuze gemaakt was. \verb!Node.js! is een open source en multiplatform van de \verb!JavaScript-runtime-omgeving!.
 	
 	\subsection{Database} \label{sec:Database}
 	% jason: dictonairies in dictionaries --> non sequal 
-	Zowel de trainers als de pleeggezinnen zullen bij het gebruik van de app informatie, zoals documenten, dagboekinzendingen, afspraken ... aan de app toevoegen. Al deze informatie moet ergens opgeslagen worden en vanuit die opslagplaats weer geraadpleegd kunnen worden. Daarom maken we gebruik van een database. We hebben een \textit{real-time} database\footnote{Een real-time database is een database waarin aanpassingen quasi onmiddellijk worden doorgevoerd, zodat deze aanpassingen ook op andere apparaten snel zichtbaar zijn.} nodig, zodat onder andere chatberichten zo snel mogelijk gesynchroniseerd kunnen worden.
+	Zowel de trainers als de pleeggezinnen zullen bij het gebruik van de app informatie, zoals documenten, dagboekinzendingen, afspraken ... aan de app toevoegen. Al deze informatie moet ergens opgeslagen worden en vanuit die opslagplaats weer geraadpleegd kunnen worden. Een database is hiervoor de beste optie. In deze toepassing hebben we een \textit{real-time} database\footnote{Een real-time database is een database waarin aanpassingen quasi onmiddellijk worden doorgevoerd, zodat deze aanpassingen ook op andere apparaten snel zichtbaar zijn.} nodig, zodat onder andere chatberichten zo snel mogelijk gesynchroniseerd kunnen worden.
 	\\\\
-	Firebase is een platform dat verschillende producten huisvest om het creëren van apps en websites te vergemakkelijken. De Realtime database en de Cloud Firestore zijn de twee real-time databases uit deze producten. Firebase is bovendien een populair platform, waardoor er ook een uitgebreide online documentatie \cite{Firebase} beschikbaar is. Daarnaast heeft het platform ook een beveiligd authenticatiesysteem en een mogelijkheid tot opslag van foto's en video's in de cloud.
+	Firebase leek ons de beste optie. Dit is een platform dat verschillende producten huisvest om het creëren van apps en websites te vergemakkelijken. De Realtime database en de Cloud Firestore zijn de twee real-time databases uit deze producten. Daarnaast zullen we ook het beveiligd authenticatiesysteem en de opslag van foto's en video's in de cloud gebruiken. 
 	\\\\
-	Na de keuze voor Firebase moet de keuze tussen de twee databases nog gemaakt worden. Over het algemeen \cite{Firebase} wordt Cloud Firestore beschouwd als een verbetering van de oudere Realtime database. Daarnaast is het filteren van data in Firestore gemakkelijker.
-	
+	Firebase heeft als voordeel dat het een populair platform is, waardoor er ook een uitgebreide online documentatie \cite{Firebase} beschikbaar is. Het platform is echter maar beperkt gratis. Wegens het verwachte lage gebruikersaantal van de app en de website zal er echter geen of slechts een zeer beperkte kostprijs zijn.
+	\\\\
+
+	We verkiezen uiteindelijk Cloud Firestore als database. Over het algemeen \cite{Firebase} wordt deze beschouwd als een verbetering van de oudere Realtime database. Daarnaast is het filteren van data in Firestore gemakkelijker.	
 	\newpage
 	\section{Resultaten}
 	Na onze studie van de verschillende tools, waren we eraan uit welke we gingen gebruiken: Android Studio voor de app, \verb!HTML!, \verb!CSS! en \verb!JavaScript! in combinatie met \verb!Node.js! voor de website en Cloud Firestore als database.
