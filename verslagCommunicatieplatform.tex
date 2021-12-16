@@ -122,7 +122,7 @@
 	%Via de login-pagina kan je met een gekregen account via e-mailadres en wachtwoord inloggen. Dit account staat gelinkt met je pleeghond. Op die manier komt elke gebruiker bij de data terecht dat over hun hond gaat. Voor de trainer gaat het net een beetje anders. Hij zal bij sommige functies kunnen kiezen voor welke hond hij informatie wil opvragen, maar daar komen we later op terug. \\
 	% Hij kan van elke hond de data opvragen, hiervoor moet hij telkens aangeven voor welke hond hij verder wil gaan. Wil hij de gegevens van één specifieke hond dan selecteert hij die naam. Indien hij meerdere honden tegelijk wil opvragen, kan hij kiezen voor alle honden.
 	%Indien het inloggen succesvol gelukt is, kom je op de hoofdpagina terecht. Daar zijn de vier functies van de applicatie en website terug te vinden: chat, documenten, kalender en dagboek. 
-	Voor het inloggen wordt gebruik gemaakt van \textit{Firebase Authentication}, een ingebouwde functionaliteit in de gebruikte database die zorgt voor een betere bescherming van de wachtwoorden van de gebruikers. Elke gebruiker kan met een door ons gekregen account via een email en bijhorend wachtwoord inloggen, zoals weergegeven in figuur \ref{App_login} voor de app. Wanneer een juiste email-wachtwoord combinatie wordt ingegeven, wordt de gebruiker doorverwezen naar de hoofdpagina (figuur \ref{App_homepage}) voor de app en chat voor de website (figuur \ref{website_homepage}). Op de hoofdpagina van de applicatie zijn de vier hoofdfuncties terug te vinden: chat, documenten, kalender en dagboek. \\ 
+	Voor het inloggen wordt gebruik gemaakt van \textit{Firebase Authentication}, een ingebouwde functionaliteit in de gebruikte database die zorgt voor een betere bescherming van de wachtwoorden van de gebruikers. Elke gebruiker kan met een door ons gekregen account via een email en bijhorend wachtwoord inloggen, zoals weergegeven in figuur \ref{App_login} voor de app en in figuur \ref{website_login} voor de website. Wanneer een juiste email-wachtwoord combinatie wordt ingegeven, wordt de gebruiker doorverwezen naar de hoofdpagina (figuur \ref{App_homepage}) voor de app en chat voor de website. Op de hoofdpagina van de applicatie zijn de vier hoofdfuncties terug te vinden: chat, documenten, kalender en dagboek. \\ 
 	Elke pagina van de website bevat een navigatiebalk zodat er telkens eenvoudig kan gewisseld worden tussen de functionaliteiten en een hoofdpagina overbodig wordt.
 	\begin{figure}[h]
 		\begin{minipage}[t]{0.4\linewidth}
@@ -136,8 +136,8 @@
 	\end{figure}
 	\begin{figure}[h]
 	\centering
-	\includegraphics[width=1.0\textwidth]{screen_web_dagboek}
-	\caption{moet nog mooiere afb Schermafbeelding van ... van de website met 1) de filteroptie (pleeggezinnen beschikken niet over de optie om het dagboek van een andere gebruiker te zien) 2) statistieken 3) De ...}\label{website_homepage}
+	\includegraphics[width=0.735\textwidth]{screen_web_dagboek}
+	\caption{Om in te loggen worden (1) de gebruikersnaam en (2) het wachtwoord gevraagd.}\label{website_login}
 	\end{figure}
 	
 	\subsection{Chat}
@@ -160,9 +160,9 @@
 	\end{figure}
 	\begin{figure}[h]
 	\centering
-	\includegraphics[width=1.0\textwidth]{screen_web_chat.jpg}
-	\caption{Er wordt links een overzicht gegeven van chats met de andere gebruikers van het platform: weergegeven door hun naam, 1) aanduiding voor een ongelezen bericht, 2) weergave van het laatste bericht (ontvangen), of 3)laatste bericht (verstuurd) en 6) de zoekbalk.
-	Rechts is de weergave van de chat met 4) een verzonden bericht en 5) een ontvangen bericht.}
+	\includegraphics[width=0.735\textwidth]{screen_web_chat.jpg}
+	\caption{Er wordt links een overzicht gegeven van chats met de andere gebruikers van het platform: weergegeven door hun naam, (1) aanduiding voor een ongelezen bericht, (2) weergave van het laatste bericht (ontvangen), of (3)laatste bericht (verstuurd) en (6) de zoekbalk.
+	Rechts is de weergave van de chat met (4) een verzonden bericht en (5) een ontvangen bericht.}
 	\label{web_chat}
 	\end{figure}
 	
@@ -189,9 +189,9 @@
 		\end{minipage}
 	\end{figure}
 	\begin{figure}[h]
-	\centering
-	\includegraphics[width=1.0\textwidth]{screen_web_dagboek.jpg}
-	\caption{moet nog mooiere afb Schermafbeelding van ... van de website met 1) de filteroptie (pleeggezinnen beschikken niet over de optie om het dagboek van een andere gebruiker te zien) 2) statistieken 3) De ...} \label{web_documenten}
+		\centering
+		\includegraphics[width=0.735\textwidth]{screen_web_dagboek.jpg}
+		\caption{Bij het documentenoverzicht hebben we (1) een zoekfunctie. Het overzicht van documenten  (2) met download-functie.}\label{web_documenten}
 	\end{figure}
 
 	\subsection{Kalender}
@@ -216,10 +216,11 @@
 	\end{figure}
 	\begin{figure}[h]
 	\centering
-	\includegraphics[width=1.0\textwidth]{screen_web_dagboek.jpg}
-	\caption{moet nog mooiere afb Schermafbeelding van ... van de website met 1) de filteroptie (pleeggezinnen beschikken niet over de optie om het dagboek van een andere gebruiker te zien) 2) statistieken 3) De ...}\label{web_kalender}
+	\includegraphics[width=0.735\textwidth]{screen_web_dagboek.jpg}
+	\caption{De activiteiten (1) worden weergegeven in een kalendervorm. Er kunnen ook afspraken worden toegevoegd(2).}\label{web_kalender}
 	\end{figure}
 	
+	\newpage
 	\subsection{Dagboek}
 	Het dagboek is ook te vinden via de hoofdpagina. 
 	Op de app kunnen we kiezen voor een overzicht te krijgen van oefeningen of voor een oefening toe te voegen \ref{App_dagboek}. Indien we voor het eerste kiezen, kunnen we via een zoekfunctie een activiteit selecteren waarvoor we een overzicht willen verkrijgen. Indien er geen enkele activiteit wordt geselecteerd, worden alle activiteiten weergeven in het overzicht zoals op figuur \ref{App_dagboekoverzicht}. Hierbij zijn de volgende gegevens zichtbaar: naam, datum, alle stresssignalen, stressniveau en een foto van de oefening. Indien we kiezen om een activiteit van diezelfde dag toe te voegen zoals op figuur \ref{App_dagboekacttoev}, kunnen we dit doen door verder te klikken. Hier kunnen de naam, één of meerdere stresssignalen, het stressniveau en een omschrijving worden meegegeven. Er kan ook een foto worden geüpload. De datum moet niet worden ingegeven aangezien het een oefening is dat die dag zelf is gebeurd. Dit gebeurt dus automatisch. Eenmaal dit allemaal is gebeurd, is de oefening terug te vinden in het overzicht tussen alle andere oefeningen. \\
@@ -244,20 +245,20 @@
 		\end{minipage}\hfill
 		\begin{minipage}[t]{0.17\linewidth}
 			\includegraphics[width=2.4cm]{App_dagboek4}
-			\caption{Dagboek menu \\ trainer}\label{App_trainerdagbmenu}
+			\caption{Trainer menu}\label{App_trainerdagbmenu}
 		\end{minipage}
 	\end{figure}
 	\begin{figure}[h]
-		\centering
-		\includegraphics[width=1.0\textwidth]{screen_web_dagboek.jpg}
-		\caption{moet nog mooiere afb Schermafbeelding van ... van de website }
-		\label{web_dagboektoev}
-	\end{figure}
-	\begin{figure}[h]
-	\centering
-	\includegraphics[width=1.0\textwidth]{screen_web_dagboek.jpg}
-	\caption{moet nog mooiere afb Schermafbeelding van ... van de website met 1) de filteroptie (pleeggezinnen beschikken niet over de optie om het dagboek van een andere gebruiker te zien) 2) statistieken 3) De ...}
-	\label{web_dagboek}
+		\begin{minipage}[t]{0.4\linewidth}
+			\includegraphics[width=1\textwidth]{screen_web_dagboek.jpg}
+			\caption{Om een oefening toe te voegen (1) moeten verschillende gegevens worden ingegeven. Er kan ook worden doorgeklikt naar het overzicht (2).}
+			\label{web_dagboektoev}
+		\end{minipage} \hfill
+		\begin{minipage}[t]{0.6\linewidth}
+			\includegraphics[width=1\textwidth]{screen_web_dagboek.jpg}
+			\caption{Hier wordt het dagboek weergegeven. \\ Daarbij is er (1) een filteroptie, (2) statistieken van de stressniveaus en (3) weergave van de oefeningen.}
+			\label{web_dagboek}
+		\end{minipage}
 	\end{figure}
 
 
@@ -277,6 +278,7 @@
 	\newpage
 	\label{flowchart}\includepdf[pages=-]{Flowchart}
 	
+	\newpage
 	\section{Ontwikkelingen in de toekomst}
 	\subsection{App}
 	Voor de applicatie zijn er nog verschillende verbeteringen mogelijk. 
@@ -307,8 +309,10 @@
 		Bij het maken van de app en website konden we het werk in twee splitsen: het design en programmeren. Beiden bestonden uit de verschillende hoofdfuncties van onze media: inlogsysteem, dagboek, kalender, documenten en chat. Daarbovenop moest het onderscheid tussen trainer en pleeggezin worden gecreëerd. In de database moesten diezelfde vijf functies ook worden geïmplementeerd. Tot slot moest alles getest en afgestemd worden op elkaar. \\
 		Voor de rapportering konden we het werk in drie stukken splitsen: tussentijds verslag, eindverslag en presentatie. Bij deze eerste twee verantwoordden we de tools die we gebruikten, verklaarden we uitgebreid de resultaten en toonden we eventuele verbeteringen$/$ontwikkelingen voor de toekomst.\\
 		Voor de presentatie was het grootste werk kijken hoe we onze media efficiënt zouden kunnen tonen. We hebben ook goed besproken hoe we de demo zouden aanpakken.
-		\\\\		
-		Onze oorspronkelijke planning is te vinden op pagina \pageref{gantt-grafiek} in deze appendices. Deze is niet de uiteindelijke planning geworden aangezien we doorheen het project doorhadden dat dit misschien niet de beste volgorde was om het project uit te voeren. We zijn begonnen met de tools te zoeken en de pro en contra's kort samen te vatten, om deze later in een degelijk verslag te gieten. Daarna zijn we begonnen met zowel de app als de website. De volgorde van het creëren van beide tools zijn wel gebeurd zoals aangegeven in de planning. Hoewel het design van de app nog vele keren moest worden aangepast, was deze voor het grote deel al klaar tegen dat we aan het tussentijds verslag begonnen. Tijdens het implementeren van de app en website werd ook de database geprogrammeerd. En op het einde van ons project werden de database-collecties van de applicatie en website op elkaar afgestemd en getest. Ondertussen werd ons eindverslag gemaakt, het intensief werken aan de verdere uitwerking werd wel veel later gestart dan voorzien. We zijn wel op het vooraf-vastgelegde moment begonnen met de presentatie te maken.
+		\\\\
+		Onze oorspronkelijke planning is te vinden op pagina \pageref{gantt-grafiek} in deze appendices. Deze is niet de uiteindelijke planning geworden aangezien we doorheen het project doorhadden dat dit misschien niet de beste volgorde was om het project uit te voeren. We zijn begonnen met de tools te zoeken en de pro en contra's kort samen te vatten, om deze later in een degelijk verslag te gieten. \\
+		Daarna zijn we begonnen met zowel de app als de website. De volgorde van het creëren van beide tools zijn wel gebeurd zoals aangegeven in de planning. Hoewel het design van de app nog vele keren moest worden aangepast, was deze voor het grote deel al klaar tegen dat we aan het tussentijds verslag begonnen. Tijdens het implementeren van de app en website werd ook de database geprogrammeerd. En op het einde van ons project werden de database-collecties van de applicatie en website op elkaar afgestemd en getest.\\ 
+		Ondertussen werd ons eindverslag gemaakt, het intensief werken aan de verdere uitwerking werd wel veel later gestart dan voorzien. We zijn wel op het vooraf-vastgelegde moment begonnen met de presentatie te maken.
 		
 		\section{Samenwerking}
 		\subsection{Verantwoordelijkheden}

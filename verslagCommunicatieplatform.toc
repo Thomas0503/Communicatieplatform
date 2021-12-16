@@ -7,18 +7,18 @@
 \contentsline {section}{\numberline {2}Resultaten}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Database}{6}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Login-pagina}{6}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Chat}{7}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Documenten}{8}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.3}Chat}{8}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Documenten}{9}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Kalender}{9}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Dagboek}{10}{subsection.2.6}%
-\contentsline {section}{\numberline {3}Ontwikkelingen in de toekomst}{13}{section.3}%
-\contentsline {subsection}{\numberline {3.1}App}{13}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Website}{13}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Algemene functies}{13}{subsection.3.3}%
+\contentsline {subsection}{\numberline {2.6}Dagboek}{12}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Ontwikkelingen in de toekomst}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}App}{14}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Website}{15}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Algemene functies}{15}{subsection.3.3}%
 \contentsline {section}{Appendices}{17}{section*.5}%
 \contentsline {section}{\numberline {A}Planning}{17}{appendix.1.A}%
-\contentsline {section}{\numberline {B}Samenwerking}{18}{appendix.1.B}%
-\contentsline {subsection}{\numberline {B.1}Verantwoordelijkheden}{18}{subsection.1.B.1}%
+\contentsline {section}{\numberline {B}Samenwerking}{17}{appendix.1.B}%
+\contentsline {subsection}{\numberline {B.1}Verantwoordelijkheden}{17}{subsection.1.B.1}%
 \contentsline {subsection}{\numberline {B.2}Taakverdeling}{18}{subsection.1.B.2}%
-\contentsline {section}{\numberline {C}Gantt-grafiek}{19}{appendix.1.C}%
-\contentsline {section}{\numberline {D}Structuur database}{19}{appendix.1.D}%
+\contentsline {section}{\numberline {C}Gantt-grafiek}{18}{appendix.1.C}%
+\contentsline {section}{\numberline {D}Structuur database}{18}{appendix.1.D}%
