@@ -21,8 +21,6 @@
         </activity>
         <activity android:name=".dagboek.Dagboek"
             android:screenOrientation="sensorPortrait"></activity>
-        <activity android:name=".kalender.Kalender"
-            android:screenOrientation="sensorPortrait"></activity>
         <activity android:name=".chat.Chat"
             android:screenOrientation="sensorPortrait"></activity>
         <activity android:name=".documenten.DocumentenToevoegenActivity"
@@ -62,8 +60,6 @@
         <activity android:name=".kalender.TrainerAfspraakMaken"
             android:screenOrientation="sensorPortrait"/>
         <activity android:name=".TrainerHomepage"
-            android:screenOrientation="sensorPortrait"/>
-        <activity android:name=".Trainer_hondkiezen"
             android:screenOrientation="sensorPortrait"/>
         <activity android:name=".documenten.TrainerDocumentenToevoegenActivity"
             android:screenOrientation="sensorPortrait"/>

@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DC3343">
+    android:background="@color/vriendenDerBlinden">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@mipmap/logo"
-        app:civ_border_color="#DC3343"
+        app:civ_border_color="@color/vriendenDerBlinden"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,7 +26,7 @@
         android:background="#00000000"
         android:text="Voor wie wilt u informatie?"
         android:gravity="center_horizontal"
-        android:textColor="#4E342E"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:text="Bekijk je eigen kalender:"
-        android:textColor="#4E342E"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Algemeen"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +65,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="50dp"
         android:text="Of kies een specifiek pleeggezin:"
-        android:textColor="#4E342E"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Algemeen" />
@@ -92,7 +92,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="40dp"
-        android:textColor="#4E342E"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hond">
@@ -105,14 +105,15 @@
             <SearchView
                 android:id="@+id/searchView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:backgroundTint="#FFFFFF"
+                android:foregroundTint="#FFFFFF" />
 
             <ListView
                 android:id="@+id/listview"
                 android:layout_width="match_parent"
                 android:layout_height="129dp"
                 android:layout_marginStart="20dp"
-                android:background="#DC3343"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

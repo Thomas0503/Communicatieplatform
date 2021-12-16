@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DC3343"
+    android:background="@color/vriendenDerBlinden"
     tools:context=".kalender.AfspraakActivity">
 
 
@@ -20,7 +20,7 @@
         android:background="#00F44336"
         android:gravity="center_horizontal"
         android:text="Kalender"
-        android:textColor="#4E342E"
+        android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +34,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:src="@mipmap/logo"
-        app:civ_border_color="#DC3343"
+        app:civ_border_color="@color/vriendenDerBlinden"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,7 +46,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/foto_charlotte_fotomodel"
-        app:civ_border_color="#DC3343"
+        app:civ_border_color="@color/vriendenDerBlinden"
         app:civ_border_width="2dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

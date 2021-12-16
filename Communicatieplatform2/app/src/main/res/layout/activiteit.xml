@@ -5,14 +5,14 @@
     android:id="@+id/Activiteit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DC3343">
+    android:background="@color/vriendenDerBlinden">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@mipmap/logo"
-        app:civ_border_color="#DC3343"
+        app:civ_border_color="@color/vriendenDerBlinden"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,10 +24,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
-        android:background="#DC3343"
         android:gravity="center_horizontal"
         android:text="Activiteit toevoegen"
-        android:textColor="#4E342E"
+        android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,14 +65,16 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="#832E2E"
         android:text="opslaan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toegevoegdeAfbeelding" />
 
     <TextView
         android:id="@+id/stressniveau"
@@ -83,7 +84,7 @@
         android:text="Stressniveau:"
         android:layout_marginTop="10dp"
 
-        android:textColor="#4E342E"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
@@ -95,7 +96,7 @@
         android:text="Activiteit:"
         android:layout_marginTop="10dp"
 
-        android:textColor="#4E342E"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/omschrijving" />
@@ -107,7 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:text="Stresssignaal:"
-        android:textColor="#4E342E"
+        android:textColor="@color/white"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -132,7 +133,6 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#DC3343"
                 android:orientation="vertical">
 
                 <RadioButton
@@ -141,9 +141,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Bench"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit2"
@@ -151,9 +151,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Dierenarts"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit3"
@@ -161,9 +161,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Houdingen"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit4"
@@ -171,9 +171,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Kinderen"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit5"
@@ -181,9 +181,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Korte lijn zonder prikkels"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit6"
@@ -191,9 +191,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Korte lijn met prikkels"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit7"
@@ -201,9 +201,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Mee naar het werk"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit8"
@@ -211,9 +211,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Op dingen springen / onder dingen kruipen"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit9"
@@ -221,9 +221,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Stofzuiger"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit10"
@@ -231,9 +231,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Tafeloefening"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit11"
@@ -241,9 +241,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Voedselweigering"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit12"
@@ -251,9 +251,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Vreemde ondergronden"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit13"
@@ -261,9 +261,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Privé vervoer"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit14"
@@ -271,9 +271,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Openbare vervoer"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit15"
@@ -281,9 +281,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Openbare plaatsen"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit16"
@@ -291,9 +291,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Shopping"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit17"
@@ -301,9 +301,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Horeca"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
 
                 <RadioButton
                     android:id="@+id/activiteit18"
@@ -311,9 +311,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:buttonTint="#38422C"
+                    android:buttonTint="#FFFFFF"
                     android:text="Overige"
-                    android:textColor="#4E342E" />
+                    android:textColor="#FFFFFF" />
             </RadioGroup>
         </LinearLayout>
     </ScrollView>
@@ -332,7 +332,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#DC3343"
             android:orientation="vertical">
 
 
@@ -342,9 +341,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
-                android:buttonTint="#4E342E"
+                android:buttonTint="#FFFFFF"
                 android:text="Bevriezen"
-                android:textColor="#38422C" />
+                android:textColor="#FFFFFF" />
 
             <CheckBox
                 android:id="@+id/stresssignaal2"
@@ -352,9 +351,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
-                android:buttonTint="#4E342E"
+                android:buttonTint="#FFFFFF"
                 android:text="Gapen"
-                android:textColor="#4E342E" />
+                android:textColor="#FFFFFF" />
 
             <CheckBox
                 android:id="@+id/stresssignaal3"
@@ -362,9 +361,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
-                android:buttonTint="#4E342E"
+                android:buttonTint="#FFFFFF"
                 android:text="Hijgen"
-                android:textColor="#4E342E" />
+                android:textColor="#FFFFFF" />
 
             <CheckBox
                 android:id="@+id/stresssignaal4"
@@ -372,9 +371,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
-                android:buttonTint="#4E342E"
+                android:buttonTint="#FFFFFF"
                 android:text="Krabben"
-                android:textColor="#4E342E" />
+                android:textColor="#FFFFFF" />
 
             <CheckBox
                 android:id="@+id/stresssignaal5"
@@ -382,9 +381,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
-                android:buttonTint="#4E342E"
+                android:buttonTint="#FFFFFF"
                 android:text="Oogwit"
-                android:textColor="#4E342E" />
+                android:textColor="#FFFFFF" />
 
             <CheckBox
                 android:id="@+id/stresssignaal6"
@@ -392,9 +391,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
-                android:buttonTint="#4E342E"
+                android:buttonTint="#FFFFFF"
                 android:text="Tongelen"
-                android:textColor="#4E342E" />
+                android:textColor="#FFFFFF" />
 
             <CheckBox
                 android:id="@+id/stresssignaal7"
@@ -402,9 +401,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
-                android:buttonTint="#4E342E"
+                android:buttonTint="#FFFFFF"
                 android:text="Trillen"
-                android:textColor="#4E342E" />
+                android:textColor="#FFFFFF" />
 
             <CheckBox
                 android:id="@+id/stresssignaal8"
@@ -412,9 +411,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
-                android:buttonTint="#4E342E"
+                android:buttonTint="#FFFFFF"
                 android:text="Uitschudden"
-                android:textColor="#4E342E" />
+                android:textColor="#FFFFFF" />
 
             <CheckBox
                 android:id="@+id/stresssignaal9"
@@ -422,9 +421,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
-                android:buttonTint="#4E342E"
+                android:buttonTint="#FFFFFF"
                 android:text="Wegkijken"
-                android:textColor="#4E342E" />
+                android:textColor="#FFFFFF" />
 
             <CheckBox
                 android:id="@+id/stresssignaal10"
@@ -432,9 +431,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
-                android:buttonTint="#4E342E"
+                android:buttonTint="#FFFFFF"
                 android:text="Overige"
-                android:textColor="#4E342E" />
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </ScrollView>
 
@@ -445,7 +444,7 @@
         android:layout_marginStart="5dp"
         android:text="0"
         android:layout_marginTop="10dp"
-        android:textColor="#4E342E"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/stressniveau"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
@@ -470,13 +469,14 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="40dp"
-        android:maxLines="3"
         android:ems="10"
         android:hint="Geef een omschrijving (optioneel):"
         android:inputType="textMultiLine"
+        android:maxLines="3"
         android:minHeight="48dp"
-        android:textColorHighlight="#A34F47"
-        android:textColorLink="#A34F47"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Dagboek" />

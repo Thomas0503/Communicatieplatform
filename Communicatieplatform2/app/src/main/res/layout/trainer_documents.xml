@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DC3343">
+    android:background="@color/vriendenDerBlinden">
 
 
     <TextView
@@ -18,7 +18,7 @@
         android:layout_marginEnd="50dp"
         android:gravity="center_horizontal"
         android:text="Documenten"
-        android:textColor="#4E342E"
+        android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:src="@mipmap/logo"
-        app:civ_border_color="#DC3343"
+        app:civ_border_color="@color/vriendenDerBlinden"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -62,7 +62,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="#FFFFFF"
-        app:backgroundTint="#8F2D26"
+        app:backgroundTint="#FFFFFF"
         app:srcCompat="@android:drawable/stat_sys_upload_done" />
 
 

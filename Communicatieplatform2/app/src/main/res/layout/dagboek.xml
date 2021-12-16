@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DC3343">
+    android:background="@color/vriendenDerBlinden">
 
     <TextView
         android:id="@+id/Dagboek"
@@ -16,7 +16,7 @@
         android:background="#00F44336"
         android:gravity="center_horizontal"
         android:text="Dagboek"
-        android:textColor="#4E342E"
+        android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,9 +26,11 @@
         android:id="@+id/imageView2"
         android:layout_width="179dp"
         android:layout_height="189dp"
+        android:layout_marginStart="2dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ActiviteitZoeken"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2"
         app:srcCompat="@drawable/foto_charlotte_sneeuw" />
 
@@ -53,7 +55,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
         android:text="Kies een activiteit (optioneel):"
-        android:textColor="#4E342E"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ActiviteitToev" />
@@ -61,11 +63,12 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="347dp"
+        android:layout_width="300dp"
         android:layout_height="222dp"
         android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginTop="10dp"
-        android:textColor="#4E342E"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kiesActiviteit">
 
@@ -77,16 +80,18 @@
             <SearchView
                 android:id="@+id/searchView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:textColor="#FFFFFF" />
 
             <ListView
                 android:id="@+id/listview"
                 android:layout_width="wrap_content"
                 android:layout_height="174dp"
                 android:layout_below="@+id/searchView"
+                android:cacheColorHint="#FFFFFF"
                 android:divider="#4E342E"
                 android:dividerHeight="2dp"
-                android:textColor="#4E342E" />
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
     </ScrollView>
@@ -98,7 +103,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:src="@mipmap/logo"
-        app:civ_border_color="#DC3343"
+        app:civ_border_color="@color/vriendenDerBlinden"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
