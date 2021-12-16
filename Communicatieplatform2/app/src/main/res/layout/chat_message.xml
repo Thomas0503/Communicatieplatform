@@ -30,6 +30,7 @@
                 android:layout_margin="2dp"
                 android:background="@drawable/ic_baseline_message_24"
                 android:backgroundTint="#600808"
+                android:maxWidth='250dp'
                 android:padding="9dp"
                 android:text="bericht"
                 android:textColor="@android:color/white"
@@ -40,6 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
+                android:maxWidth='250dp'
                 android:layout_margin="2dp"
                 android:background="@drawable/ic_baseline_message_24"
                 android:backgroundTint="#AE0C0C"

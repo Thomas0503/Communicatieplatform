@@ -31,6 +31,7 @@ import android.widget.Toast;
 
 import com.communicatieplatform.R;
 import com.communicatieplatform.documenten.DocumentenToevoegenActivity;
+import com.communicatieplatform.kalender.AfspraakMaken;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -277,9 +278,9 @@ public class Activiteit extends AppCompatActivity {
                     FirebaseAuth.getInstance().getCurrentUser().getUid()).document().set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void unused) {
-                    Toast.makeText(Activiteit.this, "Activiteit toegevoegd", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(Activiteit.this, Dagboek.class);
-                    startActivity(intent);
+                Toast.makeText(Activiteit.this, "Activiteit toegevoegd", Toast.LENGTH_SHORT).show();
+
+                    finish();
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override

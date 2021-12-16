@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 
 
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,7 +18,10 @@ import com.communicatieplatform.databinding.DocumentenBinding;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
@@ -55,20 +60,25 @@ public class PleeggezinDocumenten extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
 
-        db.collection("formulier").document("formulier").collection(FirebaseAuth.getInstance().getCurrentUser().getUid()).orderBy("createdAt").get()
-                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+        db.collection("formulier").document("formulier").collection(FirebaseAuth.getInstance().getCurrentUser().getUid()).orderBy("createdAt", Query.Direction.DESCENDING)
+                .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
-                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                    public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots,
+                                        @Nullable FirebaseFirestoreException e) {
+                        if (e != null) {
+                            Log.w("TAG", "Listen failed.", e);
+                            return;
+                        }
 
                         progressBar.setVisibility(View.GONE);
 
                         if (!queryDocumentSnapshots.isEmpty()) {
-
+                            productList.removeAll(productList);
                             List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
 
                             for (DocumentSnapshot d : list) {
 
-                                Document p = d.toObject(Document.class);
+                                Document p = new Document(d.getString("link"), d.getString("name"), d.getLong("size").intValue(), d.getTimestamp("createdAt"));
                                 p.setId(d.getId());
                                 productList.add(p);
 

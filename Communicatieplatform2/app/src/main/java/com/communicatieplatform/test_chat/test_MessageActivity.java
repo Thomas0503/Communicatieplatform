@@ -77,6 +77,12 @@ public class test_MessageActivity extends AppCompatActivity {
         sendbtn = findViewById(R.id.send_image);
         username = findViewById(R.id.username_messageTv);
         username.setText(receiverName);
+        username.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         sendbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

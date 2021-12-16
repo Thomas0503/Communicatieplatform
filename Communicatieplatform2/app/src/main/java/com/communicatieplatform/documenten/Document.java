@@ -14,9 +14,11 @@ import java.sql.Time;
 
 public class Document implements Serializable{
 
-    @Exclude private String id;
+    @Exclude
+    private String id;
 
-    private String url, name;
+    private String link;
+    private String name;
     private Integer size;
     private Timestamp datum;
     public Document() {
@@ -24,7 +26,7 @@ public class Document implements Serializable{
     }
 
     public Document(String link, String name, Integer size, Timestamp createdAt) {
-        this.url = link;
+        this.link = link;
         this.name = name;
         this.size = size;
         this.datum = createdAt;
@@ -40,8 +42,8 @@ public class Document implements Serializable{
 
     public Timestamp getDatum() {return datum;}
 
-    public String getUrl() {
-        return url;
+    public String getLink() {
+        return this.link;
     }
 
     public String getName() {

@@ -141,6 +141,7 @@ public class AfspraakMaken extends AppCompatActivity {
                 @Override
                 public void onSuccess(Void unused) {
                     Toast.makeText(AfspraakMaken.this, "Afspraak toegevoegd", Toast.LENGTH_SHORT).show();
+                    finish();
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override

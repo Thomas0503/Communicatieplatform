@@ -1,9 +1,11 @@
 package com.communicatieplatform.dagboek;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -13,7 +15,10 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
@@ -54,16 +59,20 @@ public class ActZoeken extends AppCompatActivity {
 
             if(!zoekQuery.equals("")) {
                 db.collection("dagboekje").document("dagboekje").collection(
-                        FirebaseAuth.getInstance().getCurrentUser().getUid()).whereEqualTo("oefening", zoekQuery).get()
-                        .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                        FirebaseAuth.getInstance().getCurrentUser().getUid()).whereEqualTo("oefening", zoekQuery).orderBy("createdAt", Query.Direction.DESCENDING)
+                        .addSnapshotListener(new EventListener<QuerySnapshot>() {
                             @Override
-                            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                            public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots,
+                                                @Nullable FirebaseFirestoreException e) {
+                                if (e != null) {
+                                    Log.w("TAG", "Listen failed.", e);
+                                    return;
+                                }
 
                                 progressBar.setVisibility(View.GONE);
 
                                 if (!queryDocumentSnapshots.isEmpty()) {
-
-                                    List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
+                                    productList.removeAll(productList);                                    List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
 
                                     for (DocumentSnapshot d : list) {
 
@@ -106,17 +115,22 @@ public class ActZoeken extends AppCompatActivity {
                             }
                         });
             } else {db.collection("dagboekje").document("dagboekje").collection(
-                    FirebaseAuth.getInstance().getCurrentUser().getUid()).orderBy("createdAt").get()
-                    .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                    FirebaseAuth.getInstance().getCurrentUser().getUid()).orderBy("createdAt", Query.Direction.DESCENDING)
+                    .addSnapshotListener(new EventListener<QuerySnapshot>() {
                         @Override
-                        public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                        public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots,
+                                            @Nullable FirebaseFirestoreException e) {
+                            if (e != null) {
+                                Log.w("TAG", "Listen failed.", e);
+                                return;
+                            }
 
                             progressBar.setVisibility(View.GONE);
 
                             if (!queryDocumentSnapshots.isEmpty()) {
 
                                 List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
-
+                                productList.removeAll(productList);
                                 for (DocumentSnapshot d : list) {
 
                                     List<String> stresssignalen = (List<String>) d.get("stresssignalen");

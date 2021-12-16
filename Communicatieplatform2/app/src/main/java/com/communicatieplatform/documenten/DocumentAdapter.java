@@ -80,7 +80,7 @@ public class DocumentAdapter extends RecyclerView.Adapter<DocumentAdapter.Produc
             String bestandsNaam = bestand.getName();
             storage = FirebaseStorage.getInstance();
 
-            String message = bestand.getUrl();
+            String message = bestand.getLink();
             StorageReference storageReference = storage.getReference();
             CharSequence options[] = new CharSequence[]{
                     "Download",
@@ -93,7 +93,7 @@ public class DocumentAdapter extends RecyclerView.Adapter<DocumentAdapter.Produc
                 public void onClick(DialogInterface dialog, int which) {
                     // we will be downloading the pdf
                     if (which == 0) {
-                        storageReference.child(bestand.getUrl()).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                        storageReference.child(message).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
                             public void onSuccess(Uri uri) {
                                 Intent intent = new Intent(Intent.ACTION_VIEW);
