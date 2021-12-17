@@ -64,7 +64,7 @@ public class test_MessageActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         final LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setStackFromEnd(true);
-       // layoutManager.setReverseLayout(true);
+        // layoutManager.setReverseLayout(true);
         recyclerView.setLayoutManager(layoutManager);
 
         productList = new ArrayList<>();
@@ -126,7 +126,7 @@ public class test_MessageActivity extends AppCompatActivity {
                         recyclerView.scrollToPosition(productList.size()-1);
                     }
                 });
-        }
+    }
     private void SendMessage() {
 
         String message = messageEt.getText().toString();
@@ -148,10 +148,31 @@ public class test_MessageActivity extends AppCompatActivity {
             data.put("text", message);
             data.put("to", receiver);
             db = FirebaseFirestore.getInstance();
+
+            HashMap<String, Object> dataLast = new HashMap<>();
+            dataLast.put("from", currentUid);
+            dataLast.put("createdAt", Timestamp.now());
+            dataLast.put("text", message);
+            dataLast.put("to", receiver);
+            dataLast.put("media", "");
+            dataLast.put("unread", true);
+
             db.collection("messages").document(document).collection("chat").document().set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void unused) {
                     Toast.makeText(test_MessageActivity.this, "Bericht verstuurd", Toast.LENGTH_SHORT).show();
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    Log.w("TAG", "Error adding document", e);
+                }
+            });
+
+            db.collection("lastMsg").document(document).set(dataLast).addOnSuccessListener(new OnSuccessListener<Void>() {
+                @Override
+                public void onSuccess(Void unused) {
+                    Toast.makeText(test_MessageActivity.this, "Laatste Bericht verstuurd", Toast.LENGTH_SHORT).show();
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
