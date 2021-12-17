@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rood_verticaal"
+    android:background="@drawable/rood_verticaal2"
     tools:context="chat.Chat">
 
 
@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:overScrollMode="never"
-        app:cardBackgroundColor="#FF1100"
+        app:cardBackgroundColor="#FF3D33"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="1dp">
@@ -44,6 +44,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
+        android:background="#FFA432"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -55,7 +56,7 @@
             android:textSize="18dp"
             android:maxLines="6"
             android:layout_weight="1"
-            android:background="#FF7700"
+            android:background="#FFA432"
             android:hint="Geef bericht" />
 
         <ImageButton
@@ -64,7 +65,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_weight="5"
-            android:background="#FF7700"
+            android:background="#FFA432"
             android:hint="Search"
             android:padding="7dp"
             android:src="@drawable/ic_baseline_send_24"

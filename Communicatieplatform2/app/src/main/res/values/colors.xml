@@ -10,5 +10,7 @@
     <color name="colorPrimary">#e19760</color>
     <color name="colorPrimaryDark">#a96838</color>
     <color name="colorAccent">#f4b382</color>
-    <color name="vriendenDerBlinden">#DA0519</color>
+    <!-- <color name="vriendenDerBlinden">#DA0519</color>-->
+    <color name="vriendenDerBlinden">#E04343</color>
+
 </resources>

@@ -12,7 +12,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#D68881"
+            android:background="#FCBDBB"
             android:orientation="vertical"
             android:padding="5dp">
 
@@ -45,78 +45,83 @@
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="0dp">
-            <TextView
-                android:id="@+id/title_omschrijving"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Omschrijving: "
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:textColor="#832E2E"
-                android:textSize="18sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:id="@+id/textview_omschrijving"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Omschrijving"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:textColor="#832E2E"
-                android:textSize="18sp"
-                android:textStyle="italic" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="0dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Stressignalen: "
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:textColor="#832E2E"
-                android:textSize="18sp" />
+                android:orientation="horizontal"
+                android:padding="0dp">
 
-            <TextView
-                android:id="@+id/textview_stresssignalen"
+                <TextView
+                    android:id="@+id/title_omschrijving"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Omschrijving: "
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="#832E2E"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textview_omschrijving"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Omschrijving"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="#832E2E"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Stressignalen"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:textColor="#832E2E"
-                android:textSize="18sp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="0dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Stressniveau: "
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:textColor="#832E2E"
-                android:textSize="18sp" />
+                android:orientation="horizontal"
+                android:padding="0dp">
 
-            <TextView
-                android:id="@+id/textview_stressniveau"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stressignalen: "
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="#832E2E"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textview_stresssignalen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stressignalen"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="#832E2E"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Stressniveau"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:textColor="#832E2E"
-                android:textSize="18sp" />
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stressniveau: "
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="#832E2E"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textview_stressniveau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stressniveau"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="#832E2E"
+                    android:textSize="18sp" />
             </LinearLayout>
 
 
-            </LinearLayout>
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
