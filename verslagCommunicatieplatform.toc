@@ -1,4 +1,4 @@
-\babel@toc {dutch}{}
+\babel@toc {dutch}{}\relax 
 \contentsline {section}{\numberline {1}Studie voor tools}{4}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Programmertalen}{4}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}App}{4}{subsection.1.2}%
