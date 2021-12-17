@@ -1,50 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: verslagCommunicatieplatform.aux
 The style file: unsrt.bst
 Database file #1: Bibliografie.bib
-Warning--I didn't find a database entry for "documentatie_firebase"
-Warning--I didn't find a database entry for "Realtime_vs_Firestore"
 Warning--empty journal in opgave
-You've used 15 entries,
+You've used 16 entries,
             1791 wiz_defined-function locations,
-            511 strings with 5411 characters,
-and the built_in function-call counts, 1712 in all, are:
-= -- 156
-> -- 18
+            513 strings with 5451 characters,
+and the built_in function-call counts, 1821 in all, are:
+= -- 166
+> -- 19
 < -- 0
-+ -- 16
++ -- 17
 - -- 1
 * -- 23
-:= -- 194
-add.period$ -- 45
-call.type$ -- 15
-change.case$ -- 15
+:= -- 205
+add.period$ -- 48
+call.type$ -- 16
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 78
-empty$ -- 267
+cite$ -- 17
+duplicate$ -- 83
+empty$ -- 285
 format.name$ -- 1
-if$ -- 440
+if$ -- 469
 int.to.chr$ -- 0
-int.to.str$ -- 15
+int.to.str$ -- 16
 missing$ -- 1
-newline$ -- 78
+newline$ -- 83
 num.names$ -- 1
-pop$ -- 111
+pop$ -- 119
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 44
+skip$ -- 47
 stack$ -- 0
 substring$ -- 0
-swap$ -- 14
+swap$ -- 15
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
 while$ -- 1
-width$ -- 17
-write$ -- 143
-(There were 3 warnings)
+width$ -- 18
+write$ -- 152
+(There was 1 warning)

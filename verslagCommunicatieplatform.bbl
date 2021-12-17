@@ -17,6 +17,11 @@ Android studio.
 \newblock \url{https://developer.android.com/studio}.
 \newblock (Geraadpleegd op 7 oktober 2021).
 
+\bibitem{Firebase}
+Firebase.
+\newblock \url{https://firebase.google.com/}.
+\newblock (Geraadpleegd op 14 oktober 2021).
+
 \bibitem{opgave}
 Charlotte Deconinck.
 \newblock Opgave communicatieplatform.
@@ -81,9 +86,9 @@ Flowchart - lucidchart.
 \newblock \url{https://www.lucidchart.com}.
 \newblock (Geraadpleegd op 28 oktober 2021).
 
-\bibitem{Firebase}
-Firebase.
-\newblock \url{https://firebase.google.com/}.
-\newblock (Geraadpleegd op 14 oktober 2021).
+\bibitem{Web_tutorial}
+Web tutorial.
+\newblock \url{https://youtu.be/fdcruaIiQxc}.
+\newblock (Geraadpleegd op 24 oktober 2021).
 
 \end{thebibliography}

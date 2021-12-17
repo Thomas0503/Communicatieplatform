@@ -17,16 +17,6 @@ Android studio.
 \newblock \url{https://developer.android.com/studio}.
 \newblock (Geraadpleegd op 7 oktober 2021).
 
-\bibitem{documentatie_firebase}
-Firebase documentation.
-\newblock \url{https://firebase.google.com/docs}.
-\newblock (Geraadpleegd op 14 oktober 2021).
-
-\bibitem{Realtime_vs_Firestore}
-Choose a database: Cloud firestore or realtime database.
-\newblock \url{https://firebase.google.com/docs/database/rtdb-vs-firestore}.
-\newblock (Geraadpleegd op 21 oktober 2021).
-
 \bibitem{opgave}
 Charlotte Deconinck.
 \newblock Opgave communicatieplatform.
@@ -59,14 +49,8 @@ Meest gebruikte programmeertalen voor websites.
 \newblock (Geraadpleegd op 7 oktober 2021).
 
 \bibitem{youtube}
-Youtube tutorials voor android studio: Dj malone.
-\newblock \url{https://www.youtube.com/channel/UCi3r7qQejDD-joRZCvso-Bg}.
-\newblock (Geraadpleegd op 14 oktober 2021).
-
-\bibitem{youtube2}
-Youtube tutorials voor android studio: Cn-code.
-\newblock
-  \url{https://www.youtube.com/channel/UCXIQaYiP3AUQJ1SOfLrGwlg/videos}.
+Youtube tutorials voor android studio.
+\newblock \url{https://www.youtube.com/}.
 \newblock (Geraadpleegd op 14 oktober 2021).
 
 \bibitem{FrontendBackend}
@@ -97,19 +81,14 @@ Flowchart - lucidchart.
 \newblock \url{https://www.lucidchart.com}.
 \newblock (Geraadpleegd op 28 oktober 2021).
 
-\bibitem{MongoDB}
-Mongodb.
-\newblock \url{https://www.mongodb.com/}.
-\newblock (Geraadpleegd op 7 oktober 2021).
-
 \bibitem{Firebase}
 Firebase.
 \newblock \url{https://firebase.google.com/}.
 \newblock (Geraadpleegd op 14 oktober 2021).
 
-\bibitem{pricing_firebase}
-Pricing plans.
-\newblock \url{https://firebase.google.com/pricing}.
-\newblock (Geraadpleegd op 21 oktober 2021).
+\bibitem{Web_tutorial}
+Web tutorial.
+\newblock \url{https://youtu.be/fdcruaIiQxc}.
+\newblock (Geraadpleegd op 24 oktober 2021).
 
 \end{thebibliography}

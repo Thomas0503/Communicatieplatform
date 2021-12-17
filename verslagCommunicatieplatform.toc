@@ -1,4 +1,4 @@
-\babel@toc {dutch}{}\relax 
+\babel@toc {dutch}{}
 \contentsline {section}{\numberline {1}Studie voor tools}{4}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Programmertalen}{4}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}App}{4}{subsection.1.2}%
@@ -7,10 +7,10 @@
 \contentsline {section}{\numberline {2}Resultaten}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Database}{6}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Login-pagina}{6}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Chat}{8}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Documenten}{9}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.3}Chat}{7}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Documenten}{8}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Kalender}{9}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Dagboek}{12}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.6}Dagboek}{11}{subsection.2.6}%
 \contentsline {section}{\numberline {3}Ontwikkelingen in de toekomst}{14}{section.3}%
 \contentsline {subsection}{\numberline {3.1}App}{14}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Website}{15}{subsection.3.2}%

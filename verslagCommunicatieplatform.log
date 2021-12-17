@@ -1,160 +1,148 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.21)  16 DEC 2021 17:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.24)  17 DEC 2021 12:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **verslagCommunicatieplatform.tex
 (./verslagCommunicatieplatform.tex
-LaTeX2e <2021-11-15>
-L3 programming layer <2021-11-12>
-(c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(c:/texlive/2021/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-09-06>
+(c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(c:/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count183
-\c@section=\count184
-\c@subsection=\count185
-\c@subsubsection=\count186
-\c@paragraph=\count187
-\c@subparagraph=\count188
-\c@figure=\count189
-\c@table=\count190
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen138
+\bibindent=\dimen134
 )
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+(c:/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
 
-(c:/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+(c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+(c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 )
-(c:/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(c:/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(c:/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(c:/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks15
 )
-(c:/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+(c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+(c:/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(c:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/hycolor/hycolor.sty
+(c:/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+(c:/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty
+(c:/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+(c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
-\@linkdim=\dimen139
-\Hy@linkcounter=\count191
-\Hy@pagecounter=\count192
+\@linkdim=\dimen135
+\Hy@linkcounter=\count176
+\Hy@pagecounter=\count177
 
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+(c:/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
-File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
-nguages
-)
-(c:/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
+(c:/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+(c:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count193
-
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
-)
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
+\Hy@SavedSpaceFactor=\count178
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count194
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count179
 
-(c:/texlive/2021/texmf-dist/tex/latex/url/url.sty
+(c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen140
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen136
 
-(c:/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
+(c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(c:/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count195
-\Field@Width=\dimen141
-\Fld@charsize=\dimen142
-Package hyperref Info: Hyper figures OFF on input line 6076.
-Package hyperref Info: Link nesting OFF on input line 6081.
-Package hyperref Info: Hyper index ON on input line 6084.
-Package hyperref Info: backreferencing OFF on input line 6091.
-Package hyperref Info: Link coloring OFF on input line 6096.
-Package hyperref Info: Link coloring with OCG OFF on input line 6101.
-Package hyperref Info: PDF/A mode OFF on input line 6106.
-LaTeX Info: Redefining \ref on input line 6146.
-LaTeX Info: Redefining \pageref on input line 6150.
+\Fld@menulength=\count180
+\Field@Width=\dimen137
+\Fld@charsize=\dimen138
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
 
-(c:/texlive/2021/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
-package with kernel methods
+(c:/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count196
-\c@Item=\count197
-\c@Hfootnote=\count198
+\Hy@abspage=\count181
+\c@Item=\count182
+\c@Hfootnote=\count183
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+(c:/texlive/2020/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 
-(c:/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
-kage
-with kernel methods
+(c:/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count199
-\c@bookmark@seq@number=\count266
+\Fld@listcount=\count184
+\c@bookmark@seq@number=\count185
 
-(c:/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(c:/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(c:/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+(c:/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -162,184 +150,184 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip49
 )
-(c:/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2021/11/08 3.66 The Babel package
-\babel@savecnt=\count267
-\U@D=\dimen143
-\l@unhyphenated=\language87
+(c:/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/09/01 3.48 The Babel package
 
-(c:/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def)
+(c:/texlive/2020/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/09/01 3.48 Babel common definitions
+\babel@savecnt=\count186
+\U@D=\dimen139
+\l@babelnohyphens=\language86
+
+(c:/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count268
-
-(c:/texlive/2021/texmf-dist/tex/generic/babel-dutch/dutch.ldf
-Language: dutch 2021/08/29 v3.8l Dutch support from the babel system
-Package babel Info: Making " an active character on input line 127.
-))
-(c:/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(c:/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
-
-(c:/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+\bbl@dirlevel=\count187
+
+(c:/texlive/2020/texmf-dist/tex/generic/babel-dutch/dutch.ldf
+Language: dutch 2005/03/30 v3.8i Dutch support from the babel system
+Package babel Info: Making " an active character on input line 132.
+))
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(c:/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen144
-\Gin@req@width=\dimen145
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
 )
-(c:/texlive/2021/texmf-dist/tex/latex/titling/titling.sty
+(c:/texlive/2020/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip50
 \thanksmargin=\skip51
 \droptitle=\skip52
 )
-(c:/texlive/2021/texmf-dist/tex/latex/subfiles/subfiles.sty
-Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
+(c:/texlive/2020/texmf-dist/tex/latex/subfiles/subfiles.sty
+Package: subfiles 2020/09/07 v2.0 Multi-file projects (package)
 
-(c:/texlive/2021/texmf-dist/tex/latex/import/import.sty
+(c:/texlive/2020/texmf-dist/tex/latex/import/import.sty
 Package: import 2020/04/01  v 6.2
 ))
-(c:/texlive/2021/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
+(c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
 
-(c:/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+(c:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
+(c:/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count269
-\calc@Bcount=\count270
-\calc@Adimen=\dimen146
-\calc@Bdimen=\dimen147
+\calc@Acount=\count188
+\calc@Bcount=\count189
+\calc@Adimen=\dimen142
+\calc@Bdimen=\dimen143
 \calc@Askip=\skip53
 \calc@Bskip=\skip54
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count271
+\calc@Ccount=\count190
 \calc@Cskip=\skip55
 )
-(c:/texlive/2021/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen148
-\ESO@tempdimb=\dimen149
+(c:/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 
-(c:/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+(c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
-Package xcolor Info: Model `RGB' extended on input line 1368.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ))
-\AM@pagewidth=\dimen150
-\AM@pageheight=\dimen151
-\AM@fboxrule=\dimen152
+\AM@pagewidth=\dimen144
+\AM@pageheight=\dimen145
 
-(c:/texlive/2021/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
+(c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count272
-\AM@pagebox=\box50
-\AM@global@opts=\toks17
-\AM@pagecnt=\count273
-\AM@toc@title=\toks18
-\c@AM@survey=\count274
-\AM@templatesizebox=\box51
+\AM@pagebox=\box45
+\AM@global@opts=\toks16
+\AM@pagecnt=\count191
+\AM@toc@title=\toks17
+\c@AM@survey=\count192
+\AM@templatesizebox=\box46
 )
-(c:/texlive/2021/texmf-dist/tex/latex/appendix/appendix.sty
+(c:/texlive/2020/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count275
-\c@@ppsavesec=\count276
-\c@@ppsaveapp=\count277
+\c@@pps=\count193
+\c@@ppsavesec=\count194
+\c@@ppsaveapp=\count195
 )
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2021/10/15 v2.17l AMS math features
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip56
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
 
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
-\ex@=\dimen153
+\@emptytoks=\toks18
+\ex@=\dimen146
 ))
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen154
+\pmbraise@=\dimen147
 )
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2021/08/26 v2.02 operator names
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count278
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count279
-\leftroot@=\count280
-LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count281
-\DOTSCASE@=\count282
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box52
-\strutbox@=\box53
-\big@size=\dimen155
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count283
-\c@MaxMatrixCols=\count284
+\inf@bad=\count196
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count197
+\leftroot@=\count198
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count199
+\DOTSCASE@=\count266
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen148
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count267
+\c@MaxMatrixCols=\count268
 \dotsspace@=\muskip17
-\c@parentequation=\count285
-\dspbrk@lvl=\count286
-\tag@help=\toks20
-\row@=\count287
-\column@=\count288
-\maxfields@=\count289
-\andhelp@=\toks21
-\eqnshift@=\dimen156
-\alignsep@=\dimen157
-\tagshift@=\dimen158
-\tagwidth@=\dimen159
-\totwidth@=\dimen160
-\lineht@=\dimen161
-\@envbody=\toks22
+\c@parentequation=\count269
+\dspbrk@lvl=\count270
+\tag@help=\toks19
+\row@=\count271
+\column@=\count272
+\maxfields@=\count273
+\andhelp@=\toks20
+\eqnshift@=\dimen149
+\alignsep@=\dimen150
+\tagshift@=\dimen151
+\tagwidth@=\dimen152
+\totwidth@=\dimen153
+\lineht@=\dimen154
+\@envbody=\toks21
 \multlinegap=\skip57
 \multlinetaggap=\skip58
-\mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2938.
-LaTeX Info: Redefining \] on input line 2939.
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
 )
-(c:/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+(c:/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 
-(c:/texlive/2021/texmf-dist/tex/latex/graphics/lscape.sty
-Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-(c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count290
-\l__pdf_internal_box=\box54
+(c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-11 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count274
+\l__pdf_internal_box=\box49
 )
 (./verslagCommunicatieplatform.aux)
 \openout1 = `verslagCommunicatieplatform.aux'.
@@ -360,20 +348,19 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+\AtBeginShipoutBox=\box50
 Package hyperref Info: Link coloring OFF on input line 20.
 
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+(c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
-(c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
+(c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count291
+\c@section@level=\count275
 )
 LaTeX Info: Redefining \ref on input line 20.
 LaTeX Info: Redefining \pageref on input line 20.
@@ -384,25 +371,25 @@ LaTeX Info: Redefining \nameref on input line 20.
 \openout3 = `verslagCommunicatieplatform.out'.
 
 
-(c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count292
-\scratchdimen=\dimen162
-\scratchbox=\box55
-\nofMPsegments=\count293
-\nofMParguments=\count294
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count295
-\MPscratchDim=\dimen163
-\MPnumerator=\count296
-\makeMPintoPDFobject=\count297
-\everyMPtoPDFconversion=\toks25
-) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\scratchcounter=\count276
+\scratchdimen=\dimen155
+\scratchbox=\box51
+\nofMPsegments=\count277
+\nofMParguments=\count278
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count279
+\MPscratchDim=\dimen156
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
+\everyMPtoPDFconversion=\toks24
+) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(c:/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -413,7 +400,7 @@ Package pdftex.def Info: 2013-kulak-cmyk-highres.jpg  used on input line 28.
 (pdftex.def)             Requested size: 170.71652pt x 35.5656pt.
  [1
 
-{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./2013-kulak-cm
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./2013-kulak-cm
 yk-highres.jpg>] (./verslagCommunicatieplatform.toc)
 \tf@toc=\write4
 \openout4 = `verslagCommunicatieplatform.toc'.
@@ -449,48 +436,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--111
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 113--116
-
- []
-
 <App_login.jpg, id=178, 324.46219pt x 703.12688pt>
 File: App_login.jpg Graphic file (type jpg)
 <use App_login.jpg>
-Package pdftex.def Info: App_login.jpg  used on input line 129.
+Package pdftex.def Info: App_login.jpg  used on input line 131.
 (pdftex.def)             Requested size: 99.58464pt x 215.79985pt.
 <App_homepage.jpg, id=179, 324.46219pt x 703.12688pt>
 File: App_homepage.jpg Graphic file (type jpg)
 <use App_homepage.jpg>
-Package pdftex.def Info: App_homepage.jpg  used on input line 133.
+Package pdftex.def Info: App_homepage.jpg  used on input line 135.
 (pdftex.def)             Requested size: 99.58464pt x 215.79985pt.
 <screen_web_dagboek.jpg, id=180, 1023.825pt x 464.4853pt>
 File: screen_web_dagboek.jpg Graphic file (type jpg)
 <use screen_web_dagboek.jpg>
-Package pdftex.def Info: screen_web_dagboek.jpg  used on input line 139.
+Package pdftex.def Info: screen_web_dagboek.jpg  used on input line 141.
 (pdftex.def)             Requested size: 253.57521pt x 115.03665pt.
-[6]
-<App_chat2.jpg, id=193, 324.46219pt x 703.12688pt>
+ [6]
+<App_chat2.jpg, id=195, 324.46219pt x 703.12688pt>
 File: App_chat2.jpg Graphic file (type jpg)
 <use App_chat2.jpg>
-Package pdftex.def Info: App_chat2.jpg  used on input line 149.
+Package pdftex.def Info: App_chat2.jpg  used on input line 151.
 (pdftex.def)             Requested size: 99.58464pt x 215.79985pt.
-<App_chat.jpg, id=194, 324.46219pt x 703.12688pt>
+<App_chat.jpg, id=196, 324.46219pt x 703.12688pt>
 File: App_chat.jpg Graphic file (type jpg)
 <use App_chat.jpg>
-Package pdftex.def Info: App_chat.jpg  used on input line 153.
+Package pdftex.def Info: App_chat.jpg  used on input line 155.
 (pdftex.def)             Requested size: 99.58464pt x 215.79985pt.
-<App_chat3.jpg, id=195, 324.46219pt x 703.12688pt>
+<App_chat3.jpg, id=197, 324.46219pt x 703.12688pt>
 File: App_chat3.jpg Graphic file (type jpg)
 <use App_chat3.jpg>
-Package pdftex.def Info: App_chat3.jpg  used on input line 157.
+Package pdftex.def Info: App_chat3.jpg  used on input line 159.
 (pdftex.def)             Requested size: 99.58464pt x 215.79985pt.
-<screen_web_chat.jpg, id=196, 1028.34187pt x 467.49657pt>
+<screen_web_chat.jpg, id=198, 1028.34187pt x 467.49657pt>
 File: screen_web_chat.jpg Graphic file (type jpg)
 <use screen_web_chat.jpg>
-Package pdftex.def Info: screen_web_chat.jpg  used on input line 163.
+Package pdftex.def Info: screen_web_chat.jpg  used on input line 165.
 (pdftex.def)             Requested size: 253.57521pt x 115.27597pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--168
+Underfull \hbox (badness 10000) in paragraph at lines 146--170
 
  []
 
@@ -498,94 +481,94 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--168
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<App_documenten.jpg, id=208, 324.46219pt x 703.12688pt>
+<App_documenten.jpg, id=211, 324.46219pt x 703.12688pt>
 File: App_documenten.jpg Graphic file (type jpg)
 <use App_documenten.jpg>
-Package pdftex.def Info: App_documenten.jpg  used on input line 175.
+Package pdftex.def Info: App_documenten.jpg  used on input line 178.
 (pdftex.def)             Requested size: 85.35826pt x 184.97589pt.
 
-Overfull \hbox (16.35931pt too wide) in paragraph at lines 175--176
+Overfull \hbox (16.35931pt too wide) in paragraph at lines 178--179
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 []\OT1/cmr/m/n/10 Figuur 8:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 []\OT1/cmr/m/n/10 Documenten-
  []
 
-<App_documenten3.jpg, id=209, 324.46219pt x 703.12688pt>
+<App_documenten3.jpg, id=212, 324.46219pt x 703.12688pt>
 File: App_documenten3.jpg Graphic file (type jpg)
 <use App_documenten3.jpg>
-Package pdftex.def Info: App_documenten3.jpg  used on input line 179.
+Package pdftex.def Info: App_documenten3.jpg  used on input line 182.
 (pdftex.def)             Requested size: 85.35826pt x 184.97589pt.
 
-Overfull \hbox (16.35931pt too wide) in paragraph at lines 179--180
+Overfull \hbox (16.35931pt too wide) in paragraph at lines 182--183
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
 []\OT1/cmr/m/n/10 Figuur 9:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
 []\OT1/cmr/m/n/10 Documenten
  []
 
-<App_documenten2.jpg, id=210, 324.46219pt x 703.12688pt>
+<App_documenten2.jpg, id=213, 324.46219pt x 703.12688pt>
 File: App_documenten2.jpg Graphic file (type jpg)
 <use App_documenten2.jpg>
-Package pdftex.def Info: App_documenten2.jpg  used on input line 183.
+Package pdftex.def Info: App_documenten2.jpg  used on input line 186.
 (pdftex.def)             Requested size: 85.35826pt x 184.97589pt.
 
-Overfull \hbox (16.35931pt too wide) in paragraph at lines 183--184
+Overfull \hbox (16.35931pt too wide) in paragraph at lines 186--187
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--184
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
 []\OT1/cmr/m/n/10 Figuur 10:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--184
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
 []\OT1/cmr/m/n/10 Documenten-
  []
 
-<App_documenten4.jpg, id=211, 324.46219pt x 703.12688pt>
+<App_documenten4.jpg, id=214, 324.46219pt x 703.12688pt>
 File: App_documenten4.jpg Graphic file (type jpg)
 <use App_documenten4.jpg>
-Package pdftex.def Info: App_documenten4.jpg  used on input line 187.
+Package pdftex.def Info: App_documenten4.jpg  used on input line 190.
 (pdftex.def)             Requested size: 85.35826pt x 184.97589pt.
 
-Overfull \hbox (16.35931pt too wide) in paragraph at lines 187--188
+Overfull \hbox (16.35931pt too wide) in paragraph at lines 190--191
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--188
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 []\OT1/cmr/m/n/10 Figuur 11:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--188
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 []\OT1/cmr/m/n/10 Documenten
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--188
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 \OT1/cmr/m/n/10 toe-voe-gen
  []
 
 File: screen_web_dagboek.jpg Graphic file (type jpg)
 <use screen_web_dagboek.jpg>
-Package pdftex.def Info: screen_web_dagboek.jpg  used on input line 193.
+Package pdftex.def Info: screen_web_dagboek.jpg  used on input line 196.
 (pdftex.def)             Requested size: 253.57521pt x 115.03665pt.
 [8 <./App_chat2.jpg> <./App_chat.jpg> <./App_chat3.jpg>]
 
@@ -594,134 +577,138 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<App_kalender2.jpg, id=225, 324.46219pt x 703.12688pt>
+[9 <./screen_web_chat.jpg>]
+<App_kalender2.jpg, id=235, 324.46219pt x 703.12688pt>
 File: App_kalender2.jpg Graphic file (type jpg)
 <use App_kalender2.jpg>
-Package pdftex.def Info: App_kalender2.jpg  used on input line 205.
+Package pdftex.def Info: App_kalender2.jpg  used on input line 211.
 (pdftex.def)             Requested size: 71.13188pt x 154.14122pt.
-<App_kalender.jpg, id=226, 324.46219pt x 703.12688pt>
+<App_kalender.jpg, id=236, 324.46219pt x 703.12688pt>
 File: App_kalender.jpg Graphic file (type jpg)
 <use App_kalender.jpg>
-Package pdftex.def Info: App_kalender.jpg  used on input line 209.
+Package pdftex.def Info: App_kalender.jpg  used on input line 215.
 (pdftex.def)             Requested size: 71.13188pt x 154.14122pt.
-<App_kalender3.jpg, id=227, 324.46219pt x 703.12688pt>
+<App_kalender3.jpg, id=237, 324.46219pt x 703.12688pt>
 File: App_kalender3.jpg Graphic file (type jpg)
 <use App_kalender3.jpg>
-Package pdftex.def Info: App_kalender3.jpg  used on input line 213.
+Package pdftex.def Info: App_kalender3.jpg  used on input line 219.
 (pdftex.def)             Requested size: 71.13188pt x 154.14122pt.
 
-Underfull \hbox (badness 2253) in paragraph at lines 214--214
+Underfull \hbox (badness 2253) in paragraph at lines 220--220
 []\OT1/cmr/m/n/10 Figuur 15: []Kalender
  []
 
 File: screen_web_dagboek.jpg Graphic file (type jpg)
 <use screen_web_dagboek.jpg>
-Package pdftex.def Info: screen_web_dagboek.jpg  used on input line 219.
+Package pdftex.def Info: screen_web_dagboek.jpg  used on input line 225.
 (pdftex.def)             Requested size: 253.57521pt x 115.03665pt.
-[9 <./screen_web_chat.jpg>] [10 <./App_documenten.jpg> <./App_documenten3.jpg> 
-<./App_documenten2.jpg> <./App_documenten4.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11 <./App_kalender2.jpg> <./App_kalender.jpg> <./App_kalender3.jpg>]
-<App_dagboek.jpg, id=256, 324.46219pt x 703.12688pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10 <./App_documenten.jpg> <./App_documenten3.jpg> <./App_documenten2.jpg> <./A
+pp_documenten4.jpg>]
+<App_dagboek.jpg, id=254, 324.46219pt x 703.12688pt>
 File: App_dagboek.jpg Graphic file (type jpg)
 <use App_dagboek.jpg>
-Package pdftex.def Info: App_dagboek.jpg  used on input line 231.
+Package pdftex.def Info: App_dagboek.jpg  used on input line 237.
 (pdftex.def)             Requested size: 68.28644pt x 147.97214pt.
 
-Overfull \hbox (9.63707pt too wide) in paragraph at lines 231--232
+Overfull \hbox (9.63707pt too wide) in paragraph at lines 237--238
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []\OT1/cmr/m/n/10 Figuur 17:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []\OT1/cmr/m/n/10 Dagboek
  []
 
-<App_dagboek3.jpg, id=257, 324.46219pt x 703.12688pt>
+<App_dagboek3.jpg, id=255, 324.46219pt x 703.12688pt>
 File: App_dagboek3.jpg Graphic file (type jpg)
 <use App_dagboek3.jpg>
-Package pdftex.def Info: App_dagboek3.jpg  used on input line 235.
+Package pdftex.def Info: App_dagboek3.jpg  used on input line 241.
 (pdftex.def)             Requested size: 68.28644pt x 147.97214pt.
 
-Overfull \hbox (9.63707pt too wide) in paragraph at lines 235--236
+Overfull \hbox (9.63707pt too wide) in paragraph at lines 241--242
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--236
+Underfull \hbox (badness 10000) in paragraph at lines 242--242
 []\OT1/cmr/m/n/10 Figuur 18:
  []
 
-<App_dagboek2.jpg, id=258, 324.46219pt x 703.12688pt>
+<App_dagboek2.jpg, id=256, 324.46219pt x 703.12688pt>
 File: App_dagboek2.jpg Graphic file (type jpg)
 <use App_dagboek2.jpg>
-Package pdftex.def Info: App_dagboek2.jpg  used on input line 239.
+Package pdftex.def Info: App_dagboek2.jpg  used on input line 245.
 (pdftex.def)             Requested size: 68.28644pt x 147.97214pt.
 
-Overfull \hbox (9.63707pt too wide) in paragraph at lines 239--240
+Overfull \hbox (9.63707pt too wide) in paragraph at lines 245--246
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--240
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
 []\OT1/cmr/m/n/10 Figuur 19:
  []
 
-<App_dagboek5.jpg, id=259, 324.46219pt x 703.12688pt>
+<App_dagboek5.jpg, id=257, 324.46219pt x 703.12688pt>
 File: App_dagboek5.jpg Graphic file (type jpg)
 <use App_dagboek5.jpg>
-Package pdftex.def Info: App_dagboek5.jpg  used on input line 243.
+Package pdftex.def Info: App_dagboek5.jpg  used on input line 249.
 (pdftex.def)             Requested size: 68.28644pt x 147.97214pt.
 
-Overfull \hbox (9.63707pt too wide) in paragraph at lines 243--244
+Overfull \hbox (9.63707pt too wide) in paragraph at lines 249--250
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--244
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
 []\OT1/cmr/m/n/10 Figuur 20:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--244
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
 []\OT1/cmr/m/n/10 Dagboek
  []
 
-<App_dagboek4.jpg, id=260, 324.46219pt x 703.12688pt>
+<App_dagboek4.jpg, id=258, 324.46219pt x 703.12688pt>
 File: App_dagboek4.jpg Graphic file (type jpg)
 <use App_dagboek4.jpg>
-Package pdftex.def Info: App_dagboek4.jpg  used on input line 247.
+Package pdftex.def Info: App_dagboek4.jpg  used on input line 253.
 (pdftex.def)             Requested size: 68.28644pt x 147.97214pt.
 
-Overfull \hbox (9.63707pt too wide) in paragraph at lines 247--248
+Overfull \hbox (9.63707pt too wide) in paragraph at lines 253--254
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--248
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
 []\OT1/cmr/m/n/10 Figuur 21:
  []
 
 File: screen_web_dagboek.jpg Graphic file (type jpg)
 <use screen_web_dagboek.jpg>
-Package pdftex.def Info: screen_web_dagboek.jpg  used on input line 253.
+Package pdftex.def Info: screen_web_dagboek.jpg  used on input line 259.
 (pdftex.def)             Requested size: 137.9979pt x 62.60358pt.
 File: screen_web_dagboek.jpg Graphic file (type jpg)
 <use screen_web_dagboek.jpg>
-Package pdftex.def Info: screen_web_dagboek.jpg  used on input line 258.
+Package pdftex.def Info: screen_web_dagboek.jpg  used on input line 264.
 (pdftex.def)             Requested size: 207.0021pt x 93.90892pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 252--262
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 258--268
 [][]  [] 
  []
 
+[11 <./App_kalender2.jpg> <./App_kalender.jpg> <./App_kalender3.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -732,10 +719,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 pdfTeX warning: pdflatex.exe (file ./Flowchart.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<Flowchart.pdf, id=271, 1129.21875pt x 681.54625pt>
+<Flowchart.pdf, id=274, 1129.21875pt x 681.54625pt>
 File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf>
-Package pdftex.def Info: Flowchart.pdf  used on input line 279.
+Package pdftex.def Info: Flowchart.pdf  used on input line 285.
 (pdftex.def)             Requested size: 1129.216pt x 681.54459pt.
 
 
@@ -743,7 +730,7 @@ pdfTeX warning: pdflatex.exe (file ./Flowchart.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
 File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf>
-Package pdftex.def Info: Flowchart.pdf  used on input line 279.
+Package pdftex.def Info: Flowchart.pdf  used on input line 285.
 (pdftex.def)             Requested size: 1129.216pt x 681.54459pt.
 
 
@@ -753,135 +740,140 @@ ersion <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./Flowchart.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<Flowchart.pdf, id=274, page=1, 1129.21875pt x 681.54625pt>
+<Flowchart.pdf, id=277, page=1, 1129.21875pt x 681.54625pt>
 File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf, page 1>
-Package pdftex.def Info: Flowchart.pdf , page1 used on input line 279.
+Package pdftex.def Info: Flowchart.pdf , page1 used on input line 285.
 (pdftex.def)             Requested size: 1129.216pt x 681.54459pt.
 File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf, page 1>
-Package pdftex.def Info: Flowchart.pdf , page1 used on input line 279.
+Package pdftex.def Info: Flowchart.pdf , page1 used on input line 285.
 (pdftex.def)             Requested size: 614.40405pt x 370.82697pt.
 File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf, page 1>
-Package pdftex.def Info: Flowchart.pdf , page1 used on input line 279.
+Package pdftex.def Info: Flowchart.pdf , page1 used on input line 285.
 (pdftex.def)             Requested size: 614.40405pt x 370.82697pt.
 File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf, page 1>
-Package pdftex.def Info: Flowchart.pdf , page1 used on input line 279.
+Package pdftex.def Info: Flowchart.pdf , page1 used on input line 285.
 (pdftex.def)             Requested size: 614.40405pt x 370.82697pt.
 File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf, page 1>
-Package pdftex.def Info: Flowchart.pdf , page1 used on input line 279.
+Package pdftex.def Info: Flowchart.pdf , page1 used on input line 285.
 (pdftex.def)             Requested size: 614.40405pt x 370.82697pt.
 [13 <./Flowchart.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 284--287
+Underfull \hbox (badness 10000) in paragraph at lines 290--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 
  []
 
 [14 <./App_dagboek.jpg> <./App_dagboek3.jpg> <./App_dagboek2.jpg> <./App_dagboe
 k5.jpg> <./App_dagboek4.jpg>] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 298--304
+Underfull \hbox (badness 10000) in paragraph at lines 304--310
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--304
+Underfull \hbox (badness 10000) in paragraph at lines 304--310
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--304
+Underfull \hbox (badness 10000) in paragraph at lines 304--310
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--310
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 309--316
+Underfull \hbox (badness 10000) in paragraph at lines 315--322
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--331
+Underfull \hbox (badness 10000) in paragraph at lines 327--337
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--331
+Underfull \hbox (badness 10000) in paragraph at lines 327--337
 
  []
 
 [17] [18]
-<Ganttchart.pdf, id=411, 845.0471pt x 597.50829pt>
+<Ganttchart.pdf, id=414, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf>
-Package pdftex.def Info: Ganttchart.pdf  used on input line 338.
+Package pdftex.def Info: Ganttchart.pdf  used on input line 344.
 (pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf>
-Package pdftex.def Info: Ganttchart.pdf  used on input line 338.
+Package pdftex.def Info: Ganttchart.pdf  used on input line 344.
 (pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
-<Ganttchart.pdf, id=414, page=1, 845.0471pt x 597.50829pt>
+<Ganttchart.pdf, id=417, page=1, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 338.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 344.
 (pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 338.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 344.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 338.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 344.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 338.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 344.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 338.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 344.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [19 <./Ganttchart.pdf>]
-<Ganttchart.pdf, id=447, page=2, 845.0471pt x 597.50829pt>
+<Ganttchart.pdf, id=450, page=2, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 2>
-Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 338.
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 344.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 2>
-Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 338.
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 344.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 2>
-Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 338.
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 344.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [20 <./Ganttchart.pdf>]
-<Ganttchart.pdf, id=456, page=3, 845.0471pt x 597.50829pt>
+<Ganttchart.pdf, id=459, page=3, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 3>
-Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 338.
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 344.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 3>
-Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 338.
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 344.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 3>
-Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 338.
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 344.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [21 <./Ganttchart.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_1.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<Eind_Diagram_1.drawio.pdf, id=465, 598.15468pt x 846.0408pt>
+<Eind_Diagram_1.drawio.pdf, id=468, 598.15468pt x 846.0408pt>
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf>
-Package pdftex.def Info: Eind_Diagram_1.drawio.pdf  used on input line 339.
+Package pdftex.def Info: Eind_Diagram_1.drawio.pdf  used on input line 345.
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 
 
@@ -889,7 +881,7 @@ pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_1.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf>
-Package pdftex.def Info: Eind_Diagram_1.drawio.pdf  used on input line 339.
+Package pdftex.def Info: Eind_Diagram_1.drawio.pdf  used on input line 345.
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 
 
@@ -899,40 +891,40 @@ pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_1.drawio.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_1.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<Eind_Diagram_1.drawio.pdf, id=468, page=1, 598.15468pt x 846.0408pt>
+<Eind_Diagram_1.drawio.pdf, id=471, page=1, 598.15468pt x 846.0408pt>
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 3
-39.
+45.
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 3
-39.
+45.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 3
-39.
+45.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 3
-39.
+45.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 3
-39.
+45.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 [22 <./Eind_Diagram_1.drawio.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_2.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<Eind_Diagram_2.drawio.pdf, id=482, 598.15468pt x 846.0408pt>
+<Eind_Diagram_2.drawio.pdf, id=485, 598.15468pt x 846.0408pt>
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf>
-Package pdftex.def Info: Eind_Diagram_2.drawio.pdf  used on input line 340.
+Package pdftex.def Info: Eind_Diagram_2.drawio.pdf  used on input line 346.
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 
 
@@ -940,7 +932,7 @@ pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_2.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf>
-Package pdftex.def Info: Eind_Diagram_2.drawio.pdf  used on input line 340.
+Package pdftex.def Info: Eind_Diagram_2.drawio.pdf  used on input line 346.
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 
 
@@ -950,31 +942,31 @@ pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_2.drawio.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_2.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<Eind_Diagram_2.drawio.pdf, id=485, page=1, 598.15468pt x 846.0408pt>
+<Eind_Diagram_2.drawio.pdf, id=488, page=1, 598.15468pt x 846.0408pt>
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 3
-40.
+46.
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 3
-40.
+46.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 3
-40.
+46.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 3
-40.
+46.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 3
-40.
+46.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 [23 <./Eind_Diagram_2.drawio.pdf>] (./verslagCommunicatieplatform.bbl
 Overfull \hbox (113.32964pt too wide) in paragraph at lines 9--14
@@ -983,83 +975,89 @@ t-[]for-[]web-[]application-[]development/$[]\OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--36
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
 \OT1/cmtt/m/n/10 news / html-[]css-[]and-[]javascript-[]explained-[]for-[]begin
 ners/$[]\OT1/cmr/m/n/10 , Aug
  []
 
 
-Underfull \hbox (badness 6300) in paragraph at lines 38--43
+Underfull \hbox (badness 6300) in paragraph at lines 43--48
 []\OT1/cmr/m/n/10 Meest ge-bruikte pro-gram-meer-ta-len.  []$\OT1/cmtt/m/n/10 h
 ttps : / / blog . andwork . com /
  []
 
 
-Overfull \hbox (50.33018pt too wide) in paragraph at lines 38--43
+Overfull \hbox (50.33018pt too wide) in paragraph at lines 43--48
 \OT1/cmtt/m/n/10 wat-[]spreken-[]developers-[]dit-[]zijn-[]de-[]8-[]meest-[]gev
 raagde-[]programmeertalen/$[]\OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--55
 []\OT1/cmr/m/n/10 Meest ge-bruikte pro-gram-meer-ta-len voor web-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--55
 \OT1/cmr/m/n/10 si-tes.  []$\OT1/cmtt/m/n/10 https : / / onlinerocket . nl / we
 bsites /
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 57--61
+Underfull \hbox (badness 1622) in paragraph at lines 62--66
 []\OT1/cmr/m/n/10 Verschil tus-sen front end en back end.  []$\OT1/cmtt/m/n/10 
 https : / / www . code14 . nl /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--78
+Underfull \hbox (badness 10000) in paragraph at lines 78--83
 []\OT1/cmr/m/n/10 Php vs node.js vs flask vs django.  []$\OT1/cmtt/m/n/10 https
  : / / dev . to /
  []
 
 
-Overfull \hbox (258.5784pt too wide) in paragraph at lines 73--78
+Overfull \hbox (258.5784pt too wide) in paragraph at lines 78--83
 \OT1/cmtt/m/n/10 leviathanprogramming / php-[]vs-[]nodejs-[]vs-[]flask-[]vs-[]d
 jango-[]which-[]is-[]the-[]best-[]backend-[]language-[]in-[]your-[]opinion-[]33
 9c$[]\OT1/cmr/m/n/10 ,
  []
 
-) [24] (./verslagCommunicatieplatform.aux)
+[24])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 352.
+ [25]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 352.
+ (./verslagCommunicatieplatform.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 352.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 352.
 Package rerunfilecheck Info: File `verslagCommunicatieplatform.out' has not cha
 nged.
-(rerunfilecheck)             Checksum: F3C32D0B83B3196D2EB15CFBEBF24D27;2557.
+(rerunfilecheck)             Checksum: C7E20790F3F25C8F9584B95DFEF56CC0;1312.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 352.
  ) 
 Here is how much of TeX's memory you used:
- 11793 strings out of 478371
- 188163 string characters out of 5852527
- 504711 words of memory out of 5000000
- 29643 multiletter control sequences out of 15000+600000
- 409753 words of font info for 49 fonts, out of 8000000 for 9000
+ 8324 strings out of 480876
+ 124509 string characters out of 5911487
+ 418990 words of memory out of 5000000
+ 23690 multiletter control sequences out of 15000+600000
+ 541411 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,17n,75p,1128b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
-live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmti8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmtt10.pfb>
-Output written on verslagCommunicatieplatform.pdf (24 pages, 1305934 bytes).
+ 43i,18n,46p,1201b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/texlive/2020/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmtt10.pfb>
+Output written on verslagCommunicatieplatform.pdf (25 pages, 1287387 bytes).
 PDF statistics:
- 612 PDF objects out of 1000 (max. 8388607)
- 503 compressed objects within 6 object streams
- 95 named destinations out of 1000 (max. 500000)
+ 607 PDF objects out of 1000 (max. 8388607)
+ 511 compressed objects within 6 object streams
+ 99 named destinations out of 1000 (max. 500000)
  375 words of extra memory for PDF output out of 10000 (max. 10000000)
 
