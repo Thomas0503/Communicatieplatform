@@ -290,20 +290,18 @@
 	\subsection{Verbeteringen}
 	Voor de applicatie zijn er nog verschillende verbeteringen mogelijk. 
 	De functies voor trainer kunnen nog worden geoptimaliseerd. Zo kan ervoor gezorgd worden dat een trainer niet op verschillende pagina's telkens moet doorklikken, maar dit allemaal op eenzelfde pagina kan. Daarnaast is het onderscheid tussen trainer en pleeggezin momenteel niet efficiënt geïmplementeerd. Een betere methode zou de opslaggrootte van de app sterk kunnen verminderen.
-	Ten tweede kunnen in de chat van de app zowel berichten als foto's worden ontvangen, maar tot nu toe kunnen enkel berichten worden verstuurd. Het versturen van foto's kan wel gedaan worden op de website.\\
-
-	Voor de website zijn er minder gebreken. Hier kan vooral het design nog geoptimaliseerd worden, momenteel is de website niet compatibel op mobiele apparaten. \\
-	
-	Daarnaast zouden ook de mogelijke kosten voor de database verminderd kunnen worden. Zo kunnen er mechanismen ingebouwd worden om het aantal keer dat er data uit de Cloud Firestore ingelezen wordt, te beperken. Dit is immers een van de zaken die de kosten bepaald. Ook een overstap naar de Realtime Database zou een oplossing kunnen bieden. Dit kan echter andere nadelen tot gevolg hebben, zie[bron]. 
+	Ten tweede kunnen in de chat van de app zowel berichten als foto's worden ontvangen, maar tot nu toe kunnen enkel berichten worden verstuurd. Het versturen van foto's kan wel gedaan worden op de website.\\\\
+	Voor de website zijn er minder gebreken. Hier kan vooral het design nog geoptimaliseerd worden, momenteel is de website niet compatibel op mobiele apparaten. \\\\
+	Daarnaast zouden ook de mogelijke kosten voor de database verminderd kunnen worden. Zo kunnen er mechanismen ingebouwd worden om het aantal keer dat er data uit de Cloud Firestore ingelezen wordt, te beperken. Dit is immers een van de zaken die de kosten bepaald. Ook een overstap naar de Realtime Database zou een oplossing kunnen bieden. Dit kan echter andere nadelen tot gevolg hebben, zie bron \cite{Firebase}. 
 
 	\subsection{Extra functionaliteiten}
 	Er zijn nog verschillende ontwikkelingen mogelijk die we niet hebben uitgevoerd omwille van tijdsgebrek.
-	Ten eerste zijn er enkele vereisten die we niet hebben kunnen bereiken. Zo kunnen foto's in de chat van de app enkel ontvangen worden, maar niet verstuurd. Dit kan wel gedaan worden op de website. Video's kunnen momenteel op geen van beide platformen verstuurd worden in de chat, en ze kunnen ook niet in het dagboekje worden geplaatst. Tot slot kan er in het dagboek van de app niet gefilterd worden op stressniveau.
-	Ten tweede kunnen er nog functionaliteiten worden ingebouwd die het gebruiksgemak zouden verbeteren. 
-	Meldingen vanuit de app voor kalenderafspraken, nieuw chatberichten of beschikbare documenten zou het leven van de gebruikers vergemakkelijken. Zo hoeven de pleeggezinnen media niet constant te checken om toch op de hoogte te zijn van de nieuwste wijzigingen.
-	Ook de mogelijkheid om specifieke afspraken, documenten en activeiten te verwijderen zou geïmplementeerd kunnen worden. Momenteel kan men enkel afspraken verwijderen en dit enkel via de website.
+	Ten eerste zijn er enkele vereisten die we niet hebben kunnen bereiken. Zo kunnen er momenteel geen video's verstuurd worden in de chat, en kunnen er ook geen in het dagboekje worden geplaatst. Tot slot kan er in het dagboek van de app niet gefilterd worden op stressniveau. \\\\
+	Ten tweede kunnen er nog functionaliteiten worden ingebouwd die het gebruiksgemak zouden verbeteren. \\
+	Meldingen vanuit de app voor kalenderafspraken, nieuw chatberichten of beschikbare documenten zou het leven van de gebruikers vergemakkelijken. Zo hoeven de pleeggezinnen media niet constant te checken om toch op de hoogte te zijn van de nieuwste wijzigingen. \\
+	Ook de mogelijkheid om specifieke afspraken, documenten en activeiten te verwijderen zou geïmplementeerd kunnen worden. Momenteel kan men enkel afspraken verwijderen en dit enkel via de website. Afspraken die al zijn verlopen worden wel automatisch verwijderd. \\
 	Het zou ook handig zijn als trainers en pleeggezinnen vriendenlijst konden aanmaken. Op deze manier zullen ze geen overbodige spam in de chat hebben van mensen waarmee ze niet bevriend zijn.
-	Daarnaast kan de trainer op dit moment enkel een document uploaden voor ofwel iedereen ofwel één puppy. In de toekomst zou het mogelijk zijn om documenten toe te voegen voor bijvoorbeeld twee puppy's in één keer. Dit zou de trainer veel tijd besparen.
+	Daarnaast kan de trainer op dit moment enkel een document uploaden voor ofwel iedereen, ofwel één puppy. In de toekomst zou het mogelijk zijn om documenten toe te voegen voor bijvoorbeeld twee puppy's in één keer. Dit zou de trainer veel tijd besparen. \\
 	Tot slot hebben pleeggezinnen met meerdere honden op dit moment verschillende accounts nodig. Het zou voor hen makkelijker zijn om dit te kunnen combineren via één account. Dit zou kunnen door bij dagboek, documenten en kalender een onderscheid te maken tussen de honden. En dus te vragen voor welke hond het gezin de informatie wil. Dit zou gelijkaardig zijn aan de trainer-functie. Hierbij wordt er ook gevraagd voor welke hond er data wil worden geüpload of opgevraagd.
 	
 	\newpage
@@ -312,36 +310,34 @@
 	\\\\
 	Om dit te realiseren moesten we eerst de tools zoeken die we konden gebruiken voor de app en website. Dit nam veel tijd in beslag aangezien de keuze een grote invloed kan hebben op het resultaat. De tools moeten kunnen voldoen aan alle eisen van de probleemstelling. Daarna was het belangrijk om kennis te maken met de werking van de tools. Voordat we begonnen aan het ontwerpen van de app en website, bouwden we een kennis op van het gebruik van de programma's. Toen we dit onder de knie hadden, konden we beginnen met het echte werk. We brainstormden over hoe we het project het best konden aanpakken. We dachten na over de structuur van de app en website en bedachten ook hoe we de verschillende functies die de trainers en pleeggezinnen moeten kunnen doen, gingen implementeren. Tot slot begonnen we met het design en het implementeren van de app en website.
 	\\\\
-	Er is nog ruimte voor optimalisatie bij de werking van de applicatie en bij het design van de website. Aangezien we in tijdsnood kwamen hebben we gekozen voor een optimale werking van de website en een optimaal design app, maar vooral voor een compatibele werking van beide tools met de database.\\\\
+	Er is nog ruimte voor optimalisatie bij de werking van de applicatie en bij het design van de website. Aangezien we in tijdsnood kwamen, hebben we gekozen voor een optimale werking van de website en een optimaal design app, maar vooral voor een compatibele werking van beide tools met de database.\\\\
 	%$Gelukkig bleven we ons best doen en vond Charlotte ons een topteam! :) $
 	
 	
 	\newpage
 	\begin{appendices}
 		\section{Planning} \label{planning}
-		 De app en de website bestonden uit dezelfde vijf hoofdfuncties van onze communicatieplatform: inlogsysteem, dagboek, kalender, documenten en chat. Voor elk van deze onderdelen moesten we ons zowel op het design als op de implementatie focussen. Daarbovenop moest het onderscheid tussen trainer en pleeggezin worden gecreëerd. Ook in de database moesten diezelfde vijf functies worden geïmplementeerd. Tot slot moest alles getest en afgestemd worden op elkaar. \\
+		De app en website bestaan uit dezelfde vijf hoofdfuncties van onze communicatieplatform: inlogsysteem, dagboek, kalender, documenten en chat. Voor elk van deze onderdelen moesten we ons zowel op het design als op de implementatie focussen. Daarbovenop moest het onderscheid tussen trainer en pleeggezin worden gecreëerd. Ook in de database moesten diezelfde vijf functies worden geïmplementeerd. Tot slot moest alles getest en afgestemd worden op elkaar. \\
 		De rapportering van dit project konden we onderverdelen in drie stukken: tussentijds verslag, eindverslag en presentatie. Bij deze eerste twee verantwoordden we de tools die we gebruikten, verklaarden we uitgebreid de resultaten en toonden we eventuele verbeteringen$/$ontwikkelingen voor de toekomst.\\
 		Voor de presentatie was het grootste werk kijken hoe we onze media efficiënt zouden kunnen tonen. We hebben ook goed besproken hoe we de demo zouden aanpakken.
 		\\\\
 		Onze oorspronkelijke planning is te vinden op pagina \pageref{gantt-grafiek} in deze appendices. In de loop van het project zijn we afgeweken van deze planning, aangezien we doorhadden dat dit niet de beste volgorde was om het project uit te voeren.\\
-		
-		 We zijn begonnen met de tools te zoeken en daarna de pro's en contra's kort samen te vatten, zodat we deze later in een degelijk verslag konden gieten. Daarna zijn we begonnen met zowel de app als de website. De volgorde van het creëren van beide tools zijn wel gebeurd zoals aangegeven in de planning. Hoewel het design van de app nog vele keren moest worden aangepast, was deze voor het grote deel al klaar voordat we aan het tussentijds verslag begonnen. Tijdens het implementeren van de app en website werd ook de database geprogrammeerd. En op het einde van ons project werden de database-collecties van de applicatie en website op elkaar afgestemd en getest.\\ 
+		We zijn begonnen met de tools te zoeken en daarna de pro's en contra's kort samen te vatten, zodat we deze later in een degelijk verslag konden gieten. Daarna zijn we begonnen met zowel de app als de website. De volgorde van het creëren van beide tools zijn wel gebeurd zoals aangegeven in de planning. Hoewel het design van de app nog vele keren moest worden aangepast, was deze voor het grote deel al klaar voordat we aan het tussentijds verslag begonnen. Tijdens het implementeren van de app en website werd ook de database geprogrammeerd. En op het einde van ons project werden de database-collecties van de applicatie en website op elkaar afgestemd en getest.\\ 
 		Ondertussen werd ons eindverslag gemaakt, het intensief werken aan de verdere uitwerking werd wel veel later gestart dan voorzien. We zijn wel op het vooraf-vastgelegde moment gestart met het maken van de presentatie.
 		
 		\section{Samenwerking}
 		\subsection{Verantwoordelijkheden}
 		Bij het begin van het project werden er rollen en dus verantwoordelijkheden gecreëerd. Thomas nam de verantwoordelijkheid voor het ontwikkelen van de website. Daarnaast heeft Ruben de verantwoordelijkheid van de app op zich genomen. Tot slot is Manon verantwoordelijk voor het design van het platform en voor de rapportering van ons project.
 		\subsection{Taakverdeling}
-		Wij hebben samen gezocht naar de verschillende tools die nodig waren om een website en app te bouwen en met elkaar te verbinden via een database. Nadat we deze hadden gevonden, werd de Gantt-grafiek (in bijlage op pagina \pageref{gantt-grafiek}) opgesteld en hebben we de taken (op pagina \pageref{planning}) opgesplitst. 
+		Wij hebben samen gezocht naar de verschillende tools die nodig waren om een website en app te bouwen en met elkaar te verbinden via een database. 
 		\\\\
-		Thomas heeft eerst gezorgd voor de connectie tussen de website en database. Daarna is hij begonnen met het implementeren van de website. 
-		Ruben heeft gekeken voor het verbinden van de applicatie en database. Hij heeft er ook voor gezorgd dat Android Studio via GitHub functioneert om zo een vlotter groepswerk te creëren. Daarna is hij begonnen met het implementeren van de app. 
-		Manon heeft zich eerst bezig gehouden met de app te ontwerpen, meer bepaald het design van de verschillende pagina's en de doorverwijzingen tussen de pagina's. Daarna is ze begonnen met het tussentijds verslag te schrijven. \\
-		Voor het maken van het tussentijds verslag hebben we later ook de taken verdeeld. We namen elk een of meerdere onderdelen voor zich. Iedereen kreeg het onderdeel waarvan hij of zij het meest vanaf wist. Tot slot heeft iedereen het verslag doorgelezen en goedgekeurd.
+		Thomas heeft gezorgd voor de connectie tussen de website en database. Hij heeft ook de website geïmplementeerd. 
+		Ruben heeft gekeken voor het verbinden van de applicatie en database. Hij heeft er ook voor gezorgd dat Android Studio via GitHub functioneert om zo een vlotter groepswerk te creëren. Via die Android Studio heeft hij de app geïmplementeerd, samen met Manon. 
+		Manon heeft naast het implementeren van die app zich ook bezig gehouden met de app te ontwerpen, meer bepaald het design van de verschillende pagina's en de doorverwijzingen tussen de pagina's. Daarnaast is ze het tussentijds verslag beginnen schrijven. De Gantt-grafiek (in bijlage op pagina \pageref{gantt-grafiek})  de taken (op pagina \pageref{planning}) werden onder anderen opgesteld door Manon. \\
+		Voor het maken van het tussentijds verslag hebben we ook de taken verdeeld. We namen elk een of meerdere onderdelen voor zich. Iedereen kreeg het onderdeel waarvan hij of zij het meest vanaf wist.
 		\\\\
-		Toen dat tussentijds verslag ingediend was, hebben Thomas en Ruben gekeken om de database-collecties van de app en website op elkaar af te stemmen. Ondertussen heeft Manon verder de applicatie geïmplementeerd.
-		Tot slot heeft Ruben verdergewerkt aan de app, terwijl Thomas en Manon bezig waren met het eindverslag en de presentatie voor te bereiden. \\
-		Op het einde van ons project heeft iedereen het verslag doorgelezen en goedgekeurd.
+		Naar het einde toe van ons project hebben Thomas en Ruben samen gekeken om de database-collecties van de app en website op elkaar af te stemmen en hebben Manon en Thomas het eindverslag en de presentatie voorbereid. \\
+		De verslagen werden telkens door iedereen gelezen en goedgekeurd.
 		
 		\section{Gantt-grafiek}
 		De gantt-grafiek is te vinden op pagina \pageref{gantt-grafiek} in deze appendices.

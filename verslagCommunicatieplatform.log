@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.21)  17 DEC 2021 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.21)  18 DEC 2021 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -406,7 +406,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<2013-kulak-cmyk-highres.jpg, id=96, 602.25pt x 125.46875pt>
+<2013-kulak-cmyk-highres.jpg, id=92, 602.25pt x 125.46875pt>
 File: 2013-kulak-cmyk-highres.jpg Graphic file (type jpg)
 <use 2013-kulak-cmyk-highres.jpg>
 Package pdftex.def Info: 2013-kulak-cmyk-highres.jpg  used on input line 28.
@@ -449,38 +449,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--111
  []
 
 [5]
-<App_login.jpg, id=178, 813.0375pt x 1761.58125pt>
+<App_login.jpg, id=173, 813.0375pt x 1761.58125pt>
 File: App_login.jpg Graphic file (type jpg)
 <use App_login.jpg>
 Package pdftex.def Info: App_login.jpg  used on input line 131.
 (pdftex.def)             Requested size: 99.58464pt x 215.762pt.
-<App_homepage.jpg, id=179, 813.0375pt x 1761.58125pt>
+<App_homepage.jpg, id=174, 813.0375pt x 1761.58125pt>
 File: App_homepage.jpg Graphic file (type jpg)
 <use App_homepage.jpg>
 Package pdftex.def Info: App_homepage.jpg  used on input line 135.
 (pdftex.def)             Requested size: 99.58464pt x 215.762pt.
-<screen_web_login.jpg, id=180, 1371.1225pt x 658.46pt>
+<screen_web_login.jpg, id=175, 1371.1225pt x 658.46pt>
 File: screen_web_login.jpg Graphic file (type jpg)
 <use screen_web_login.jpg>
 Package pdftex.def Info: screen_web_login.jpg  used on input line 141.
 (pdftex.def)             Requested size: 253.57521pt x 121.773pt.
  [6]
-<App_chat2.jpg, id=195, 813.0375pt x 1761.58125pt>
+<App_chat2.jpg, id=190, 813.0375pt x 1761.58125pt>
 File: App_chat2.jpg Graphic file (type jpg)
 <use App_chat2.jpg>
 Package pdftex.def Info: App_chat2.jpg  used on input line 151.
 (pdftex.def)             Requested size: 99.58464pt x 215.762pt.
-<App_chat.jpg, id=196, 813.0375pt x 1761.58125pt>
+<App_chat.jpg, id=191, 813.0375pt x 1761.58125pt>
 File: App_chat.jpg Graphic file (type jpg)
 <use App_chat.jpg>
 Package pdftex.def Info: App_chat.jpg  used on input line 155.
 (pdftex.def)             Requested size: 99.58464pt x 215.762pt.
-<App_chat3.jpg, id=197, 813.0375pt x 1761.58125pt>
+<App_chat3.jpg, id=192, 813.0375pt x 1761.58125pt>
 File: App_chat3.jpg Graphic file (type jpg)
 <use App_chat3.jpg>
 Package pdftex.def Info: App_chat3.jpg  used on input line 159.
 (pdftex.def)             Requested size: 99.58464pt x 215.762pt.
-<screen_web_chat.jpg, id=198, 1371.1225pt x 656.4525pt>
+<screen_web_chat.jpg, id=193, 1371.1225pt x 656.4525pt>
 File: screen_web_chat.jpg Graphic file (type jpg)
 <use screen_web_chat.jpg>
 Package pdftex.def Info: screen_web_chat.jpg  used on input line 165.
@@ -494,7 +494,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--170
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<App_documenten.jpg, id=211, 813.0375pt x 1761.58125pt>
+<App_documenten.jpg, id=206, 813.0375pt x 1761.58125pt>
 File: App_documenten.jpg Graphic file (type jpg)
 <use App_documenten.jpg>
 Package pdftex.def Info: App_documenten.jpg  used on input line 178.
@@ -514,7 +514,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--179
 []\OT1/cmr/m/n/10 Documenten-
  []
 
-<App_documenten3.jpg, id=212, 813.0375pt x 1761.58125pt>
+<App_documenten3.jpg, id=207, 813.0375pt x 1761.58125pt>
 File: App_documenten3.jpg Graphic file (type jpg)
 <use App_documenten3.jpg>
 Package pdftex.def Info: App_documenten3.jpg  used on input line 182.
@@ -534,7 +534,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--183
 []\OT1/cmr/m/n/10 Documenten
  []
 
-<App_documenten2.jpg, id=213, 324.46219pt x 703.12688pt>
+<App_documenten2.jpg, id=208, 324.46219pt x 703.12688pt>
 File: App_documenten2.jpg Graphic file (type jpg)
 <use App_documenten2.jpg>
 Package pdftex.def Info: App_documenten2.jpg  used on input line 186.
@@ -554,7 +554,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--187
 []\OT1/cmr/m/n/10 Documenten-
  []
 
-<App_documenten4.jpg, id=214, 813.0375pt x 1761.58125pt>
+<App_documenten4.jpg, id=209, 813.0375pt x 1761.58125pt>
 File: App_documenten4.jpg Graphic file (type jpg)
 <use App_documenten4.jpg>
 Package pdftex.def Info: App_documenten4.jpg  used on input line 190.
@@ -579,7 +579,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--191
 \OT1/cmr/m/n/10 toe-voe-gen
  []
 
-<screen_web_documenten.jpg, id=215, 1367.1075pt x 616.3025pt>
+<screen_web_documenten.jpg, id=210, 1367.1075pt x 616.3025pt>
 File: screen_web_documenten.jpg Graphic file (type jpg)
 <use screen_web_documenten.jpg>
 Package pdftex.def Info: screen_web_documenten.jpg  used on input line 196.
@@ -592,17 +592,17 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9 <./screen_web_chat.jpg>]
-<App_kalender2.jpg, id=236, 813.0375pt x 1761.58125pt>
+<App_kalender2.jpg, id=231, 813.0375pt x 1761.58125pt>
 File: App_kalender2.jpg Graphic file (type jpg)
 <use App_kalender2.jpg>
 Package pdftex.def Info: App_kalender2.jpg  used on input line 211.
 (pdftex.def)             Requested size: 71.13188pt x 154.10034pt.
-<App_kalender.jpg, id=237, 813.0375pt x 1761.58125pt>
+<App_kalender.jpg, id=232, 813.0375pt x 1761.58125pt>
 File: App_kalender.jpg Graphic file (type jpg)
 <use App_kalender.jpg>
 Package pdftex.def Info: App_kalender.jpg  used on input line 215.
 (pdftex.def)             Requested size: 71.13188pt x 154.10034pt.
-<App_kalender3.jpg, id=238, 813.0375pt x 1761.58125pt>
+<App_kalender3.jpg, id=233, 813.0375pt x 1761.58125pt>
 File: App_kalender3.jpg Graphic file (type jpg)
 <use App_kalender3.jpg>
 Package pdftex.def Info: App_kalender3.jpg  used on input line 219.
@@ -612,7 +612,7 @@ Underfull \hbox (badness 2253) in paragraph at lines 220--220
 []\OT1/cmr/m/n/10 Figuur 15: []Kalender
  []
 
-<screen_web_kalender.jpg, id=239, 1353.055pt x 939.51pt>
+<screen_web_kalender.jpg, id=234, 1353.055pt x 939.51pt>
 File: screen_web_kalender.jpg Graphic file (type jpg)
 <use screen_web_kalender.jpg>
 Package pdftex.def Info: screen_web_kalender.jpg  used on input line 225.
@@ -629,7 +629,7 @@ pp_documenten4.jpg>]
 LaTeX Warning: Reference `web_dagboektoev' on page 11 undefined on input line 2
 33.
 
-<App_dagboek.jpg, id=255, 813.0375pt x 1761.58125pt>
+<App_dagboek.jpg, id=250, 813.0375pt x 1761.58125pt>
 File: App_dagboek.jpg Graphic file (type jpg)
 <use App_dagboek.jpg>
 Package pdftex.def Info: App_dagboek.jpg  used on input line 237.
@@ -649,7 +649,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []\OT1/cmr/m/n/10 Dagboek
  []
 
-<App_dagboek3.jpg, id=256, 813.0375pt x 1761.58125pt>
+<App_dagboek3.jpg, id=251, 813.0375pt x 1761.58125pt>
 File: App_dagboek3.jpg Graphic file (type jpg)
 <use App_dagboek3.jpg>
 Package pdftex.def Info: App_dagboek3.jpg  used on input line 241.
@@ -664,7 +664,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--242
 []\OT1/cmr/m/n/10 Figuur 18:
  []
 
-<App_dagboek2.jpg, id=257, 813.0375pt x 1761.58125pt>
+<App_dagboek2.jpg, id=252, 813.0375pt x 1761.58125pt>
 File: App_dagboek2.jpg Graphic file (type jpg)
 <use App_dagboek2.jpg>
 Package pdftex.def Info: App_dagboek2.jpg  used on input line 245.
@@ -679,7 +679,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 246--246
 []\OT1/cmr/m/n/10 Figuur 19:
  []
 
-<App_dagboek5.jpg, id=258, 813.0375pt x 1761.58125pt>
+<App_dagboek5.jpg, id=253, 813.0375pt x 1761.58125pt>
 File: App_dagboek5.jpg Graphic file (type jpg)
 <use App_dagboek5.jpg>
 Package pdftex.def Info: App_dagboek5.jpg  used on input line 249.
@@ -699,7 +699,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 250--250
 []\OT1/cmr/m/n/10 Dagboek
  []
 
-<App_dagboek4.jpg, id=259, 813.0375pt x 1761.58125pt>
+<App_dagboek4.jpg, id=254, 813.0375pt x 1761.58125pt>
 File: App_dagboek4.jpg Graphic file (type jpg)
 <use App_dagboek4.jpg>
 Package pdftex.def Info: App_dagboek4.jpg  used on input line 253.
@@ -714,12 +714,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--254
 []\OT1/cmr/m/n/10 Figuur 21:
  []
 
-<screen_web_dagboek2.0.jpg, id=260, 554.82281pt x 546.54187pt>
+<screen_web_dagboek2.0.jpg, id=255, 554.82281pt x 546.54187pt>
 File: screen_web_dagboek2.0.jpg Graphic file (type jpg)
 <use screen_web_dagboek2.0.jpg>
 Package pdftex.def Info: screen_web_dagboek2.0.jpg  used on input line 260.
 (pdftex.def)             Requested size: 96.5981pt x 95.15422pt.
-<screen_web_dagboek.jpg, id=261, 1368.11125pt x 620.3175pt>
+<screen_web_dagboek.jpg, id=256, 1368.11125pt x 620.3175pt>
 File: screen_web_dagboek.jpg Graphic file (type jpg)
 <use screen_web_dagboek.jpg>
 Package pdftex.def Info: screen_web_dagboek.jpg  used on input line 265.
@@ -741,7 +741,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 pdfTeX warning: pdflatex.exe (file ./Flowchart.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<Flowchart.pdf, id=276, 1129.21875pt x 681.54625pt>
+<Flowchart.pdf, id=271, 1129.21875pt x 681.54625pt>
 File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf>
 Package pdftex.def Info: Flowchart.pdf  used on input line 286.
@@ -762,7 +762,7 @@ ersion <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./Flowchart.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<Flowchart.pdf, id=279, page=1, 1129.21875pt x 681.54625pt>
+<Flowchart.pdf, id=274, page=1, 1129.21875pt x 681.54625pt>
 File: Flowchart.pdf Graphic file (type pdf)
 <use Flowchart.pdf, page 1>
 Package pdftex.def Info: Flowchart.pdf , page1 used on input line 286.
@@ -784,119 +784,124 @@ File: Flowchart.pdf Graphic file (type pdf)
 Package pdftex.def Info: Flowchart.pdf , page1 used on input line 286.
 (pdftex.def)             Requested size: 614.40405pt x 370.82697pt.
 [13 <./Flowchart.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 291--294
+Underfull \hbox (badness 10000) in paragraph at lines 291--296
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
+Underfull \hbox (badness 10000) in paragraph at lines 291--296
 
  []
 
 [14 <./App_dagboek.jpg> <./App_dagboek3.jpg> <./App_dagboek2.jpg> <./App_dagboe
 k5.jpg> <./App_dagboek4.jpg> <./screen_web_dagboek2.0.jpg> <./screen_web_dagboe
-k.jpg>] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 305--311
+k.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 298--306
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 309--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--311
+Underfull \hbox (badness 10000) in paragraph at lines 309--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--311
+Underfull \hbox (badness 10000) in paragraph at lines 309--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--311
+Underfull \hbox (badness 10000) in paragraph at lines 309--315
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 316--323
+Underfull \hbox (badness 10000) in paragraph at lines 320--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--338
+Underfull \hbox (badness 10000) in paragraph at lines 332--341
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--338
+Underfull \hbox (badness 10000) in paragraph at lines 332--341
 
  []
 
 [17] [18]
-<Ganttchart.pdf, id=417, 845.0471pt x 597.50829pt>
+<Ganttchart.pdf, id=413, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf>
-Package pdftex.def Info: Ganttchart.pdf  used on input line 345.
+Package pdftex.def Info: Ganttchart.pdf  used on input line 348.
 (pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf>
-Package pdftex.def Info: Ganttchart.pdf  used on input line 345.
+Package pdftex.def Info: Ganttchart.pdf  used on input line 348.
 (pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
-<Ganttchart.pdf, id=420, page=1, 845.0471pt x 597.50829pt>
+<Ganttchart.pdf, id=416, page=1, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 345.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 348.
 (pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 345.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 348.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 345.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 348.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 345.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 348.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 1>
-Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 345.
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 348.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [19 <./Ganttchart.pdf>]
-<Ganttchart.pdf, id=453, page=2, 845.0471pt x 597.50829pt>
+<Ganttchart.pdf, id=449, page=2, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 2>
-Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 345.
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 348.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 2>
-Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 345.
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 348.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 2>
-Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 345.
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 348.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [20 <./Ganttchart.pdf>]
-<Ganttchart.pdf, id=462, page=3, 845.0471pt x 597.50829pt>
+<Ganttchart.pdf, id=458, page=3, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 3>
-Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 345.
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 348.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 3>
-Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 345.
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 348.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 3>
-Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 345.
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 348.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [21 <./Ganttchart.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_1.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<Eind_Diagram_1.drawio.pdf, id=471, 598.15468pt x 846.0408pt>
+<Eind_Diagram_1.drawio.pdf, id=467, 598.15468pt x 846.0408pt>
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf>
-Package pdftex.def Info: Eind_Diagram_1.drawio.pdf  used on input line 346.
+Package pdftex.def Info: Eind_Diagram_1.drawio.pdf  used on input line 349.
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 
 
@@ -904,7 +909,7 @@ pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_1.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf>
-Package pdftex.def Info: Eind_Diagram_1.drawio.pdf  used on input line 346.
+Package pdftex.def Info: Eind_Diagram_1.drawio.pdf  used on input line 349.
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 
 
@@ -914,40 +919,40 @@ pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_1.drawio.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_1.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<Eind_Diagram_1.drawio.pdf, id=474, page=1, 598.15468pt x 846.0408pt>
+<Eind_Diagram_1.drawio.pdf, id=470, page=1, 598.15468pt x 846.0408pt>
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 3
-46.
+49.
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 3
-46.
+49.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 3
-46.
+49.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 3
-46.
+49.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 3
-46.
+49.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 [22 <./Eind_Diagram_1.drawio.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_2.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<Eind_Diagram_2.drawio.pdf, id=488, 598.15468pt x 846.0408pt>
+<Eind_Diagram_2.drawio.pdf, id=484, 598.15468pt x 846.0408pt>
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf>
-Package pdftex.def Info: Eind_Diagram_2.drawio.pdf  used on input line 347.
+Package pdftex.def Info: Eind_Diagram_2.drawio.pdf  used on input line 350.
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 
 
@@ -955,7 +960,7 @@ pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_2.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf>
-Package pdftex.def Info: Eind_Diagram_2.drawio.pdf  used on input line 347.
+Package pdftex.def Info: Eind_Diagram_2.drawio.pdf  used on input line 350.
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 
 
@@ -965,31 +970,31 @@ pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_2.drawio.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_2.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<Eind_Diagram_2.drawio.pdf, id=491, page=1, 598.15468pt x 846.0408pt>
+<Eind_Diagram_2.drawio.pdf, id=487, page=1, 598.15468pt x 846.0408pt>
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 3
-47.
+50.
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 3
-47.
+50.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 3
-47.
+50.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 3
-47.
+50.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 3
-47.
+50.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 [23 <./Eind_Diagram_2.drawio.pdf>] (./verslagCommunicatieplatform.bbl
 Overfull \hbox (113.32964pt too wide) in paragraph at lines 9--14
@@ -1051,13 +1056,13 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `verslagCommunicatieplatform.out' has not cha
 nged.
-(rerunfilecheck)             Checksum: F3C32D0B83B3196D2EB15CFBEBF24D27;2557.
+(rerunfilecheck)             Checksum: 55198AAE5689E0D74A0476D9CD93D886;2544.
  ) 
 Here is how much of TeX's memory you used:
- 11827 strings out of 478371
- 189002 string characters out of 5852527
+ 11825 strings out of 478371
+ 188972 string characters out of 5852527
  503073 words of memory out of 5000000
- 29669 multiletter control sequences out of 15000+600000
+ 29668 multiletter control sequences out of 15000+600000
  409753 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,17n,75p,1201b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1073,10 +1078,10 @@ ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/texlive/2021/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmtt10.pfb>
-Output written on verslagCommunicatieplatform.pdf (25 pages, 4108651 bytes).
+Output written on verslagCommunicatieplatform.pdf (25 pages, 4110055 bytes).
 PDF statistics:
- 622 PDF objects out of 1000 (max. 8388607)
- 510 compressed objects within 6 object streams
- 99 named destinations out of 1000 (max. 500000)
- 395 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 618 PDF objects out of 1000 (max. 8388607)
+ 506 compressed objects within 6 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 387 words of extra memory for PDF output out of 10000 (max. 10000000)
 

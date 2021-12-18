@@ -12,9 +12,8 @@
 \contentsline {subsection}{\numberline {2.5}Kalender}{9}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Dagboek}{11}{subsection.2.6}%
 \contentsline {section}{\numberline {3}Ontwikkelingen in de toekomst}{14}{section.3}%
-\contentsline {subsection}{\numberline {3.1}App}{14}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Website}{15}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Algemene functies}{15}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.1}Verbeteringen}{14}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Extra functionaliteiten}{15}{subsection.3.2}%
 \contentsline {section}{Appendices}{17}{section*.5}%
 \contentsline {section}{\numberline {A}Planning}{17}{appendix.1.A}%
 \contentsline {section}{\numberline {B}Samenwerking}{17}{appendix.1.B}%
