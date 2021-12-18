@@ -17,6 +17,7 @@ import android.widget.ProgressBar;
 import android.widget.SearchView;
 import android.widget.Toast;
 
+import com.communicatieplatform.test_chat.Model_User;
 import com.communicatieplatform.R;
 import com.communicatieplatform.databinding.ChatBinding;
 import com.communicatieplatform.databinding.DocumentenBinding;
@@ -104,7 +105,7 @@ public class KiesContactActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextChange(String newText) {
                 if(adapter != null) {
-                adapter.getFilter().filter(newText);}
+                    adapter.getFilter().filter(newText);}
                 return false;
             }
         });

@@ -24,9 +24,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif"
         android:gravity="center_horizontal"
         android:text="Activiteit toevoegen"
-        android:textColor="#FFFFFF"
+        android:textColor="#FBDAD9"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,14 +91,16 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
     <TextView
         android:id="@+id/kiesActiviteit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:text="Activiteit:"
         android:layout_marginTop="10dp"
 
+        android:fontFamily="sans-serif"
+        android:text="Activiteit:"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -476,9 +479,9 @@
         android:inputType="textMultiLine"
         android:maxLines="3"
         android:minHeight="48dp"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorLink="#FFFFFF"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Dagboek" />

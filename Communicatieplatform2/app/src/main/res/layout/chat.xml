@@ -19,12 +19,11 @@
         android:layout_marginEnd="100dp"
         android:background="#00F44336"
         android:text="Chat"
-        android:textColor="#FFFFFF"
+        android:textColor="#FBDAD9"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
         android:layout_width="80dp"

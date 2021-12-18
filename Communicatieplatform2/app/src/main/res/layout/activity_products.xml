@@ -20,7 +20,7 @@
         android:background="#00F44336"
         android:gravity="center_horizontal"
         android:text="Kalender"
-        android:textColor="@color/white"
+        android:textColor="#FBDAD9"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

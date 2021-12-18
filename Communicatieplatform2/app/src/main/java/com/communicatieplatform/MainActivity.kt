@@ -96,16 +96,16 @@ class MainActivity:AppCompatActivity() {
                                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                                 startActivity(intent)
                             } else {
-                                Toast.makeText(this, "1Onverwachte fout, probeer opnieuw", Toast.LENGTH_LONG).show()
+                                Toast.makeText(this, "Onverwachte fout, probeer opnieuw", Toast.LENGTH_LONG).show()
                             }
                         } else {
-                            Toast.makeText(this, "2Onverwachte fout, probeer opnieuw", Toast.LENGTH_LONG).show()
+                            Toast.makeText(this, "Onverwachte fout, probeer opnieuw", Toast.LENGTH_LONG).show()
 
                             Log.d(TAG, "No such document")
                         }
                     }
                     .addOnFailureListener { exception ->
-                        Toast.makeText(this, "3     Onverwachte fout, probeer opnieuw", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "Onverwachte fout, probeer opnieuw", Toast.LENGTH_LONG).show()
                         Log.d(TAG, "get failed with ", exception)
                     }
             }

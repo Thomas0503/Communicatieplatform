@@ -16,7 +16,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#D68881"
+            android:background="#fdbdbb"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -32,7 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Name"
-                    android:textColor="#FCBDBB"
+                    android:textColor="#832E2E"
                     android:textSize="22sp"
                     android:textStyle="bold" />
 

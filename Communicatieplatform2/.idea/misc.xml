@@ -12,6 +12,7 @@
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/Communicatieplatform2/app/src/main/res/layout/layout_product.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/Communicatieplatform2/app/src/main/res/layout/layout_product_chat.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/Communicatieplatform2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/drawable-v24/edittext_background.xml" value="0.2703125" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout-land/activiteit.xml" value="0.2" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/activiteit.xml" value="0.25" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/activiteit_zoeken.xml" value="0.2" />
@@ -22,7 +23,7 @@
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/activity_view_pdf.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/afspraak.xml" value="0.264" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/chat.xml" value="0.203125" />
-        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/chat_message.xml" value="0.4" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/chat_message.xml" value="0.264" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/dagboek.xml" value="0.264" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/documenten.xml" value="0.20601851851851852" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/documents.xml" value="0.2" />
@@ -38,7 +39,7 @@
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/layout_product_test_chat_sender.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/list_msg.xml" value="0.12239583333333333" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/trainer_dagboek.xml" value="0.264" />
-        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/trainer_documents.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/trainer_documents.xml" value="0.536" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/trainer_keuze.xml" value="0.2" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/trainer_keuze_dagboek.xml" value="0.264" />
         <entry key="..\:/Users/Gebruiker/OneDrive/Documents/hoger/peno3/communicatieplatform/Communicatieplatform/Communicatieplatform2/app/src/main/res/layout/trainer_keuze_documenten.xml" value="0.25" />

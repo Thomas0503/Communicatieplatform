@@ -29,6 +29,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
@@ -64,7 +65,7 @@ public class test_MessageActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         final LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setStackFromEnd(true);
-        // layoutManager.setReverseLayout(true);
+        layoutManager.setReverseLayout(true);
         recyclerView.setLayoutManager(layoutManager);
 
         productList = new ArrayList<>();
@@ -98,7 +99,7 @@ public class test_MessageActivity extends AppCompatActivity {
             document = receiver + currentUid;}
         else {
             document = currentUid+ receiver;}
-        db.collection("messages").document(document).collection("chat").orderBy("createdAt")
+        db.collection("messages").document(document).collection("chat").orderBy("createdAt", Query.Direction.ASCENDING)
                 .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
                     public void onEvent(@Nullable QuerySnapshot value,
@@ -118,12 +119,12 @@ public class test_MessageActivity extends AppCompatActivity {
                                     }
                                     Message p = new Message(d.getTimestamp("createdAt"), d.getString("from"), d.getString("to"), d.getString("text"), media);
                                     p.setId(d.getId());
-                                    productList.add(p);
+                                    productList.add(0, p);
                                     break;
                             }
                         }
                         adapter.notifyDataSetChanged();
-                        recyclerView.scrollToPosition(productList.size()-1);
+                        recyclerView.scrollToPosition(0);
                     }
                 });
     }
@@ -138,7 +139,7 @@ public class test_MessageActivity extends AppCompatActivity {
             currentUid = user.getUid();
             receiver = getIntent().getStringExtra("receiveruid");
             document = "";
-            if(currentUid.compareTo(receiver)<0) {
+            if(currentUid.compareTo(receiver)<=0) {
                 document = receiver+ currentUid;}
             else {
                 document = currentUid+receiver;}
