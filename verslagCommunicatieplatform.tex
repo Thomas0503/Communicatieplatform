@@ -287,24 +287,30 @@
 	
 	\newpage
 	\section{Ontwikkelingen in de toekomst}
-	\subsection{App}
+	\subsection{Verbeteringen}
 	Voor de applicatie zijn er nog verschillende verbeteringen mogelijk. 
-	De functies voor trainer kunnen nog worden geoptimaliseerd. Zo kan er gezocht worden dat een trainer niet op verschillende pagina's telkens moet doorklikken, maar dit allemaal op eenzelfde pagina kan.\\
-	Om te chatten op de app kunnen zowel berichten als foto's worden ontvangen, maar tot nu toe kunnen enkel berichten worden verstuurd. Het versturen van foto's kan wel gedaan worden op de website.\\
-	\subsection{Website}
-	Voor de website zijn er minder gebreken. Hier kan vooral het design nog geoptimaliseerd worden, momenteel is de website niet compatibel op mobiele apparaten. \\ 
-	\subsection{Algemene functies}
-	Er zijn nog verschillende ontwikkelingen mogelijk die we niet hebben uitgevoerd omwille van tijdsgebrek. 
-	Zo zou het handig zijn om een vriendenlijst te maken. Op deze manier zal je geen overbodige spam hebben van mensen waarmee je niet bevriend bent.
-	Daarnaast moet de trainer op dit moment telkens een document uploaden voor ofwel iedereen ofwel één puppy. In de toekomst zou het mogelijk zijn om documenten toe te voegen voor bijvoorbeeld twee puppy's in één keer. Dit zou de trainer veel tijd besparen.
-	Het zou ook handig zijn mocht het mogelijk zijn om melding te krijgen van bijvoorbeeld een kalenderafspraak, nieuw chatbericht of beschikbare documenten. Zo hoeven de pleeggezinnen media niet constant te checken om toch op de hoogte te zijn van de nieuwste wijzigingen.
+	De functies voor trainer kunnen nog worden geoptimaliseerd. Zo kan ervoor gezorgd worden dat een trainer niet op verschillende pagina's telkens moet doorklikken, maar dit allemaal op eenzelfde pagina kan. Daarnaast is het onderscheid tussen trainer en pleeggezin momenteel niet efficiënt geïmplementeerd. Een betere methode zou de opslaggrootte van de app sterk kunnen verminderen.
+	Ten tweede kunnen in de chat van de app zowel berichten als foto's worden ontvangen, maar tot nu toe kunnen enkel berichten worden verstuurd. Het versturen van foto's kan wel gedaan worden op de website.\\
+
+	Voor de website zijn er minder gebreken. Hier kan vooral het design nog geoptimaliseerd worden, momenteel is de website niet compatibel op mobiele apparaten. \\
+	
+	Daarnaast zouden ook de mogelijke kosten voor de database verminderd kunnen worden. Zo kunnen er mechanismen ingebouwd worden om het aantal keer dat er data uit de Cloud Firestore ingelezen wordt, te beperken. Dit is immers een van de zaken die de kosten bepaald. Ook een overstap naar de Realtime Database zou een oplossing kunnen bieden. Dit kan echter andere nadelen tot gevolg hebben, zie[bron]. 
+
+	\subsection{Extra functionaliteiten}
+	Er zijn nog verschillende ontwikkelingen mogelijk die we niet hebben uitgevoerd omwille van tijdsgebrek.
+	Ten eerste zijn er enkele vereisten die we niet hebben kunnen bereiken. Zo kunnen foto's in de chat van de app enkel ontvangen worden, maar niet verstuurd. Dit kan wel gedaan worden op de website. Video's kunnen momenteel op geen van beide platformen verstuurd worden in de chat, en ze kunnen ook niet in het dagboekje worden geplaatst. Tot slot kan er in het dagboek van de app niet gefilterd worden op stressniveau.
+	Ten tweede kunnen er nog functionaliteiten worden ingebouwd die het gebruiksgemak zouden verbeteren. 
+	Meldingen vanuit de app voor kalenderafspraken, nieuw chatberichten of beschikbare documenten zou het leven van de gebruikers vergemakkelijken. Zo hoeven de pleeggezinnen media niet constant te checken om toch op de hoogte te zijn van de nieuwste wijzigingen.
+	Ook de mogelijkheid om specifieke afspraken, documenten en activeiten te verwijderen zou geïmplementeerd kunnen worden. Momenteel kan men enkel afspraken verwijderen en dit enkel via de website.
+	Het zou ook handig zijn als trainers en pleeggezinnen vriendenlijst konden aanmaken. Op deze manier zullen ze geen overbodige spam in de chat hebben van mensen waarmee ze niet bevriend zijn.
+	Daarnaast kan de trainer op dit moment enkel een document uploaden voor ofwel iedereen ofwel één puppy. In de toekomst zou het mogelijk zijn om documenten toe te voegen voor bijvoorbeeld twee puppy's in één keer. Dit zou de trainer veel tijd besparen.
 	Tot slot hebben pleeggezinnen met meerdere honden op dit moment verschillende accounts nodig. Het zou voor hen makkelijker zijn om dit te kunnen combineren via één account. Dit zou kunnen door bij dagboek, documenten en kalender een onderscheid te maken tussen de honden. En dus te vragen voor welke hond het gezin de informatie wil. Dit zou gelijkaardig zijn aan de trainer-functie. Hierbij wordt er ook gevraagd voor welke hond er data wil worden geüpload of opgevraagd.
 	
 	\newpage
 	\section*{Conclusie}
-	Het doel is om een communicatieplatform te vormen voor trainers en pleeggezinnen van blindengeleidehonden in wording. Honden in opleiding logeren bij pleeggezinnen en worden doorheen het dagelijks leven getraind. Tijdens die training is er niet altijd een optimale communicatie met de trainer. Daarvoor ontwikkelen wij een app en website die in connectie staan met elkaar via een database.
+	Het doel is om een communicatieplatform te vormen voor trainers en pleeggezinnen van blindengeleidehonden in wording. Honden in opleiding logeren bij pleeggezinnen en worden doorheen het dagelijks leven getraind. Tijdens die training is er niet altijd een optimale communicatie met de trainer. Daarvoor ontwikkelen wij een app en website die  via een database in connectie staan met elkaar.
 	\\\\
-	Om het communicatieplatform te creëren was de eerste stap de tools zoeken die we konden gebruiken voor de app en website. Dit nam veel tijd in beslag aangezien dit een belangrijk gegeven was in ons project. De tools moeten kunnen voldoen aan alle eisen van de probleemstelling. Daarna was het belangrijk om kennis te maken met de werking van de tools. Voordat we begonnen aan het ontwerpen van de app en website, bouwden we een kennis op van het gebruik van de programma's. Toen we dit onder de knie hadden, konden we beginnen met het echte werk. We brainstormden over hoe we het project het best konden aanpakken. We dachten na over de structuur van de app en website en bedachten ook hoe we de verschillende functies die de trainers en pleeggezinnen moeten kunnen doen, gingen implementeren. Tot slot begonnen we met het design en het implementeren van de app en website.
+	Om dit te realiseren moesten we eerst de tools zoeken die we konden gebruiken voor de app en website. Dit nam veel tijd in beslag aangezien de keuze een grote invloed kan hebben op het resultaat. De tools moeten kunnen voldoen aan alle eisen van de probleemstelling. Daarna was het belangrijk om kennis te maken met de werking van de tools. Voordat we begonnen aan het ontwerpen van de app en website, bouwden we een kennis op van het gebruik van de programma's. Toen we dit onder de knie hadden, konden we beginnen met het echte werk. We brainstormden over hoe we het project het best konden aanpakken. We dachten na over de structuur van de app en website en bedachten ook hoe we de verschillende functies die de trainers en pleeggezinnen moeten kunnen doen, gingen implementeren. Tot slot begonnen we met het design en het implementeren van de app en website.
 	\\\\
 	Er is nog ruimte voor optimalisatie bij de werking van de applicatie en bij het design van de website. Aangezien we in tijdsnood kwamen hebben we gekozen voor een optimale werking van de website en een optimaal design app, maar vooral voor een compatibele werking van beide tools met de database.\\\\
 	%$Gelukkig bleven we ons best doen en vond Charlotte ons een topteam! :) $
