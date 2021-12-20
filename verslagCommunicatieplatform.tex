@@ -80,45 +80,72 @@
 	
 	\newpage
 	\section{Studie voor tools}\label{Tools}
-	\subsection{Programmertalen} 
-	\verb!Java! en \verb!Kotlin! blijken de beste programmeertalen te zijn om een app te bouwen volgens bron \cite{Programmeertaal}. Aangezien zowel \verb!Java! als \verb!Kotlin! officiële programmeertalen zijn voor Android development, sluiten ze goed aan op het besturingssysteem Android. \verb!Java! bestaat al langer dan \verb!Kotlin!. Hierdoor bestaat er meer online documentatie voor \verb!Java!, die nuttig is voor onderdelen die moeilijk te implementeren zijn (zoals bij chat). Daarom hebben we gekozen om \verb!Java! te gebruiken als programmeertaal voor de app.
+	\subsection{Programmeertalen} 
+	\verb!Java! en \verb!Kotlin! blijken de beste programmeertalen te zijn om een app te bouwen volgens bron \cite{Programmeertaal}. Aangezien zowel \verb!Java! als \verb!Kotlin! officiële programmeertalen zijn voor Android development, sluiten ze goed aan op het besturingssysteem Android. \verb!Java! bestaat al langer dan \verb!Kotlin!. Hierdoor bestaat er meer online documentatie voor \verb!Java!, die nuttig is om moeilijke onderdelen te implementeren(zoals de chat). Daarom hebben we gekozen om \verb!Java! te gebruiken als programmeertaal voor de app.
 	\\\\%of een hybride app?
 	Voor de \textit{front-end}\footnote{De \textit{front-end} van een website is deel van het programma dat zichtbaar is voor de gebruiker. Dit zorgt voor het visuele gedeelte van de site.} ontwikkeling van de website kozen we ervoor om gebruik te maken van \verb!HTML!, \verb!CSS! en \verb!JavaScript!. Dit zijn veruit de meest gebruikte talen  \cite{JavaScript_for_web-app} voor de ontwikkeling van een \textit{front-end}.
 	
 	\subsection{Applicatie}
-	Er bestaan veel tools om een app te ontwikkelen voor het besturingssysteem Android. De tool die wij wilden gebruiken, moest voldoen aan verschillende vereisten. Het moet compatibel zijn met Android, het moet mogelijk zijn om de data weg te schrijven naar een database zodat er een website aan gekoppeld kan worden,  en we moeten alle klantenvereisten er mee kunnen implementeren. Zo moet het mogelijk zijn om documenten te uploaden, om een dagboek bij te houden en om een chatfunctie te installeren. 
+	Er bestaan veel tools om een app te ontwikkelen voor het besturingssysteem Android. De tool die wij willen gebruiken, moet voldoen aan verschillende vereisten. Het moet compatibel zijn met Android, het moet mogelijk zijn om de data weg te schrijven naar een database zodat er een website aan gekoppeld kan worden, en we moeten er alle klantenvereisten mee kunnen implementeren. Zo moet het bijvoorbeeld mogelijk zijn om documenten te uploaden, om een dagboek bij te houden en om een chatfunctie te installeren. 
 	\\\\
-	We kozen ervoor om Android Studio \cite{AndroidStudio} te gebruiken
-	Deze IDE, die mede ontwikkeld is door Google, is specifiek gericht op het Android platform en er kan makkelijk op getest worden aan de hand van Android-emulators. Een ander voordeel is de ingebouwde \textit{lay-outeditor}, waarmee relatief gemakkelijk de lay-out van de applicatie ontwikkeld kan worden.
-	Daarnaast kan Android Studio gesynchroniseerd worden met GitHub\footnote{GitHub is een versiebeheersysteem. Telkens er een wijziging wordt gedaan in de code, wordt deze opgeslagen. Deze kunnen later gepusht worden zodat elk teamlid de wijzigingen ziet.}. Dit vereenvoudigt de samenwerking tussen verschillende groepsleden. Daarnaast kunnen de verschillende functionaliteiten via deelprogramma's zo ook onafhankelijk worden ontwikkeld en getest.
+	We kozen ervoor om Android Studio \cite{AndroidStudio} te gebruiken.
+	Deze \textit{IDE}\footnote{Een \textit{IDE}, of voluit een Integrated Development Environment, is een tool die het ontwerpen van software vereenvoudigd.}, die mede ontwikkeld is door Google, is specifiek gericht op het Android platform. Een voordeel hiervan is de ingebouwde \textit{lay-outeditor}, waarmee relatief gemakkelijk de lay-out van de applicatie ontwikkeld kan worden. De ingebouwde Android-emulators zorgen er daarnaast voor dat de app gemakkelijker getest kan worden.
+	Bovendien kan Android Studio gesynchroniseerd worden met GitHub\footnote{GitHub is een versiebeheersysteem. Telkens er een wijziging wordt gedaan in de code, wordt deze opgeslagen. Deze kunnen later gepusht worden zodat elk teamlid de wijzigingen ziet.}. Dit vereenvoudigt de samenwerking tussen verschillende groepsleden en we kunnen zo de verschillende functionaliteiten via deelprogramma's ook onafhankelijk ontwikkelen en testen.
 	\\
-	Tot slot kan Android Studio makkelijk gekoppeld worden met de databases van Firebase (dit komt aan bod in hoofdstuk \ref{sec:Database}) doordat de Firebase-services rechtstreeks met Android Studio kunnen gekoppeld worden.
+	Tot slot kan Android Studio makkelijk gekoppeld worden met de databases van Firebase (dit komt aan bod in hoofdstuk \ref{sec:Database}) doordat de Firebase-services rechtstreeks in Android Studio geïmplementeerd kunnen worden.
 	
 	\subsection{Website}
-	Voor de ontwikkeling van de \textit{back-end}\footnote{De \textit{back-end} van een website is deel van het programma dat onzichtbaar is voor de gebruiker. Dit zorgt ervoor dat de \textit{front-end} van de website werkt.} van de website bestaan er veel verschillende tools. \verb!Node.js! leek ons de beste optie. De \textit{event-driven} architectuur van \verb!Node.js! maakt het eenvoudiger om een chat-app te implementeren en is snel en makkelijk te begrijpen, waardoor onze keuze gemaakt was. \verb!Node.js! is een open source en multiplatform van de \verb!JavaScript-runtime-omgeving!.
+	Voor de ontwikkeling van de \textit{back-end}\footnote{De \textit{back-end} van een website is deel van het programma dat onzichtbaar is voor de gebruiker. Dit zorgt ervoor dat de \textit{front-end} van de website werkt.} van een website bestaan er veel verschillende tools. \verb!Node.js! leek ons de beste optie. De \textit{event-driven} architectuur van \verb!Node.js! maakt het eenvoudiger om een chat-app te implementeren en is snel en makkelijk te begrijpen, wat onze keuze sterk beïnvloedde. \verb!Node.js! is een open source en een multiplatform van de \verb!JavaScript-runtime-omgeving!.
 	
 	\subsection{Database} \label{sec:Database}
 	% jason: dictonairies in dictionaries --> non sequal 
-	Zowel de trainers als de pleeggezinnen zullen bij het gebruik van de applicatie en de website informatie, zoals documenten, dagboekinzendingen, afspraken ... toevoegen. Al deze informatie moet ergens opgeslagen worden en vanuit die opslagplaats weer geraadpleegd kunnen worden, en dit vanaf verschillende apparaten. Een gemeenschappelijke database is hiervoor de beste optie. In deze toepassing hebben we een \textit{real time} database\footnote{Een real-time database is een database waarin aanpassingen quasi onmiddellijk worden doorgevoerd, zodat deze aanpassingen ook op andere apparaten snel zichtbaar zijn.} nodig, zodat onder andere chatberichten zo snel mogelijk gesynchroniseerd kunnen worden.
+	De app en de website moeten verbonden worden met dezelfde database. Hierin worden alle gegevens die worden geüpload of ingegeven via de applicatie en website, gestructureerd opgeslagen. Het is dus een plek waar alle data te vinden is, maar ook de $ontmoetingsplaats$ van de website en applicatie. Vanuit deze opslagplaats kan diezelfde informatie weer geraadpleegd worden, en dit door beide delen van ons platform.\\ Voor dit project hebben we meer bepaald een \textit{real time} database\footnote{Een real-time database is een database waarin aanpassingen quasi onmiddellijk worden doorgevoerd, zodat deze aanpassingen ook op andere apparaten snel zichtbaar zijn.} nodig, zodat onder andere chatberichten zo snel mogelijk gesynchroniseerd kunnen worden.
 	\\\\
-	Firebase leek ons de beste optie. Dit is een platform dat verschillende producten huisvest om het creëren van applicaties en websites te vergemakkelijken. De Realtime database en de Cloud Firestore zijn de twee real time databases uit deze producten. Daarnaast zullen we ook het beveiligd authenticatiesysteem en de opslag van foto's en video's in de cloud gebruiken. 
+	Firebase leek ons de beste optie. Dit is een platform dat verschillende producten huisvest om het creëren van applicaties en websites te vereenvoudigen. De Realtime database en de Cloud Firestore zijn de twee real time databases uit deze producten. Daarnaast zullen we ook twee andere producten gebruiken: het beveiligd authenticatiesysteem en de opslag van foto's en video's in de cloud. 
 	\\
-	Firebase heeft als voordeel dat het een populair platform is, waardoor er ook een uitgebreide online documentatie \cite{Firebase} beschikbaar is. Het platform is echter maar beperkt gratis. Wegens het verwachte lage gebruikersaantal van de app en de website zal er echter geen of slechts een zeer beperkte kostprijs zijn.
+	Firebase heeft als voordeel dat het een populair platform is, waardoor er ook een uitgebreide online documentatie \cite{Firebase} beschikbaar is. Het platform is wel maar beperkt gratis. Wegens het verwachte lage gebruikersaantal van de app en de website zal er toch geen of slechts een zeer beperkte kostprijs zijn.
 	\\
-	We verkiezen uiteindelijk Cloud Firestore als database. Over het algemeen \cite{Firebase} wordt deze beschouwd als een verbetering van de oudere Realtime database. Daarnaast is het filteren van data in Firestore gemakkelijker.	
+	Uit de twee databases van Firestore verkiezen we uiteindelijk Cloud Firestoree. Deze \cite{Firebase} wordt namelijk over het algemeen beschouwd als een verbetering van de oudere Realtime database. Daarnaast is het ook eenvoudiger om data te filteren in Firestore.	
 	\newpage
-	\section{Resultaten}\label{Resultaten}
+	\section{Ontwerp}\label{Ontwerp}
 	%Na onze studie van de verschillende tools, waren we eraan uit welke we gingen gebruiken: Android Studio voor de app, \verb!HTML!, \verb!CSS! en \verb!JavaScript! in combinatie met \verb!Node.js! voor de website en Cloud Firestore als database.
 	%\\\\
 	%Daarna hebben we gezocht naar de structuur (die weergegeven wordt op \pageref{flowchart}), die we wilden bereiken voor het communicatieplatform. 
-	Voor het communicatieplatform hebben we
+	Het communicatieplatform heeft
 	%Hiervoor hebben we 
-	verschillende pagina's nodig: login, menu, chatoverzicht, documenten, kalender, dagboek, activiteiten toevoegen, overzicht van activiteiten, documenten toevoegen en chatberichten. Het pleeggezin kan chatten, documenten lezen, hun kalender bekijken, een afspraak toevoegen en het dagboekje bekijken. Voor het dagboekje zijn er meerdere opties, ofwel wordt er een activiteit toegevoegd, ofwel wordt er een overzicht gevraagd van een bepaalde activiteit. Daarnaast moet de trainer ook bepaalde functies kunnen uitvoeren. Hij kan ook chatten en het dagboek bekijken voor een specifieke hond. Daarnaast kan hij zelf ook documenten uploaden en afspraken toevoegen in de kalender. Hiervoor kiest hij of hij dat voor een specifieke puppy wil doen of voor alle puppy's tegelijk. Hiervoor vonden we de structuur (weergegeven op \pageref{flowchart}).
+	verschillende pagina's nodig:
+	\begin{itemize}
+		\item Login
+		\item Hoofdmenu
+		\item Chat
+		\begin{itemize}
+			\item Keuze contactpersoon
+			\item Chatberichten
+		\end{itemize}
+		\item Documenten
+		\begin{itemize}
+			\item Overzicht
+			\item Documenten toevoegen
+		\end{itemize}
+	\item Kalender
+	\begin{itemize}
+		\item Overzicht
+		\item Afspraak toevoegen
+	\end{itemize}
+\item Dagboek
+		\begin{itemize}
+			\item Overzicht activiteiten
+			\item Activiteit toevoegen
+		\end{itemize}
+		
+	\end{itemize}	
+	 Het pleeggezin kan chatten, documenten lezen, hun kalender bekijken, een afspraak toevoegen en het dagboekje bekijken. Voor het dagboekje zijn er meerdere opties, ofwel wordt er een activiteit toegevoegd, ofwel wordt er een overzicht gevraagd van een bepaalde activiteit.\\ Ook de trainer kan bepaalde functies uitvoeren. Hij kan ook chatten en hij kan het dagboek bekijken voor een specifieke hond. Daarnaast kan hij zelf ook documenten uploaden en afspraken toevoegen in de kalender. Hiervoor kiest hij of hij dat voor een specifieke puppy wil doen of voor alle puppy's tegelijk.\\
+	 Een overzicht van de structuur van de app en website is te vinden op pagina \pageref{flowchart}.
 	\subsection{Database}
-	Zowel de app als website zijn verbonden met de database Cloud Firestore. Hier worden alle gegevens die worden geüpload of ingegeven via de applicatie en website, gestructureerd opgeslagen . Het is dus een plek waar alle data te vinden is, maar ook een $ontmoetingsplaats$ van de website en applicatie. Alle gegevens van beide tools komen hier samen. Op die manier kunnen alle data ook opgevraagd worden via website en app. \\
-	Bij zo'n database is vooral de structuur belangrijk. Op pagina \pageref{programmeerstructuur} in de appendices is een overzicht te zien van hoe we de gevarieerde informatie gaan wegschrijven vanuit de applicatie en website naar de database. Hierbij maken we verschillende collecties aan: Dagboekje, Berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters$/$gegevens. 
-	Afbeeldingen en pdf-documenten worden eerst opgeslagen in de Cloud Storage van Firebase. Daarna wordt er een link naar de opslagplaats in de database geplaatst. Bij pdf-documenten wordt ook de naam en de grootte van het document opgeslagen, aangezien we deze zullen gebruiken in de lay-out. Aan de hand van de link kunnen afbeeldingen uit de Cloud Storage weergegeven worden in de app en de website en kunnen pdf-documenten gedownload worden.  
-	
+	Bij de database is vooral de structuur belangrijk. Op pagina \pageref{programmeerstructuur} in de appendices is een overzicht te zien van hoe we de gevarieerde informatie gaan wegschrijven vanuit de applicatie en website naar de database. Hierbij maken we verschillende collecties aan: Dagboekje, Berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters$/$gegevens. 
+	Afbeeldingen en pdf-documenten slaan we eerst op in de Cloud Storage van Firebase. Daarna plaatsen we de link naar deze opslagplaats in de database. Aan de hand van de link kunnen afbeeldingen uit de Cloud Storage weergegeven worden in de app en de website en kunnen pdf-documenten gedownload worden.  
+	\section{Resultaten}\label{Resultaten}
+	In wat volgt bespreken we kort de uiteindelijke werking van de app en de website.
 	\subsection{Login-pagina}
 	Via de login-pagina kan je met een gekregen account via e-mailadres en wachtwoord inloggen. Dit account staat gelinkt met je pleeghond. Op die manier komt elke gebruiker bij de data terecht dat over hun hond gaat. %Voor de trainer gaat het net een beetje anders. Hij zal bij sommige functies kunnen kiezen voor welke hond hij informatie wil opvragen, maar daar komen we later op terug. \\
 	%Hij kan van elke hond de data opvragen, hiervoor moet hij telkens aangeven voor welke hond hij verder wil gaan. Wil hij de gegevens van één specifieke hond dan selecteert hij die naam. Indien hij meerdere honden tegelijk wil opvragen, kan hij kiezen voor alle honden.
