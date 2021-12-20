@@ -22,6 +22,21 @@ Firebase.
 \newblock \url{https://firebase.google.com/}.
 \newblock (Geraadpleegd op 14/10/2021).
 
+\bibitem{documentatie_firebase}
+Firebase documentation.
+\newblock \url{https://firebase.google.com/docs}.
+\newblock (Geraadpleegd op 14/10/2021).
+
+\bibitem{pricing_firebase}
+Pricing plans.
+\newblock \url{https://firebase.google.com/pricing}.
+\newblock (Geraadpleegd op 21/10/2021).
+
+\bibitem{Realtime_vs_Firestore}
+Choose a database: Cloud firestore or realtime database.
+\newblock \url{https://firebase.google.com/docs/database/rtdb-vs-firestore}.
+\newblock (Geraadpleegd op 21/10/2021).
+
 \bibitem{opgave}
 Charlotte Deconinck.
 \newblock Opgave communicatieplatform.

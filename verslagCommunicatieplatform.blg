@@ -1,48 +1,52 @@
-This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: verslagCommunicatieplatform.aux
 The style file: unsrt.bst
 Database file #1: Bibliografie.bib
+Repeated entry---line 195 of file Bibliografie.bib
+ : @misc{Firebase
+ :               ,
+I'm skipping whatever remains of this entry
 Warning--empty journal in opgave
-You've used 12 entries,
+You've used 15 entries,
             1791 wiz_defined-function locations,
-            497 strings with 4956 characters,
-and the built_in function-call counts, 1373 in all, are:
-= -- 124
-> -- 15
+            508 strings with 5297 characters,
+and the built_in function-call counts, 1700 in all, are:
+= -- 154
+> -- 18
 < -- 0
-+ -- 13
++ -- 16
 - -- 1
 * -- 17
-:= -- 159
-add.period$ -- 36
-call.type$ -- 12
-change.case$ -- 12
+:= -- 192
+add.period$ -- 45
+call.type$ -- 15
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 63
-empty$ -- 213
+cite$ -- 16
+duplicate$ -- 78
+empty$ -- 267
 format.name$ -- 1
-if$ -- 351
+if$ -- 438
 int.to.chr$ -- 0
-int.to.str$ -- 12
+int.to.str$ -- 15
 missing$ -- 1
-newline$ -- 63
+newline$ -- 78
 num.names$ -- 1
-pop$ -- 89
+pop$ -- 113
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 35
+skip$ -- 44
 stack$ -- 0
 substring$ -- 0
-swap$ -- 11
+swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
 while$ -- 1
-width$ -- 14
-write$ -- 114
-(There was 1 warning)
+width$ -- 17
+write$ -- 141
+(There was 1 error message)
