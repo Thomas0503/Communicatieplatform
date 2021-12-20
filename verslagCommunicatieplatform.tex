@@ -7,6 +7,7 @@
 \usepackage[toc,page]{appendix}
 \usepackage{amsmath}
 \usepackage{pdflscape}
+\usepackage{float}
 
 
 \title{Communicatieplatform}
@@ -151,7 +152,7 @@
 	%Hij kan van elke hond de data opvragen, hiervoor moet hij telkens aangeven voor welke hond hij verder wil gaan. Wil hij de gegevens van één specifieke hond dan selecteert hij die naam. Indien hij meerdere honden tegelijk wil opvragen, kan hij kiezen voor alle honden.
 	%Indien het inloggen succesvol gelukt is, kom je op de hoofdpagina terecht. Daar zijn de vier functies van de applicatie en website terug te vinden: chat, documenten, kalender en dagboek. 
 	Voor het inloggen wordt gebruik gemaakt van \textit{Firebase Authentication}, een ingebouwde functionaliteit van Firebase. Zo worden de wachtwoorden veilig bewaard. Elke gebruiker kan met een door ons gekregen account via een email en bijhorend wachtwoord inloggen, zoals weergegeven in figuur \ref{App_login} voor de app en in figuur \ref{website_login} voor de website. Wanneer een juiste email-wachtwoord combinatie wordt ingegeven, wordt de gebruiker doorverwezen naar de hoofdpagina (figuur \ref{App_homepage}) bij de applicatie of naar de chat bij de website. \\Op de hoofdpagina van de applicatie zijn de vier hoofdfuncties terug te vinden: chat, documenten, kalender en dagboek. Elke pagina van de website bevat een navigatiebalk zodat er telkens eenvoudig kan gewisseld worden tussen de functionaliteiten en een hoofdpagina overbodig wordt.
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\begin{minipage}[t]{0.4\linewidth}
 			\includegraphics[width=3.5cm]{App_login}
 			\caption{Login-pagina}\label{App_login}
@@ -161,7 +162,7 @@
 			\caption{Hoofdpagina}\label{App_homepage}
 		\end{minipage}
 	\end{figure}
-	\begin{figure}[h]
+	\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.735\textwidth]{screen_web_login}
 	\caption{Om in te loggen worden het email adres en het wachtwoord gevraagd.}\label{website_login}
@@ -185,7 +186,7 @@
 			\caption{Chat}\label{App_chat}
 		\end{minipage}
 	\end{figure}
-	\begin{figure}[h]
+	\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.735\textwidth]{screen_web_chat.jpg}
 	\caption{Er wordt links een overzicht gegeven van chats met de andere gebruikers van het platform: weergegeven door hun naam, (1) aanduiding voor een ongelezen bericht, (2) weergave van het laatste bericht (ontvangen), of (3) laatste bericht (verstuurd) en (6) de zoekbalk.
@@ -198,7 +199,7 @@
 	De trainer heeft diezelfde documenten geüpload. Hij kiest voor wie hij bestanden wil uploaden (voor de app is dit weergegeven op figuur \ref{App_trainerdoc}): voegt hij documenten toe die enkel door een bepaalde gebruiker kunnen worden gezien of algemene documenten die door elke gebruiker kunnen worden gezien? Daarna moet de trainer een pdf-bestand selecteren, wat duidelijk wordt weergegeven op de applicatie \ref{App_trainerdoctoev}. Het is dus enkel mogelijk om pdf-bestanden te uploaden. Dan moet hij deze uploaden, op dat moment worden die documenten ook geüpload naar de database. \\
 	De trainer kan ook een overzicht van de documenten opvragen voor een specifieke hond, bij de app staat daarbij rechtsonder ook nog een knop om rechtstreeks een document up te loaden \ref{App_trainerdocoverz}. Elk document wordt gekenmerkt door de datum waarop het document toegevoegd werd, een referentie naar de Firebase Storage, een naam en grootte. En wordt opgeslagen onder volgens het unieke gebruikers-id van het lid van het pleeggezin waarvoor het bedoeld is. De trainer kan per pleeggezin de documenten opvragen en hierbij ook deze bestanden downloaden. 
 	Op de website kan er ook nog gezocht worden via een zoekbalk naar een bepaald document op basis van de documentnaam. \\
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\begin{minipage}[t]{0.2\linewidth}
 			\includegraphics[width=3cm]{App_documenten}
 			\caption{Documenten- overzicht}\label{App_document}
@@ -216,7 +217,7 @@
 			\caption{Documenten toevoegen trainer}\label{App_trainerdoctoev}
 		\end{minipage}
 	\end{figure}
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.735\textwidth]{screen_web_documenten.jpg}
 		\caption{Bij het documentenoverzicht hebben we (1) de optie om documenten van pleeggezinnen te bekijken (enkel voor trainers), (2) de zoekfunctie, (3) de optie om documenten toe te voegen (enkel voor trainers) en (4) het overzicht van de documenten, met de optie om het document te downloaden.}\label{web_documenten}
@@ -231,7 +232,7 @@
 	In de kalendervorm zijn de omschrijving van de afspraak, het begin- en eindmoment visueel zichtbaar. Wanneer er dubbel geklikt wordt op een afspraak, worden de locatie en de vrije opmerkingen zichtbaar en ook een optie om de afspraak te verwijderen. Door een afspraak te verwijderen worden al zijn gegevens uit de database gewist. Deze wijziging is meteen zichtbaar op het overzicht in zowel de applicatie als website.
 	\\
 	Indien een trainer op het kalenderoverzicht wil terechtkomen, moet hij kiezen opnieuw eerst kiezen voor wie deze informatie wil (Dit is voor de applicatie weergegeven in figuur \ref{App_trainerkal}). Hij heeft hierbij twee opties: zichzelf of een specifieke hond. Indien je een lid bent van het pleeggezin krijg je onmiddellijk de afspraken voor jullie pleeghond. 
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\begin{minipage}[t]{0.33\linewidth}
 			\includegraphics[width=2.5cm]{App_kalender2}
 			\caption{Kalender}\label{App_kalender}
@@ -245,19 +246,18 @@
 			\caption{Kalender menu trainer}\label{App_trainerkal}
 		\end{minipage}
 	\end{figure}
-	\begin{figure}[h]
+	\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.735\textwidth]{screen_web_kalender.jpg}
 	\caption{De activiteiten worden weergegeven in een kalendervorm (4).Na dubbelklikken wordt extra informatie zichtbaar en is het mogelijk de afspraak te verwijderen (3). Er kunnen ook afspraken worden toegevoegd (1). Trainers hebben de optie (2) om kalenders van pleeggezinnen te bekijken.}\label{web_kalender}
 	\end{figure}
 	
-	\newpage
 	\subsection{Dagboek}
 	Het 'dagboek' is ook te vinden via de hoofdpagina. 
 	Op de app kunnen we ervoor kiezen om een overzicht te krijgen van oefeningen of om een oefening toe te voegen \ref{App_dagboek}. Indien we voor het eerste kiezen, kunnen we via een zoekfunctie een activiteit selecteren waarvoor we een overzicht willen verkrijgen. Indien er geen enkele activiteit wordt geselecteerd, worden alle activiteiten weergeven in het overzicht zoals op figuur \ref{App_dagboekoverzicht}. Hierbij zijn de volgende gegevens zichtbaar: naam, datum, alle stresssignalen\footnote{Het is de bedoeling dat de hond leert om zo weinig mogelijk stress te hebben, aan de hand van stresssignalen zoals bijvoorbeeld rillen, kan er ingeschat worden hoe de hond zich voelt.}, stressniveau en een foto van de oefening. Indien we kiezen om een activiteit van diezelfde dag toe te voegen zoals op figuur \ref{App_dagboekacttoev}, kunnen we dit doen door verder te klikken. Hier kunnen de naam, één of meerdere stresssignalen, het stressniveau en een omschrijving worden meegegeven. Er kan ook een foto worden geüpload. Eenmaal dit allemaal is gebeurd, is de oefening terug te vinden in het overzicht tussen alle andere oefeningen. \\
 	Op de website kunnen we meteen een activiteit toevoegen, zie figuur \ref{web_dagboektoev}. Hierbij kunnen er opnieuw dezelfde gegevens ingegeven worden. Door verder te klikken kunnen we het overzicht van de oefeningen bekijken. Indien we slechts een overzicht willen van één specifieke oefening, kunnen we deze selecteren. Op de website is er nog een extra tool te vinden, namelijk het gemiddelde stressniveau per oefening. Daar zie je een overzicht van alle gemiddelden van de verschillende soorten oefeningen. Zo kan er makkelijk worden gekeken naar welke er nog meer moeten getraind worden en welke er al helemaal goed lukken. \\
 	Indien je een trainer bent, kan je opnieuw kiezen voor wie je het dagboekje wil zien (weergegeven op de app zoals \ref{App_trainerdagb}). Dit kan handig zijn voor het pleeggezin van die ene hond. Want kan de trainer zo beter volgen in het traject van de opleiding en kan indien nodig wat tips geven aan het pleeggezin. De trainer kan zelf geen activiteiten toevoegen, aangezien trainingen niet tot het dagboek behoren en hij dus geen dagelijkse oefeningen uitvoert met de hond. Daarom is er op figuur \ref{App_trainerdagbmenu} van de applicatie geen mogelijkheid om een activiteit toe te voegen.\\
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\begin{minipage}[t]{0.17\linewidth}
 			\includegraphics[width=2.4cm]{App_dagboek}
 			\caption{Dagboek menu}\label{App_dagboek}
@@ -279,7 +279,7 @@
 			\caption{Trainer menu}\label{App_trainerdagbmenu}
 		\end{minipage}
 	\end{figure}
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\begin{minipage}[t]{0.4\linewidth}
 			\centering
 			\includegraphics[width=0.7\textwidth]{screen_web_dagboek2.0.jpg}
@@ -307,14 +307,13 @@
 	
 	%\subsection{Database}
 	%Cloud Firestore is dus gekoppeld met zowel de app als de website. Bij zo'n database is vooral de structuur belangrijk. Op \ref{programmeerstructuur} is een overzicht te zien van hoe we de gevarieerde informatie gaan wegschrijven vanuit de app en website naar de database. Hierbij maken we verschillende collecties aan: Dagboekje, Berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters/gegevens. 
-	\newpage
 	%\label{flowchart}\includepdf[pages=-]{Flowchart}
-	\begin{figure}[h]
-		\hspace*{-1.6in}
+	\begin{figure}[H]
+		\hspace*{-1.8in}
 		\includegraphics[width=1.75\textwidth]{Flowchart.jpg}
 		\caption{Flowchart van het communicatieplatform.}\label{flowchart}
 	\end{figure}
-	
+
 	\newpage
 	\section{Ontwikkelingen in de toekomst}\label{Ontwikkelingen}
 	\subsection{Verbeteringen}

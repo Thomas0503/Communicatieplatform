@@ -39,20 +39,6 @@ Html, css and javascript for beginners.
   Aug 2021.
 \newblock (Geraadpleegd op 7/10/2021).
 
-\bibitem{programmeetalen}
-Meest gebruikte programmeertalen.
-\newblock
-  \url{https://blog.andwork.com/wat-spreken-developers-dit-zijn-de-8-meest-gevraagde-programmeertalen/},
-  Jan 2021.
-\newblock (Geraadpleegd op 7/10/2021).
-
-\bibitem{programmeertalen2}
-Meest gebruikte programmeertalen voor websites.
-\newblock
-  \url{https://onlinerocket.nl/websites/top-9-programmeertalen-voor-websites/},
-  Juli 2021.
-\newblock (Geraadpleegd op 7/10/2021).
-
 \bibitem{youtube}
 Youtube tutorials voor android studio.
 \newblock \url{https://www.youtube.com/}.
@@ -62,11 +48,6 @@ Youtube tutorials voor android studio.
 Verschil tussen front end en back end.
 \newblock
   \url{https://www.code14.nl/blog/wat-is-het-verschil-tussen-front-end-en-back-end/}.
-\newblock (Geraadpleegd op 14/10/2021).
-
-\bibitem{HTML5-Flash}
-Html5 vs flash.
-\newblock \url{https://www.educba.com/html5-vs-flash/}.
 \newblock (Geraadpleegd op 14/10/2021).
 
 \bibitem{Django-Express}

@@ -4,45 +4,45 @@ The top-level auxiliary file: verslagCommunicatieplatform.aux
 The style file: unsrt.bst
 Database file #1: Bibliografie.bib
 Warning--empty journal in opgave
-You've used 15 entries,
+You've used 12 entries,
             1791 wiz_defined-function locations,
-            508 strings with 5327 characters,
-and the built_in function-call counts, 1712 in all, are:
-= -- 156
-> -- 18
+            497 strings with 4956 characters,
+and the built_in function-call counts, 1373 in all, are:
+= -- 124
+> -- 15
 < -- 0
-+ -- 16
++ -- 13
 - -- 1
-* -- 23
-:= -- 194
-add.period$ -- 45
-call.type$ -- 15
-change.case$ -- 15
+* -- 17
+:= -- 159
+add.period$ -- 36
+call.type$ -- 12
+change.case$ -- 12
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 78
-empty$ -- 267
+cite$ -- 13
+duplicate$ -- 63
+empty$ -- 213
 format.name$ -- 1
-if$ -- 440
+if$ -- 351
 int.to.chr$ -- 0
-int.to.str$ -- 15
+int.to.str$ -- 12
 missing$ -- 1
-newline$ -- 78
+newline$ -- 63
 num.names$ -- 1
-pop$ -- 111
+pop$ -- 89
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 44
+skip$ -- 35
 stack$ -- 0
 substring$ -- 0
-swap$ -- 14
+swap$ -- 11
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
 while$ -- 1
-width$ -- 17
-write$ -- 143
+width$ -- 14
+write$ -- 114
 (There was 1 warning)
