@@ -75,6 +75,7 @@ public class AfspraakAdapter extends RecyclerView.Adapter<AfspraakAdapter.Produc
             holder.titleViewDesc.setVisibility(View.GONE);
         } else {
             holder.textViewDesc.setVisibility(View.VISIBLE);
+            holder.titleViewDesc.setVisibility(View.VISIBLE);
             holder.textViewDesc.setText(product.getLocatie());
         }
         if(product.getOpmerkingen().equals("")){
@@ -82,6 +83,7 @@ public class AfspraakAdapter extends RecyclerView.Adapter<AfspraakAdapter.Produc
             holder.titleViewOpmerking.setVisibility(View.GONE);
         } else {
             holder.textViewOpmerking.setVisibility(View.VISIBLE);
+            holder.titleViewOpmerking.setVisibility(View.VISIBLE);
             holder.textViewOpmerking.setText(product.getOpmerkingen());
         }
     }

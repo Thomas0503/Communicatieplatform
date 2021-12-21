@@ -81,6 +81,7 @@ public class ActzoekAdapter extends RecyclerView.Adapter<ActzoekAdapter.ProductV
         holder.textViewDatum.setText(textDatum);
         holder.textViewSignalen.setText(product.getStresssignalenString());
         holder.textNiveau.setText(product.getNiveau().toString());
+        
         if(product.getDescription().equals("") || product.getDescription().isEmpty()){
             holder.textOmschrijving.setVisibility(View.GONE);
             holder.titleOmschrijving.setVisibility(View.GONE);
