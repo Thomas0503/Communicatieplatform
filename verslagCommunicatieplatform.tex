@@ -169,17 +169,17 @@
 	
 	\newpage
 	\subsection{Database}
-	Bij de database is vooral de structuur belangrijk. Op pagina \pageref{programmeerstructuur} in de appendices is een overzicht te zien van hoe we de gevarieerde informatie gaan wegschrijven vanuit de applicatie en website naar de database. Hierbij maken we verschillende collecties aan: Dagboek, Berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters$/$gegevens. Gebruikers bevat een overzicht van alle gebruikers en hun persoonlijke informatie. In Dagboek, Kalender en Documenten wordt er voor elke gebruiker een map aangemaakt met als naam zijn gebruikers-id\footnote{Elke gebruiker staat in de database bekend als een unieke string, deze string wordt de gebruikers-id genoemd}. Hoe de collectie Berichten gebruikt wordt, zal besproken worden in deel \ref{Chat}.
+	Bij de database is vooral de structuur belangrijk. Op pagina \pageref{programmeerstructuur} in de appendices is een overzicht te zien van hoe we de gevarieerde informatie gaan wegschrijven vanuit de applicatie en website naar de database. Hierbij maken we verschillende collecties aan: Dagboek, Berichten, Laatste berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters$/$gegevens. Gebruikers bevat een overzicht van alle gebruikers en hun persoonlijke informatie. In Dagboek, Kalender en Documenten wordt er voor elke gebruiker een map aangemaakt met als naam zijn gebruikers-id\footnote{Elke gebruiker staat in de database bekend als een unieke string, deze string wordt de gebruikers-id genoemd}. Hoe de collectie Berichten gebruikt wordt, zal besproken worden in deel \ref{Chat}.
 	
 	
-	Afbeeldingen en pdf-documenten slaan we eerst op in de \textit{Cloud Storage} van Firebase. Daarna plaatsen we de link naar deze opslagplaats in de database. Aan de hand van de link kunnen afbeeldingen uit de Cloud Storage weergegeven worden in de app en de website en kunnen pdf-documenten gedownload worden.  
+	Afbeeldingen en pdf-documenten slaan we eerst op in de \textit{Cloud Storage} van Firebase. Daarna plaatsen we de link naar deze opslagplaats in de database. Aan de hand van de link kunnen afbeeldingen uit de Cloud Storage weergegeven worden in de app en website. Er kunnen ook pdf-documenten gedownload worden.  
 	\section{Resultaten}\label{Resultaten}
 	In wat volgt bespreken we kort de uiteindelijke werking van de applicatie en website.
 	\subsection{Login-pagina}
 	Via de login-pagina kan je met een gekregen account via e-mailadres en wachtwoord inloggen. Dit account staat gelinkt met je pleeghond. Op die manier komt elke gebruiker bij de data terecht die over zijn hond gaat. %Voor de trainer gaat het net een beetje anders. Hij zal bij sommige functies kunnen kiezen voor welke hond hij informatie wil opvragen, maar daar komen we later op terug. \\
 	%Hij kan van elke hond de data opvragen, hiervoor moet hij telkens aangeven voor welke hond hij verder wil gaan. Wil hij de gegevens van één specifieke hond dan selecteert hij die naam. Indien hij meerdere honden tegelijk wil opvragen, kan hij kiezen voor alle honden.
 	%Indien het inloggen succesvol gelukt is, kom je op de hoofdpagina terecht. Daar zijn de vier functies van de applicatie en website terug te vinden: chat, documenten, kalender en dagboek. 
-	Voor het inloggen wordt er gebruik gemaakt van \textit{Firebase Authentication}, een ingebouwde functionaliteit van Firebase. Zo worden de wachtwoorden veilig bewaard zonder dat we zelf een beveiligde server moeten opzetten. Wanneer een juiste e-mail-wachtwoord-combinatie wordt ingegeven, wordt de gebruiker doorverwezen naar de hoofdpagina (figuur \ref{App_homepage}) bij de applicatie of naar de chat bij de website.
+	Voor het inloggen wordt er gebruik gemaakt van \textit{Firebase Authentication}, een ingebouwde functionaliteit van Firebase. Zo worden de wachtwoorden veilig bewaard zonder dat we zelf een beveiligde server moeten opzetten. Wanneer een juiste e-mail-wachtwoordcombinatie wordt ingegeven, wordt de gebruiker doorverwezen naar de hoofdpagina (figuur \ref{App_homepage}) bij de applicatie of naar de chat bij de website.
 	
 	
 	Op de hoofdpagina van de applicatie zijn de vier hoofdfuncties van het platform terug te vinden: chat, documenten, kalender en dagboek. Bij de website bevat elke pagina een navigatiebalk zodat er telkens eenvoudig kan gewisseld worden tussen de functionaliteiten en een hoofdpagina overbodig wordt.
@@ -268,7 +268,7 @@
 	\end{figure}
 
 	\subsection{Kalender}
-	Via de hoofdpagina kan er ook gekozen worden voor 'kalender'. Op dat moment wordt men doorverwezen naar een chronologisch overzicht van de verschillende afspraken die staan gepland. Hierbij is er een duidelijk onderscheid te maken tussen de applicatie en website.
+	Via de hoofdpagina kan er ook gekozen worden voor 'kalender'. Op dat moment wordt men doorverwezen naar een chronologisch overzicht van de verschillende afspraken die staan gepland. Hierbij is er een duidelijk onderscheid tussen de applicatie en website.
 	
 	
 	Via de applicatie krijg je een overzicht van de toekomstige afspraken (zie figuur \ref{App_kalender}) in de vorm van een chronologische lijst met alle afspraken. Hierbij zijn een omschrijving van de afspraak, de datum, het begin- en einduur, de locatie en vrije opmerkingen onmiddellijk leesbaar. Het is ook mogelijk om een nieuwe afspraak te maken \ref{App_afsprtoev}. Hiervoor moet je een omschrijving, datum, startuur en einduur kiezen. Indien gewenst kan ook een locatie of vrije opmerking toegevoegd worden. Voor de datum kan je via een kalender de geplande dag kiezen en het begin- en einduur kunnen gekozen worden via een klok. Eenmaal deze gegevens ingevuld zijn, kan men de data weer doorsturen naar de database. Vanaf dat moment zijn ze toegevoegd aan het overzicht van afspraken op zowel de app als website.
@@ -278,7 +278,7 @@
 	In de kalendervorm zijn de omschrijving van de afspraak, het begin- en het eindmoment direct visueel zichtbaar. Wanneer er dubbel geklikt wordt op een afspraak, worden de locatie en de vrije opmerkingen zichtbaar, samen met een optie om de afspraak te verwijderen. Door een afspraak te verwijderen worden al deze gegevens uit de database gewist. Die wijziging is meteen zichtbaar op het overzicht in zowel de applicatie als website.
 	
 	
-	Indien een trainer het kalenderoverzicht wil openen, moet hij opnieuw eerst kiezen voor wie hij deze informatie wil (Dit is voor de applicatie weergegeven in figuur \ref{App_trainerkal}.). Hij heeft hierbij twee opties: zijn eigen kalender of die van een specifiek pleeggezin.
+	Indien een trainer het kalenderoverzicht wil openen, moet hij opnieuw eerst kiezen voor wie hij deze informatie wil. (Dit is voor de applicatie weergegeven in figuur \ref{App_trainerkal}.) Hij heeft hierbij twee opties: zijn eigen kalender of die van een specifiek pleeggezin.
 	\begin{figure}[H]
 		\begin{minipage}[t]{0.33\linewidth}
 			\includegraphics[width=2.5cm]{App_kalender2}
@@ -435,7 +435,7 @@
 		Wij hebben samen gezocht naar de verschillende tools die nodig waren om een website en app te bouwen en met elkaar te verbinden via een database. 
 		
 		
-		Thomas heeft gezorgd voor de connectie tussen de website en database. Hij heeft ook de website geïmplementeerd. Ruben heeft gekeken voor het verbinden van de applicatie en database. Hij heeft er ook voor gezorgd dat Android Studio via GitHub functioneert om zo een vlotter groepswerk te creëren. Via Android Studio heeft hij de applicatie geïmplementeerd, samen met Manon. Manon heeft zich, naast het implementeren van die applicatie, ook bezig gehouden met de applicatie te ontwerpen, meer bepaald het design van de verschillende pagina's en de doorverwijzingen tussen de pagina's. Daarnaast is ze het tussentijds verslag beginnen schrijven. De Gantt-grafiek (in bijlage op pagina \pageref{gantt-grafiek}) en de taken (op pagina \pageref{planning}) werden onder anderen opgesteld door Manon.
+		Thomas heeft gezorgd voor de connectie tussen de website en database. Hij heeft ook de website geïmplementeerd. Ruben keek voor het verbinden van de applicatie en database. Hij heeft er ook voor gezorgd dat Android Studio via GitHub functioneert om zo een vlotter groepswerk te creëren. Via Android Studio heeft hij de applicatie geïmplementeerd, samen met Manon. Manon heeft zich, naast het implementeren van die applicatie, ook bezig gehouden met de applicatie te ontwerpen, meer bepaald het design van de verschillende pagina's en de doorverwijzingen tussen de pagina's. Daarnaast is ze het tussentijds verslag beginnen schrijven. De Gantt-grafiek (in bijlage op pagina \pageref{gantt-grafiek}) en de taken (op pagina \pageref{planning}) werden onder anderen opgesteld door Manon.
 		
 		
 		Voor het maken van het tussentijds verslag hebben we ook de taken verdeeld. We namen elk een of meerdere onderdelen voor zich. Iedereen kreeg het onderdeel waarvan hij of zij het meest vanaf wist.
