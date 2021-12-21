@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.21)  21 DEC 2021 15:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.21)  21 DEC 2021 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -453,11 +453,11 @@ File: App_homepage.jpg Graphic file (type jpg)
 <use App_homepage.jpg>
 Package pdftex.def Info: App_homepage.jpg  used on input line 191.
 (pdftex.def)             Requested size: 99.58464pt x 215.762pt.
-<screen_web_login.jpg, id=211, 1371.1225pt x 658.46pt>
+<screen_web_login.jpg, id=211, 1026.83624pt x 491.58656pt>
 File: screen_web_login.jpg Graphic file (type jpg)
 <use screen_web_login.jpg>
 Package pdftex.def Info: screen_web_login.jpg  used on input line 197.
-(pdftex.def)             Requested size: 253.57521pt x 121.773pt.
+(pdftex.def)             Requested size: 253.57521pt x 121.39613pt.
  [8] [9pdfTeX warning (ext4): destination with the same identifier (name{figure
 .2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -870,7 +870,13 @@ jango-[]which-[]is-[]the-[]best-[]backend-[]language-[]in-[]your-[]opinion-[]33
 9c$[]\OT1/cmr/m/n/10 ,
  []
 
-) [18] [19] [20]
+) [18]
+Overfull \hbox (3.49152pt too wide) in paragraph at lines 413--414
+\OT1/cmr/m/n/10 com-mu-ni-ca-tie-plat-form: 'dag-boek', 'ka-len-der', 'do-cu-me
+n-ten' en 'chat'. Voor
+ []
+
+[19] [20]
 <Ganttchart.pdf, id=367, 845.0471pt x 597.50829pt>
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf>
@@ -1058,7 +1064,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist
 pe1/public/amsfonts/cm/cmti8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super
 /sfrm1000.pfb>
-Output written on verslagCommunicatieplatform.pdf (25 pages, 4173310 bytes).
+Output written on verslagCommunicatieplatform.pdf (25 pages, 4173394 bytes).
 PDF statistics:
  534 PDF objects out of 1000 (max. 8388607)
  425 compressed objects within 5 object streams
