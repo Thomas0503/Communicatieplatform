@@ -88,7 +88,7 @@
 	\newpage
 	\section{Studie voor tools}\label{Tools}
 	\subsection{Programmeertalen} 
-	\verb!Java! en \verb!Kotlin! blijken de beste programmeertalen te zijn om een applicatie te bouwen volgens bron \cite{Programmeertaal}. Aangezien zowel \verb!Java! als \verb!Kotlin! officiële programmeertalen zijn voor Android development, sluiten ze goed aan op het besturingssysteem Android. \verb!Java! bestaat al langer dan \verb!Kotlin!. Hierdoor is er meer online documentatie beschikbaar voor \verb!Java!. Deze documentatie hebben we nodig om moeilijke onderdelen te implementeren (zoals de chat). Daarom hebben we gekozen om \verb!Java! te gebruiken als programmeertaal voor de app.
+	\verb!Java! en \verb!Kotlin! blijken de beste programmeertalen te zijn om een applicatie te bouwen volgens bron \cite{Programmeertaal}. Aangezien zowel \verb!Java! als \verb!Kotlin! officiële programmeertalen zijn voor Android development, sluiten ze goed aan op het besturingssysteem Android. \verb!Java! bestaat al langer dan \verb!Kotlin!. Hierdoor zijn er online meer voorbeelden beschikbaar voor \verb!Java!. Deze voorbeelden hebben we nodig om moeilijke onderdelen te implementeren (zoals de chat). Daarom hebben we gekozen om \verb!Java! te gebruiken als programmeertaal voor de app.
 	
 	
 	Voor de \textit{front-end}\footnote{De \textit{front-end} van een website is het deel dat zichtbaar is voor de gebruiker. Dit zorgt voor het visuele gedeelte van de site.} ontwikkeling van de website kozen we ervoor om gebruik te maken van \verb!HTML!, \verb!CSS! en \verb!JavaScript!. Dit zijn veruit de meest gebruikte talen  \cite{JavaScript_for_web-app} om de \textit{front-end} van een website te ontwikkelen.
@@ -114,7 +114,7 @@
 	Firebase\cite{Firebase} leek ons de beste optie. Dit is een platform dat verschillende producten huisvest om het creëren van applicaties en websites te vereenvoudigen. De \textit{Realtime Database} en de \textit{Cloud Firestore} zijn de twee real-time databases uit deze producten. Daarnaast zullen we ook twee andere producten gebruiken: het beveiligd authenticatiesysteem en de opslag van foto's en video's in de cloud. 
 	
 	
-	Firebase heeft als voordeel dat het een populair platform is, waardoor er ook een uitgebreide online documentatie \cite{documentatie_firebase} beschikbaar is. Het platform is wel maar beperkt gratis \cite{pricing_firebase}. Wegens het verwachte lage gebruikersaantal van de app en de website zal de kostprijs echter zeer laag, maximaal tien euro per maand blijven.
+	Firebase heeft als voordeel dat het een populair platform is, waardoor er online ook een uitgebreide hoeveelheid voorbeelden beschikbaar zijn. Het platform is wel maar beperkt gratis \cite{pricing_firebase}. Wegens het verwachte lage gebruikersaantal van de app en de website zal de kostprijs echter zeer laag, maximaal tien euro per maand blijven.
 	
 	
 	Uit de twee databases van Firestore verkiezen we uiteindelijk Cloud Firestore \cite{Realtime_vs_Firestore}. Deze wordt namelijk over het algemeen beschouwd als een verbetering van de oudere Realtime Database. Daarnaast is het ook eenvoudiger om specifieke data op te vragen in Firestore.	
@@ -239,7 +239,7 @@
 	Bij 'documenten' krijgt een lid van het pleeggezin een chronologisch overzicht van verschillende documenten (zie figuur \ref{App_document} voor de applicatie en figuur \ref{web_documenten} voor de website). Zij zijn opgeslagen in de database en kunnen gedownload worden. Die documenten zijn specifiek gericht voor het gezin van een bepaalde pleeghond. Geen enkel ander gezin kan aan deze informatie. In het overzicht worden de documentnaam en -grootte weergegeven en is er een knop voorzien om het document te downloaden.
 	
 	
-	De trainer heeft diezelfde documenten geüpload. Om dit te doen kiest hij eerst voor wie hij bestanden wil uploaden (voor de app is dit weergegeven op figuur \ref{App_trainerdoc}): voegt hij documenten toe die enkel door één bepaalde gebruiker kunnen worden gezien of algemene documenten die door alle gebruikers kunnen worden gezien. Daarna moet de trainer een bestand selecteren, wat duidelijk wordt weergegeven op de applicatie \ref{App_trainerdoctoev}. Het is enkel mogelijk om pdf-bestanden te selecteren. Wanneer de trainer het gekozen document upload, wordt dit opgeslagen in de database onder de gebruikers-id's van de gekozen pleeggezinnen.
+	De trainer heeft diezelfde documenten geüpload. Om dit te doen kiest hij eerst voor wie hij bestanden wil uploaden (voor de app is dit weergegeven op figuur \ref{App_trainerdoc}): hij voegt documenten toe die enkel door één bepaalde gebruiker kunnen worden gezien of algemene documenten die door alle gebruikers kunnen worden gezien. Daarna moet de trainer een bestand selecteren, wat duidelijk wordt weergegeven op de applicatie \ref{App_trainerdoctoev}. Het is enkel mogelijk om pdf-bestanden te selecteren. Wanneer de trainer het gekozen document upload, wordt dit opgeslagen in de database onder de gebruikers-id's van de gekozen pleeggezinnen.
 	
 	
 	De trainer kan daarnaast een overzicht van de documenten opvragen voor een specifieke hond. Hij kan hierbij deze bestanden ook downloaden. Bij de app staat bij dit overzicht rechtsonder een knop om ook rechtstreeks een document up te loaden \ref{App_trainerdocoverz}.
@@ -271,13 +271,13 @@
 	\end{figure}
 
 	\subsection{Kalender}
-	Via de hoofdpagina kan er ook gekozen worden voor 'kalender'. Op dat moment wordt men doorverwezen naar een chronologisch overzicht van de verschillende activiteiten die staan gepland. Hierbij is er een duidelijk onderscheid te maken tussen de applicatie en website.
+	Via de hoofdpagina kan er ook gekozen worden voor 'kalender'. Op dat moment wordt men doorverwezen naar een chronologisch overzicht van de verschillende afspraken die staan gepland. Hierbij is er een duidelijk onderscheid te maken tussen de applicatie en website.
 	
 	
-	Via de applicatie krijg je een overzicht van de toekomstige activiteiten (zie figuur \ref{App_kalender}) in de vorm van een chronologische lijst met alle activiteiten. Hierbij zijn een omschrijving van de afspraak, de datum, het begin- en einduur, de locatie en vrije opmerkingen onmiddellijk leesbaar. Het is ook mogelijk om een nieuwe afspraak te maken \ref{App_afsprtoev}. Hiervoor moet je een omschrijving, datum, startuur en einduur kiezen. Indien gewenst kan ook een locatie of vrije opmerking toegevoegd worden. Voor de datum kan je via een kalender de geplande dag kiezen en het begin- en einduur kunnen gekozen worden via een klok. Eenmaal deze gegevens ingevuld zijn, kan men de data weer doorsturen naar de database. Vanaf dat moment zijn ze toegevoegd aan het overzicht van activiteiten op zowel de app als website.
+	Via de applicatie krijg je een overzicht van de toekomstige afspraken (zie figuur \ref{App_kalender}) in de vorm van een chronologische lijst met alle afspraken. Hierbij zijn een omschrijving van de afspraak, de datum, het begin- en einduur, de locatie en vrije opmerkingen onmiddellijk leesbaar. Het is ook mogelijk om een nieuwe afspraak te maken \ref{App_afsprtoev}. Hiervoor moet je een omschrijving, datum, startuur en einduur kiezen. Indien gewenst kan ook een locatie of vrije opmerking toegevoegd worden. Voor de datum kan je via een kalender de geplande dag kiezen en het begin- en einduur kunnen gekozen worden via een klok. Eenmaal deze gegevens ingevuld zijn, kan men de data weer doorsturen naar de database. Vanaf dat moment zijn ze toegevoegd aan het overzicht van afspraken op zowel de app als website.
 	
 	
-	Analoog aan de applicatie krijg je ook op de website een overzicht van alle activiteiten te zien (zie figuur \ref{web_kalender}), maar hier wordt dit gedaan in een $'$echte$'$ kalendervorm.
+	Analoog aan de applicatie krijg je ook op de website een overzicht van alle afspraken te zien (zie figuur \ref{web_kalender}), maar hier wordt dit gedaan in een $'$echte$'$ kalendervorm.
 	In de kalendervorm zijn de omschrijving van de afspraak, het begin- en het eindmoment direct visueel zichtbaar. Wanneer er dubbel geklikt wordt op een afspraak, worden de locatie en de vrije opmerkingen zichtbaar, samen met een optie om de afspraak te verwijderen. Door een afspraak te verwijderen worden al deze gegevens uit de database gewist. Die wijziging is meteen zichtbaar op het overzicht in zowel de applicatie als website.
 	
 	
