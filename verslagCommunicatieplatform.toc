@@ -1,4 +1,4 @@
-\babel@toc {dutch}{}
+\babel@toc {dutch}{}\relax 
 \contentsline {section}{\numberline {1}Studie voor tools}{4}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Programmeertalen}{4}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Applicatie}{4}{subsection.1.2}%
@@ -6,13 +6,13 @@
 \contentsline {subsection}{\numberline {1.4}Database}{5}{subsection.1.4}%
 \contentsline {section}{\numberline {2}Ontwerp}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}App en website}{6}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Database}{6}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Resultaten}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Login-pagina}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Chat}{8}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Documenten}{10}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Kalender}{11}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Dagboek}{13}{subsection.3.5}%
+\contentsline {subsection}{\numberline {2.2}Database}{8}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Resultaten}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Login-pagina}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Chat}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Documenten}{11}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Kalender}{12}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Dagboek}{14}{subsection.3.5}%
 \contentsline {section}{\numberline {4}Ontwikkelingen in de toekomst}{16}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Verbeteringen}{16}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Extra functionaliteiten}{16}{subsection.4.2}%

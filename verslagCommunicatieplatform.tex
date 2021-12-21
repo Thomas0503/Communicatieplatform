@@ -76,11 +76,11 @@
 	
 	
 	Het doel is om een communicatieplatform te creëren voor die pleeggezinnen en hun trainers.
-	Op die manier kan het gezin communiceren met de trainer en omgekeerd. Hiervoor heeft iedereen een persoonlijke login waarmee ze gegevens kunnen vinden over de opleiding van hun hond. Ze kunnen een kalender raadplegen waarop ze de trainingen en toediening van medicatie kunnen bekijken. Het gezin kan ook verslagen van trainingen en andere documenten opvragen van de trainers. Daarnaast is het ook mogelijk om een dagboek bij te houden van de verschillende activiteiten die het gezin kan doen met de hond, zoals bijvoorbeeld een terrasje doen. Die data kan worden opgevraagd via een overzicht om inzicht te krijgen in welke activiteiten er meer getraind moet worden. Bovendien kan het pleeggezin de trainers gemakkelijk bereiken via de ingebouwde chatfunctie.
+	Op die manier kan het gezin communiceren met de trainer en omgekeerd. Hiervoor heeft iedereen een persoonlijke login waarmee ze gegevens kunnen vinden over de opleiding van hun hond. Ze kunnen een kalender raadplegen waarop ze de trainingen en toediening van medicatie kunnen bekijken. Het gezin kan ook verslagen van trainingen en andere documenten opvragen van de trainers. Daarnaast is het ook mogelijk om een dagboek bij te houden van de verschillende activiteiten die het gezin kan doen met de hond, zoals bijvoorbeeld een terrasje doen. Die data kan worden opgevraagd via een overzicht om inzicht te krijgen in welke activiteiten er meer getraind moet worden. Bovendien kan het pleeggezin de trainer gemakkelijk bereiken via de ingebouwde chatfunctie.
 	
 	
 	
-	Hiervoor is zowel een Android-applicatie als een website nodig: de gezinnen kunnen bijvoorbeeld via hun app herinneringen krijgen voor trainingen van de hond, voor medicijnen die de hond moet innemen \texttt{...} Daarnaast kan de trainer via zijn computer de verslagen van trainingen uploaden, die belangrijk zijn om te weten waarop er nog getraind moet worden. Trainers en pleeggezinnen kunnen echter ook gebruik maken van het andere platform, indien ze dit willen.
+	Hiervoor is zowel een Android-applicatie als website nodig: de gezinnen kunnen bijvoorbeeld via hun app herinneringen krijgen voor trainingen van de hond, voor medicijnen die de hond moet innemen \texttt{...} Daarnaast kan de trainer via zijn computer de verslagen van trainingen uploaden, die belangrijk zijn om te weten waarop er nog getraind moet worden. Zowel de trainers als pleeggezinnen kunnen van beide platformen gebruik maken.
 	
 
 	
@@ -88,17 +88,17 @@
 	\newpage
 	\section{Studie voor tools}\label{Tools}
 	\subsection{Programmeertalen} 
-	\verb!Java! en \verb!Kotlin! blijken de beste programmeertalen te zijn om een app te bouwen volgens bron \cite{Programmeertaal}. Aangezien zowel \verb!Java! als \verb!Kotlin! officiële programmeertalen zijn voor Android development, sluiten ze goed aan op het besturingssysteem Android. \verb!Java! bestaat al langer dan \verb!Kotlin!. Hierdoor bestaat er meer online documentatie voor \verb!Java! en deze documentatie hebben we nodig om moeilijke onderdelen te implementeren (zoals de chat). Daarom hebben we gekozen om \verb!Java! te gebruiken als programmeertaal voor de app.
+	\verb!Java! en \verb!Kotlin! blijken de beste programmeertalen te zijn om een applicatie te bouwen volgens bron \cite{Programmeertaal}. Aangezien zowel \verb!Java! als \verb!Kotlin! officiële programmeertalen zijn voor Android development, sluiten ze goed aan op het besturingssysteem Android. \verb!Java! bestaat al langer dan \verb!Kotlin!. Hierdoor is er meer online documentatie beschikbaar voor \verb!Java!. Deze documentatie hebben we nodig om moeilijke onderdelen te implementeren (zoals de chat). Daarom hebben we gekozen om \verb!Java! te gebruiken als programmeertaal voor de app.
 	
 	
-	Voor de \textit{front-end}\footnote{De \textit{front-end} van een website is deel van het programma dat zichtbaar is voor de gebruiker. Dit zorgt voor het visuele gedeelte van de site.} ontwikkeling van de website kozen we ervoor om gebruik te maken van \verb!HTML!, \verb!CSS! en \verb!JavaScript!. Dit zijn veruit de meest gebruikte talen  \cite{JavaScript_for_web-app} voor de ontwikkeling van een \textit{front-end}.
+	Voor de \textit{front-end}\footnote{De \textit{front-end} van een website is het deel dat zichtbaar is voor de gebruiker. Dit zorgt voor het visuele gedeelte van de site.} ontwikkeling van de website kozen we ervoor om gebruik te maken van \verb!HTML!, \verb!CSS! en \verb!JavaScript!. Dit zijn veruit de meest gebruikte talen  \cite{JavaScript_for_web-app} om de \textit{front-end} van een website te ontwikkelen.
 	
 	\subsection{Applicatie}
-	Er bestaan veel tools om een app te ontwikkelen voor het besturingssysteem Android. De tool die wij willen gebruiken, moet voldoen aan verschillende vereisten. Het moet compatibel zijn met Android, het moet mogelijk zijn om de data weg te schrijven naar een database, zodat er een website aan gekoppeld kan worden, en we moeten er alle klantenvereisten mee kunnen implementeren. Zo moet het bijvoorbeeld mogelijk zijn om documenten te uploaden, om een dagboek bij te houden en om een chatfunctie te implementeren. 
+	Er bestaan veel tools om een applicatie te ontwikkelen voor het besturingssysteem Android. De tool die wij willen gebruiken, moet voldoen aan verschillende vereisten. Het moet compatibel zijn met Android. Er moet ook een mogelijkheid zijn om de data weg te schrijven naar een database, zodat er een website aan gekoppeld kan worden. Voor alle klantenvereisten moet het mogelijk zijn om ze te implementeren. Zo moet er bijvoorbeeld een mogelijkheid zijn om documenten te uploaden, om een dagboek bij te houden en om een chatfunctie te implementeren. 
 	
 	
 	We kozen ervoor om Android Studio \cite{AndroidStudio} te gebruiken.
-	Deze \textit{IDE}\footnote{Een \textit{IDE}, of voluit een \textit{Integrated Development Environment}, is een tool die het ontwerpen van software vereenvoudigd.}, die mede ontwikkeld is door Google, is specifiek gericht op het Android platform. Een voordeel hiervan is de ingebouwde \textit{lay-outeditor}, waarmee relatief gemakkelijk de lay-out van de applicatie ontwikkeld kan worden. De ingebouwde Android-\textit{emulators} zorgen er daarnaast voor dat de app gemakkelijker getest kan worden. Bovendien kan Android Studio gesynchroniseerd worden met GitHub\footnote{GitHub is een versiebeheersysteem. Telkens er een wijziging wordt gedaan in de code, wordt deze opgeslagen. Deze kunnen later \textit{gepusht} worden zodat elk teamlid de wijzigingen ziet.}. Dit vereenvoudigt de samenwerking tussen verschillende groepsleden en we kunnen zo de verschillende functionaliteiten via deelprogramma's ook onafhankelijk ontwikkelen en testen.
+	Deze \textit{IDE}\footnote{Een \textit{IDE}, of voluit een \textit{Integrated Development Environment}, is een tool die het ontwerpen van software vereenvoudigd.}, die mede ontwikkeld is door Google, is specifiek gericht op het Android platform. Een voordeel hiervan is de ingebouwde \textit{lay-outeditor}, waarmee de lay-out van de applicatie relatief gemakkelijk ontwikkeld kan worden. De ingebouwde Android-\textit{emulators} zorgen er daarnaast voor dat de app gemakkelijker getest kan worden. Bovendien kan Android Studio gesynchroniseerd worden met GitHub\footnote{GitHub is een versiebeheersysteem. Telkens er een wijziging wordt gedaan in de code, wordt deze opgeslagen. Deze kunnen later \textit{gepusht} worden zodat elk teamlid de wijzigingen ziet.}. Dit vereenvoudigt de samenwerking tussen verschillende groepsleden. We kunnen zo de verschillende functionaliteiten via deelprogramma's onafhankelijk ontwikkelen en testen.
 	
 	
 	Tot slot kan Android Studio makkelijk gekoppeld worden met de databases van Firebase (dit komt aan bod in hoofdstuk \ref{sec:Database}) doordat de Firebase-services rechtstreeks in Android Studio geïmplementeerd kunnen worden.
@@ -108,13 +108,13 @@
 	
 	\subsection{Database} \label{sec:Database}
 	% jason: dictonairies in dictionaries --> non sequal 
-	De app en de website moeten verbonden worden met dezelfde database. Hierin worden alle gegevens die worden geüpload of ingegeven via de applicatie en website, gestructureerd opgeslagen. Het is dus een plek waar alle data te vinden is, maar ook de $ontmoetingsplaats$ van de website en applicatie. Vanuit deze opslagplaats kan diezelfde informatie weer geraadpleegd worden, en dit door beide delen van ons platform. Voor dit project hebben we meer bepaald een \textit{real-time} database\footnote{Een real-time database is een database waarin aanpassingen quasi onmiddellijk worden doorgevoerd, zodat deze aanpassingen ook op andere apparaten snel zichtbaar zijn.} nodig, zodat onder andere chatberichten zo snel mogelijk gesynchroniseerd kunnen worden.
+	De applicatie en de website moeten verbonden worden met dezelfde database. Hierin worden alle gegevens die geüpload of ingegeven worden via de applicatie en website, gestructureerd opgeslagen. Het is dus een plek waar alle data te vinden is, maar ook de $ontmoetingsplaats$ van de website en applicatie. Vanuit deze opslagplaats kan diezelfde informatie weer geraadpleegd worden via beide delen van ons platform. Voor dit project hebben we meer bepaald een \textit{real-time} database\footnote{Een real-time database is een database waarin aanpassingen quasi onmiddellijk worden doorgevoerd, zodat deze aanpassingen ook op andere apparaten snel zichtbaar zijn.} nodig, zodat onder andere chatberichten zo snel mogelijk gesynchroniseerd kunnen worden.
 	
 	
 	Firebase\cite{Firebase} leek ons de beste optie. Dit is een platform dat verschillende producten huisvest om het creëren van applicaties en websites te vereenvoudigen. De Realtime Database en de Cloud Firestore zijn de twee real-time databases uit deze producten. Daarnaast zullen we ook twee andere producten gebruiken: het beveiligd authenticatiesysteem en de opslag van foto's en video's in de cloud. 
 	
 	
-	Firebase heeft als voordeel dat het een populair platform is, waardoor er ook een uitgebreide online documentatie \cite{documentatie_firebase} beschikbaar is. Het platform is wel maar beperkt gratis \cite{pricing_firebase}. Wegens het verwachte lage gebruikersaantal van de app en de website zal de kostprijs echter zeer laag blijven (We rekenen op maximaal tien euro per maand).
+	Firebase heeft als voordeel dat het een populair platform is, waardoor er ook een uitgebreide online documentatie \cite{documentatie_firebase} beschikbaar is. Het platform is wel maar beperkt gratis \cite{pricing_firebase}. Wegens het verwachte lage gebruikersaantal van de app en de website zal de kostprijs echter zeer laag, maximaal tien euro per maand blijven.
 	
 	
 	Uit de twee databases van Firestore verkiezen we uiteindelijk Cloud Firestore \cite{Realtime_vs_Firestore}. Deze wordt namelijk over het algemeen beschouwd als een verbetering van de oudere Realtime Database. Daarnaast is het ook eenvoudiger om specifieke data op te vragen in Firestore.	
@@ -157,22 +157,28 @@
 		\end{itemize}
 		
 	\end{itemize}	
-	 Het pleeggezin kan chatten, documenten lezen, hun kalender bekijken, een afspraak toevoegen en het dagboekje bekijken. Voor het dagboekje zijn er meerdere opties, ofwel wordt er een activiteit toegevoegd, ofwel wordt er een overzicht gevraagd van een bepaalde activiteit.\\ Ook de trainer kan bepaalde functies uitvoeren. Hij kan ook chatten en hij kan het dagboek bekijken voor een specifieke hond. Daarnaast kan hij zelf ook documenten uploaden en afspraken toevoegen in de kalender. Hiervoor kiest hij of hij dat voor een specifieke puppy wil doen of voor alle puppy's tegelijk.
-	 
-	 
+	 Het pleeggezin kan chatten, documenten lezen, hun kalender bekijken, een afspraak toevoegen en het dagboekje bekijken. Voor het dagboekje zijn er meerdere opties, ofwel wordt er een activiteit toegevoegd, ofwel wordt er een overzicht gevraagd van een bepaalde activiteit.\\ Ook de trainer kan bepaalde functies uitvoeren. Hij kan chatten en het dagboek bekijken voor een specifieke hond. Daarnaast kan hij zelf ook documenten uploaden en afspraken toevoegen in de kalender. Hiervoor kiest hij telkens of hij dat voor een specifieke puppy wil doen of voor alle puppy's tegelijk.\\
 	 Een overzicht van de structuur van de app en website is te vinden op figuur \ref{flowchart}.
+	 
+	\begin{figure}[H]
+		\hspace*{-1.8in}
+		\includegraphics[width=1.75\textwidth]{Flowchart.jpg}
+		\caption{Flowchart van het communicatieplatform. Gemaakt via \cite{Lucidchart_flowchart}.}\label{flowchart}
+	\end{figure}
+	
+	\newpage
 	\subsection{Database}
-	Bij de database is vooral de structuur belangrijk. Op pagina \pageref{programmeerstructuur} in de appendices is een overzicht te zien van hoe we de gevarieerde informatie gaan wegschrijven vanuit de applicatie en website naar de database. Hierbij maken we verschillende collecties aan: Dagboek, Berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters$/$gegevens. Gebruikers bevat een overzicht van alle gebruikers en hun persoonlijke informatie. In Dagboek, Kalender en Documenten wordt er voor elke gebruiker een map aangemaakt met als naam zijn gebruikers-id\footnote{Elke gebruiker staat in de database bekend als een unieke string, deze string wordt de gebruikers-id genoemd}. De collectie Berichten zal besproken worden in deel \ref{Chat}.
+	Bij de database is vooral de structuur belangrijk. Op pagina \pageref{programmeerstructuur} in de appendices is een overzicht te zien van hoe we de gevarieerde informatie gaan wegschrijven vanuit de applicatie en website naar de database. Hierbij maken we verschillende collecties aan: Dagboek, Berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters$/$gegevens. Gebruikers bevat een overzicht van alle gebruikers en hun persoonlijke informatie. In Dagboek, Kalender en Documenten wordt er voor elke gebruiker een map aangemaakt met als naam zijn gebruikers-id\footnote{Elke gebruiker staat in de database bekend als een unieke string, deze string wordt de gebruikers-id genoemd}. Hoe de collectie Berichten gebruikt wordt, zal besproken worden in deel \ref{Chat}.
 	
 	
-	Afbeeldingen en pdf-documenten slaan we eerst op in de Cloud Storage van Firebase. Daarna plaatsen we de link naar deze opslagplaats in de database. Aan de hand van de link kunnen afbeeldingen uit de Cloud Storage weergegeven worden in de app en de website en kunnen pdf-documenten gedownload worden.  
+	Afbeeldingen en pdf-documenten slaan we eerst op in de Cloud Storage van Firebase. Daarna plaatsen we de link naar deze opslagplaats in de database. Aan de hand van de link kunnen afbeeldingen uit de Cloud Storage weergegeven worden in de app en website en kunnen pdf-documenten gedownload worden.  
 	\section{Resultaten}\label{Resultaten}
-	In wat volgt bespreken we kort de uiteindelijke werking van de app en de website.
+	In wat volgt bespreken we kort de uiteindelijke werking van de applicatie en website.
 	\subsection{Login-pagina}
 	Via de login-pagina kan je met een gekregen account via e-mailadres en wachtwoord inloggen. Dit account staat gelinkt met je pleeghond. Op die manier komt elke gebruiker bij de data terecht die over hun hond gaat. %Voor de trainer gaat het net een beetje anders. Hij zal bij sommige functies kunnen kiezen voor welke hond hij informatie wil opvragen, maar daar komen we later op terug. \\
 	%Hij kan van elke hond de data opvragen, hiervoor moet hij telkens aangeven voor welke hond hij verder wil gaan. Wil hij de gegevens van één specifieke hond dan selecteert hij die naam. Indien hij meerdere honden tegelijk wil opvragen, kan hij kiezen voor alle honden.
 	%Indien het inloggen succesvol gelukt is, kom je op de hoofdpagina terecht. Daar zijn de vier functies van de applicatie en website terug te vinden: chat, documenten, kalender en dagboek. 
-	Voor het inloggen wordt gebruik gemaakt van \textit{Firebase Authentication}, een ingebouwde functionaliteit van Firebase. Zo worden de wachtwoorden veilig bewaard zonder dat we zelf een beveiligde server moeten opzetten. Wanneer een juiste email-wachtwoord combinatie wordt ingegeven, wordt de gebruiker doorverwezen naar de hoofdpagina (figuur \ref{App_homepage}) bij de applicatie of naar de chat bij de website.
+	Voor het inloggen wordt gebruik gemaakt van \textit{Firebase Authentication}, een ingebouwde functionaliteit van Firebase. Zo worden de wachtwoorden veilig bewaard zonder dat we er zelf een beveiligde server moeten opzetten. Wanneer een juiste email-wachtwoord combinatie wordt ingegeven, wordt de gebruiker doorverwezen naar de hoofdpagina (figuur \ref{App_homepage}) bij de applicatie of naar de chat bij de website.
 	
 	
 	Op de hoofdpagina van de applicatie zijn de vier hoofdfuncties van het platform terug te vinden: chat, documenten, kalender en dagboek. Bij de website bevat elke pagina een navigatiebalk zodat er telkens eenvoudig kan gewisseld worden tussen de functionaliteiten en een hoofdpagina overbodig wordt.
@@ -189,7 +195,7 @@
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.735\textwidth]{screen_web_login}
-	\caption{Om in te loggen worden het email adres en het wachtwoord gevraagd.}\label{website_login}
+	\caption{Om in te loggen worden het e-mailadres en wachtwoord gevraagd.}\label{website_login}
 	\end{figure}
 	
 	\subsection{Chat}\label{Chat}
@@ -202,7 +208,7 @@
 	Elke conversatie tussen twee gebruikers wordt uniek opgeslagen in de database (in de collectie Berichten) door een combinatie van de twee gebruikers-id's. Voor elk bericht wordt er opgeslagen wie de verzender en ontvanger is, samen met de berichtinhoud, datum$/$tijd en eventueel een referentie naar de media.
 	
 	
-	Voor elke conversatie wordt ook het laatst verzonden bericht opgeslagen. Deze wordt telkens overschreven wanneer er een nieuw bericht wordt verzonden$/$ontvangen. Hierbij wordt er bijgehouden of het bericht al dan niet is gelezen. Het wordt als gelezen beschouwd wanneer de conversatie met de gebruiker wordt geopend. Bij de website wordt elk laatst verzonden bericht weergegeven onder de naam van de geselecteerde gebruiker.
+	Voor elke conversatie wordt ook het laatst verzonden bericht opgeslagen. Deze wordt telkens overschreven wanneer er een nieuw bericht wordt verzonden of ontvangen. Hierbij wordt er bijgehouden of het bericht al dan niet is gelezen. Het wordt als gelezen beschouwd wanneer de conversatie met de gebruiker wordt geopend. Bij de website wordt elk laatst verzonden bericht weergegeven onder de naam van de geselecteerde gebruiker.
 	\begin{figure}[h]
 		\begin{minipage}[t]{0.33\linewidth}
 			\includegraphics[width=3.5cm]{App_chat2}
@@ -229,7 +235,7 @@
 	Bij 'documenten' krijgt een lid van het pleeggezin een chronologisch overzicht (zie figuur \ref{App_document} voor de applicatie en figuur \ref{web_documenten} voor de website) van verschillende documenten. Zij zijn opgeslagen in de database en kunnen gedownload worden. Die documenten zijn specifiek gericht voor het gezin van een bepaalde pleeghond. Geen enkel ander gezin kan aan deze informatie. De documentnaam en -grootte zijn hierbij weergegeven. Er is een knop voorzien om het document te downloaden.
 	
 	
-	De trainer heeft diezelfde documenten geüpload. Hij kiest voor wie hij bestanden wil uploaden (voor de app is dit weergegeven op figuur \ref{App_trainerdoc}): voegt hij documenten toe die enkel door één bepaalde gebruiker kunnen worden gezien of algemene documenten die  door alle gebruikers kunnen worden gezien. Daarna moet de trainer een bestand selecteren, wat duidelijk wordt weergegeven op de applicatie \ref{App_trainerdoctoev}. Momenteel is het enkel mogelijk om pdf-bestanden te selecteren. Wanneer de trainer het gekozen document upload, wordt dit opgeslagen in de database onder de gebruikers-id's van de gekozen pleeggezinnen.
+	De trainer heeft diezelfde documenten geüpload. Hij kiest voor wie hij bestanden wil uploaden (voor de app is dit weergegeven op figuur \ref{App_trainerdoc}): voegt hij documenten toe die enkel door één bepaalde gebruiker kunnen worden gezien of algemene documenten die  door alle gebruikers kunnen worden gezien. Daarna moet de trainer een bestand selecteren, wat duidelijk wordt weergegeven op de applicatie \ref{App_trainerdoctoev}. Het is enkel mogelijk om pdf-bestanden te selecteren. Wanneer de trainer het gekozen document upload, wordt dit opgeslagen in de database onder de gebruikers-id's van de gekozen pleeggezinnen.
 	
 	
 	De trainer kan bovendien een overzicht van de documenten opvragen voor een specifieke hond. Hij kan hierbij deze bestanden ook downloaden. Bij de app staat bij dit overzicht rechtsonder een knop om ook rechtstreeks een document up te loaden \ref{App_trainerdocoverz}.
@@ -261,17 +267,17 @@
 	\end{figure}
 
 	\subsection{Kalender}
-	Via de hoofdpagina kan er ook gekozen worden voor 'kalender'. Op dat moment wordt men doorverwezen naar een pagina waar men een chronologisch overzicht krijgt van de verschillende activiteiten die staan gepland. Hierbij is er een duidelijk onderscheid te maken tussen de applicatie en website.
+	Via de hoofdpagina kan er ook gekozen worden voor 'kalender'. Op dat moment wordt men doorverwezen naar een pagina waar men een chronologisch overzicht krijgt van de verschillende activiteiten die gepland staan. Hierbij is er een duidelijk onderscheid te maken tussen de applicatie en website.
 	
 	
 	Via de applicatie krijg je een overzicht van de toekomstige activiteiten (zie figuur \ref{App_kalender}) in de vorm van een chronologische lijst met alle activiteiten. Hierbij zijn een omschrijving van de afspraak, de datum, het begin- en einduur, de locatie en vrije opmerkingen onmiddellijk leesbaar. Het is ook mogelijk om een nieuwe afspraak te maken \ref{App_afsprtoev}. Hiervoor moet je een omschrijving, datum, startuur en einduur kiezen. Indien gewenst kan ook een locatie of vrije opmerkingen toegevoegd worden. Voor de datum kan je via een kalender de geplande dag kiezen en het begin- en einduur kunnen gekozen worden via een klok. Eenmaal deze gegevens gekozen zijn, wordt de data weer doorgestuurd naar de database. Vanaf dat moment zijn ze toegevoegd aan het overzicht van activiteiten op zowel de app als website.
 	
 	
 	Analoog aan de applicatie krijg je ook op de website een overzicht van alle activiteiten te zien (zie figuur \ref{web_kalender}), maar hier wordt dit gedaan in een $'$echte$'$ kalendervorm.
-	In de kalendervorm zijn de omschrijving van de afspraak, het begin- en het eindmoment direct visueel zichtbaar. Wanneer er dubbel geklikt wordt op een afspraak, worden de locatie en de vrije opmerkingen zichtbaar en ook een optie om de afspraak te verwijderen. Door een afspraak te verwijderen worden al zijn gegevens uit de database gewist. Deze wijziging is meteen zichtbaar op het overzicht in zowel de applicatie als de website.
+	In de kalendervorm zijn de omschrijving van de afspraak, het begin- en het eindmoment direct visueel zichtbaar. Wanneer er dubbel geklikt wordt op een afspraak, worden de locatie en de vrije opmerkingen zichtbaar en is er ook een optie om de afspraak te verwijderen. Door een afspraak te verwijderen worden al deze gegevens uit de database gewist. Die wijziging is meteen zichtbaar op het overzicht in zowel de applicatie als website.
 	
 	
-	Indien een trainer het kalenderoverzicht wil openen, moet hij opnieuw eerst kiezen voor wie hij deze informatie wil (Dit is voor de applicatie weergegeven in figuur \ref{App_trainerkal}). Hij heeft hierbij twee opties: zijn eigen kalender of die van een specifiek pleeggezin.
+	Indien een trainer het kalenderoverzicht wil openen, moet hij opnieuw eerst kiezen voor wie hij deze informatie wil (Dit is voor de applicatie weergegeven in figuur \ref{App_trainerkal}.). Hij heeft hierbij twee opties: zijn eigen kalender of die van een specifiek pleeggezin.
 	\begin{figure}[H]
 		\begin{minipage}[t]{0.33\linewidth}
 			\includegraphics[width=2.5cm]{App_kalender2}
@@ -289,17 +295,17 @@
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.735\textwidth]{screen_web_kalender.jpg}
-	\caption{De activiteiten worden weergegeven in een kalendervorm (4).Na dubbelklikken wordt extra informatie zichtbaar en is het mogelijk de afspraak te verwijderen (3). Er kunnen ook afspraken worden toegevoegd (1). Trainers hebben de optie (2) om kalenders van pleeggezinnen te bekijken.}\label{web_kalender}
+	\caption{De activiteiten worden weergegeven in een kalendervorm (4). Na dubbelklikken wordt extra informatie zichtbaar en is het mogelijk de afspraak te verwijderen (3). Er kunnen ook afspraken worden toegevoegd (1). Trainers hebben de optie (2) om kalenders van pleeggezinnen te bekijken.}\label{web_kalender}
 	\end{figure}
 	
 	\subsection{Dagboek}
 	Het 'dagboek' is ook te vinden via de hoofdpagina. Hiermee kunnen pleeggezinnen een overzicht krijgen van de oefeningen die ze met hun hond hebben gedaan.
 	
 	
-	Op de app moeten we er eerst voor kiezen om ofwel dit overzicht te krijgen ofwel om een oefening toe te voegen \ref{App_dagboek}. Indien we voor het eerste kiezen, kunnen we via een zoekfunctie een activiteit selecteren waarvoor we het overzicht willen verkrijgen. Indien er geen enkele activiteit wordt geselecteerd, worden alle activiteiten weergeven, zoals op figuur \ref{App_dagboekoverzicht}. Hierbij zijn de volgende gegevens zichtbaar: naam, datum, alle stresssignalen\footnote{Het is de bedoeling dat de hond leert om zo weinig mogelijk stress te hebben tijdens de oefeningen. Aan de hand van stresssignalen zoals bijvoorbeeld rillen, kan er ingeschat worden hoe de hond zich voelt.}, stressniveau en een foto van de oefening. We kunnen echter ook kiezen om een activiteit van diezelfde dag toe te voegen, wat ons op de app leidt tot de pagina zichtbaar op figuur \ref{App_dagboekacttoev}. Hier kunnen de naam, één of meerdere stresssignalen, het stressniveau en een omschrijving worden meegegeven. Er kan ook een foto worden geüpload. Eenmaal dit allemaal is gebeurd, is de oefening terug te vinden in het overzicht tussen alle andere oefeningen.
+	Op de app moeten we er eerst voor kiezen om ofwel dit overzicht te krijgen ofwel om een oefening toe te voegen \ref{App_dagboek}. Indien we voor het eerste kiezen, kunnen we via een zoekfunctie een activiteit selecteren waarvoor we het overzicht willen verkrijgen. Indien er geen enkele activiteit wordt geselecteerd, worden alle activiteiten weergeven, zoals op figuur \ref{App_dagboekoverzicht}. Hierbij zijn de volgende gegevens zichtbaar: naam, datum, alle stresssignalen\footnote{Het is de bedoeling dat de hond leert om zo weinig mogelijk stress te hebben tijdens de oefeningen. Aan de hand van stresssignalen zoals bijvoorbeeld rillen, kan er ingeschat worden hoe de hond zich voelt.}, stressniveau en een foto van de oefening. We kunnen echter ook kiezen om een activiteit van diezelfde dag toe te voegen, wat ons op de applicatie leidt tot de pagina zichtbaar op figuur \ref{App_dagboekacttoev}. Hier kunnen de naam, één of meerdere stresssignalen, het stressniveau en een omschrijving worden meegegeven. Er kan ook een foto worden geüpload. Eenmaal dit allemaal is gebeurd, is de oefening terug te vinden in het overzicht tussen alle andere oefeningen.
 	
 	
-	Op de website kunnen we meteen een activiteit toevoegen, zie figuur \ref{web_dagboektoev}. Hierbij kunnen er opnieuw dezelfde gegevens ingegeven worden. Door verder te klikken kunnen we het overzicht van de oefeningen bekijken. Indien we slechts een overzicht willen van één specifieke oefening, kunnen we deze opnieuw selecteren. Daarnaast kan er nu ook gefilterd worden op het stressniveau. Bovendien kan je op de website ook het gemiddelde stressniveau per oefening raadplegen. Je ziet dan een overzicht van alle gemiddelden van de verschillende soorten oefeningen. Zo kan er makkelijk worden gekeken op welke er nog meer moet getraind worden en welke er al helemaal goed lukken.
+	Op de website kunnen we meteen een activiteit toevoegen, zie figuur \ref{web_dagboek2}. Hierbij kunnen er opnieuw dezelfde gegevens ingegeven worden. Door verder te klikken kunnen we het overzicht van de oefeningen bekijken. Indien we slechts een overzicht willen van één specifieke oefening, kunnen we deze opnieuw selecteren. Daarnaast kan er nu ook gefilterd worden op het stressniveau. Bovendien kan je op de website ook het gemiddelde stressniveau per oefening raadplegen. Je ziet dan een overzicht van alle gemiddelden van de verschillende soorten oefeningen. Zo kan er makkelijk worden gekeken op welke er nog meer moet getraind worden en welke er al helemaal goed lukken.
 	
 	
 	Als trainer kan je kiezen van welk pleeggezin je het dagboekje wil zien (weergegeven op de app zoals \ref{App_trainerdagb}). Zo kan de trainer het traject van de opleiding beter volgen en kan hij indien nodig wat tips geven aan het pleeggezin. De trainer kan zelf geen activiteiten toevoegen, aangezien trainingen niet tot het dagboek behoren en hij dus geen dagelijkse oefeningen uitvoert met de hond. Daarom is er op figuur \ref{App_trainerdagbmenu} van de applicatie geen mogelijkheid om een activiteit toe te voegen.\\
@@ -354,17 +360,12 @@
 	%\subsection{Database}
 	%Cloud Firestore is dus gekoppeld met zowel de app als de website. Bij zo'n database is vooral de structuur belangrijk. Op \ref{programmeerstructuur} is een overzicht te zien van hoe we de gevarieerde informatie gaan wegschrijven vanuit de app en website naar de database. Hierbij maken we verschillende collecties aan: Dagboekje, Berichten, Kalender, Documenten en Gebruikers. Elke collectie bevat verschillende items met elk hun eigen parameters/gegevens. 
 	%\label{flowchart}\includepdf[pages=-]{Flowchart}
-	\begin{figure}[H]
-		\hspace*{-1.8in}
-		\includegraphics[width=1.75\textwidth]{Flowchart.jpg}
-		\caption{Flowchart van het communicatieplatform. Gemaakt via \cite{Lucidchart_flowchart}.}\label{flowchart}
-	\end{figure}
 
 	\newpage
 	\section{Ontwikkelingen in de toekomst}\label{Ontwikkelingen}
 	\subsection{Verbeteringen}
 	Voor de applicatie zijn er nog verschillende verbeteringen mogelijk. 
-	De functies voor trainer kunnen bijvoorbeeld nog worden geoptimaliseerd. Zo kan ervoor gezorgd worden dat een trainer niet op verschillende pagina's telkens moet doorklikken, maar dit allemaal op eenzelfde pagina kan. Daarnaast is het onderscheid tussen trainer en pleeggezin momenteel niet efficiënt geïmplementeerd. Een betere methode zou de opslaggrootte van de applicatie sterk kunnen verminderen. Ten tweede kunnen in de chat van de app zowel berichten als foto's worden ontvangen, maar tot nu toe kunnen enkel berichten worden verstuurd. Men kan wel al foto's versturen via de website. Tot slot zou ook de lay-out ook visueel mooier en gebruiksvriendelijker kunnen worden gemaakt.
+	De functies voor trainer kunnen bijvoorbeeld nog worden geoptimaliseerd. Zo kan ervoor gezorgd worden dat een trainer niet op verschillende pagina's telkens moet doorklikken, maar dit allemaal op eenzelfde pagina kan. Daarnaast is het onderscheid tussen trainer en pleeggezin momenteel niet efficiënt geïmplementeerd. Een betere methode zou de opslaggrootte van de applicatie sterk kunnen verminderen. Ten tweede kunnen in de chat van de app zowel berichten als foto's worden ontvangen, maar tot nu toe kunnen enkel berichten worden verstuurd. Men kan wel al foto's versturen via de website. Tot slot zou ook de lay-out visueel mooier en gebruiksvriendelijker kunnen worden gemaakt.
 	
 	
 	De website heeft minder gebreken. Hier kan vooral het design nog geoptimaliseerd worden en kan de website compatibel worden gemaakt voor mobiele apparaten.
@@ -373,11 +374,11 @@
 	Er zijn nog verschillende ontwikkelingen mogelijk die we niet hebben uitgevoerd omwille van tijdsgebrek.
 	
 	
-	Ten eerste zijn er enkele doelstellingen die we niet hebben kunnen bereiken. Zo kunnen er momenteel geen video's verstuurd worden in de chat, en kunnen er ook geen in het dagboekje worden geplaatst. Bovendien kan er in het dagboek van de app niet gefilterd worden op stressniveau.
+	Ten eerste zijn er enkele doelstellingen die we niet hebben kunnen bereiken. Zo kunnen er momenteel geen video's verstuurd worden in de chat en ook geen in het dagboekje worden geplaatst, wat wel mogelijk is met foto's. Bovendien kan er in het dagboek van de app niet gefilterd worden op stressniveau.
 	
 	
 	Ten tweede kunnen er nog functionaliteiten worden ingebouwd die de app en website gebruiksvriendelijker zouden maken. 
-	Meldingen vanuit de app voor kalenderafspraken, nieuwe chatberichten of beschikbare documenten zou het leven van de gebruikers makkelijker maken. Zo hoeven de pleeggezinnen de media niet dagelijks te raadplegen om toch op de hoogte te zijn van de nieuwste wijzigingen.
+	Meldingen vanuit de app voor kalenderafspraken, nieuwe chatberichten of beschikbare documenten zou het leven van de gebruikers makkelijker maken. Zo hoeven pleeggezinnen de media niet dagelijks te raadplegen om toch op de hoogte te zijn van de nieuwste wijzigingen.
 	Ook de mogelijkheid om specifieke afspraken, documenten en activiteiten te verwijderen zou geïmplementeerd kunnen worden. Momenteel kan men enkel afspraken verwijderen en dit enkel via de website. Afspraken die al zijn verlopen worden wel automatisch verwijderd.
 	Het zou ook handig zijn als trainers en pleeggezinnen vriendenlijsten konden aanmaken. Op deze manier zullen ze geen overbodige spam in de chat hebben van mensen waarmee ze niet bevriend zijn.
 	Daarnaast kan de trainer op dit moment enkel een document uploaden voor ofwel iedereen, ofwel één puppy. In de toekomst zou het mogelijk moeten zijn om documenten toe te voegen voor bijvoorbeeld twee puppy's in één keer. Dit zou de trainer veel tijd besparen.
@@ -396,7 +397,7 @@
 	%Om dit te realiseren moesten we eerst de tools zoeken die we konden gebruiken voor de app en website. Dit nam veel tijd in beslag aangezien de keuze een grote invloed kan hebben op het resultaat. De tools moeten kunnen voldoen aan alle eisen van de probleemstelling. Daarna was het belangrijk om kennis te maken met de werking van de tools. Voordat we begonnen aan het ontwerpen van de app en website, bouwden we een kennis op van het gebruik van de programma's. Toen we dit onder de knie hadden, konden we beginnen met het echte werk. We brainstormden over hoe we het project het best konden aanpakken. We dachten na over de structuur van de app en website en bedachten ook hoe we de verschillende functies die de trainers en pleeggezinnen moeten kunnen doen, gingen implementeren. Tot slot begonnen we met het design en het implementeren van de app en website.
 	
 	
-	Dankzij een goede samenwerking is dit project grotendeels afgewerkt. Er is echter nog ruimte voor optimalisatie, vooral bij de werking van de applicatie en bij het design van de website. Daarnaast kunnen er ook nog extra functionaliteiten worden ingebouwd die het gebruiksgemak zouden verbeteren..\\\\
+	Dankzij een goede samenwerking is dit project grotendeels afgewerkt. Er is echter nog ruimte voor optimalisatie, vooral bij de werking van de applicatie en bij het design van de website. Daarnaast kunnen er ook nog extra functionaliteiten worden ingebouwd die het gebruiksgemak zouden verbeteren.\\\\
 	%$Gelukkig bleven we ons best doen en vond Charlotte ons een topteam! :) $
 	
 	
