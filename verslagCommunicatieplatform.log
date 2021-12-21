@@ -1,4 +1,12 @@
+<<<<<<< refs/remotes/origin/Eindverslag
 This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.21)  21 DEC 2021 15:19
+=======
+<<<<<<< refs/remotes/origin/Eindverslag
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.21)  21 DEC 2021 15:11
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.30)  21 DEC 2021 15:09
+>>>>>>> aanpassingen
+>>>>>>> aanpassingen
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -426,6 +434,7 @@ yk-highres.jpg>] (./verslagCommunicatieplatform.toc)
 \tf@toc=\write4
 \openout4 = `verslagCommunicatieplatform.toc'.
 
+<<<<<<< refs/remotes/origin/Eindverslag
  [2] [3] [4] [5]
 <Flowchart.jpg, id=191, 1027.84pt x 621.32124pt>
 File: Flowchart.jpg Graphic file (type jpg)
@@ -518,10 +527,100 @@ Package pdftex.def Info: App_documenten.jpg  used on input line 247.
 (pdftex.def)             Requested size: 85.35826pt x 184.93117pt.
 
 Overfull \hbox (16.35931pt too wide) in paragraph at lines 247--248
+=======
+ [2] [3] [4] [5] [6]
+<App_login.jpg, id=199, 813.0375pt x 1761.58125pt>
+File: App_login.jpg Graphic file (type jpg)
+<use App_login.jpg>
+Package pdftex.def Info: App_login.jpg  used on input line 184.
+(pdftex.def)             Requested size: 99.58464pt x 215.762pt.
+<App_homepage.jpg, id=200, 813.0375pt x 1761.58125pt>
+File: App_homepage.jpg Graphic file (type jpg)
+<use App_homepage.jpg>
+Package pdftex.def Info: App_homepage.jpg  used on input line 188.
+(pdftex.def)             Requested size: 99.58464pt x 215.762pt.
+<screen_web_login.jpg, id=201, 1371.1225pt x 658.46pt>
+File: screen_web_login.jpg Graphic file (type jpg)
+<use screen_web_login.jpg>
+Package pdftex.def Info: screen_web_login.jpg  used on input line 194.
+(pdftex.def)             Requested size: 253.57521pt x 121.773pt.
+ [7] [8pdfTeX warning (ext4): destination with the same identifier (name{figure
+.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.203 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.203 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.203 	
+        <./App_login.jpg> <./App_homepage.jpg> <./screen_web_login.jpg>]
+<App_chat2.jpg, id=221, 813.0375pt x 1761.58125pt>
+File: App_chat2.jpg Graphic file (type jpg)
+<use App_chat2.jpg>
+Package pdftex.def Info: App_chat2.jpg  used on input line 211.
+(pdftex.def)             Requested size: 99.58464pt x 215.762pt.
+<App_chat.jpg, id=222, 813.0375pt x 1761.58125pt>
+File: App_chat.jpg Graphic file (type jpg)
+<use App_chat.jpg>
+Package pdftex.def Info: App_chat.jpg  used on input line 215.
+(pdftex.def)             Requested size: 99.58464pt x 215.762pt.
+<App_chat3.jpg, id=223, 813.0375pt x 1761.58125pt>
+File: App_chat3.jpg Graphic file (type jpg)
+<use App_chat3.jpg>
+Package pdftex.def Info: App_chat3.jpg  used on input line 219.
+(pdftex.def)             Requested size: 99.58464pt x 215.762pt.
+<screen_web_chat.jpg, id=224, 1371.1225pt x 656.4525pt>
+File: screen_web_chat.jpg Graphic file (type jpg)
+<use screen_web_chat.jpg>
+Package pdftex.def Info: screen_web_chat.jpg  used on input line 225.
+(pdftex.def)             Requested size: 253.57521pt x 121.40173pt.
+
+Overfull \hbox (21.16718pt too wide) in paragraph at lines 208--229
+\OT1/cmr/m/n/10 wordt tel-kens over-schre-ven wan-neer er een nieuw be-richt wo
+rdt verzonden$\OML/cmm/m/it/10 =$\OT1/cmr/m/n/10 ontvangen.
+ []
+
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.230 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.230 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.230 	
+        <./App_chat2.jpg> <./App_chat.jpg> <./App_chat3.jpg>]
+<App_documenten.jpg, id=236, 813.0375pt x 1761.58125pt>
+File: App_documenten.jpg Graphic file (type jpg)
+<use App_documenten.jpg>
+Package pdftex.def Info: App_documenten.jpg  used on input line 244.
+(pdftex.def)             Requested size: 85.35826pt x 184.93117pt.
+
+Overfull \hbox (16.35931pt too wide) in paragraph at lines 244--245
+>>>>>>> aanpassingen
 [][]
  []
 
 
+<<<<<<< refs/remotes/origin/Eindverslag
 Underfull \hbox (badness 10000) in paragraph at lines 248--248
 []\OT1/cmr/m/n/10 Figuur 9:
  []
@@ -538,10 +637,29 @@ Package pdftex.def Info: App_documenten3.jpg  used on input line 251.
 (pdftex.def)             Requested size: 85.35826pt x 184.93117pt.
 
 Overfull \hbox (16.35931pt too wide) in paragraph at lines 251--252
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
+[]\OT1/cmr/m/n/10 Figuur 8:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
+[]\OT1/cmr/m/n/10 Documenten-
+ []
+
+<App_documenten3.jpg, id=237, 813.0375pt x 1761.58125pt>
+File: App_documenten3.jpg Graphic file (type jpg)
+<use App_documenten3.jpg>
+Package pdftex.def Info: App_documenten3.jpg  used on input line 248.
+(pdftex.def)             Requested size: 85.35826pt x 184.93117pt.
+
+Overfull \hbox (16.35931pt too wide) in paragraph at lines 248--249
+>>>>>>> aanpassingen
 [][]
  []
 
 
+<<<<<<< refs/remotes/origin/Eindverslag
 Underfull \hbox (badness 10000) in paragraph at lines 252--252
 []\OT1/cmr/m/n/10 Figuur 10:
  []
@@ -558,10 +676,29 @@ Package pdftex.def Info: App_documenten2.jpg  used on input line 255.
 (pdftex.def)             Requested size: 85.35826pt x 184.97589pt.
 
 Overfull \hbox (16.35931pt too wide) in paragraph at lines 255--256
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+[]\OT1/cmr/m/n/10 Figuur 9:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+[]\OT1/cmr/m/n/10 Documenten
+ []
+
+<App_documenten2.jpg, id=238, 324.46219pt x 703.12688pt>
+File: App_documenten2.jpg Graphic file (type jpg)
+<use App_documenten2.jpg>
+Package pdftex.def Info: App_documenten2.jpg  used on input line 252.
+(pdftex.def)             Requested size: 85.35826pt x 184.97589pt.
+
+Overfull \hbox (16.35931pt too wide) in paragraph at lines 252--253
+>>>>>>> aanpassingen
 [][]
  []
 
 
+<<<<<<< refs/remotes/origin/Eindverslag
 Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\OT1/cmr/m/n/10 Figuur 11:
  []
@@ -578,20 +715,48 @@ Package pdftex.def Info: App_documenten4.jpg  used on input line 259.
 (pdftex.def)             Requested size: 85.35826pt x 184.93117pt.
 
 Overfull \hbox (16.35931pt too wide) in paragraph at lines 259--260
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 253--253
+[]\OT1/cmr/m/n/10 Figuur 10:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--253
+[]\OT1/cmr/m/n/10 Documenten-
+ []
+
+<App_documenten4.jpg, id=239, 813.0375pt x 1761.58125pt>
+File: App_documenten4.jpg Graphic file (type jpg)
+<use App_documenten4.jpg>
+Package pdftex.def Info: App_documenten4.jpg  used on input line 256.
+(pdftex.def)             Requested size: 85.35826pt x 184.93117pt.
+
+Overfull \hbox (16.35931pt too wide) in paragraph at lines 256--257
+>>>>>>> aanpassingen
 [][]
  []
 
 
+<<<<<<< refs/remotes/origin/Eindverslag
 Underfull \hbox (badness 10000) in paragraph at lines 260--260
 []\OT1/cmr/m/n/10 Figuur 12:
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 260--260
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
+[]\OT1/cmr/m/n/10 Figuur 11:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
+>>>>>>> aanpassingen
 []\OT1/cmr/m/n/10 Documenten
  []
 
 
+<<<<<<< refs/remotes/origin/Eindverslag
 Underfull \hbox (badness 10000) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 toe-voe-gen
  []
@@ -600,9 +765,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--260
 File: screen_web_documenten.jpg Graphic file (type jpg)
 <use screen_web_documenten.jpg>
 Package pdftex.def Info: screen_web_documenten.jpg  used on input line 265.
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
+\OT1/cmr/m/n/10 toe-voe-gen
+ []
+
+<screen_web_documenten.jpg, id=240, 1367.1075pt x 616.3025pt>
+File: screen_web_documenten.jpg Graphic file (type jpg)
+<use screen_web_documenten.jpg>
+Package pdftex.def Info: screen_web_documenten.jpg  used on input line 262.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 253.57521pt x 114.3057pt.
 [11pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
  has been already used, duplicate ignored
+<<<<<<< refs/remotes/origin/Eindverslag
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.267 	\end{figure}
@@ -658,9 +834,73 @@ Underfull \hbox (badness 2253) in paragraph at lines 292--292
 File: screen_web_kalender.jpg Graphic file (type jpg)
 <use screen_web_kalender.jpg>
 Package pdftex.def Info: screen_web_kalender.jpg  used on input line 297.
+=======
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.264 	\end{figure}
+                    <./screen_web_chat.jpg>] [11pdfTeX warning (ext4): destinat
+ion with the same identifier (name{figure.8}) has been already used, duplicate 
+ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.271 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.271 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.271 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.271 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.271 	
+        <./App_documenten.jpg> <./App_documenten3.jpg> <./App_documenten2.jpg> 
+<./App_documenten4.jpg> <./screen_web_documenten.jpg>]
+<App_kalender2.jpg, id=258, 813.0375pt x 1761.58125pt>
+File: App_kalender2.jpg Graphic file (type jpg)
+<use App_kalender2.jpg>
+Package pdftex.def Info: App_kalender2.jpg  used on input line 280.
+(pdftex.def)             Requested size: 71.13188pt x 154.10034pt.
+<App_kalender.jpg, id=259, 813.0375pt x 1761.58125pt>
+File: App_kalender.jpg Graphic file (type jpg)
+<use App_kalender.jpg>
+Package pdftex.def Info: App_kalender.jpg  used on input line 284.
+(pdftex.def)             Requested size: 71.13188pt x 154.10034pt.
+<App_kalender3.jpg, id=260, 813.0375pt x 1761.58125pt>
+File: App_kalender3.jpg Graphic file (type jpg)
+<use App_kalender3.jpg>
+Package pdftex.def Info: App_kalender3.jpg  used on input line 288.
+(pdftex.def)             Requested size: 71.13188pt x 154.10034pt.
+
+Underfull \hbox (badness 2253) in paragraph at lines 289--289
+[]\OT1/cmr/m/n/10 Figuur 15: []Kalender
+ []
+
+<screen_web_kalender.jpg, id=261, 1013.28563pt x 704.6325pt>
+File: screen_web_kalender.jpg Graphic file (type jpg)
+<use screen_web_kalender.jpg>
+Package pdftex.def Info: screen_web_kalender.jpg  used on input line 294.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 253.57521pt x 176.32973pt.
 [13pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
 ) has been already used, duplicate ignored
+<<<<<<< refs/remotes/origin/Eindverslag
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.300 	
@@ -680,105 +920,207 @@ l.300
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.309 	
+=======
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.297 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.297 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.15}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.297 	
+        <./App_kalender2.jpg> <./App_kalender.jpg> <./App_kalender3.jpg>]
+[13pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.306 	
+>>>>>>> aanpassingen
         <./screen_web_kalender.jpg>]
 <App_dagboek.jpg, id=297, 813.0375pt x 1761.58125pt>
 File: App_dagboek.jpg Graphic file (type jpg)
 <use App_dagboek.jpg>
+<<<<<<< refs/remotes/origin/Eindverslag
 Package pdftex.def Info: App_dagboek.jpg  used on input line 314.
 (pdftex.def)             Requested size: 68.28644pt x 147.94493pt.
 
 Overfull \hbox (9.63707pt too wide) in paragraph at lines 314--315
+=======
+Package pdftex.def Info: App_dagboek.jpg  used on input line 311.
+(pdftex.def)             Requested size: 68.28644pt x 147.94493pt.
+
+Overfull \hbox (9.63707pt too wide) in paragraph at lines 311--312
+>>>>>>> aanpassingen
 [][]
  []
 
 
+<<<<<<< refs/remotes/origin/Eindverslag
 Underfull \hbox (badness 10000) in paragraph at lines 315--315
 []\OT1/cmr/m/n/10 Figuur 18:
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 315--315
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+[]\OT1/cmr/m/n/10 Figuur 17:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+>>>>>>> aanpassingen
 []\OT1/cmr/m/n/10 Dagboek
  []
 
 <App_dagboek3.jpg, id=298, 813.0375pt x 1761.58125pt>
 File: App_dagboek3.jpg Graphic file (type jpg)
 <use App_dagboek3.jpg>
+<<<<<<< refs/remotes/origin/Eindverslag
 Package pdftex.def Info: App_dagboek3.jpg  used on input line 318.
 (pdftex.def)             Requested size: 68.28644pt x 147.94493pt.
 
 Overfull \hbox (9.63707pt too wide) in paragraph at lines 318--319
+=======
+Package pdftex.def Info: App_dagboek3.jpg  used on input line 315.
+(pdftex.def)             Requested size: 68.28644pt x 147.94493pt.
+
+Overfull \hbox (9.63707pt too wide) in paragraph at lines 315--316
+>>>>>>> aanpassingen
 [][]
  []
 
 
+<<<<<<< refs/remotes/origin/Eindverslag
 Underfull \hbox (badness 10000) in paragraph at lines 319--319
 []\OT1/cmr/m/n/10 Figuur 19:
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 316--316
+[]\OT1/cmr/m/n/10 Figuur 18:
+>>>>>>> aanpassingen
  []
 
 <App_dagboek2.jpg, id=299, 813.0375pt x 1761.58125pt>
 File: App_dagboek2.jpg Graphic file (type jpg)
 <use App_dagboek2.jpg>
+<<<<<<< refs/remotes/origin/Eindverslag
 Package pdftex.def Info: App_dagboek2.jpg  used on input line 322.
 (pdftex.def)             Requested size: 68.28644pt x 147.94493pt.
 
 Overfull \hbox (9.63707pt too wide) in paragraph at lines 322--323
+=======
+Package pdftex.def Info: App_dagboek2.jpg  used on input line 319.
+(pdftex.def)             Requested size: 68.28644pt x 147.94493pt.
+
+Overfull \hbox (9.63707pt too wide) in paragraph at lines 319--320
+>>>>>>> aanpassingen
 [][]
  []
 
 
+<<<<<<< refs/remotes/origin/Eindverslag
 Underfull \hbox (badness 10000) in paragraph at lines 323--323
 []\OT1/cmr/m/n/10 Figuur 20:
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+[]\OT1/cmr/m/n/10 Figuur 19:
+>>>>>>> aanpassingen
  []
 
 <App_dagboek5.jpg, id=300, 813.0375pt x 1761.58125pt>
 File: App_dagboek5.jpg Graphic file (type jpg)
 <use App_dagboek5.jpg>
+<<<<<<< refs/remotes/origin/Eindverslag
 Package pdftex.def Info: App_dagboek5.jpg  used on input line 326.
 (pdftex.def)             Requested size: 68.28644pt x 147.94493pt.
 
 Overfull \hbox (9.63707pt too wide) in paragraph at lines 326--327
+=======
+Package pdftex.def Info: App_dagboek5.jpg  used on input line 323.
+(pdftex.def)             Requested size: 68.28644pt x 147.94493pt.
+
+Overfull \hbox (9.63707pt too wide) in paragraph at lines 323--324
+>>>>>>> aanpassingen
 [][]
  []
 
 
+<<<<<<< refs/remotes/origin/Eindverslag
 Underfull \hbox (badness 10000) in paragraph at lines 327--327
 []\OT1/cmr/m/n/10 Figuur 21:
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 327--327
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+[]\OT1/cmr/m/n/10 Figuur 20:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+>>>>>>> aanpassingen
 []\OT1/cmr/m/n/10 Dagboek
  []
 
 <App_dagboek4.jpg, id=301, 813.0375pt x 1761.58125pt>
 File: App_dagboek4.jpg Graphic file (type jpg)
 <use App_dagboek4.jpg>
+<<<<<<< refs/remotes/origin/Eindverslag
 Package pdftex.def Info: App_dagboek4.jpg  used on input line 330.
 (pdftex.def)             Requested size: 68.28644pt x 147.94493pt.
 
 Overfull \hbox (9.63707pt too wide) in paragraph at lines 330--331
+=======
+Package pdftex.def Info: App_dagboek4.jpg  used on input line 327.
+(pdftex.def)             Requested size: 68.28644pt x 147.94493pt.
+
+Overfull \hbox (9.63707pt too wide) in paragraph at lines 327--328
+>>>>>>> aanpassingen
 [][]
  []
 
 
+<<<<<<< refs/remotes/origin/Eindverslag
 Underfull \hbox (badness 10000) in paragraph at lines 331--331
 []\OT1/cmr/m/n/10 Figuur 22:
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 311--333
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 328--328
+[]\OT1/cmr/m/n/10 Figuur 21:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--330
+>>>>>>> aanpassingen
 
  []
 
 <screen_web_dagboek2.0.jpg, id=302, 554.82281pt x 546.54187pt>
 File: screen_web_dagboek2.0.jpg Graphic file (type jpg)
 <use screen_web_dagboek2.0.jpg>
+<<<<<<< refs/remotes/origin/Eindverslag
 Package pdftex.def Info: screen_web_dagboek2.0.jpg  used on input line 337.
+=======
+Package pdftex.def Info: screen_web_dagboek2.0.jpg  used on input line 334.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 96.5981pt x 95.15422pt.
 <screen_web_dagboek.jpg, id=303, 1368.11125pt x 620.3175pt>
 File: screen_web_dagboek.jpg Graphic file (type jpg)
 <use screen_web_dagboek.jpg>
+<<<<<<< refs/remotes/origin/Eindverslag
 Package pdftex.def Info: screen_web_dagboek.jpg  used on input line 342.
 (pdftex.def)             Requested size: 207.0021pt x 93.85762pt.
 
@@ -826,9 +1168,27 @@ l.364 	\newpage
 n_web_dagboek.jpg>] [16]
 Underfull \hbox (badness 10000) in paragraph at lines 400--402
 
+=======
+Package pdftex.def Info: screen_web_dagboek.jpg  used on input line 339.
+(pdftex.def)             Requested size: 207.0021pt x 93.85762pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 332--343
+[][]  [] 
+ []
+
+<Flowchart.jpg, id=295, 1027.84pt x 621.32124pt>
+File: Flowchart.jpg Graphic file (type jpg)
+<use Flowchart.jpg>
+Package pdftex.def Info: Flowchart.jpg  used on input line 362.
+(pdftex.def)             Requested size: 603.75pt x 364.96466pt.
+
+Overfull \hbox (130.886pt too wide) in paragraph at lines 361--363
+[]|  []
+>>>>>>> aanpassingen
  []
 
 
+<<<<<<< refs/remotes/origin/Eindverslag
 Underfull \hbox (badness 10000) in paragraph at lines 400--402
 
  []
@@ -839,6 +1199,57 @@ Overfull \hbox (113.32964pt too wide) in paragraph at lines 9--14
 t-[]for-[]web-[]application-[]development/$[]\OT1/cmr/m/n/10 ,
  []
 
+=======
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.365 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+18}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.365 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+19}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.365 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+20}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.365 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+21}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.365 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+22}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.365 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+23}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.365 
+       <./App_dagboek.jpg> <./App_dagboek3.jpg> <./App_dagboek2.jpg> <./App_dag
+boek5.jpg> <./App_dagboek4.jpg> <./screen_web_dagboek2.0.jpg> <./screen_web_dag
+boek.jpg>] [15pdfTeX warning (ext4): destination with the same identifier (name
+{figure.24}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.366 	\newpage
+                <./Flowchart.jpg>] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 402--404
+>>>>>>> aanpassingen
 
 Underfull \hbox (badness 7558) in paragraph at lines 21--24
 []\OT1/cmr/m/n/10 Firebase.  []$\OT1/cmtt/m/n/10 https : / / firebase . google 
@@ -846,17 +1257,22 @@ Underfull \hbox (badness 7558) in paragraph at lines 21--24
  []
 
 
+<<<<<<< refs/remotes/origin/Eindverslag
 Underfull \hbox (badness 10000) in paragraph at lines 51--56
 \OT1/cmtt/m/n/10 news / html-[]css-[]and-[]javascript-[]explained-[]for-[]begin
 ners/$[]\OT1/cmr/m/n/10 , Aug
  []
 
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 402--404
+>>>>>>> aanpassingen
 
 Underfull \hbox (badness 1622) in paragraph at lines 63--67
 []\OT1/cmr/m/n/10 Verschil tus-sen front end en back end.  []$\OT1/cmtt/m/n/10 
 https : / / www . code14 . nl /
  []
 
+<<<<<<< refs/remotes/origin/Eindverslag
 
 Underfull \hbox (badness 10000) in paragraph at lines 74--79
 []\OT1/cmr/m/n/10 Php vs node.js vs flask vs django.  []$\OT1/cmtt/m/n/10 https
@@ -934,15 +1350,82 @@ Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 454.
 File: Ganttchart.pdf Graphic file (type pdf)
 <use Ganttchart.pdf, page 3>
 Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 454.
+=======
+[17] [18] [19]
+<Ganttchart.pdf, id=332, 845.0471pt x 597.50829pt>
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf>
+Package pdftex.def Info: Ganttchart.pdf  used on input line 453.
+(pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf>
+Package pdftex.def Info: Ganttchart.pdf  used on input line 453.
+(pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
+<Ganttchart.pdf, id=335, page=1, 845.0471pt x 597.50829pt>
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 1>
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 453.
+(pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 1>
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 453.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 1>
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 453.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 1>
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 453.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 1>
+Package pdftex.def Info: Ganttchart.pdf , page1 used on input line 453.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+ [20 <./Ganttchart.pdf>]
+<Ganttchart.pdf, id=367, page=2, 845.0471pt x 597.50829pt>
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 2>
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 453.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 2>
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 453.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 2>
+Package pdftex.def Info: Ganttchart.pdf , page2 used on input line 453.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+ [21 <./Ganttchart.pdf>]
+<Ganttchart.pdf, id=376, page=3, 845.0471pt x 597.50829pt>
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 3>
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 453.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 3>
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 453.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: Ganttchart.pdf Graphic file (type pdf)
+<use Ganttchart.pdf, page 3>
+Package pdftex.def Info: Ganttchart.pdf , page3 used on input line 453.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [23 <./Ganttchart.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_1.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< refs/remotes/origin/Eindverslag
 <Eind_Diagram_1.drawio.pdf, id=421, 598.15468pt x 846.0408pt>
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf  used on input line 455.
+=======
+<Eind_Diagram_1.drawio.pdf, id=385, 598.15468pt x 846.0408pt>
+File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
+<use Eind_Diagram_1.drawio.pdf>
+Package pdftex.def Info: Eind_Diagram_1.drawio.pdf  used on input line 454.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 
 
@@ -950,7 +1433,11 @@ pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_1.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf>
+<<<<<<< refs/remotes/origin/Eindverslag
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf  used on input line 455.
+=======
+Package pdftex.def Info: Eind_Diagram_1.drawio.pdf  used on input line 454.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 
 
@@ -960,40 +1447,71 @@ pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_1.drawio.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_1.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< refs/remotes/origin/Eindverslag
 <Eind_Diagram_1.drawio.pdf, id=424, page=1, 598.15468pt x 846.0408pt>
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 4
 55.
+=======
+<Eind_Diagram_1.drawio.pdf, id=388, page=1, 598.15468pt x 846.0408pt>
+File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
+<use Eind_Diagram_1.drawio.pdf, page 1>
+Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 4
+54.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 4
+<<<<<<< refs/remotes/origin/Eindverslag
 55.
+=======
+54.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 4
+<<<<<<< refs/remotes/origin/Eindverslag
 55.
+=======
+54.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 4
+<<<<<<< refs/remotes/origin/Eindverslag
 55.
+=======
+54.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_1.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_1.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_1.drawio.pdf , page1 used on input line 4
+<<<<<<< refs/remotes/origin/Eindverslag
 55.
+=======
+54.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 [24 <./Eind_Diagram_1.drawio.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_2.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< refs/remotes/origin/Eindverslag
 <Eind_Diagram_2.drawio.pdf, id=438, 598.15468pt x 846.0408pt>
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf  used on input line 456.
+=======
+<Eind_Diagram_2.drawio.pdf, id=402, 598.15468pt x 846.0408pt>
+File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
+<use Eind_Diagram_2.drawio.pdf>
+Package pdftex.def Info: Eind_Diagram_2.drawio.pdf  used on input line 455.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 
 
@@ -1001,7 +1519,11 @@ pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_2.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf>
+<<<<<<< refs/remotes/origin/Eindverslag
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf  used on input line 456.
+=======
+Package pdftex.def Info: Eind_Diagram_2.drawio.pdf  used on input line 455.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 
 
@@ -1011,30 +1533,51 @@ pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_2.drawio.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex.exe (file ./Eind_Diagram_2.drawio.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
+<<<<<<< refs/remotes/origin/Eindverslag
 <Eind_Diagram_2.drawio.pdf, id=441, page=1, 598.15468pt x 846.0408pt>
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 4
 56.
+=======
+<Eind_Diagram_2.drawio.pdf, id=405, page=1, 598.15468pt x 846.0408pt>
+File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
+<use Eind_Diagram_2.drawio.pdf, page 1>
+Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 4
+55.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 598.15321pt x 846.03874pt.
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 4
+<<<<<<< refs/remotes/origin/Eindverslag
 56.
+=======
+55.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 4
+<<<<<<< refs/remotes/origin/Eindverslag
 56.
+=======
+55.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 4
+<<<<<<< refs/remotes/origin/Eindverslag
 56.
+=======
+55.
+>>>>>>> aanpassingen
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 File: Eind_Diagram_2.drawio.pdf Graphic file (type pdf)
 <use Eind_Diagram_2.drawio.pdf, page 1>
 Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 4
+<<<<<<< refs/remotes/origin/Eindverslag
 56.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 [25 <./Eind_Diagram_2.drawio.pdf>] (./verslagCommunicatieplatform.aux)
@@ -1064,7 +1607,87 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist
 pe1/public/amsfonts/cm/cmti8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super
 /sfrm1000.pfb>
+<<<<<<< refs/remotes/origin/Eindverslag
 Output written on verslagCommunicatieplatform.pdf (25 pages, 4173394 bytes).
+=======
+Output written on verslagCommunicatieplatform.pdf (25 pages, 4173310 bytes).
+=======
+55.
+(pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
+[24 <./Eind_Diagram_2.drawio.pdf>] (./verslagCommunicatieplatform.bbl
+Overfull \hbox (113.32964pt too wide) in paragraph at lines 9--14
+\OT1/cmtt/m/n/10 2018 / 06 / why-[]millions-[]of-[]developers-[]use-[]javascrip
+t-[]for-[]web-[]application-[]development/$[]\OT1/cmr/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 7558) in paragraph at lines 21--24
+[]\OT1/cmr/m/n/10 Firebase.  []$\OT1/cmtt/m/n/10 https : / / firebase . google 
+. com/$[]\OT1/cmr/m/n/10 .  (Ge-raad-pleegd op
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--56
+\OT1/cmtt/m/n/10 news / html-[]css-[]and-[]javascript-[]explained-[]for-[]begin
+ners/$[]\OT1/cmr/m/n/10 , Aug
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 63--67
+[]\OT1/cmr/m/n/10 Verschil tus-sen front end en back end.  []$\OT1/cmtt/m/n/10 
+https : / / www . code14 . nl /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--79
+[]\OT1/cmr/m/n/10 Php vs node.js vs flask vs django.  []$\OT1/cmtt/m/n/10 https
+ : / / dev . to /
+ []
+
+
+Overfull \hbox (258.5784pt too wide) in paragraph at lines 74--79
+\OT1/cmtt/m/n/10 leviathanprogramming / php-[]vs-[]nodejs-[]vs-[]flask-[]vs-[]d
+jango-[]which-[]is-[]the-[]best-[]backend-[]language-[]in-[]your-[]opinion-[]33
+9c$[]\OT1/cmr/m/n/10 ,
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 461.
+ [25]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 461.
+ (./verslagCommunicatieplatform.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 461.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 461.
+Package rerunfilecheck Info: File `verslagCommunicatieplatform.out' has not cha
+nged.
+(rerunfilecheck)             Checksum: 3523C0FE6850F9BAD9486B9BA92A6A73;1446.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 461.
+ ) 
+Here is how much of TeX's memory you used:
+ 8423 strings out of 480875
+ 126129 string characters out of 5911456
+ 417797 words of memory out of 5000000
+ 23779 multiletter control sequences out of 15000+600000
+ 541746 words of font info for 52 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,18n,46p,1218b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
+fb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2020/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2020/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmti8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmtt10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super
+/sfrm1000.pfb>
+Output written on verslagCommunicatieplatform.pdf (25 pages, 4162892 bytes).
+>>>>>>> aanpassingen
+>>>>>>> aanpassingen
 PDF statistics:
  534 PDF objects out of 1000 (max. 8388607)
  425 compressed objects within 5 object streams
