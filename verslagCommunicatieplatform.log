@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.21)  21 DEC 2021 16:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.21)  21 DEC 2021 16:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1030,20 +1030,14 @@ Package pdftex.def Info: Eind_Diagram_2.drawio.pdf , page1 used on input line 4
 57.
 (pdftex.def)             Requested size: 562.06468pt x 794.99446pt.
 [25 <./Eind_Diagram_2.drawio.pdf>] (./verslagCommunicatieplatform.aux)
-
-Package rerunfilecheck Warning: File `verslagCommunicatieplatform.out' has chan
-ged.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `verslagCommunicatieplatform.out':
-(rerunfilecheck)             Before: C7DFA93A3923660C6904E0A905CBFD49;1471
-(rerunfilecheck)             After:  F96EF83A95980784DC0C5D9B93CA5E6D;2955.
+Package rerunfilecheck Info: File `verslagCommunicatieplatform.out' has not cha
+nged.
+(rerunfilecheck)             Checksum: F96EF83A95980784DC0C5D9B93CA5E6D;2955.
  ) 
 Here is how much of TeX's memory you used:
  11891 strings out of 478371
  189892 string characters out of 5852527
- 503399 words of memory out of 5000000
+ 503392 words of memory out of 5000000
  29733 multiletter control sequences out of 15000+600000
  410088 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1062,7 +1056,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist
 pe1/public/amsfonts/cm/cmti8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super
 /sfrm1000.pfb>
-Output written on verslagCommunicatieplatform.pdf (25 pages, 4419323 bytes).
+Output written on verslagCommunicatieplatform.pdf (25 pages, 4419474 bytes).
 PDF statistics:
  518 PDF objects out of 1000 (max. 8388607)
  409 compressed objects within 5 object streams
