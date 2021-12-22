@@ -173,7 +173,6 @@ public class test_MessageActivity extends AppCompatActivity {
             db.collection("lastMsg").document(document).set(dataLast).addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void unused) {
-                    Toast.makeText(test_MessageActivity.this, "Laatste Bericht verstuurd", Toast.LENGTH_SHORT).show();
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
