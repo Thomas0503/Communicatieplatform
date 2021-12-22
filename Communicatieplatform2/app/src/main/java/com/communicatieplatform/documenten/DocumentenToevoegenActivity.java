@@ -91,23 +91,25 @@ public class DocumentenToevoegenActivity extends AppCompatActivity {
         progressDialog.setProgress(0);
         progressDialog.show();
 
-        final String fileName = System.currentTimeMillis() + "" + FirebaseAuth.getInstance().getCurrentUser().getUid();
+        String fileName = System.currentTimeMillis() + " - ";
+        final String[] fileInfo = getFileInfo(pdfUri);
+        final String name = fileName + "_" + fileInfo[0];
         String directory = "Uploads";
         StorageReference storageReference = storage.getReference(); //return root path
-        storageReference.child(directory).child(fileName).putFile(pdfUri)
+        storageReference.child(directory).child(name).putFile(pdfUri)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                         //store the url in realtime database
                         String[] fileInfo = getFileInfo(pdfUri);
-                        String url = directory + "/" + fileName;
+                        String url = directory + "/" + name;
                         CollectionReference reference = database.collection("formulier").document("formulier").collection(FirebaseAuth.getInstance().getCurrentUser().getUid());
                         Map<String, Object> image = new HashMap<>();
                         image.put("link", url);
                         image.put("name", fileInfo[0]);
                         image.put("size", Long.parseLong(fileInfo[1]));
                         image.put("createdAt", Timestamp.now());
-                        reference.document(fileName).set(image)
+                        reference.document(name).set(image)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void aVoid) {

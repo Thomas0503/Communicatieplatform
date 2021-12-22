@@ -39,7 +39,7 @@
                 android:padding="9dp"
                 android:text="bericht"
                 android:textColor="@android:color/white"
-                android:textSize="15dp" />
+                android:textSize="16dp" />
 
             <ImageView
                 android:id="@+id/imageViewIk"
@@ -61,7 +61,7 @@
                 android:padding="9dp"
                 android:text="bericht"
                 android:textColor="@android:color/white"
-                android:textSize="15dp" />
+                android:textSize="16dp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

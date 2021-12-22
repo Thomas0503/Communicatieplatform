@@ -55,10 +55,7 @@
         android:layout_marginTop="56dp"
         android:backgroundTint="#832E2E"
         android:text="kies bestand"
-        android:typeface="serif"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_image2" />
 
     <TextView
@@ -82,9 +79,7 @@
         android:layout_marginTop="35dp"
         android:backgroundTint="#832E2E"
         android:text="upload bestand"
-        android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/notification" />
 
